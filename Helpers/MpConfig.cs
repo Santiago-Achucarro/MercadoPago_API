@@ -14,10 +14,10 @@ namespace MercadoPago_API.Helpers
 
         public string ObtenerAccessToken()
         {
-            var token = _configuration.GetValue<string>("MercadoPago:AccessToken_Test");
+            var token = _configuration.GetValue<string>("MercadoPago:AccessToken_Prod");
             if (string.IsNullOrEmpty(token))
             {
-                throw new Exception("El AccessToken_Test no está configurado correctamente.");
+                throw new Exception("El AccessToken_Prod no está configurado correctamente.");
             }
             return token;
         }

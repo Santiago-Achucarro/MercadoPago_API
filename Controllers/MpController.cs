@@ -27,7 +27,7 @@ namespace MercadoPago_API.Controllers
             _httpClient = httpClient;
             _appDbContext = appDbContext;
         }
-
+        //Genera un metodo de pago, retorna un id valido para que un posible front lo lea y muestre un checkbox estilo mp 
         [HttpPost("preferencia")]
         public async Task<ActionResult> CrearPreferencia([FromBody] PreferenciaItemsMpDTO preferencia)
         {
@@ -52,6 +52,7 @@ namespace MercadoPago_API.Controllers
 
             return Ok(preference);
         }
+        //Webhook que corre por instancia de pedidos creados o pagos, rellena tablas con valores retonardos por mp
         [HttpPost("notificarpago")]
         public async Task<IActionResult> NotificatePago([FromBody] dynamic eventData)
         {

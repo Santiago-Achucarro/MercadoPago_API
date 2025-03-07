@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>MercadoPago_API</RootNamespace>
   </PropertyGroup>
 
@@ -28,7 +28,6 @@
     <Folder Include="Model\App\Configurations\" />
     <Folder Include="Model\App\Keyless\" />
     <Folder Include="Persistence\Extensions\" />
-    <Folder Include="SQL\" />
 	<Folder Include="Controllers\" />
   </ItemGroup>
 
