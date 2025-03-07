@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FF2AEF6-D020-4953-A66A-5E04392F70A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComprasDAL</RootNamespace>
+    <AssemblyName>ComprasDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global">
+      <HintPath>..\..\..\Servicio\Actions\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data">
+      <HintPath>..\..\..\Servicio\Actions\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="interfacedaab">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comAjuEdoCta.cs" />
+    <Compile Include="comAsiCierre.cs" />
+    <Compile Include="comAsiCierreCr.cs" />
+    <Compile Include="comAsiSegmentosAnul.cs" />
+    <Compile Include="comBorrarProveedorDesdeHasta.cs" />
+    <Compile Include="comCategorias.cs" />
+    <Compile Include="comCFDISat.cs" />
+    <Compile Include="comCFDISatPago.cs" />
+    <Compile Include="comComprasConsigna.cs" />
+    <Compile Include="comCompras_Pagadas.cs" />
+    <Compile Include="comCondFiscal.cs" />
+    <Compile Include="comConPago.cs" />
+    <Compile Include="comConsEdoCtaProveedores.cs" />
+    <Compile Include="comConsEdoCtaProveedoresTesoreria.cs" />
+    <Compile Include="comDespachos.cs" />
+    <Compile Include="comEmbarques.cs" />
+    <Compile Include="comEmbAsiCierre.cs" />
+    <Compile Include="comEmbCuerpo.cs" />
+    <Compile Include="comEmbGastoMovProv.cs" />
+    <Compile Include="comEmbGastos.cs" />
+    <Compile Include="comEsquemaAuto.cs" />
+    <Compile Include="comEsquemaAutoUsu.cs" />
+    <Compile Include="comFactTesProvSugeridos.cs" />
+    <Compile Include="comFacturasConOrdenDeCompra.cs" />
+    <Compile Include="comFacturasConOrdenDeEmbarque.cs" />
+    <Compile Include="comFacturasVariasOC.cs" />
+    <Compile Include="comFactuReceOc.cs" />
+    <Compile Include="comFactuReceStk.cs" />
+    <Compile Include="comForEntre.cs" />
+    <Compile Include="comHabilitarPagos.cs" />
+    <Compile Include="comHabilitarPagosMasivos.cs" />
+    <Compile Include="comImpuestos.cs" />
+    <Compile Include="comLibros.cs" />
+    <Compile Include="comLibrosColumnas.cs" />
+    <Compile Include="comLibrosImpuestos.cs" />
+    <Compile Include="comListaNegraMX.cs" />
+    <Compile Include="comMovDetalle.cs" />
+    <Compile Include="comMovDetalleCont.cs" />
+    <Compile Include="comMovImpAcredita.cs" />
+    <Compile Include="comMovImpuestos.cs" />
+    <Compile Include="comMovPAnexo.cs" />
+    <Compile Include="comMovpAnexoCont.cs" />
+    <Compile Include="comMovpAnexoDetalle.cs" />
+    <Compile Include="comMovPOC.cs" />
+    <Compile Include="comMovProv.cs" />
+    <Compile Include="comMovProvAnexoImp.cs" />
+    <Compile Include="comMovProvDevenga.cs" />
+    <Compile Include="comMovProvDevengaCont.cs" />
+    <Compile Include="comMovProvDevengaCtas.cs" />
+    <Compile Include="comMovProvDPreFactDir.cs" />
+    <Compile Include="comMovProvDPreOC.cs" />
+    <Compile Include="comMovProvEmb.cs" />
+    <Compile Include="comMovProvRemiPend.cs" />
+    <Compile Include="comMovProvXmlcs.cs" />
+    <Compile Include="comMovProvXmlDatos.cs" />
+    <Compile Include="comMovTipos.cs" />
+    <Compile Include="comNivelesAuto.cs" />
+    <Compile Include="comOCAntiRecepcion.cs" />
+    <Compile Include="comOCArticulo.cs" />
+    <Compile Include="comOCAutorizando.cs" />
+    <Compile Include="comOCCuerpo.cs" />
+    <Compile Include="comOCEstados.cs" />
+    <Compile Include="comOCMemo.cs" />
+    <Compile Include="comOCMovProv.cs" />
+    <Compile Include="comOcReceCuerpo.cs" />
+    <Compile Include="comOCRecepcion.cs" />
+    <Compile Include="comOCSegmentos.cs" />
+    <Compile Include="comOrdencomp.cs" />
+    <Compile Include="comOrdenCompCons.cs" />
+    <Compile Include="comOrdenCompDesechado.cs" />
+    <Compile Include="comOrigenesFiscales.cs" />
+    <Compile Include="comPagosAnticipo.cs" />
+    <Compile Include="comPagosHabilitados.cs" />
+    <Compile Include="comPFXDatos.cs" />
+    <Compile Include="ComprasCerrar.cs" />
+    <Compile Include="comProvAnexo.cs" />
+    <Compile Include="comProvCtasContrap.cs" />
+    <Compile Include="comProveedores.cs" />
+    <Compile Include="comProveedoresCtasPasivo.cs" />
+    <Compile Include="comProveedoresImpuestos.cs" />
+    <Compile Include="comProveedoresRetencion.cs" />
+    <Compile Include="comProveedoresSaldoInicial.cs" />
+    <Compile Include="comProveedoresTipoPasivo.cs" />
+    <Compile Include="comProvTipos.cs" />
+    <Compile Include="comRegiones.cs" />
+    <Compile Include="comRemiPendFact.cs" />
+    <Compile Include="comReqInterno.cs" />
+    <Compile Include="comRIArticulo.cs" />
+    <Compile Include="comRIAutorizando.cs" />
+    <Compile Include="comRIConsolidacion.cs" />
+    <Compile Include="comRICuerpo.cs" />
+    <Compile Include="comRIMemo.cs" />
+    <Compile Include="comRIPendAuto.cs" />
+    <Compile Include="comRISegmento.cs" />
+    <Compile Include="comSolicitudesSat.cs" />
+    <Compile Include="comSubCategorias.cs" />
+    <Compile Include="comTipoPermi.cs" />
+    <Compile Include="comTipoPermiRI.cs" />
+    <Compile Include="comTraePendientes.cs" />
+    <Compile Include="conEliminaPendOC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ComprasCommon\ComprasCommon\ComprasCommon.csproj">
+      <Project>{426a7287-f5d3-42c3-b096-e963f20d1513}</Project>
+      <Name>ComprasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genReportesDS" targetNamespace="http://tempuri.org/genReportesDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genReportesDS.xsd" xmlns:mstns="http://tempuri.org/genReportesDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genReportesDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="genReportes" type="xs:int" minOccurs="0" />
+<xs:element name="Reporte_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Reporte_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Titulo" type="xs:string" minOccurs="0" />
+<xs:element name="Carpeta" type="xs:string" minOccurs="0" />
+<xs:element name="Rpt" type="xs:string" minOccurs="0" />
+<xs:element name="Estandar" type="xs:boolean" minOccurs="0" />
+<xs:element name="Local" type="xs:boolean" minOccurs="0" />
+<xs:element name="StoreProcedure" type="xs:string" minOccurs="0" />
+<xs:element name="TipoReporte" type="xs:string" minOccurs="0" />
+<xs:element name="TamanioHoja" type="xs:string" minOccurs="0" />
+<xs:element name="AnchoHoja" type="xs:int" minOccurs="0" />
+<xs:element name="AltoHoja" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Procedimientos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="genReportes" type="xs:int" minOccurs="0" />
+<xs:element name="Reporte_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="StoreProcedure" type="xs:string" minOccurs="0" />
+<xs:element name="DataTable" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

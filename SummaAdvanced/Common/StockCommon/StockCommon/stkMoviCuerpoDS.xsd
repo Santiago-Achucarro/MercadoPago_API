@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="stkMoviCuerpoDS" targetNamespace="http://tempuri.org/stkMoviCuerpoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/stkMoviCuerpoDS.xsd" xmlns:mstns="http://tempuri.org/stkMoviCuerpoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="stkMoviCuerpoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="stkMoviCabe" type="xs:long" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="RenglonReferencia" type="xs:int" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Deposito_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDepositos" type="xs:string" minOccurs="0" />
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProductos" type="xs:string" minOccurs="0" />
+<xs:element name="Medida_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUniMed" type="xs:string" minOccurs="0" />
+<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantidadForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="CostoUnitario" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioOriginal" type="xs:decimal" minOccurs="0" />
+<xs:element name="MedidaAlterna" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionMedidaAlterna" type="xs:string" minOccurs="0" />
+<xs:element name="CantidadAlternaForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="Descuento" type="xs:decimal" minOccurs="0" />
+<xs:element name="conRenglonDebe" type="xs:int" minOccurs="0" />
+<xs:element name="CuentaDebe" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentaDebe" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1Debe" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1Debe" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2Debe" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2Debe" type="xs:string" minOccurs="0" />
+<xs:element name="ClaseDebe" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteContableDebe" type="xs:decimal" minOccurs="0" />
+<xs:element name="conRenglonHaber" type="xs:int" minOccurs="0" />
+<xs:element name="CuentaHaber" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentaHaber" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1Haber" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1Haber" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2Haber" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2Haber" type="xs:string" minOccurs="0" />
+<xs:element name="ClaseHaber" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteContableHaber" type="xs:decimal" minOccurs="0" />
+<xs:element name="Despacho_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

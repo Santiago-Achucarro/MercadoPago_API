@@ -1,0 +1,2 @@
+ALTER TABLE testarjetas3
+ALTER COLUMN NroTarjeta NVARCHAR(250);

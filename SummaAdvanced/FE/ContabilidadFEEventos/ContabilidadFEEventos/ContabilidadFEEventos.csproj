@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{654D89F4-22D1-4B28-A171-AB64D3863A23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContabilidadFEEventos</RootNamespace>
+    <AssemblyName>ContabilidadFEEventos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore">
+      <HintPath>..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesFEAdv">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesFEAdv.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conArbolResultados.cs" />
+    <Compile Include="conAsientos.cs" />
+    <Compile Include="conAsientosTipo.cs" />
+    <Compile Include="conBaseDistri.cs" />
+    <Compile Include="conCatalogoElectoMx.cs" />
+    <Compile Include="conCatalogoElectroMX.cs" />
+    <Compile Include="conCuentasActualizacion.cs" />
+    <Compile Include="conEjercicios.cs" />
+    <Compile Include="coninfDefiniblesGenerar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\ContabilidadBE\ContabilidadValidacion\ContabilidadValidacion.csproj">
+      <Project>{8de70d60-5727-4f7a-ac20-732e3ea9f4d3}</Project>
+      <Name>ContabilidadValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\GeneralesBE\GeneralesValidacion\GeneralesValidacion.csproj">
+      <Project>{bd4fd30c-d5fa-4c15-84ea-6d46f45f3d0b}</Project>
+      <Name>GeneralesValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\ContabilidadExchange\ContabilidadExchange.csproj">
+      <Project>{24e4cba8-710c-4a3d-8e5f-a24e8d976541}</Project>
+      <Name>ContabilidadExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\GeneralesExchange\GeneralesExchange.csproj">
+      <Project>{678dcd1e-d8ac-4fd8-934a-b775110c81d5}</Project>
+      <Name>GeneralesExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ContabilidadCommon\ContabilidadCommon\ContabilidadCommon.csproj">
+      <Project>{a1732112-8817-4321-99cc-3c0069457061}</Project>
+      <Name>ContabilidadCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ContabilidadReportesCommon\ContabilidadReportesCommon\ContabilidadReportesCommon.csproj">
+      <Project>{a22c03ef-51a0-4c26-817c-071cde455472}</Project>
+      <Name>ContabilidadReportesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

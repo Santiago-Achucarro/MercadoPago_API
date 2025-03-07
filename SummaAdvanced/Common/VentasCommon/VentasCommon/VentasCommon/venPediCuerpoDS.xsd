@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venPediCuerpoDS" targetNamespace="http://tempuri.org/venPediCuerpoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venPediCuerpoDS.xsd" xmlns:mstns="http://tempuri.org/venPediCuerpoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venPediCuerpoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venPedidos" type="xs:int" minOccurs="0" />
+<xs:element name="Renglon_Pe" type="xs:int" minOccurs="0" />
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProductos" type="xs:string" minOccurs="0" />
+<xs:element name="ObservacionesProductos" type="xs:string" minOccurs="0" />
+<xs:element name="Medida_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUniMed" type="xs:string" minOccurs="0" />
+<xs:element name="Deposito_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDepositos" type="xs:string" minOccurs="0" />
+<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantidadOriginal" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantidadPedida" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantidadRemitida" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantidadFacturada" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioSinIva" type="xs:decimal" minOccurs="0" />
+<xs:element name="CFVenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="PrecioLista" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioListaForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioVenta" type="xs:decimal" minOccurs="0" />
+<xs:element name="TipoPrecio" type="xs:string" minOccurs="0" />
+<xs:element name="SubTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="FechaEntrega" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Especial" type="xs:boolean" minOccurs="0" />
+<xs:element name="Bonificacion" type="xs:decimal" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="Pendiente" type="xs:boolean" minOccurs="0" />
+<xs:element name="ReservaMercaderia" type="xs:boolean" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="SubTotalNeto" type="xs:decimal" minOccurs="0" />
+<xs:element name="RenglonReferencia" type="xs:int" minOccurs="0" />
+<xs:element name="Anular" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

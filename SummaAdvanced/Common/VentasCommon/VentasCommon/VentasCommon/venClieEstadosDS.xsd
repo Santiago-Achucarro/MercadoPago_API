@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venClieEstadosDS" targetNamespace="http://tempuri.org/venClieEstadosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venClieEstadosDS.xsd" xmlns:mstns="http://tempuri.org/venClieEstadosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venClieEstadosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venClieEstados" type="xs:int" minOccurs="0" />
+<xs:element name="Estado_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Estado_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentas" type="xs:string" minOccurs="0" />
+<xs:element name="Reservado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="ImpideOperaciones" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

@@ -1,0 +1,1024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B396219-F034-49EE-B92B-D5234000DB8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventariosReportes</RootNamespace>
+    <AssemblyName>InventariosReportes</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comPrevCompras.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comPrevCompras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INF_stkCPDestinoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>INF_stkCPDestinoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inf_stkMoviCuerpoH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inf_stkMoviCuerpoH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inf_stkSolicitudCDCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inf_stkSolicitudCDCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizDistribCantidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatrizDistribCantidad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizDistribMonto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatrizDistribMonto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizDistribStock.cs">
+      <DependentUpon>MatrizDistribStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizDistribStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatrizDistribStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenCompDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Principal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="stkAFecha.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkAFecha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkAnalisisInventario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkAnalisisInventario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkAnamoviStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkAnamoviStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkCartaPorteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkCartaPorteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkCFDIDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkCFDIDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkCFDIRDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkCFDIRDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stKCPDestinoDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stKCPDestinoDS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkCPOrigenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkCPOrigenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkEmbarque.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkEmbarque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkEnsamblesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkEnsamblesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkEnTransito.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkEnTransito.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkExceso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkExceso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkHojaDeRuta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkHojaDeRuta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkHojaDeRutaDeta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkHojaDeRutaDeta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkInvAjustes.cs">
+      <DependentUpon>stkInvAjustes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkInvAjustes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkInvAjustes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkInvIngresado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkInvIngresado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMaterialEnPersDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMaterialEnPersDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMaxMin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMaxMin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMercTransImp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMercTransImp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMercTransLoc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMercTransLoc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviCabeH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviCabeH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviCausa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviCausa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviCuerpoH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviCuerpoH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviDespaH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviDespaH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviEmpleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviEmpleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviOC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviOC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkMoviSerieH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkMoviSerieH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkOtrosMovimientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkOtrosMovimientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkProdSinMovimientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StkProdSinMovimientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkRankConsumo.cs">
+      <DependentUpon>StkRankConsumo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkRankConsumo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StkRankConsumo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkRemiClie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkRemiClie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkRemiPendFact.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkRemiPendFact.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkRemitos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkRemitos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkReposicion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkReposicion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkRotacion.cs">
+      <DependentUpon>StkRotacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkRotacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StkRotacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkSeguimientoDespa.cs">
+      <DependentUpon>stkSeguimientoDespa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkSeguimientoDespa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkSeguimientoDespa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkSeguimientoSerie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkSeguimientoSerie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkSerieLoteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkSerieLoteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkSolicitudCDPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkSolicitudCDPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkSubDiario.cs">
+      <DependentUpon>StkSubDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkSubDiario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StkSubDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StkSubMayor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StkSubMayor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkTraspasosPend.cs">
+      <DependentUpon>stkTraspasosPend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkTraspasosPend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkTraspasosPend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stkxUbicacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stkxUbicacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockNegativo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockNegativo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockxAlmacen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockxAlmacen.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="comPrevCompras.rdlc" />
+    <EmbeddedResource Include="MatrizDistribCantidad.rdlc" />
+    <EmbeddedResource Include="MatrizDistribMonto.rdlc" />
+    <EmbeddedResource Include="MatrizDistribStock.rdlc" />
+    <EmbeddedResource Include="stkAFecha.rdlc" />
+    <EmbeddedResource Include="stkAFechaF.rdlc" />
+    <EmbeddedResource Include="stkAFechaFam.rdlc" />
+    <EmbeddedResource Include="stkAFechaG.rdlc" />
+    <EmbeddedResource Include="stkAnalisisInventarios.rdlc" />
+    <EmbeddedResource Include="stkAnaMovimientos.rdlc" />
+    <EmbeddedResource Include="stkDevolucionesProv.rdlc" />
+    <EmbeddedResource Include="StkEnsambles.rdlc" />
+    <EmbeddedResource Include="stkEntradasEmbarque.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stkExceso.rdlc" />
+    <EmbeddedResource Include="stkExistLoteSerie.rdlc" />
+    <EmbeddedResource Include="stkHojaDeRuta.rdlc" />
+    <EmbeddedResource Include="stkHojaDeRutaDeta.rdlc" />
+    <EmbeddedResource Include="stkInvAjustes.rdlc" />
+    <EmbeddedResource Include="stkInvIngresado.rdlc" />
+    <EmbeddedResource Include="stkMaterialEnPers.rdlc" />
+    <EmbeddedResource Include="stkMaxMin.rdlc" />
+    <EmbeddedResource Include="stkMercTransImp.rdlc" />
+    <EmbeddedResource Include="stkMercTransLoc.rdlc" />
+    <EmbeddedResource Include="stkMoviCabeCD.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stkMoviCabeCDMX.rdlc" />
+    <EmbeddedResource Include="stkMoviCausa.rdlc" />
+    <EmbeddedResource Include="stkMoviCausaCosto.rdlc" />
+    <EmbeddedResource Include="stkMoviEmple.rdlc" />
+    <EmbeddedResource Include="stkMoviOC.rdlc" />
+    <EmbeddedResource Include="stkOtrosMovimientos.rdlc" />
+    <EmbeddedResource Include="StkProdSinMovimientos.rdlc" />
+    <EmbeddedResource Include="StkRankConsumo.rdlc" />
+    <EmbeddedResource Include="stkRemiClie.rdlc" />
+    <EmbeddedResource Include="stkRemiPendFact.rdlc" />
+    <EmbeddedResource Include="stkRemiProv.rdlc" />
+    <EmbeddedResource Include="stkRemisionMX.rdlc" />
+    <EmbeddedResource Include="stkReposicion.rdlc" />
+    <EmbeddedResource Include="StkRotacion.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stkSeguimientoDespa.rdlc" />
+    <EmbeddedResource Include="stkSeguimientoSerie.rdlc" />
+    <EmbeddedResource Include="stkSolicitudCD.rdlc" />
+    <EmbeddedResource Include="StkSubDiario.rdlc" />
+    <EmbeddedResource Include="StkSubMayor.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stkTraspasosPend.rdlc" />
+    <EmbeddedResource Include="StkxAlmacen.rdlc" />
+    <EmbeddedResource Include="StkxUbicacion.rdlc" />
+    <EmbeddedResource Include="StockNegativo.rdlc" />
+    <EmbeddedResource Include="vstkproductos.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="comPrevCompras.xsc">
+      <DependentUpon>comPrevCompras.xsd</DependentUpon>
+    </None>
+    <None Include="comPrevCompras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comPrevCompras.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comPrevCompras.xss">
+      <DependentUpon>comPrevCompras.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsc">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empresas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Empresas.xss">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="INF_stkCPDestinoDS.xsc">
+      <DependentUpon>INF_stkCPDestinoDS.xsd</DependentUpon>
+    </None>
+    <None Include="INF_stkCPDestinoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>INF_stkCPDestinoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INF_stkCPDestinoDS.xss">
+      <DependentUpon>INF_stkCPDestinoDS.xsd</DependentUpon>
+    </None>
+    <None Include="inf_stkMoviCuerpoH.xsc">
+      <DependentUpon>inf_stkMoviCuerpoH.xsd</DependentUpon>
+    </None>
+    <None Include="inf_stkMoviCuerpoH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inf_stkMoviCuerpoH.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="inf_stkMoviCuerpoH.xss">
+      <DependentUpon>inf_stkMoviCuerpoH.xsd</DependentUpon>
+    </None>
+    <None Include="inf_stkSolicitudCDCuerpo.xsc">
+      <DependentUpon>inf_stkSolicitudCDCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="inf_stkSolicitudCDCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inf_stkSolicitudCDCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inf_stkSolicitudCDCuerpo.xss">
+      <DependentUpon>inf_stkSolicitudCDCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribCantidad.xsc">
+      <DependentUpon>MatrizDistribCantidad.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribCantidad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatrizDistribCantidad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MatrizDistribCantidad.xss">
+      <DependentUpon>MatrizDistribCantidad.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribMonto.xsc">
+      <DependentUpon>MatrizDistribMonto.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribMonto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatrizDistribMonto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MatrizDistribMonto.xss">
+      <DependentUpon>MatrizDistribMonto.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribStock.xsc">
+      <DependentUpon>MatrizDistribStock.xsd</DependentUpon>
+    </None>
+    <None Include="MatrizDistribStock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatrizDistribStock.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MatrizDistribStock.xss">
+      <DependentUpon>MatrizDistribStock.xsd</DependentUpon>
+    </None>
+    <None Include="OrdenCompDS.xsc">
+      <DependentUpon>OrdenCompDS.xsd</DependentUpon>
+    </None>
+    <None Include="OrdenCompDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrdenCompDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrdenCompDS.xss">
+      <DependentUpon>OrdenCompDS.xsd</DependentUpon>
+    </None>
+    <None Include="Principal.xsc">
+      <DependentUpon>Principal.xsd</DependentUpon>
+    </None>
+    <None Include="Principal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Principal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Principal.xss">
+      <DependentUpon>Principal.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkAFecha.xsc">
+      <DependentUpon>stkAFecha.xsd</DependentUpon>
+    </None>
+    <None Include="stkAFecha.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkAFecha.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkAFecha.xss">
+      <DependentUpon>stkAFecha.xsd</DependentUpon>
+    </None>
+    <None Include="stkAnalisisInventario.xsc">
+      <DependentUpon>stkAnalisisInventario.xsd</DependentUpon>
+    </None>
+    <None Include="stkAnalisisInventario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkAnalisisInventario.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkAnalisisInventario.xss">
+      <DependentUpon>stkAnalisisInventario.xsd</DependentUpon>
+    </None>
+    <None Include="stkAnamoviStock.xsc">
+      <DependentUpon>stkAnamoviStock.xsd</DependentUpon>
+    </None>
+    <None Include="stkAnamoviStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkAnamoviStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkAnamoviStock.xss">
+      <DependentUpon>stkAnamoviStock.xsd</DependentUpon>
+    </None>
+    <None Include="stkCartaPorteDS.xsc">
+      <DependentUpon>stkCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCartaPorteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkCartaPorteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkCartaPorteDS.xss">
+      <DependentUpon>stkCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCFDIDS.xsc">
+      <DependentUpon>stkCFDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCFDIDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkCFDIDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkCFDIDS.xss">
+      <DependentUpon>stkCFDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCFDIRDS.xsc">
+      <DependentUpon>stkCFDIRDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCFDIRDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkCFDIRDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkCFDIRDS.xss">
+      <DependentUpon>stkCFDIRDS.xsd</DependentUpon>
+    </None>
+    <None Include="stKCPDestinoDS1.xsc">
+      <DependentUpon>stKCPDestinoDS1.xsd</DependentUpon>
+    </None>
+    <None Include="stKCPDestinoDS1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stKCPDestinoDS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stKCPDestinoDS1.xss">
+      <DependentUpon>stKCPDestinoDS1.xsd</DependentUpon>
+    </None>
+    <None Include="stkCPOrigenDS.xsc">
+      <DependentUpon>stkCPOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkCPOrigenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkCPOrigenDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkCPOrigenDS.xss">
+      <DependentUpon>stkCPOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkEmbarque.xsc">
+      <DependentUpon>stkEmbarque.xsd</DependentUpon>
+    </None>
+    <None Include="stkEmbarque.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkEmbarque.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkEmbarque.xss">
+      <DependentUpon>stkEmbarque.xsd</DependentUpon>
+    </None>
+    <None Include="stkEnsamblesDS.xsc">
+      <DependentUpon>stkEnsamblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkEnsamblesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkEnsamblesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkEnsamblesDS.xss">
+      <DependentUpon>stkEnsamblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkEnTransito.xsc">
+      <DependentUpon>stkEnTransito.xsd</DependentUpon>
+    </None>
+    <None Include="stkEnTransito.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkEnTransito.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkEnTransito.xss">
+      <DependentUpon>stkEnTransito.xsd</DependentUpon>
+    </None>
+    <None Include="stkExceso.xsc">
+      <DependentUpon>stkExceso.xsd</DependentUpon>
+    </None>
+    <None Include="stkExceso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkExceso.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkExceso.xss">
+      <DependentUpon>stkExceso.xsd</DependentUpon>
+    </None>
+    <None Include="stkHojaDeRuta.xsc">
+      <DependentUpon>stkHojaDeRuta.xsd</DependentUpon>
+    </None>
+    <None Include="stkHojaDeRuta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkHojaDeRuta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkHojaDeRuta.xss">
+      <DependentUpon>stkHojaDeRuta.xsd</DependentUpon>
+    </None>
+    <None Include="stkHojaDeRutaDeta.xsc">
+      <DependentUpon>stkHojaDeRutaDeta.xsd</DependentUpon>
+    </None>
+    <None Include="stkHojaDeRutaDeta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkHojaDeRutaDeta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkHojaDeRutaDeta.xss">
+      <DependentUpon>stkHojaDeRutaDeta.xsd</DependentUpon>
+    </None>
+    <None Include="stkInvAjustes.xsc">
+      <DependentUpon>stkInvAjustes.xsd</DependentUpon>
+    </None>
+    <None Include="stkInvAjustes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkInvAjustes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkInvAjustes.xss">
+      <DependentUpon>stkInvAjustes.xsd</DependentUpon>
+    </None>
+    <None Include="stkInvIngresado.xsc">
+      <DependentUpon>stkInvIngresado.xsd</DependentUpon>
+    </None>
+    <None Include="stkInvIngresado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkInvIngresado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkInvIngresado.xss">
+      <DependentUpon>stkInvIngresado.xsd</DependentUpon>
+    </None>
+    <None Include="stkMaterialEnPersDS.xsc">
+      <DependentUpon>stkMaterialEnPersDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkMaterialEnPersDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMaterialEnPersDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMaterialEnPersDS.xss">
+      <DependentUpon>stkMaterialEnPersDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkMaxMin.xsc">
+      <DependentUpon>stkMaxMin.xsd</DependentUpon>
+    </None>
+    <None Include="stkMaxMin.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMaxMin.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkMaxMin.xss">
+      <DependentUpon>stkMaxMin.xsd</DependentUpon>
+    </None>
+    <None Include="stkMercTransImp.xsc">
+      <DependentUpon>stkMercTransImp.xsd</DependentUpon>
+    </None>
+    <None Include="stkMercTransImp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMercTransImp.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkMercTransImp.xss">
+      <DependentUpon>stkMercTransImp.xsd</DependentUpon>
+    </None>
+    <None Include="stkMercTransLoc.xsc">
+      <DependentUpon>stkMercTransLoc.xsd</DependentUpon>
+    </None>
+    <None Include="stkMercTransLoc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMercTransLoc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkMercTransLoc.xss">
+      <DependentUpon>stkMercTransLoc.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCabeH.xsc">
+      <DependentUpon>stkMoviCabeH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCabeH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviCabeH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviCabeH.xss">
+      <DependentUpon>stkMoviCabeH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCausa.xsc">
+      <DependentUpon>stkMoviCausa.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCausa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviCausa.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviCausa.xss">
+      <DependentUpon>stkMoviCausa.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCuerpoH.xsc">
+      <DependentUpon>stkMoviCuerpoH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviCuerpoH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviCuerpoH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviCuerpoH.xss">
+      <DependentUpon>stkMoviCuerpoH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviDespaH.xsc">
+      <DependentUpon>stkMoviDespaH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviDespaH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviDespaH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviDespaH.xss">
+      <DependentUpon>stkMoviDespaH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviEmpleDS.xsc">
+      <DependentUpon>stkMoviEmpleDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviEmpleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviEmpleDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviEmpleDS.xss">
+      <DependentUpon>stkMoviEmpleDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviOC.xsc">
+      <DependentUpon>stkMoviOC.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviOC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviOC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviOC.xss">
+      <DependentUpon>stkMoviOC.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviSerieH.xsc">
+      <DependentUpon>stkMoviSerieH.xsd</DependentUpon>
+    </None>
+    <None Include="stkMoviSerieH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkMoviSerieH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkMoviSerieH.xss">
+      <DependentUpon>stkMoviSerieH.xsd</DependentUpon>
+    </None>
+    <None Include="stkOtrosMovimientos.xsc">
+      <DependentUpon>stkOtrosMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="stkOtrosMovimientos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkOtrosMovimientos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkOtrosMovimientos.xss">
+      <DependentUpon>stkOtrosMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="StkProdSinMovimientos.xsc">
+      <DependentUpon>StkProdSinMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="StkProdSinMovimientos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StkProdSinMovimientos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StkProdSinMovimientos.xss">
+      <DependentUpon>StkProdSinMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="StkRankConsumo.xsc">
+      <DependentUpon>StkRankConsumo.xsd</DependentUpon>
+    </None>
+    <None Include="StkRankConsumo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StkRankConsumo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StkRankConsumo.xss">
+      <DependentUpon>StkRankConsumo.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemiClie.xsc">
+      <DependentUpon>stkRemiClie.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemiClie.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkRemiClie.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkRemiClie.xss">
+      <DependentUpon>stkRemiClie.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemiPendFact.xsc">
+      <DependentUpon>stkRemiPendFact.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemiPendFact.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkRemiPendFact.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkRemiPendFact.xss">
+      <DependentUpon>stkRemiPendFact.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemitos.xsc">
+      <DependentUpon>stkRemitos.xsd</DependentUpon>
+    </None>
+    <None Include="stkRemitos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkRemitos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkRemitos.xss">
+      <DependentUpon>stkRemitos.xsd</DependentUpon>
+    </None>
+    <None Include="stkReposicion.xsc">
+      <DependentUpon>stkReposicion.xsd</DependentUpon>
+    </None>
+    <None Include="stkReposicion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkReposicion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkReposicion.xss">
+      <DependentUpon>stkReposicion.xsd</DependentUpon>
+    </None>
+    <None Include="StkRotacion.xsc">
+      <DependentUpon>StkRotacion.xsd</DependentUpon>
+    </None>
+    <None Include="StkRotacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StkRotacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StkRotacion.xss">
+      <DependentUpon>StkRotacion.xsd</DependentUpon>
+    </None>
+    <None Include="stkSeguimientoDespa.xsc">
+      <DependentUpon>stkSeguimientoDespa.xsd</DependentUpon>
+    </None>
+    <None Include="stkSeguimientoDespa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkSeguimientoDespa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkSeguimientoDespa.xss">
+      <DependentUpon>stkSeguimientoDespa.xsd</DependentUpon>
+    </None>
+    <None Include="stkSeguimientoSerie.xsc">
+      <DependentUpon>stkSeguimientoSerie.xsd</DependentUpon>
+    </None>
+    <None Include="stkSeguimientoSerie.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkSeguimientoSerie.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkSeguimientoSerie.xss">
+      <DependentUpon>stkSeguimientoSerie.xsd</DependentUpon>
+    </None>
+    <None Include="stkSerieLoteDS.xsc">
+      <DependentUpon>stkSerieLoteDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkSerieLoteDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkSerieLoteDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkSerieLoteDS.xss">
+      <DependentUpon>stkSerieLoteDS.xsd</DependentUpon>
+    </None>
+    <None Include="stkSolicitudCDPrincipal.xsc">
+      <DependentUpon>stkSolicitudCDPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="stkSolicitudCDPrincipal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkSolicitudCDPrincipal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkSolicitudCDPrincipal.xss">
+      <DependentUpon>stkSolicitudCDPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="StkSubDiario.xsc">
+      <DependentUpon>StkSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="StkSubDiario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StkSubDiario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StkSubDiario.xss">
+      <DependentUpon>StkSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="StkSubMayor.xsc">
+      <DependentUpon>StkSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="StkSubMayor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StkSubMayor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StkSubMayor.xss">
+      <DependentUpon>StkSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="stkTraspasosPend.xsc">
+      <DependentUpon>stkTraspasosPend.xsd</DependentUpon>
+    </None>
+    <None Include="stkTraspasosPend.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkTraspasosPend.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="stkTraspasosPend.xss">
+      <DependentUpon>stkTraspasosPend.xsd</DependentUpon>
+    </None>
+    <None Include="stkxUbicacion.xsc">
+      <DependentUpon>stkxUbicacion.xsd</DependentUpon>
+    </None>
+    <None Include="stkxUbicacion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stkxUbicacion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stkxUbicacion.xss">
+      <DependentUpon>stkxUbicacion.xsd</DependentUpon>
+    </None>
+    <None Include="StockNegativo.xsc">
+      <DependentUpon>StockNegativo.xsd</DependentUpon>
+    </None>
+    <None Include="StockNegativo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockNegativo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockNegativo.xss">
+      <DependentUpon>StockNegativo.xsd</DependentUpon>
+    </None>
+    <None Include="StockxAlmacen.xsc">
+      <DependentUpon>StockxAlmacen.xsd</DependentUpon>
+    </None>
+    <None Include="StockxAlmacen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockxAlmacen.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockxAlmacen.xss">
+      <DependentUpon>StockxAlmacen.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

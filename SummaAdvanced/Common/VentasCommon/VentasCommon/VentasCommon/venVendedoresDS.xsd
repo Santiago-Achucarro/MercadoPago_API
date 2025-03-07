@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venVendedoresDS" targetNamespace="http://tempuri.org/venVendedoresDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venVendedoresDS.xsd" xmlns:mstns="http://tempuri.org/venVendedoresDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venVendedoresDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venVendedores" type="xs:long" minOccurs="0" />
+<xs:element name="Vendedor_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Vendedor_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="CUIT" type="xs:string" minOccurs="0" />
+<xs:element name="TipoDoc" type="xs:string" minOccurs="0" />
+<xs:element name="IdFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+<xs:element name="Comision" type="xs:decimal" minOccurs="0" />
+<xs:element name="ComisionxSuperv" type="xs:decimal" minOccurs="0" />
+<xs:element name="Supervisor_Id" type="xs:string" minOccurs="0" />
+<xs:element name="NombreSupervisor" type="xs:string" minOccurs="0" />
+<xs:element name="PisoDeVentas" type="xs:decimal" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="FacturaCobrada" type="xs:boolean" minOccurs="0" />
+<xs:element name="ConAnticipos" type="xs:boolean" minOccurs="0" />
+<xs:element name="SinImpuestos" type="xs:boolean" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ClieRazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ProvRazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Cobrador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CobNombre" type="xs:string" minOccurs="0" />
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="SueNombre" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

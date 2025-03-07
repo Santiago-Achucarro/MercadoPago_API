@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="stkUbiAlmacenDefectoDS" targetNamespace="http://tempuri.org/stkUbiAlmacenDefectoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/stkUbiAlmacenDefectoDS.xsd" xmlns:mstns="http://tempuri.org/stkUbiAlmacenDefectoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="stkUbiAlmacenDefectoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Deposito_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProductos" type="xs:string" minOccurs="0" />
+<xs:element name="Ubicacion_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

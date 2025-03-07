@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D0EABF8-A1B4-4C8E-B116-1FDA1540E67F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebServiceCommon</RootNamespace>
+    <AssemblyName>WebServiceCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="swsPermisosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swsPermisosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="swsTokenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swsTokenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="swsTokenGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swsTokenGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="swsUsuariosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swsUsuariosDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="swsPermisosDS.xsc">
+      <DependentUpon>swsPermisosDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsPermisosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swsPermisosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swsPermisosDS.xss">
+      <DependentUpon>swsPermisosDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsTokenDS.xsc">
+      <DependentUpon>swsTokenDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsTokenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swsTokenDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swsTokenDS.xss">
+      <DependentUpon>swsTokenDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsTokenGenerarDS.xsc">
+      <DependentUpon>swsTokenGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsTokenGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swsTokenGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swsTokenGenerarDS.xss">
+      <DependentUpon>swsTokenGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsUsuariosDS.xsc">
+      <DependentUpon>swsUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="swsUsuariosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swsUsuariosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swsUsuariosDS.xss">
+      <DependentUpon>swsUsuariosDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

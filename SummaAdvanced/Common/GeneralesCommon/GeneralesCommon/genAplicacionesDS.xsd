@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genAplicacionesDS" targetNamespace="http://tempuri.org/genAplicacionesDS.xsd" xmlns:mstns="http://tempuri.org/genAplicacionesDS.xsd" xmlns="http://tempuri.org/genAplicacionesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genAplicacionesDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="genAplicacionesDS" msprop:Generator_UserDSName="genAplicacionesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Asiento_Id_Ap" msprop:Generator_ColumnVarNameInTable="columnAsiento_Id_Ap" msprop:Generator_ColumnPropNameInRow="Asiento_Id_Ap" msprop:Generator_ColumnPropNameInTable="Asiento_Id_ApColumn" msprop:Generator_UserColumnName="Asiento_Id_Ap" type="xs:long" minOccurs="0" />
+              <xs:element name="CuotaNro_Ap" msprop:Generator_ColumnVarNameInTable="columnCuotaNro_Ap" msprop:Generator_ColumnPropNameInRow="CuotaNro_Ap" msprop:Generator_ColumnPropNameInTable="CuotaNro_ApColumn" msprop:Generator_UserColumnName="CuotaNro_Ap" type="xs:short" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Aplicaciones" msprop:Generator_TableClassName="AplicacionesDataTable" msprop:Generator_TableVarName="tableAplicaciones" msprop:Generator_TablePropName="Aplicaciones" msprop:Generator_RowDeletingName="AplicacionesRowDeleting" msprop:Generator_RowChangingName="AplicacionesRowChanging" msprop:Generator_RowEvHandlerName="AplicacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="AplicacionesRowDeleted" msprop:Generator_UserTableName="Aplicaciones" msprop:Generator_RowChangedName="AplicacionesRowChanged" msprop:Generator_RowEvArgName="AplicacionesRowChangeEvent" msprop:Generator_RowClassName="AplicacionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Asiento_Id" msprop:Generator_ColumnVarNameInTable="columnAsiento_Id" msprop:Generator_ColumnPropNameInRow="Asiento_Id" msprop:Generator_ColumnPropNameInTable="Asiento_IdColumn" msprop:Generator_UserColumnName="Asiento_Id" type="xs:long" minOccurs="0" />
+              <xs:element name="CuotaNro" msprop:Generator_ColumnVarNameInTable="columnCuotaNro" msprop:Generator_ColumnPropNameInRow="CuotaNro" msprop:Generator_ColumnPropNameInTable="CuotaNroColumn" msprop:Generator_UserColumnName="CuotaNro" type="xs:short" minOccurs="0" />
+              <xs:element name="NroAplicacion" msprop:Generator_ColumnVarNameInTable="columnNroAplicacion" msprop:Generator_ColumnPropNameInRow="NroAplicacion" msprop:Generator_ColumnPropNameInTable="NroAplicacionColumn" msprop:Generator_UserColumnName="NroAplicacion" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaAplicacion" msprop:Generator_ColumnVarNameInTable="columnFechaAplicacion" msprop:Generator_ColumnPropNameInRow="FechaAplicacion" msprop:Generator_ColumnPropNameInTable="FechaAplicacionColumn" msprop:Generator_UserColumnName="FechaAplicacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Importe" msprop:Generator_ColumnVarNameInTable="columnImporte" msprop:Generator_ColumnPropNameInRow="Importe" msprop:Generator_ColumnPropNameInTable="ImporteColumn" msprop:Generator_UserColumnName="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Importe_Ap" msprop:Generator_ColumnVarNameInTable="columnImporte_Ap" msprop:Generator_ColumnPropNameInRow="Importe_Ap" msprop:Generator_ColumnPropNameInTable="Importe_ApColumn" msprop:Generator_UserColumnName="Importe_Ap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EsAplicOriginal" msprop:Generator_ColumnVarNameInTable="columnEsAplicOriginal" msprop:Generator_ColumnPropNameInRow="EsAplicOriginal" msprop:Generator_ColumnPropNameInTable="EsAplicOriginalColumn" msprop:Generator_UserColumnName="EsAplicOriginal" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EsVentaContado" msprop:Generator_ColumnVarNameInTable="columnEsVentaContado" msprop:Generator_ColumnPropNameInRow="EsVentaContado" msprop:Generator_ColumnPropNameInTable="EsVentaContadoColumn" msprop:Generator_UserColumnName="EsVentaContado" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

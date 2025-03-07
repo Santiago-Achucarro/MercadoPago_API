@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tesMovXCarteraDS" targetNamespace="http://tempuri.org/tesMovXCarteraDS.xsd" xmlns:mstns="http://tempuri.org/tesMovXCarteraDS.xsd" xmlns="http://tempuri.org/tesMovXCarteraDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tesMovXCarteraDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="tesMovXCarteraDS" msprop:Generator_UserDSName="tesMovXCarteraDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarteraDesde" msprop:Generator_ColumnVarNameInTable="columnCarteraDesde" msprop:Generator_ColumnPropNameInRow="CarteraDesde" msprop:Generator_ColumnPropNameInTable="CarteraDesdeColumn" msprop:Generator_UserColumnName="CarteraDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="CarteraHasta" msprop:Generator_ColumnVarNameInTable="columnCarteraHasta" msprop:Generator_ColumnPropNameInRow="CarteraHasta" msprop:Generator_ColumnPropNameInTable="CarteraHastaColumn" msprop:Generator_UserColumnName="CarteraHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDesde" msprop:Generator_ColumnVarNameInTable="columnFechaDesde" msprop:Generator_ColumnPropNameInRow="FechaDesde" msprop:Generator_ColumnPropNameInTable="FechaDesdeColumn" msprop:Generator_UserColumnName="FechaDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaHasta" msprop:Generator_ColumnVarNameInTable="columnFechaHasta" msprop:Generator_ColumnPropNameInRow="FechaHasta" msprop:Generator_ColumnPropNameInTable="FechaHastaColumn" msprop:Generator_UserColumnName="FechaHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro1Desde" msprop:Generator_ColumnVarNameInTable="columnCentro1Desde" msprop:Generator_ColumnPropNameInRow="Centro1Desde" msprop:Generator_ColumnPropNameInTable="Centro1DesdeColumn" msprop:Generator_UserColumnName="Centro1Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCentro1Desde" msprop:Generator_ColumnVarNameInTable="columnDescripcionCentro1Desde" msprop:Generator_ColumnPropNameInRow="DescripcionCentro1Desde" msprop:Generator_ColumnPropNameInTable="DescripcionCentro1DesdeColumn" msprop:Generator_UserColumnName="DescripcionCentro1Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro1Hasta" msprop:Generator_ColumnVarNameInTable="columnCentro1Hasta" msprop:Generator_ColumnPropNameInRow="Centro1Hasta" msprop:Generator_ColumnPropNameInTable="Centro1HastaColumn" msprop:Generator_UserColumnName="Centro1Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCentro1Hasta" msprop:Generator_ColumnVarNameInTable="columnDescripcionCentro1Hasta" msprop:Generator_ColumnPropNameInRow="DescripcionCentro1Hasta" msprop:Generator_ColumnPropNameInTable="DescripcionCentro1HastaColumn" msprop:Generator_UserColumnName="DescripcionCentro1Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro2Desde" msprop:Generator_ColumnVarNameInTable="columnCentro2Desde" msprop:Generator_ColumnPropNameInRow="Centro2Desde" msprop:Generator_ColumnPropNameInTable="Centro2DesdeColumn" msprop:Generator_UserColumnName="Centro2Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCentro2Desde" msprop:Generator_ColumnVarNameInTable="columnDescripcionCentro2Desde" msprop:Generator_ColumnPropNameInRow="DescripcionCentro2Desde" msprop:Generator_ColumnPropNameInTable="DescripcionCentro2DesdeColumn" msprop:Generator_UserColumnName="DescripcionCentro2Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro2Hasta" msprop:Generator_ColumnVarNameInTable="columnCentro2Hasta" msprop:Generator_ColumnPropNameInRow="Centro2Hasta" msprop:Generator_ColumnPropNameInTable="Centro2HastaColumn" msprop:Generator_UserColumnName="Centro2Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCentro2Hasta" msprop:Generator_ColumnVarNameInTable="columnDescripcionCentro2Hasta" msprop:Generator_ColumnPropNameInRow="DescripcionCentro2Hasta" msprop:Generator_ColumnPropNameInTable="DescripcionCentro2HastaColumn" msprop:Generator_UserColumnName="DescripcionCentro2Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="SucursalDesde" msprop:Generator_ColumnVarNameInTable="columnSucursalDesde" msprop:Generator_ColumnPropNameInRow="SucursalDesde" msprop:Generator_ColumnPropNameInTable="SucursalDesdeColumn" msprop:Generator_UserColumnName="SucursalDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionSucDesde" msprop:Generator_ColumnVarNameInTable="columnDescripcionSucDesde" msprop:Generator_ColumnPropNameInRow="DescripcionSucDesde" msprop:Generator_ColumnPropNameInTable="DescripcionSucDesdeColumn" msprop:Generator_UserColumnName="DescripcionSucDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="SucursalHasta" msprop:Generator_ColumnVarNameInTable="columnSucursalHasta" msprop:Generator_ColumnPropNameInRow="SucursalHasta" msprop:Generator_ColumnPropNameInTable="SucursalHastaColumn" msprop:Generator_UserColumnName="SucursalHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionSucHasta" msprop:Generator_ColumnVarNameInTable="columnDescripcionSucHasta" msprop:Generator_ColumnPropNameInRow="DescripcionSucHasta" msprop:Generator_ColumnPropNameInTable="DescripcionSucHastaColumn" msprop:Generator_UserColumnName="DescripcionSucHasta" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

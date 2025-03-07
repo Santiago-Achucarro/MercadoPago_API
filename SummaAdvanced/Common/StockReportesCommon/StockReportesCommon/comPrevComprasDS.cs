@@ -1,0 +1,7 @@
+﻿namespace StockReportesCommon
+{
+}
+
+namespace StockReportesCommon
+{
+}

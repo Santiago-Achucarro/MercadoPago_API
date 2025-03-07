@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA57DEBA-EAD3-459E-B319-912F31710D87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesoreriaReportesCommon</RootNamespace>
+    <AssemblyName>TesoreriaReportesCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tesCheqBusquedaDS.cs">
+      <DependentUpon>tesCheqBusquedaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCheqBusquedaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCheqBusquedaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCheqPropImpresionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCheqPropImpresionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesClientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesDevueltosDS.cs">
+      <DependentUpon>tesChequesDevueltosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesDevueltosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesDevueltosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesEmitidosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesEmitidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobranzasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobranzasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesConcBancariaDS.cs">
+      <DependentUpon>tesConcBancariaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesConcBancariaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesConcBancariaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesConciliacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesConciliacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesEstadoDeCuentaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesEstadoDeCuentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesIdentificaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesIdentificaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesIngCobranzasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesIngCobranzasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesLibroBancoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesLibroBancoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovPorSubTipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesMovPorSubTipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovXCarteraDS.cs">
+      <DependentUpon>tesMovXCarteraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovXCarteraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesMovXCarteraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesPagosEmitidosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesPagosEmitidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRendicionCajaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRendicionCajaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRetencion1DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRetencion1DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRetencionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRetencionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesSolicitudGastosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesSolicitudGastosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesSubDiarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesSubDiarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesSubMayorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesSubMayorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesTiposCambioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesTiposCambioDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tesCheqBusquedaDS.xsc">
+      <DependentUpon>tesCheqBusquedaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesCheqBusquedaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCheqBusquedaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesCheqBusquedaDS.xss">
+      <DependentUpon>tesCheqBusquedaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesCheqPropImpresionDS.xsc">
+      <DependentUpon>tesCheqPropImpresionDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesCheqPropImpresionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCheqPropImpresionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesCheqPropImpresionDS.xss">
+      <DependentUpon>tesCheqPropImpresionDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesClientesDS.xsc">
+      <DependentUpon>tesChequesClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesClientesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesClientesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesChequesClientesDS.xss">
+      <DependentUpon>tesChequesClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesDevueltosDS.xsc">
+      <DependentUpon>tesChequesDevueltosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesDevueltosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesDevueltosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesChequesDevueltosDS.xss">
+      <DependentUpon>tesChequesDevueltosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesEmitidosDS.xsc">
+      <DependentUpon>tesChequesEmitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesEmitidosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesEmitidosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesChequesEmitidosDS.xss">
+      <DependentUpon>tesChequesEmitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasDS.xsc">
+      <DependentUpon>tesCobranzasDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobranzasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesCobranzasDS.xss">
+      <DependentUpon>tesCobranzasDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesConcBancariaDS.xsc">
+      <DependentUpon>tesConcBancariaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesConcBancariaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesConcBancariaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesConcBancariaDS.xss">
+      <DependentUpon>tesConcBancariaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesConciliacionDS.xsc">
+      <DependentUpon>tesConciliacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesConciliacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesConciliacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesConciliacionDS.xss">
+      <DependentUpon>tesConciliacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesEstadoDeCuentaDS.xsc">
+      <DependentUpon>tesEstadoDeCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesEstadoDeCuentaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesEstadoDeCuentaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesEstadoDeCuentaDS.xss">
+      <DependentUpon>tesEstadoDeCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesIdentificaDS.xsc">
+      <DependentUpon>tesIdentificaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesIdentificaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesIdentificaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesIdentificaDS.xss">
+      <DependentUpon>tesIdentificaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzasDS.xsc">
+      <DependentUpon>tesIngCobranzasDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesIngCobranzasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesIngCobranzasDS.xss">
+      <DependentUpon>tesIngCobranzasDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesLibroBancoDS.xsc">
+      <DependentUpon>tesLibroBancoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesLibroBancoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesLibroBancoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesLibroBancoDS.xss">
+      <DependentUpon>tesLibroBancoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovPorSubTipoDS.xsc">
+      <DependentUpon>tesMovPorSubTipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovPorSubTipoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesMovPorSubTipoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesMovPorSubTipoDS.xss">
+      <DependentUpon>tesMovPorSubTipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovXCarteraDS.xsc">
+      <DependentUpon>tesMovXCarteraDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovXCarteraDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesMovXCarteraDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesMovXCarteraDS.xss">
+      <DependentUpon>tesMovXCarteraDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosEmitidosDS.xsc">
+      <DependentUpon>tesPagosEmitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosEmitidosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesPagosEmitidosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesPagosEmitidosDS.xss">
+      <DependentUpon>tesPagosEmitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendicionCajaDS.xsc">
+      <DependentUpon>tesRendicionCajaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendicionCajaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRendicionCajaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesRendicionCajaDS.xss">
+      <DependentUpon>tesRendicionCajaDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRetencion1DS.xsc">
+      <DependentUpon>tesRetencion1DS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRetencion1DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRetencion1DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesRetencion1DS.xss">
+      <DependentUpon>tesRetencion1DS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRetencionesDS.xsc">
+      <DependentUpon>tesRetencionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesRetencionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRetencionesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesRetencionesDS.xss">
+      <DependentUpon>tesRetencionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSolicitudGastosDS.xsc">
+      <DependentUpon>tesSolicitudGastosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSolicitudGastosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesSolicitudGastosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesSolicitudGastosDS.xss">
+      <DependentUpon>tesSolicitudGastosDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubDiarioDS.xsc">
+      <DependentUpon>tesSubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubDiarioDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesSubDiarioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesSubDiarioDS.xss">
+      <DependentUpon>tesSubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubMayorDS.xsc">
+      <DependentUpon>tesSubMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubMayorDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesSubMayorDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesSubMayorDS.xss">
+      <DependentUpon>tesSubMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesTiposCambioDS.xsc">
+      <DependentUpon>tesTiposCambioDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesTiposCambioDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesTiposCambioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesTiposCambioDS.xss">
+      <DependentUpon>tesTiposCambioDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

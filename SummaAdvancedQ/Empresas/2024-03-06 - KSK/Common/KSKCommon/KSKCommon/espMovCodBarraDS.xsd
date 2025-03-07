@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="espMovCodBarraDS" targetNamespace="http://tempuri.org/espMovCodBarraDS.xsd" xmlns:mstns="http://tempuri.org/espMovCodBarraDS.xsd" xmlns="http://tempuri.org/espMovCodBarraDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="espMovCodBarraDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="espMovCodBarraDS" msprop:Generator_UserDSName="espMovCodBarraDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CodigoBarra" msprop:Generator_TableClassName="CodigoBarraDataTable" msprop:Generator_TableVarName="tableCodigoBarra" msprop:Generator_TablePropName="CodigoBarra" msprop:Generator_RowDeletingName="CodigoBarraRowDeleting" msprop:Generator_RowChangingName="CodigoBarraRowChanging" msprop:Generator_RowEvHandlerName="CodigoBarraRowChangeEventHandler" msprop:Generator_RowDeletedName="CodigoBarraRowDeleted" msprop:Generator_UserTableName="CodigoBarra" msprop:Generator_RowChangedName="CodigoBarraRowChanged" msprop:Generator_RowEvArgName="CodigoBarraRowChangeEvent" msprop:Generator_RowClassName="CodigoBarraRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoBarra" msprop:Generator_ColumnVarNameInTable="columnCodigoBarra" msprop:Generator_ColumnPropNameInRow="CodigoBarra" msprop:Generator_ColumnPropNameInTable="CodigoBarraColumn" msprop:Generator_UserColumnName="CodigoBarra" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venListasPreciosTraerProductosDS" targetNamespace="http://tempuri.org/venListasPreciosTraerProductosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venListasPreciosTraerProductosDS.xsd" xmlns:mstns="http://tempuri.org/venListasPreciosTraerProductosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venListasPreciosTraerProductosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venListasPrecios" type="xs:int" minOccurs="0" />
+<xs:element name="ListaPrecio_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="ListaPrecio_Id_Nueva_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="ListaPrecio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionMonedas" type="xs:string" minOccurs="0" />
+<xs:element name="LlevaImpuestoInclu" type="xs:boolean" minOccurs="0" />
+<xs:element name="UsuarioAutorizado" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuarioAutorizado" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Excel" type="xs:string" minOccurs="0" />
+<xs:element name="Ver" type="xs:string" minOccurs="0" />
+<xs:element name="DecimalesPu" type="xs:int" minOccurs="0" />
+<xs:element name="Version" type="xs:int" minOccurs="0" />
+<xs:element name="VigenciaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="VigenciaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Productos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="PrecioLista" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioPromocion" type="xs:decimal" minOccurs="0" />
+<xs:element name="AdmiteRegalo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Bonificaciones">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="NroBonifRecargo" type="xs:short" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+<xs:element name="Formula" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

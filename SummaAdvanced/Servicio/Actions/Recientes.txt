@@ -1,0 +1,8 @@
+frmespvenMovPtoVtaKSK
+
+frmvenMovimientosConStock
+frmespvenMovimientosConStockKS
+rptVentaXCliente
+rptespvenClieEspecialKsk
+rpttesIngCobranzas
+rptvenComisVendedores

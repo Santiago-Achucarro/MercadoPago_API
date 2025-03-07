@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2E03C22-9810-4E6B-9CEE-3B678F371495}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TatianaBE</RootNamespace>
+    <AssemblyName>TatianaBE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="StockExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\StockExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="espProductosColorTalleTestDevolverDatosAction.cs" />
+    <Compile Include="espProductosColorTalleTestEliminarAction.cs" />
+    <Compile Include="espProductosColorTalleTestGuardarAction.cs" />
+    <Compile Include="espstkColorTestDevolverDatosAction.cs" />
+    <Compile Include="espstkColorTestEliminarAction.cs" />
+    <Compile Include="espstkColorTestGuardarAction.cs" />
+    <Compile Include="espstkTalleTestDevolverDatosAction.cs" />
+    <Compile Include="espstkTalleTestEliminarAction.cs" />
+    <Compile Include="espstkTalleTestGuardarAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\TatianaCommon\TatianaCommon.csproj">
+      <Project>{cd3ecd87-9d5b-409b-b083-335dad4b3b70}</Project>
+      <Name>TatianaCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dal\TatianaDAL\TatianaDAL.csproj">
+      <Project>{bdfd0cd6-94a8-4150-a8c1-792c5aed0470}</Project>
+      <Name>TatianaDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TesteoExchange\TatianaExchange\TatianaExchange.csproj">
+      <Project>{c27b99dd-c592-4362-9ed2-05a7e6159b46}</Project>
+      <Name>TatianaExchange</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

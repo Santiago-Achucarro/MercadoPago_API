@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genTareasProgramadasEjecucionDS" targetNamespace="http://tempuri.org/genTareasProgramadasEjecucionDS.xsd" xmlns:mstns="http://tempuri.org/genTareasProgramadasEjecucionDS.xsd" xmlns="http://tempuri.org/genTareasProgramadasEjecucionDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genTareasProgramadasEjecucionDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="genTareasProgramadasEjecucionDS" msprop:Generator_UserDSName="genTareasProgramadasEjecucionDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tarea_Id" msprop:Generator_ColumnVarNameInTable="columnTarea_Id" msprop:Generator_ColumnPropNameInRow="Tarea_Id" msprop:Generator_ColumnPropNameInTable="Tarea_IdColumn" msprop:Generator_UserColumnName="Tarea_Id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Parametros" msprop:Generator_TableClassName="ParametrosDataTable" msprop:Generator_TableVarName="tableParametros" msprop:Generator_TablePropName="Parametros" msprop:Generator_RowDeletingName="ParametrosRowDeleting" msprop:Generator_RowChangingName="ParametrosRowChanging" msprop:Generator_RowEvHandlerName="ParametrosRowChangeEventHandler" msprop:Generator_RowDeletedName="ParametrosRowDeleted" msprop:Generator_UserTableName="Parametros" msprop:Generator_RowChangedName="ParametrosRowChanged" msprop:Generator_RowEvArgName="ParametrosRowChangeEvent" msprop:Generator_RowClassName="ParametrosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parametro" msprop:Generator_ColumnVarNameInTable="columnParametro" msprop:Generator_ColumnPropNameInRow="Parametro" msprop:Generator_ColumnPropNameInTable="ParametroColumn" msprop:Generator_UserColumnName="Parametro" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

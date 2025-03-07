@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="conPolizasElectroMxDS" targetNamespace="http://tempuri.org/conPolizasElectroMxDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/conPolizasElectroMxDS.xsd" xmlns:mstns="http://tempuri.org/conPolizasElectroMxDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="conPolizasElectroMxDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Anio" type="xs:int" minOccurs="0" />
+<xs:element name="Mes" type="xs:int" minOccurs="0" />
+<xs:element name="TipoSolicitud" type="xs:string" minOccurs="0" />
+<xs:element name="NumOrden" type="xs:string" minOccurs="0" />
+<xs:element name="NumTramite" type="xs:string" minOccurs="0" />
+<xs:element name="Sello" type="xs:string" minOccurs="0" />
+<xs:element name="noCertificado" type="xs:string" minOccurs="0" />
+<xs:element name="Certificado" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Poliza">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="NumUnidenPol" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Concepto" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Transaccion">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Concepto" type="xs:string" minOccurs="0" />
+<xs:element name="Debe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Haber" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="CompNal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="UUID_CFDI" type="xs:string" minOccurs="0" />
+<xs:element name="RFC" type="xs:string" minOccurs="0" />
+<xs:element name="MontoTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ComNalOtr">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="CFD_CBB_Serie" type="xs:string" minOccurs="0" />
+<xs:element name="CFD_CBB_NumFol" type="xs:int" minOccurs="0" />
+<xs:element name="RFC" type="xs:string" minOccurs="0" />
+<xs:element name="MontoTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ComExt">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="NumFactExt" type="xs:string" minOccurs="0" />
+<xs:element name="TxtId" type="xs:string" minOccurs="0" />
+<xs:element name="MontoTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cheque">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="conRenglon" type="xs:int" minOccurs="0" />
+<xs:element name="Num" type="xs:string" minOccurs="0" />
+<xs:element name="BanEmisNal" type="xs:string" minOccurs="0" />
+<xs:element name="BanEmisExt" type="xs:string" minOccurs="0" />
+<xs:element name="CtaOri" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Benef" type="xs:string" minOccurs="0" />
+<xs:element name="Rfc" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Transferencia">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="conRenglon" type="xs:int" minOccurs="0" />
+<xs:element name="CtaOri" type="xs:string" minOccurs="0" />
+<xs:element name="BanEmisNal" type="xs:string" minOccurs="0" />
+<xs:element name="BanEmisExt" type="xs:string" minOccurs="0" />
+<xs:element name="CtaDest" type="xs:string" minOccurs="0" />
+<xs:element name="BancoDestNal" type="xs:string" minOccurs="0" />
+<xs:element name="BancoDestExt" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Benef" type="xs:string" minOccurs="0" />
+<xs:element name="Rfc" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="MetodoPago">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="conRenglon" type="xs:int" minOccurs="0" />
+<xs:element name="MetPagoPol" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Benef" type="xs:string" minOccurs="0" />
+<xs:element name="Rfc" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="TipCamb" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

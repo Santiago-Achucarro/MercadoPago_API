@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="comProveedoresXLSCatalogoDS" targetNamespace="http://tempuri.org/comProveedoresXLSCatalogoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/comProveedoresXLSCatalogoDS.xsd" xmlns:mstns="http://tempuri.org/comProveedoresXLSCatalogoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="comProveedoresXLSCatalogoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ProveedorDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ProveedorHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Proveedores">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ClaveFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="TipoDoc" type="xs:string" minOccurs="0" />
+<xs:element name="idFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:int" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="NombreLegal" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion1" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion2" type="xs:string" minOccurs="0" />
+<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="Provincia_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Pais_Id" type="xs:short" minOccurs="0" />
+<xs:element name="Telefono" type="xs:string" minOccurs="0" />
+<xs:element name="Region_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CondPago_Id" type="xs:string" minOccurs="0" />
+<xs:element name="FormaEnt_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Contacto" type="xs:string" minOccurs="0" />
+<xs:element name="EMail" type="xs:string" minOccurs="0" />
+<xs:element name="Fax" type="xs:string" minOccurs="0" />
+<xs:element name="Letra_Fact" type="xs:string" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="CondFiscal_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Ganancias" type="xs:boolean" minOccurs="0" />
+<xs:element name="IBrutos" type="xs:string" minOccurs="0" />
+<xs:element name="Origen_Id" type="xs:short" minOccurs="0" />
+<xs:element name="EsAduana" type="xs:boolean" minOccurs="0" />
+<xs:element name="TipoCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="NroCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="CBU" type="xs:string" minOccurs="0" />
+<xs:element name="Banco_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="ProvTipo_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="CtasPasivo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="TipoCtaProv" type="xs:int" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ctaPagoXAdelantado" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAnticipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="CtaContrapartida">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Detalle" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Impuestos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="IIBB">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Juris_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Situacion" type="xs:string" minOccurs="0" />
+<xs:element name="Coeficiente" type="xs:decimal" minOccurs="0" />
+<xs:element name="Exencion" type="xs:decimal" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Retenciones">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cartera_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Exencion" type="xs:decimal" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

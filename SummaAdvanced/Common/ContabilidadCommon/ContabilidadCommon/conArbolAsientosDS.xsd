@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="conArbolAsientosDS" targetNamespace="http://tempuri.org/conArbolAsientosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/conArbolAsientosDS.xsd" xmlns:mstns="http://tempuri.org/conArbolAsientosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="conArbolAsientosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Ejercicio" type="xs:short" minOccurs="0" />
+<xs:element name="Periodo" type="xs:short" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1Desde" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1Hasta" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2Desde" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2Hasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Arbol">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Orden" type="xs:int" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="hijo" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Nivel" type="xs:int" minOccurs="0" />
+<xs:element name="Imputable" type="xs:int" minOccurs="0" />
+<xs:element name="Padre" type="xs:int" minOccurs="0" />
+<xs:element name="PER01" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER02" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER03" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER04" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER05" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER06" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER07" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER08" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER09" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER10" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER11" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER12" type="xs:decimal" minOccurs="0" />
+<xs:element name="PER13" type="xs:decimal" minOccurs="0" />
+<xs:element name="Total" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Resumen">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Formulario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Detalle" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Debe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Haber" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Detalle">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Segmento" type="xs:string" minOccurs="0" />
+<xs:element name="Entidad" type="xs:string" minOccurs="0" />
+<xs:element name="Detalle" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Debe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Haber" type="xs:decimal" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="PeriodoDetalle">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Ejercicio" type="xs:int" minOccurs="0" />
+<xs:element name="Periodo" type="xs:int" minOccurs="0" />
+<xs:element name="Formulario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="impValidacionFComprasDS" targetNamespace="http://tempuri.org/impValidacionFComprasDS.xsd" xmlns:mstns="http://tempuri.org/impValidacionFComprasDS.xsd" xmlns="http://tempuri.org/impValidacionFComprasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="impValidacionFComprasDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="impValidacionFComprasDS" msprop:Generator_UserDSName="impValidacionFComprasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cuerpo" msprop:Generator_TableClassName="CuerpoDataTable" msprop:Generator_TableVarName="tableCuerpo" msprop:Generator_TablePropName="Cuerpo" msprop:Generator_RowDeletingName="CuerpoRowDeleting" msprop:Generator_RowChangingName="CuerpoRowChanging" msprop:Generator_RowEvHandlerName="CuerpoRowChangeEventHandler" msprop:Generator_RowDeletedName="CuerpoRowDeleted" msprop:Generator_UserTableName="Cuerpo" msprop:Generator_RowChangedName="CuerpoRowChanged" msprop:Generator_RowEvArgName="CuerpoRowChangeEvent" msprop:Generator_RowClassName="CuerpoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Proveed_Id" msprop:Generator_ColumnVarNameInTable="columnProveed_Id" msprop:Generator_ColumnPropNameInRow="Proveed_Id" msprop:Generator_ColumnPropNameInTable="Proveed_IdColumn" msprop:Generator_UserColumnName="Proveed_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="RazonSocial" msprop:Generator_ColumnVarNameInTable="columnRazonSocial" msprop:Generator_ColumnPropNameInRow="RazonSocial" msprop:Generator_ColumnPropNameInTable="RazonSocialColumn" msprop:Generator_UserColumnName="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="Comprobante" msprop:Generator_ColumnVarNameInTable="columnComprobante" msprop:Generator_ColumnPropNameInRow="Comprobante" msprop:Generator_ColumnPropNameInTable="ComprobanteColumn" msprop:Generator_UserColumnName="Comprobante" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Importe" msprop:Generator_ColumnVarNameInTable="columnImporte" msprop:Generator_ColumnPropNameInRow="Importe" msprop:Generator_ColumnPropNameInTable="ImporteColumn" msprop:Generator_UserColumnName="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Moneda" msprop:Generator_ColumnVarNameInTable="columnMoneda" msprop:Generator_ColumnPropNameInRow="Moneda" msprop:Generator_ColumnPropNameInTable="MonedaColumn" msprop:Generator_UserColumnName="Moneda" type="xs:string" minOccurs="0" />
+              <xs:element name="UUID" msprop:Generator_ColumnVarNameInTable="columnUUID" msprop:Generator_ColumnPropNameInRow="UUID" msprop:Generator_ColumnPropNameInTable="UUIDColumn" msprop:Generator_UserColumnName="UUID" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionEstado" msprop:Generator_ColumnVarNameInTable="columnDescripcionEstado" msprop:Generator_ColumnPropNameInRow="DescripcionEstado" msprop:Generator_ColumnPropNameInTable="DescripcionEstadoColumn" msprop:Generator_UserColumnName="DescripcionEstado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProveedDesde" msprop:Generator_ColumnVarNameInTable="columnProveedDesde" msprop:Generator_ColumnPropNameInRow="ProveedDesde" msprop:Generator_ColumnPropNameInTable="ProveedDesdeColumn" msprop:Generator_UserColumnName="ProveedDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="ProveedHasta" msprop:Generator_ColumnVarNameInTable="columnProveedHasta" msprop:Generator_ColumnPropNameInRow="ProveedHasta" msprop:Generator_ColumnPropNameInTable="ProveedHastaColumn" msprop:Generator_UserColumnName="ProveedHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDesde" msprop:Generator_ColumnVarNameInTable="columnFechaDesde" msprop:Generator_ColumnPropNameInRow="FechaDesde" msprop:Generator_ColumnPropNameInTable="FechaDesdeColumn" msprop:Generator_UserColumnName="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta" msprop:Generator_ColumnVarNameInTable="columnFechaHasta" msprop:Generator_ColumnPropNameInRow="FechaHasta" msprop:Generator_ColumnPropNameInTable="FechaHastaColumn" msprop:Generator_UserColumnName="FechaHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SoloConErrores" msprop:Generator_ColumnVarNameInTable="columnSoloConErrores" msprop:Generator_ColumnPropNameInRow="SoloConErrores" msprop:Generator_ColumnPropNameInTable="SoloConErroresColumn" msprop:Generator_UserColumnName="SoloConErrores" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

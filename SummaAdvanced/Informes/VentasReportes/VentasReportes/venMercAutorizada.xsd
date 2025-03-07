@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="venMercAutorizada" targetNamespace="http://tempuri.org/venMercAutorizada.xsd" xmlns:mstns="http://tempuri.org/venMercAutorizada.xsd" xmlns="http://tempuri.org/venMercAutorizada.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="venMercAutorizada" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="venMercAutorizada" msprop:Generator_UserDSName="venMercAutorizada">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Segmento" msprop:Generator_ColumnVarNameInTable="columnSegmento" msprop:Generator_ColumnPropNameInRow="Segmento" msprop:Generator_ColumnPropNameInTable="SegmentoColumn" msprop:Generator_UserColumnName="Segmento" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_id" msprop:Generator_ColumnVarNameInTable="columnProducto_id" msprop:Generator_ColumnPropNameInRow="Producto_id" msprop:Generator_ColumnPropNameInTable="Producto_idColumn" msprop:Generator_UserColumnName="Producto_id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadForm" msprop:Generator_ColumnVarNameInTable="columnCantidadForm" msprop:Generator_ColumnPropNameInRow="CantidadForm" msprop:Generator_ColumnPropNameInTable="CantidadFormColumn" msprop:Generator_UserColumnName="CantidadForm" type="xs:string" minOccurs="0" />
+              <xs:element name="Medida_Id" msprop:Generator_ColumnVarNameInTable="columnMedida_Id" msprop:Generator_ColumnPropNameInRow="Medida_Id" msprop:Generator_ColumnPropNameInTable="Medida_IdColumn" msprop:Generator_UserColumnName="Medida_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadAlternaForm" msprop:Generator_ColumnVarNameInTable="columnCantidadAlternaForm" msprop:Generator_ColumnPropNameInRow="CantidadAlternaForm" msprop:Generator_ColumnPropNameInTable="CantidadAlternaFormColumn" msprop:Generator_UserColumnName="CantidadAlternaForm" type="xs:string" minOccurs="0" />
+              <xs:element name="MedidaAlterna" msprop:Generator_ColumnVarNameInTable="columnMedidaAlterna" msprop:Generator_ColumnPropNameInRow="MedidaAlterna" msprop:Generator_ColumnPropNameInTable="MedidaAlternaColumn" msprop:Generator_UserColumnName="MedidaAlterna" type="xs:string" minOccurs="0" />
+              <xs:element name="ClaseAlterna" msprop:Generator_ColumnVarNameInTable="columnClaseAlterna" msprop:Generator_ColumnPropNameInRow="ClaseAlterna" msprop:Generator_ColumnPropNameInTable="ClaseAlternaColumn" msprop:Generator_UserColumnName="ClaseAlterna" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

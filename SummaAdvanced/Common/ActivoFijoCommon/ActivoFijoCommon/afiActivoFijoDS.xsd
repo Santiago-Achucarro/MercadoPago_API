@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="afiActivoFijoDS" targetNamespace="http://tempuri.org/afiActivoFijoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/afiActivoFijoDS.xsd" xmlns:mstns="http://tempuri.org/afiActivoFijoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="afiActivoFijoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AfiActivoFijo" type="xs:int" minOccurs="0" />
+<xs:element name="ActivoFijo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ActivoFijo_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaIniDepre" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+<xs:element name="ValorInicial" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorFiscal" type="xs:decimal" minOccurs="0" />
+<xs:element name="VidaUtil" type="xs:int" minOccurs="0" />
+<xs:element name="VidaUtilRestante" type="xs:int" minOccurs="0" />
+<xs:element name="PorResidual" type="xs:decimal" minOccurs="0" />
+<xs:element name="AmortAcumulada" type="xs:decimal" minOccurs="0" />
+<xs:element name="Rubro_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionRubros" type="xs:string" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+<xs:element name="CtaValorOrigen_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentasOrigen" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAmortAcum_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaAmortAcum_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAmortizacion" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaAmortizacion" type="xs:string" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+<xs:element name="ValorInicialSI" type="xs:decimal" minOccurs="0" />
+<xs:element name="AmortAcumSI" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="FechaCarga" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="TieneMovimientos" type="xs:boolean" minOccurs="0" />
+<xs:element name="AsientoOrigen" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonOrigen" type="xs:int" minOccurs="0" />
+<xs:element name="Origen" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Centros">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ActivoFijo_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Responsables">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ActivoFijo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionActivoFijo" type="xs:string" minOccurs="0" />
+<xs:element name="Responsable_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionResponsable" type="xs:string" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Adjuntos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="Guid" type="xs:string" minOccurs="0" />
+<xs:element name="NombreArchivo" type="xs:string" minOccurs="0" />
+<xs:element name="Extension" type="xs:string" minOccurs="0" />
+<xs:element name="ArchivoBase64" type="xs:string" minOccurs="0" />
+<xs:element name="Estado" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

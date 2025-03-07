@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genHorariosIngresoDS" targetNamespace="http://tempuri.org/genHorariosIngresoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genHorariosIngresoDS.xsd" xmlns:mstns="http://tempuri.org/genHorariosIngresoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genHorariosIngresoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Lunes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Martes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Miercoles" type="xs:boolean" minOccurs="0" />
+<xs:element name="Jueves" type="xs:boolean" minOccurs="0" />
+<xs:element name="Viernes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Sabado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Domingo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Festivos" type="xs:boolean" minOccurs="0" />
+<xs:element name="HoraDesde" type="xs:string" minOccurs="0" />
+<xs:element name="HoraHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

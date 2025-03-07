@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MatrizDistribStock" targetNamespace="http://tempuri.org/MatrizDistribStock.xsd" xmlns:mstns="http://tempuri.org/MatrizDistribStock.xsd" xmlns="http://tempuri.org/MatrizDistribStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MatrizDistribStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MatrizDistribStock" msprop:Generator_UserDSName="MatrizDistribStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MatrizDistribStock" msprop:Generator_TableClassName="MatrizDistribStockDataTable" msprop:Generator_TableVarName="tableMatrizDistribStock" msprop:Generator_RowChangedName="MatrizDistribStockRowChanged" msprop:Generator_TablePropName="_MatrizDistribStock" msprop:Generator_RowDeletingName="MatrizDistribStockRowDeleting" msprop:Generator_RowChangingName="MatrizDistribStockRowChanging" msprop:Generator_RowEvHandlerName="MatrizDistribStockRowChangeEventHandler" msprop:Generator_RowDeletedName="MatrizDistribStockRowDeleted" msprop:Generator_RowClassName="MatrizDistribStockRow" msprop:Generator_UserTableName="MatrizDistribStock" msprop:Generator_RowEvArgName="MatrizDistribStockRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stkProductos" msprop:Generator_ColumnVarNameInTable="columnstkProductos" msprop:Generator_ColumnPropNameInRow="stkProductos" msprop:Generator_ColumnPropNameInTable="stkProductosColumn" msprop:Generator_UserColumnName="stkProductos" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:string" minOccurs="0" />
+              <xs:element name="Orden" msprop:Generator_ColumnVarNameInTable="columnOrden" msprop:Generator_ColumnPropNameInRow="Orden" msprop:Generator_ColumnPropNameInTable="OrdenColumn" msprop:Generator_UserColumnName="Orden" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="MasDe" msprop:Generator_ColumnVarNameInTable="columnMasDe" msprop:Generator_ColumnPropNameInRow="MasDe" msprop:Generator_ColumnPropNameInTable="MasDeColumn" msprop:Generator_UserColumnName="MasDe" type="xs:string" minOccurs="0" />
+              <xs:element name="Entre" msprop:Generator_ColumnVarNameInTable="columnEntre" msprop:Generator_ColumnPropNameInRow="Entre" msprop:Generator_ColumnPropNameInTable="EntreColumn" msprop:Generator_UserColumnName="Entre" type="xs:string" minOccurs="0" />
+              <xs:element name="MenosDe" msprop:Generator_ColumnVarNameInTable="columnMenosDe" msprop:Generator_ColumnPropNameInRow="MenosDe" msprop:Generator_ColumnPropNameInTable="MenosDeColumn" msprop:Generator_UserColumnName="MenosDe" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

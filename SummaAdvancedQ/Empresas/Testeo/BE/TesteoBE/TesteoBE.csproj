@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C673586E-D5AB-4B5F-A8F3-ABEC24C5B185}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesteoBE</RootNamespace>
+    <AssemblyName>TesteoBE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralesExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\GeneralesExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesFEAdv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\GeneralidadesFEAdv.dll</HintPath>
+    </Reference>
+    <Reference Include="StockCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="StockExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\StockExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VentasCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="VentasExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Servicio\Actions\VentasExchange.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="espMovConStkCodBarraDevolverDatosAction.cs" />
+    <Compile Include="espMovConStkCodBarraLlenarGrillaAction.cs" />
+    <Compile Include="espstkColorTestDevolverDatosAction.cs" />
+    <Compile Include="espstkColorTestEliminarAction.cs" />
+    <Compile Include="espstkColorTestGuardarAction.cs" />
+    <Compile Include="espstkProductosDevolverDatosAction.cs" />
+    <Compile Include="espstkProductosEliminarAction.cs" />
+    <Compile Include="espstkProductosGuardarAction.cs" />
+    <Compile Include="espstkTalleTestDevolverDatosAction.cs" />
+    <Compile Include="espstkTalleTestEliminarAction.cs" />
+    <Compile Include="espstkTalleTestGuardarAction.cs" />
+    <Compile Include="espvenCondFiscImpTestDevolverDatosAction.cs" />
+    <Compile Include="espvenCondFiscImpTestEliminarAction.cs" />
+    <Compile Include="espvenCondFiscImpTestGuardarAction.cs" />
+    <Compile Include="espvenPedidosTestDevolverDatosAction.cs" />
+    <Compile Include="espvenPedidosTestLlenarGrillaAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\TestCommon\TestCommon.csproj">
+      <Project>{6292a74c-f7f2-46e1-91e5-5e2c73263ce3}</Project>
+      <Name>TestCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dal\TestDal\TestDal.csproj">
+      <Project>{26f966c6-dfd5-4b70-a924-4aa28fa890ef}</Project>
+      <Name>TestDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TesteoExChange\TesteoExchange.csproj">
+      <Project>{550d05b1-1b7c-448e-9b42-47a801dbbd08}</Project>
+      <Name>TesteoExchange</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

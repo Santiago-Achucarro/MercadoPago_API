@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59D93B95-AA3F-4E1F-BB61-74A5652FA781}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KSKBE</RootNamespace>
+    <AssemblyName>KSKBE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ContabilidadCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\ContabilidadCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ContabilidadExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\ContabilidadExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore">
+      <HintPath>..\..\..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralesCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralesExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralesExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralesValidacion">
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralesValidacion.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Recursos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\Recursos.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Serializers.Newtonsoft.Json, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\RestSharp.Newtonsoft.Json.1.5.1\lib\net452\RestSharp.Serializers.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Serializers.NewtonsoftJson, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\RestSharp.Serializers.NewtonsoftJson.110.2.0\lib\net471\RestSharp.Serializers.NewtonsoftJson.dll</HintPath>
+    </Reference>
+    <Reference Include="StockCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\StockCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="StockExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\StockExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="StockValidacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\StockValidacion.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\KSK\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TesoreriaBE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\TesoreriaBE.dll</HintPath>
+    </Reference>
+    <Reference Include="TesoreriaCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\TesoreriaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TesoreriaExchange, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\TesoreriaExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="TesoreriaValidacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\TesoreriaValidacion.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasBE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasBE.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasBEFactElect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasBEFactElect.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasExchange">
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="VentasValidacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Servicio\Actions\VentasValidacion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConectarSQL.cs" />
+    <Compile Include="espConfPtoVtaKSKDevolverDatosAction.cs" />
+    <Compile Include="espConfPtoVtaKSKEliminarAction.cs" />
+    <Compile Include="espConfPtoVtaKSKGuardarAction.cs" />
+    <Compile Include="espgenSucursalCookieKSKGuardarAction.cs" />
+    <Compile Include="espstkexistenciaxdepositoKSKDevolverDatosAction.cs" />
+    <Compile Include="esptesMPCobranzaKSKDevolverDatosAction.cs" />
+    <Compile Include="esptesMPCobranzaKSKEliminarAction.cs" />
+    <Compile Include="esptesMPCobranzaKSKEscaneoAction.cs" />
+    <Compile Include="esptesMPCobranzaKSKGenerarAction.cs" />
+    <Compile Include="esptesMPCobranzaKSKGuardarAction.cs" />
+    <Compile Include="esptesT3PromocionesKSKDevolverDatosAction.cs" />
+    <Compile Include="esptesT3PromocionesKSKEliminarAction.cs" />
+    <Compile Include="esptesT3PromocionesKSKGuardarAction.cs" />
+    <Compile Include="espvenClieContactoKSKDevolverDatosAction.cs" />
+    <Compile Include="espvenClieContactoKSKEliminarAction.cs" />
+    <Compile Include="espvenClieContactoKSKGuardarAction.cs" />
+    <Compile Include="espvenClieHabitualKSKDevolverDatosAction.cs" />
+    <Compile Include="espvenClieHabitualKSKEliminarAction.cs" />
+    <Compile Include="espvenClieHabitualKSKGuardarAction.cs" />
+    <Compile Include="espvenComandasDatosKSKDevolverDatosAction.cs" />
+    <Compile Include="espvenComandasDatosKSKFacturarTicketAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKAsignaSaldoCobraAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKCobrarAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKEnviaKSKAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKEnviarFacturaPorMailAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKGuardarAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKGuardarClienteAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKLeerCodBarraAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKLeerPadronAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKMPEscanearOrdenAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKMPBorrarOrdenAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKMPOrdenyEscaneoAction.cs" />
+    <Compile Include="espvenMovimientosConStockKSKTraerMediosPagoAction.cs" />
+    <Compile Include="espvenMovimientosKSKGuardarBackUp20231201.cs" />
+    <Compile Include="Mail\CifrarDescifrarTexto.cs" />
+    <Compile Include="Mail\EnviarMail.cs" />
+    <Compile Include="Mail\EscribirLog.cs" />
+    <Compile Include="Mail\LeerGuardarDatosConfiguracion.cs" />
+    <Compile Include="MP\GenerarOrden.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobranzasDevolverDatosAction.cs" />
+    <Compile Include="tesCobranzasEliminarAction.cs" />
+    <Compile Include="venMovConStockEnviarAction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\KSKCommon\KSKCommon\KSKCommon.csproj">
+      <Project>{01abe4ee-c792-4ebd-812e-0b28a6970435}</Project>
+      <Name>KSKCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DAL\KSKDal\KSKDal\KSKDal.csproj">
+      <Project>{0cd681ee-f39a-478b-a952-7a83b8802147}</Project>
+      <Name>KSKDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KSKExchange\KSKExchange.csproj">
+      <Project>{5e8a0bf2-b72f-46d7-a458-160afdb8707f}</Project>
+      <Name>KSKExchange</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

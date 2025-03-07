@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="stkCataProductosDS" targetNamespace="http://tempuri.org/stkCataProductosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/stkCataProductosDS.xsd" xmlns:mstns="http://tempuri.org/stkCataProductosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="stkCataProductosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ProductoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ProductoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="FamiliaDesde" type="xs:string" minOccurs="0" />
+<xs:element name="FamiliaHasta" type="xs:string" minOccurs="0" />
+<xs:element name="GrupoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="GrupoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Productos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Clase" type="xs:string" minOccurs="0" />
+<xs:element name="Description" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDetallada" type="xs:string" minOccurs="0" />
+<xs:element name="Tipo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoBarra" type="xs:string" minOccurs="0" />
+<xs:element name="CtaCompra" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAjuInventario" type="xs:string" minOccurs="0" />
+<xs:element name="Familia_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Grupo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Medida_Id" type="xs:string" minOccurs="0" />
+<xs:element name="AceptaCompras" type="xs:boolean" minOccurs="0" />
+<xs:element name="AceptaVentas" type="xs:boolean" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaseAlterna" type="xs:string" minOccurs="0" />
+<xs:element name="UsaDespachoImportacion" type="xs:boolean" minOccurs="0" />
+<xs:element name="Serializable" type="xs:boolean" minOccurs="0" />
+<xs:element name="TrabajaPorLotes" type="xs:boolean" minOccurs="0" />
+<xs:element name="conVencimiento" type="xs:boolean" minOccurs="0" />
+<xs:element name="MedidaAlterna" type="xs:string" minOccurs="0" />
+<xs:element name="FactorAlterna" type="xs:decimal" minOccurs="0" />
+<xs:element name="CostoUltimaCompra" type="xs:decimal" minOccurs="0" />
+<xs:element name="CostoPromPond" type="xs:decimal" minOccurs="0" />
+<xs:element name="CostoReposicion" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioUltCompra" type="xs:decimal" minOccurs="0" />
+<xs:element name="MonedaUltCompra" type="xs:string" minOccurs="0" />
+<xs:element name="MargenExceso" type="xs:decimal" minOccurs="0" />
+<xs:element name="TiempoEntrega" type="xs:short" minOccurs="0" />
+<xs:element name="CFComp_Id" type="xs:string" minOccurs="0" />
+<xs:element name="UMCompra" type="xs:string" minOccurs="0" />
+<xs:element name="CtaVenta" type="xs:string" minOccurs="0" />
+<xs:element name="CtaVentaExt" type="xs:string" minOccurs="0" />
+<xs:element name="CtaCredito" type="xs:string" minOccurs="0" />
+<xs:element name="CtaCreditoExt" type="xs:string" minOccurs="0" />
+<xs:element name="CtaDescuento" type="xs:string" minOccurs="0" />
+<xs:element name="CtaDescuentoExt" type="xs:string" minOccurs="0" />
+<xs:element name="CtaCosto" type="xs:string" minOccurs="0" />
+<xs:element name="CtaCostoExt" type="xs:string" minOccurs="0" />
+<xs:element name="UmVenta" type="xs:string" minOccurs="0" />
+<xs:element name="DiasGarantia" type="xs:short" minOccurs="0" />
+<xs:element name="Acepta_Comis_Vta" type="xs:boolean" minOccurs="0" />
+<xs:element name="CFVenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="FraccionArancelaria" type="xs:string" minOccurs="0" />
+<xs:element name="FechaUltCompra" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Factores">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Medida_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+<xs:element name="CodigoBarras" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Componentes">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Producto_Componente" type="xs:string" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

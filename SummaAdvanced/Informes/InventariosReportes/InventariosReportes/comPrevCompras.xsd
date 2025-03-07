@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="comPrevCompras" targetNamespace="http://tempuri.org/comPrevCompras.xsd" xmlns:mstns="http://tempuri.org/comPrevCompras.xsd" xmlns="http://tempuri.org/comPrevCompras.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="comPrevCompras" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="comPrevCompras" msprop:Generator_UserDSName="comPrevCompras">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="comPrevCompras" msprop:Generator_TableClassName="comPrevComprasDataTable" msprop:Generator_TableVarName="tablecomPrevCompras" msprop:Generator_TablePropName="_comPrevCompras" msprop:Generator_RowDeletingName="comPrevComprasRowDeleting" msprop:Generator_RowChangingName="comPrevComprasRowChanging" msprop:Generator_RowEvHandlerName="comPrevComprasRowChangeEventHandler" msprop:Generator_RowDeletedName="comPrevComprasRowDeleted" msprop:Generator_UserTableName="comPrevCompras" msprop:Generator_RowChangedName="comPrevComprasRowChanged" msprop:Generator_RowEvArgName="comPrevComprasRowChangeEvent" msprop:Generator_RowClassName="comPrevComprasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:string" minOccurs="0" />
+              <xs:element name="Compras" msprop:Generator_ColumnVarNameInTable="columnCompras" msprop:Generator_ColumnPropNameInRow="Compras" msprop:Generator_ColumnPropNameInTable="ComprasColumn" msprop:Generator_UserColumnName="Compras" type="xs:string" minOccurs="0" />
+              <xs:element name="Pedidos" msprop:Generator_ColumnVarNameInTable="columnPedidos" msprop:Generator_ColumnPropNameInRow="Pedidos" msprop:Generator_ColumnPropNameInTable="PedidosColumn" msprop:Generator_UserColumnName="Pedidos" type="xs:string" minOccurs="0" />
+              <xs:element name="StockTotal" msprop:Generator_ColumnVarNameInTable="columnStockTotal" msprop:Generator_ColumnPropNameInRow="StockTotal" msprop:Generator_ColumnPropNameInTable="StockTotalColumn" msprop:Generator_UserColumnName="StockTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsumosPeriodo" msprop:Generator_ColumnVarNameInTable="columnConsumosPeriodo" msprop:Generator_ColumnPropNameInRow="ConsumosPeriodo" msprop:Generator_ColumnPropNameInTable="ConsumosPeriodoColumn" msprop:Generator_UserColumnName="ConsumosPeriodo" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsumosAnioAnt" msprop:Generator_ColumnVarNameInTable="columnConsumosAnioAnt" msprop:Generator_ColumnPropNameInRow="ConsumosAnioAnt" msprop:Generator_ColumnPropNameInTable="ConsumosAnioAntColumn" msprop:Generator_UserColumnName="ConsumosAnioAnt" type="xs:string" minOccurs="0" />
+              <xs:element name="Maximo" msprop:Generator_ColumnVarNameInTable="columnMaximo" msprop:Generator_ColumnPropNameInRow="Maximo" msprop:Generator_ColumnPropNameInTable="MaximoColumn" msprop:Generator_UserColumnName="Maximo" type="xs:string" minOccurs="0" />
+              <xs:element name="Minimo" msprop:Generator_ColumnVarNameInTable="columnMinimo" msprop:Generator_ColumnPropNameInRow="Minimo" msprop:Generator_ColumnPropNameInTable="MinimoColumn" msprop:Generator_UserColumnName="Minimo" type="xs:string" minOccurs="0" />
+              <xs:element name="NecesidadCompra" msprop:Generator_ColumnVarNameInTable="columnNecesidadCompra" msprop:Generator_ColumnPropNameInRow="NecesidadCompra" msprop:Generator_ColumnPropNameInTable="NecesidadCompraColumn" msprop:Generator_UserColumnName="NecesidadCompra" type="xs:string" minOccurs="0" />
+              <xs:element name="Exceso" msprop:Generator_ColumnVarNameInTable="columnExceso" msprop:Generator_ColumnPropNameInRow="Exceso" msprop:Generator_ColumnPropNameInTable="ExcesoColumn" msprop:Generator_UserColumnName="Exceso" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genUsuariosDS" targetNamespace="http://tempuri.org/genUsuariosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genUsuariosDS.xsd" xmlns:mstns="http://tempuri.org/genUsuariosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genUsuariosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="genUsuarios" type="xs:int" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Apellido_y_Nombres" type="xs:string" minOccurs="0" />
+<xs:element name="TipoUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSucursalesEmpr" type="xs:string" minOccurs="0" />
+<xs:element name="Clave_de_Acceso" type="xs:int" minOccurs="0" />
+<xs:element name="Cargo" type="xs:string" minOccurs="0" />
+<xs:element name="UltCambioPass" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Intentos" type="xs:short" minOccurs="0" />
+<xs:element name="Email" type="xs:string" minOccurs="0" />
+<xs:element name="UsuarioCarga" type="xs:int" minOccurs="0" />
+<xs:element name="PtoEmision" type="xs:string" minOccurs="0" />
+<xs:element name="CambiarClave" type="xs:boolean" minOccurs="0" />
+<xs:element name="MalClave" type="xs:short" minOccurs="0" />
+<xs:element name="EsSupervisor" type="xs:boolean" minOccurs="0" />
+<xs:element name="Cultura" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCultura" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Clave1" type="xs:string" minOccurs="0" />
+<xs:element name="Clave2" type="xs:string" minOccurs="0" />
+<xs:element name="MultiplesLogins" type="xs:boolean" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCliente" type="xs:string" minOccurs="0" />
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProveedor" type="xs:string" minOccurs="0" />
+<xs:element name="Vendedor_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionVendedor" type="xs:string" minOccurs="0" />
+<xs:element name="Cobrador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCobrador" type="xs:string" minOccurs="0" />
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionLegajo" type="xs:string" minOccurs="0" />
+<xs:element name="RestringeHorarios" type="xs:boolean" minOccurs="0" />
+<xs:element name="Firma" type="xs:string" minOccurs="0" />
+<xs:element name="ImagenFirmaB64" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Proveedor">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cliente">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Empleado">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="Apellido_y_Nombre" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Vendedor">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Vendedor_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cobrador">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cobrador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="HorariosIngreso">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Lunes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Martes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Miercoles" type="xs:boolean" minOccurs="0" />
+<xs:element name="Jueves" type="xs:boolean" minOccurs="0" />
+<xs:element name="Viernes" type="xs:boolean" minOccurs="0" />
+<xs:element name="Sabado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Domingo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Festivos" type="xs:boolean" minOccurs="0" />
+<xs:element name="HoraDesde" type="xs:string" minOccurs="0" />
+<xs:element name="HoraHasta" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Adjuntos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="Guid" type="xs:string" minOccurs="0" />
+<xs:element name="NombreArchivo" type="xs:string" minOccurs="0" />
+<xs:element name="Extension" type="xs:string" minOccurs="0" />
+<xs:element name="ArchivoBase64" type="xs:string" minOccurs="0" />
+<xs:element name="Estado" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Sucursales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionEmpresa" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSucursal" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

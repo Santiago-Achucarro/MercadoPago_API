@@ -1,0 +1,7 @@
+﻿namespace ComprasReportesCommon
+{
+}
+
+namespace ComprasReportesCommon
+{
+}

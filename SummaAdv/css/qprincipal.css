@@ -1,0 +1,592 @@
+﻿/**Ver: 1.01.05**/
+
+/* estilos del Menu*/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;    
+}
+
+
+
+/*********************Estilos de componentes de barra de menú  **/
+
+nav.flatMenu.top-bar-show section.nav-top-bar {
+    height: 35px;
+    min-height: 35px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: darkgray;
+    background: -webkit-linear-gradient(darkgray, lightgray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkgray, lightgray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkgray, lightgray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkgray, lightgray); /* Standard syntax (must be last) */
+    */
+}
+
+
+nav.flatMenu.top-bar-show section.nav-header {
+    /*height: 50px;*/ /*Cuando hay muchos forms abiertos, el ul que muestra las solapas de todos los forms abiertos, baja de linea y se ubica encima de los controles del form activo*/
+    min-height: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #337ab7;
+    background: -webkit-linear-gradient(#4b5c82, #337ab7);
+    background: -o-linear-gradient(#4b5c82, #337ab7);
+    background: -moz-linear-gradient(#4b5c82, #337ab7);
+    background: linear-gradient(#4b5c82, #337ab7);
+}
+
+
+nav.flatMenu section.nav-header > ul.nav-links > li.right-bar {
+    background-color: transparent;
+    border-right-style: solid;
+    border-right-color: #337ab7;
+    /*border-left-style: solid;
+    border-left-color: #337ab7;*/
+}
+
+nav.flatMenu section.nav-header > ul.nav-links {
+    font-size: x-small;
+}
+
+nav.flatMenu ul.nav-links .drop-down > ul > li > a {
+    padding: 7px;
+}
+    /*** Estilos para los iframes y div conteneodr del iframe*/
+    .quasar-divFrame {
+            /*width: calc(100% - 200px);*/
+            height: calc(100% - 85px);
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            margin-left: 100px;
+            margin: 0;
+            /*overflow: scroll;*/
+            float: left;
+            padding-top: 0px;
+}
+
+.quasar-iframe {
+     height: 100%; 
+     width: 100%; 
+    border: none;
+    margin-bottom: -5px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*********************/
+
+/******** estilos notificaciones ***********************************/
+.quasar-badge {
+    color: white;
+    background: red;
+    position: relative;
+    top: -10px;
+    right: 1px;
+    font-size: 10px;
+}
+
+
+.quasar-badge-mobile {
+    display: inline;
+    position: fixed;
+    margin-right: 30px;
+    top: 10px;
+    right: -30px;
+    color: white;
+    background: red;
+    /*position: relative;
+    top: -18px;
+    right: 10px;*/
+    font-size: 9px;
+}	
+
+.quasar-badge-mobile-frm {
+    display: inline;
+    position: fixed;
+    margin-right: 30px;
+    top: 19px;
+    right: -28px;
+    color: white;
+    background: #424242;
+    /*position: relative;
+    top: -18px;
+    right: 10px;*/
+    font-size: 9px;
+}	
+
+
+.quasar-ModalNotificacion {
+    z-index: 10040;
+}
+
+
+/*defino esto para la imagen del logo en desktop*/
+.quasar-logo-top-bar {
+    height: 32px;
+    display: block;
+    float: left;
+    border-color: darkgray;
+    border-style: solid; 
+    border-width: thin;
+}
+
+.quasar-logo-footer {
+    height: 22px;
+    display: block;
+    float: right;
+    border-color: #428bca;
+    border-style: solid;
+    border-width: thin;
+}
+
+
+.quasar-logo-footer-left {
+    height: 22px;
+    display: block;
+    float: left;
+    /*border-color: #428bca;
+    border-style: solid;
+    border-width: thin;*/
+}
+
+/*defino esto para los span, es igual a lo que tiene el "nav.flatMenu section.nav-top-bar a" */
+.quasar-empresa-top-bar {
+    font-family: open-sans;
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 3.125em;
+    display: block;
+    margin-top: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    float: left;
+    padding: 0 1.25em;
+    position: relative;
+}
+
+
+/********* estilos para la lista de formularios abiertos ************/
+.nav-pills > li > a {
+        border: none;
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 1px;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li.active > a:hover {
+        border: none;
+        background-color: darkgray;
+        color: white;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+		background-color: #585858;
+        border: none;
+        color: lightgray;
+}
+
+.nav-pills > li > button {
+    display: none;
+}
+
+.nav-pills > li.active > button {
+    display: block;
+}
+
+.nav-pills > li .close {
+			margin: -2px 0 0 10px;
+			font-size: 18px;
+    display: none;
+}
+
+.nav-pills > li.active .close {
+	margin: -2px 0 0 10px;
+	font-size: 18px;
+    display: block;
+}
+
+.nav-pills > li .close > .glyphicon {
+    color: gray;
+}
+    
+.nav-pills {
+    margin-top: 5px;
+}
+
+
+#tabFormsAbiertos {
+    overflow: auto;
+}
+/**********************/
+/*.marginBottom {
+	margin-bottom :1px !important;
+}
+.operationDiv {
+	padding:5px 10px 5px 5px;
+}
+.operationDivWrapper {
+	margin-top:-1px;
+}
+.leftMenu {
+	height :70%;
+	background-color: #E6E6E6;
+	border-right: 2px solid #BFBFBF;
+}*/
+.ui-igtrialwatermark {
+    width: 0px;
+    height: 0px;
+    background-image: none;
+    opacity: .25;
+    filter: alpha(opacity=25);
+    -ms-filter: "alpha(opacity=25)";
+    -khtml-opacity: .25;
+    -moz-opacity: .25
+}
+
+/*estilo para el footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 25px;
+  border-top-color: #428bca;
+  border-top-style: solid;
+  border-top-width: thin;
+  background-color: black;
+}
+
+.footer-texto {
+    border-left-color: #428bca;
+    border-left-style: groove;
+    border-left-width: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+}
+
+
+/**********************/
+
+.quasar-menu-hoja {
+    /*clase para buscador de opciones de menu*/
+}
+
+.quasar-menu-nodo-modulo {
+    /*clase para buscador de opciones de menu*/
+}
+
+/**********************/
+
+/*override width:auto of navbar-collapse*/
+@media (max-width: 2000px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+		margin-top: 7.5px;
+	}
+
+        .navbar-nav > li {
+        float: none;
+    }
+
+            .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+	}
+}
+/********* estilos para Popups  ***********/
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* The actual popup */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+    }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+
+/* Correcciones al Menu en Celular*/
+
+nav.flatMenu section.nav-header .mobile-trigger i.fa {
+    width: 35px;
+    float: left; /*Todos los botones de la barra*/
+    background: transparent; /*Para que utilice el mismo fondo que la barra*/
+}
+
+.quasar-favoritos {
+    /*font-size: 1.5em;
+    vertical-align: super;*/
+}
+
+@media screen and (min-width: 768px) {
+    .quasar-favoritos {
+        font-size: 1.3em !important;
+        vertical-align: super;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    nav.flatMenu {
+        border-radius: 0px; /*le quito el borde redondeado */
+    }
+
+    #tabFormsAbiertos {
+        /*display: inline-block;*/ /*Se modificó para que en mobile no aparezca*/
+        display: none;
+        overflow: unset;
+    }
+
+    nav.flatMenu section.nav-header .mobile-trigger i.fa:hover {
+        background-color: transparent;
+    }
+}
+ 
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+}
+
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+}
+
+.quasar-btn-lstfrmabiertos {
+    text-align: left;
+    background-color: #585858 !important;
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    border-top: 1px solid #ccc !important;
+    border-radius: 7px 7px 7px 6px !important;
+    font-family: Segoe UI;
+    font-size: small
+}
+
+    .quasar-btn-lstfrmabiertos:hover, .quasar-btn-lstfrmabiertos:focus {
+        background-color: darkgray !important;
+        color: white !important;
+    }
+
+    .quasar-tit-frmabierto {
+    padding-top: 4px;
+    display: inline-flex;
+    align-items: center;
+    /* font-size: 14px; */
+    color: white;
+    font-family: open-sans;
+    font-size: 1.25em;
+    /* font-weight: 600; */
+    }
+
+.modal.right .modal-dialog {
+    position: fixed;
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right: -320px;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+/** repetidos en qbasico*/
+.quasar-btn-lupa {
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 10px;
+    background-color: gainsboro;
+    margin-top: -13px;
+}
+
+.quasar-box {
+    font-family: Segoe UI;
+    font-size: small;
+    font-weight: normal;
+    color: black;
+    padding-top: 2px;
+    /* margin-bottom: 2px; */
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 3px; 
+    margin-right: 3px; 
+    width: calc(100% - 6px);
+}
+
+.modal-dialog {
+    /*position: absolute;*/
+    top: 47px;
+    /*right: 100px;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*z-index: 10040;*/
+    margin: auto;
+}  
+
+nav.flatMenu.theme4 section.nav-header > ul.nav-links > li.right-bar i.reciente {
+    font-size: x-small;
+    padding-right: 2px;
+    color: darkgray;
+}
+
+nav.flatMenu.theme4 section.nav-header > ul.nav-links > li.right-bar i.favorito {
+    font-size: x-small;
+    padding-right: 2px;
+    color: darkgray;
+}
+
+nav.flatMenu.theme4 section.nav-header > ul.nav-links > li.right-bar a {
+    font-family:open-sans;
+}
+
+nav.flatMenu.theme4 section.nav-header > ul.nav-links > li.right-bar a {
+    font-family: open-sans;
+}
+
+nav.flatMenu.theme4 ul.nav-links .drop-down.medium .list-items a, nav.flatMenu.theme4 ul.nav-links .drop-down.large .list-items a {
+    word-break: break-word;
+}
+
+nav.flatMenu ul.nav-links .drop-down.medium .list-items a, nav.flatMenu ul.nav-links .drop-down.large .list-items a {
+    padding: 5px;
+    font-size: 13.5px;
+}
+
+#divRecientesyFav {
+    left: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    #divRecientesyFav {
+        left: 20px;
+    }
+}

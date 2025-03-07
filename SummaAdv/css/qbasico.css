@@ -1,0 +1,1158 @@
+﻿/**Ver: 1.01.05**/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #424242;
+}
+
+.popupbody {
+    background-color: #424242;
+    overflow-y: auto;
+    max-height: 85vh;
+}
+
+.popupheader {
+    font-family: Segoe UI;
+    font-size: small;
+    font-weight: normal;
+    padding: 3px;
+}
+
+.popupfooter {
+    padding: 3px;
+    background-color: #424242;
+}
+
+.divPrincipalOculto {
+    display: none;
+}
+
+.divPrincipalOk {
+    display: block;
+}
+
+.quasar-divMenu {
+    border-bottom-style: solid;
+    border-bottom-color: #428bca;
+    border-bottom-width: thin;
+    padding-right: 10px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #424242;
+    left: 0px;
+    height: 44px;
+}
+
+#divCargando {
+    display: none;
+}
+
+#divCargando.show {
+        display: block;
+        position: fixed;
+        z-index: 100000;
+        background-image: url('../Imagenes/ajaxload.gif');
+        background-color: #666;
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+}
+
+
+#divMensajeItera {
+    display: none;
+    top: 50px;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+}
+
+#divMensajeItera.show {
+    display: block;
+}
+
+
+/** Usados para la grilla*/
+.ui-iggrid {
+    font-family: Segoe UI;
+    font-size: small;
+}
+
+.ui-widget .ui-widget {
+    font-family: Segoe UI;
+    font-size: small;
+}
+/******************/
+
+.quasar-btn-lstopciones {
+    display: none;
+    margin-left: 3px;
+    background-color: transparent;
+    color: gainsboro;
+    text-align: center;
+    padding: 6px 8px 8px 8px;
+    font-family: Segoe UI;
+    font-size: small;
+    font-weight: normal;
+    /* border-left: 1px solid #ccc; */
+    /* border-right: 1px solid #ccc; */
+    /* border-top: 1px solid #ccc; */
+    /*width: 3em;*/
+    margin-right: 4px;
+}
+                 
+.quasar-btn-lstopciones:hover,
+.quasar-btn-lstopciones:focus {
+        color: white;
+}
+
+
+/*Usados para los paneles que agrupan controles*/
+.quasar-panel-default {
+    background-color: transparent;
+    margin-bottom: 0px
+}
+
+.quasar-panel-sinborde {
+    background-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    border: none;
+}
+
+.quasar-panel-body {
+        padding: 3px;
+}
+         
+.quasar-panel {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.quasar-panel-titulo {
+    color: gainsboro;
+    background-color: transparent
+}
+
+.quasar-box-segm {
+    display: inline-block;
+    padding-top: 0px;
+}
+
+
+.quasar-box, .quasar-box-segm, .quasar-box-en-panel, .quasar-box-segm-en-panel {
+    font-family: Segoe UI;
+    font-size: small;
+    font-weight: normal;
+    color: black;
+    padding-top: 2px;
+    margin-bottom: 2px;
+}
+
+.quasar-box-en-panel, .quasar-box-segm-en-panel {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.quasar-box > label, .quasar-box-segm > label, .quasar-box-en-panel > label, .quasar-box-segm-en-panel > label, .radio > label {
+        font-style: normal;
+        color: gainsboro;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+
+.quasar-label > label {
+    font-style: normal;
+    color: gainsboro;
+    font-weight: normal;
+}
+
+.quasar-label-danger {
+    color: #c82333 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+}
+.quasar-label-warning {
+    color: #ffc107 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+}
+.quasar-label-info {
+    color: #0069d9 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+}
+.quasar-label-success{
+    color: #218838 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+}
+
+.quasar-label-danger-large {
+    color: #c82333 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+    font-size: large !important;
+}
+ 
+.quasar-label-warning-large {
+    color: #ffc107 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+    font-size: large !important;
+}
+
+.quasar-label-info-large {
+    color: #0069d9 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+    font-size: large !important;
+}
+
+.quasar-label-success-large {
+    color: #218838 !important;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    font-weight: bold !important;
+    font-size: large !important;
+}
+
+ui-iggrid tbody td {
+ white-space: normal;
+}
+
+.quasar-editortexto {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editormascara {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorHTML {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorhora {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editornumerico {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorporcentaje {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editoroptiongroup {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorfecha {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorcombo {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorcheckbox {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-editorsegmento_id {
+    /*Por ahora solo para distinguir cada tipo de control*/
+}
+
+.quasar-deshabilitado {
+    color: black;
+}
+
+.quasar-requerido {
+    /*background-color:darkslategray;*/
+    /*border-left-width:4px, !important;
+    border-right-width:4px, !important;
+    border-left-color:#424242, !important;
+    border-right-color:#424242, !important;*/
+}
+
+.quasar-lupa-navegacion {
+    /*barra navegacion de lupas, no se debe mostrar en pantallas chicas*/
+}
+
+.quasar-celda-grilla-autoformateable tbody td {
+    white-space: nowrap;
+}
+
+.quasar-aceptar-fila {
+    /*por ahora solo se utiliza para identificar los botones de este tipo con un selector*/
+}
+
+.quasar-cancelar-fila {
+    /*por ahora solo se utiliza para identificar los botones de este tipo con un selector*/
+}
+
+/*.quasar-box-segm{
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: small;
+    font-weight: normal;
+    color: lightgray;
+    height: auto;
+    margin: auto;
+}*/
+.quasar-btn-lupa {
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  padding: 0px 0;
+  font-size: 12px;
+  background-color: gainsboro;
+    /*  line-height: 1.428571429;
+  border-radius: 10px;
+*/  margin-top: -12px;
+}
+
+.quasar-div-btn-asoc-grilla {
+    text-align: right;
+    margin-bottom: -25px;
+    z-index: 1
+}
+
+.quasar-btn-asoc-grilla {
+    height: 25px;
+    width: auto;
+    min-width: 100px;
+    background-color: dimgrey;
+    border-color: dimgrey;
+    color: gainsboro;
+    padding: 3px;
+}
+
+.quasar-btn-icon-asoc-grilla{
+    background-color: dimgrey;
+    border-color: dimgrey;
+    color: gainsboro;
+}
+
+.quasar-checkbox {
+    height: 15px;
+    width: 15px;
+    margin-right: 2px !important;
+}
+
+.quasar-checkbox-label {
+    vertical-align: text-bottom;
+}
+
+
+.quasar-i-radio-grilla {
+    padding-top: 4px;
+    color: gray;
+}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+/*    
+/*    /* Safari only override */
+/*    ::i-block-chrome, .quasar-btn-lupa {
+/*        margin-top: -3px;
+/*    }
+/*}*/ 
+
+
+.quasar-btn {
+  text-align: center;
+  padding: 0px 0;
+  font-size: 12px;
+  background-color: gainsboro;
+}
+
+.quasar-btn-icon {
+    padding-right: 8px;
+}
+
+.quasar-btn-favorito,
+.quasar-btn-favorito:hover,
+.quasar-btn-favorito.active,
+.quasar-btn-favorito.active:hover,
+.quasar-btn-favorito.clicked,
+.quasar-btn-favorito.clicked:hover {
+    color: white;
+}
+
+.quasar-btn-no-favorito,
+.quasar-btn-no-favorito:hover,
+.quasar-btn-no-favorito.active,
+.quasar-btn-no-favorito.active:hover,
+.quasar-btn-no-favorito.clicked,
+.quasar-btn-no-favorito.clicked:hover {
+    color: black;
+}
+
+/*****************************/
+
+#Procesando {
+    background-position: left;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: small;
+    font-family: Segoe UI;
+}
+
+/*.input, .ui-igcombo-list, Lupa { 
+   font-size:small; 
+   color:black; 
+   font-family:Segoe UI; 
+   font-weight:lighter; 
+   left:5px; 
+  }*/ 
+
+/**** INICIO Estilos para los tabs*********/
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+        float: left;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+            display: inline-block;
+    color: lightgray;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    transition: 0.3s;
+            font-family: Segoe UI;
+            font-size: small;
+            font-weight: normal;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    min-width: 80px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+                background-color: darkgray;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #585858; 
+    color: lightgray;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/***********************************/
+
+
+/*.btnLupaClose {
+            
+    height: 20px;
+    width: 20px;
+    background-size:contain;
+    background:url('../Imagenes/Remove.png');
+    background-size:contain;
+    border:none;
+    background-repeat:no-repeat;
+
+}*/
+
+/*********** Utilizado para las lupas  *********/
+#gridlupa.ui-iggrid .ui-iggrid-headercaption, .ui-iggrid .ui-iggrid-footer, .ui-iggrid .ui-iggrid-toolbar {
+        padding: 0px;
+}
+
+#gridlupa.ui-iggrid-table tr td {
+            padding-top: 0px !important;
+            padding-right: 0px;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+    font-size: smaller;
+}
+
+#gridlupa_editor_list {
+    font-size: smaller;
+}
+
+.ui-igedit-dropdown.ui-widget.ui-igedit-dropdown-orientation-top {
+    font-size: smaller;
+}
+
+
+#headerModalLupa {
+        padding: 1px 15px;
+}
+
+#divGrillaLupa {
+        padding: 4px;
+}
+    
+    
+#gridlupaSeg.ui-iggrid .ui-iggrid-headercaption, .ui-iggrid .ui-iggrid-footer, .ui-iggrid .ui-iggrid-toolbar {
+        padding: 0px;
+}
+
+#gridlupaSeg.ui-iggrid-table tr td {
+            padding-top: 0px !important;
+            padding-right: 0px;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+    font-size: smaller;
+}
+
+#gridlupaSeg_editor_list {
+    font-size: smaller;
+}
+
+#headerModalLupaSeg {
+        padding: 1px 15px;
+}
+
+#divGrillaLupaSeg {
+        padding: 4px;
+}
+
+#footerModalUpLoad {
+        padding: 3px 10px;
+}
+
+#divUpLoad {
+        padding: 4px;
+}
+
+#primer_renglon {
+        border-bottom-style: solid;
+        border-bottom-color: darkgray;
+        border-bottom-width: thin;
+        padding-top: 50px;
+}
+
+/**Usado para alinear los textos de la grilla*/
+.alignCol-derecha {
+    text-align: right;
+    padding-right: 5px !important;
+}
+
+.alignCol-izquierda {
+    text-align: left;
+}
+
+.alignCol-center {
+    text-align: center;
+}
+
+.alignHeaderCol-derecha {
+    text-align: right !important;
+    padding-right: 5px !important;
+}
+
+.alignHeaderCol-center {
+    text-align: center !important;
+}
+
+.alignHeaderCol-izquierda {
+    text-align: left;
+}
+
+/********************/
+
+
+
+
+/***********************************************/
+
+/*** cambio el color de los warnings, porque originalmente están muy claritos*/
+.alert-warning {
+    background-color: khaki;
+}
+/************************/
+
+/*** este estilo lo hago, porque cuando paso con el mouse sobre los controles, se ocultaba el texto (está de color blanco en el control original *****/
+.ui-igedit-input:hover {
+    color: black;
+}
+/********************************/
+
+/*** Redondeo los bordes de los controles*/
+.ui-corner-all {
+    border-radius: 2px;
+}
+/********/
+
+ 
+.ui-igedit-input input {
+    /*background-color:darkslategray;*/
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-left-color: #424242;
+    border-right-color: #424242;
+}
+
+
+.ui-igedit-input:focus {
+    background-color: lightgray;
+}
+
+.ui-igcombo-field:focus {
+    background-color: lightgray;
+}
+
+input[type="checkbox"]:focus {
+    background-color: lightgray;
+}
+
+.quasar-divFrame-form {
+    /*width: calc(100% - 200px);*/
+    height: calc(100% - 20px);
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    margin-left: 10px;
+    margin: 0;
+    /*overflow: scroll;*/
+    float: left;
+    padding-top: 0px;
+}
+
+.quasar-iframe-form {
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin-bottom: -5px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.quasar-iframe-form-modal {
+    padding: 1px;
+}
+
+
+.quasar-boton-grilla-mobile {
+    background-color: #424242;
+    color: gainsboro;
+    margin-right: 3px;
+}
+
+.ui-igtrialwatermark {
+    width: 0px;
+    height: 0px;
+    background-image: none;
+    opacity: .25;
+    filter: alpha(opacity=25);
+    -ms-filter: "alpha(opacity=25)";
+    -khtml-opacity: .25;
+    -moz-opacity: .25
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .55;
+}
+
+.quasar-mensaje-exito {
+    position: fixed;
+    z-index: 100020;
+    top: 2px;
+    right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.quasar-btn-invisible {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: none;
+    height: 0px;
+    width: 0px;
+}
+
+.quasar-btn-invisible:hover {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: none;
+    height: 0px;
+    width: 0px;
+}
+
+.quasar-txt-invisible {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    outline: none;
+    cursor: none;
+    height: 0px;
+    width: 0px;
+}
+
+.quasar-txt-invisible:hover {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    outline: none;
+    cursor: none;
+    height: 0px;
+    width: 0px;
+}
+
+.quasar-div-grafico-leyenda {
+    background-color: white;
+}
+
+.chart {
+    display: inline-block;
+}
+
+.legend {
+    display: inline-block;
+}
+
+.legend-Oculta {
+    display: none;
+}
+
+
+
+.quasar-fondo-grafico {
+    /*background-color: #424242;*/
+    /*background-color: #1b1b1b;*/
+    /*color: black;
+    border-style: solid;
+    border-color: #428bca;
+    border-width: thin;
+    border-radius: 5px;*/
+}
+
+.ui-chart-container {
+    /*background-color: #424242;*/
+    /*background-color: #1b1b1b;*/
+    /*border-width: thin;
+    border-color: #428bca;
+    border-style: solid;
+    border-radius: 5px;*/
+}
+
+.ui-chart-piechart-container {
+    /*background-color: #424242;*/
+    /*background-color: #1b1b1b;*/
+    /*border-width: thin;
+    border-color: #428bca;
+    border-style: solid;
+    border-radius: 5px;*/
+}
+
+.ui-doughnut {
+    /*background-color: #424242;*/
+    /*background-color: #1b1b1b;*/
+    /*border-width: thin;
+    border-color: #428bca;
+    border-style: solid;
+    border-radius: 5px;*/
+}
+
+.ui-chart-title, .ui-chart-subtitle,
+.ui-horizontal-axis-labels, .ui-chart-horizontal-axis-title,
+.ui-vertical-axis-labels, .ui-chart-vertical-axis-title {
+    color: black/*gainsboro;*/
+}
+
+/** Link Descarga**/
+.quasar-content-descarga {
+    text-align: center;
+    background-color: #424242;
+}
+
+.quasar-ahref-descarga,
+.quasar-ahref-descarga:hover {
+    font-style: normal;
+    color: gainsboro;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+/** Lista Adjuntos **/
+div.gallery {
+    /*border: 1px solid #ccc;*/
+}
+
+div.gallery:hover {
+        /*border: 1px solid #777;*/
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    /*max-height: 225px;*/
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+    color: gainsboro;
+}
+
+.divListaAdjunto {
+    border-top-style: solid; 
+    border-bottom-style: solid; 
+    border-top-width: 1px; 
+    border-bottom-width: 1px; 
+    border-bottom-color: gainsboro; 
+    border-top-color: gainsboro;
+}
+
+
+.divAdjunto {
+    /*  padding: 0 6px;
+  float: left;
+  width: 24.99999%;*/
+    padding-top: 10px;
+    height: 250px;
+}
+
+.divImagenAdjModal {
+    text-align: center;
+    background-color: #424242;
+}
+
+.labelElimAdjunto {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.btn-circle.btn-sm {
+    width: 25px;
+    height: 25px;
+    padding: 0px 0px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+.btn-square.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 0px 0px;
+    background-color: gainsboro;
+    color: #424242;
+    /*border-radius: 15px;*/
+    font-size: 20px;
+    text-align: center;
+    margin-top: 11px;
+} 
+
+
+/*.tablinks {
+    display:inline-block;
+}*/
+
+.quasar-footer-mobile {
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    height: 35px;
+    border-top-color: #428bca;
+    border-top-style: solid;
+    border-top-width: thin;
+    padding-right: 10px;
+    width: 100%;
+    background-color: #424242;
+    left: 0px;
+    z-index: 2000;
+}
+
+.quasar-footer-mobile-entidad {
+    bottom: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .custom-class {
+                width: 90%; /* either % (e.g. 60%) or px (400px) */
+             }
+
+    /*
+    ul.tab li a {
+        display: inline-block;
+    }
+
+    ul.tab li a:focus, .active {
+        display: inline-block;
+    }
+    */
+
+    /*.tablinks {
+        display: inline-block;
+    }
+
+    /* Create an active/current tablink class */
+        /*.tablinks:focus, .tablinks.active {
+            display: inline-block;
+        }*/
+
+    .quasar-footer-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .custom-class {
+      width: 100%; /* either % (e.g. 60%) or px (400px) */
+  }
+
+    /*ul.tab li a:focus, .active {
+        display: inline-block;
+    }
+
+    ul.tab li a {
+        display: none;
+    }*/
+
+    /* Create an active/current tablink class */
+        /*.tablinks:focus, .tablinks.active {
+        display: inline-block;
+    }*/
+
+        /*.tablinks {
+        display: none;
+    }*/
+
+        .quasar-grp-tablinks {
+        display: none;
+    }
+
+
+    .quasar-btn-lstopciones {
+        display: inline-block;
+    }
+
+    .quasar-btn-solapa {
+        background-color: #585858 !important;
+        border-left: 1px solid #ccc !important;
+        border-right: 1px solid #ccc !important;
+        border-top: 1px solid #ccc !important;
+        border-radius: 10px 10px 0 0 !important;
+            font-family: Segoe UI;
+            font-size: small;
+    }
+
+            .quasar-btn-solapa:hover, .quasar-btn-solapa:focus {
+                background-color: darkgray !important;
+                color: white !important;
+    }
+
+        .quasar-mobile {
+            background-color: transparent;
+            border: none;
+            padding: 6px 9px;
+        }
+
+        .quasar-btn-favorito,
+        .quasar-btn-favorito:hover,
+        .quasar-btn-favorito.active,
+        .quasar-btn-favorito.active:hover,
+        .quasar-btn-favorito.clicked,
+        .quasar-btn-favorito.clicked:hover {
+            color: white;
+            background-color: transparent;
+            border: none;
+        }
+
+        .quasar-btn-no-favorito,
+        .quasar-btn-no-favorito:hover,
+        .quasar-btn-no-favorito.active,
+        .quasar-btn-no-favorito.active:hover,
+        .quasar-btn-no-favorito.clicked,
+        .quasar-btn-no-favorito.clicked:hover {
+            color: darkgray;
+            background-color: transparent;
+            border: none;
+        }
+
+        .quasar-footer-mobile {
+            display: inline-flex;
+        }
+
+
+        /*#btnFavorito {
+        display:none;
+    }*/
+
+}
+/*@media screen and (max-width: 767px) {
+
+    .ul.tab li a {
+        display: none !important;
+    }
+}
+ 
+@media screen and (max-width: 767px) {
+    .ul.tab li a:focus, .active {
+        display: inline-block !important;
+    }
+}*/
+
+@media screen and (max-width: 900px) {
+    .quasar-lupa-navegacion {
+        display: none; 
+    }
+}
+
+#gridlupaseg_scroll {
+    overflow:auto !important;
+}
+#gridlupa_scroll {
+    overflow: auto !important;
+}
+
+
+/****** INICIO Por ahora no se utilizan, se utilizaran si las columnas en mobile se muestran por fila */
+/***
+*** Para celular ***
+.quasar-edicion-grd-container {
+}
+
+.quasar-edicion-grd-footer {
+}
+
+.quasar-edicion-grd-btn-cancel {
+}
+
+
+@media screen and (max-width: 767px) {
+    .ui-igcombo-wrapper {
+        width: 100%; ***Para que no corte los combos cuando edita una fila de una grilla***
+    }
+    ***ui-igedit ui-igedit-container ui-widget ui-corner-all ui-state-default {
+        width: 100%; 
+    }***
+    .ui-igedit-container {
+        width: 100%; ***Para que no corte los editores cuando edita una fila de la grilla***
+    }
+
+    .ui-dialog .ui-dialog-titlebar {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        font-family: Segoe UI;
+        font-size: small;
+        font-weight: normal;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+    }
+
+    
+    [id$="_updating_dialog_container"] {
+        background-color: #424242;
+    }
+
+    [id$="_updating_dialog_container_content"] {
+        color: gainsboro !important;
+    }
+
+    .data-render-tmpl {
+        color: gainsboro;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    [id$="_updating_dialog_container_footer"] {
+        background-color: #424242;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: thin !important;
+        border-top-color: white;
+        border-top-style: solid;
+        border-top-width: thin !important;
+    }
+
+    button[id$="_updating_dialog_container_footer_buttoncancel"] {
+        color: #fff !important;
+        background-color: #d9534f !important;
+        border-color: #d43f3a !important;
+    }
+
+    button[id$="_updating_dialog_container_footer_buttonok"] {
+        color: #fff !important;
+        background-color: #337ab7 !important;
+        border-color: #2e6da4 !important;
+    }
+
+    ***button[id$="_updating_dialog_container_footer_buttonok"]:focus {
+        color: #fff;
+        background-color: #286090;
+        border-color: #122b40;
+    }
+
+    button[id$="_updating_dialog_container_footer_buttonok"]:hover {
+        color: #fff;
+        background-color: #286090;
+        border-color: #204d74;
+    }
+
+    button[id$="_updating_dialog_container_footer_buttonok"]:disabled,
+    button[id$="_updating_dialog_container_footer_buttonok"]:disabled:hover {
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }***
+
+    .ui-iggrid tr.ui-ig-altrecord {
+        background-color: #eef7ff; 
+    }
+}
+/****** FIN Por ahora no se utilizan, se utilizaran si las columnas en mobile se muestran por fila ****/

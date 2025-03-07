@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="conAnexosGruposDS" targetNamespace="http://tempuri.org/conAnexosGruposDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/conAnexosGruposDS.xsd" xmlns:mstns="http://tempuri.org/conAnexosGruposDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="conAnexosGruposDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="GrupoAne_ID" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="orden" type="xs:short" minOccurs="0" />
+<xs:element name="Origen" type="xs:short" minOccurs="0" />
+<xs:element name="DescripcionOrigen" type="xs:string" minOccurs="0" />
+<xs:element name="VerifTipo" type="xs:string" minOccurs="0" />
+<xs:element name="Description" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Tipo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

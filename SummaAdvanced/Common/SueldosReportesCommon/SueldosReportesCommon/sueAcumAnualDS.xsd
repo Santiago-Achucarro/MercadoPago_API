@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sueAcumAnualDS" targetNamespace="http://tempuri.org/sueAcumAnualDS.xsd" xmlns:mstns="http://tempuri.org/sueAcumAnualDS.xsd" xmlns="http://tempuri.org/sueAcumAnualDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sueAcumAnualDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="sueAcumAnualDS" msprop:Generator_UserDSName="sueAcumAnualDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Anio" msprop:Generator_ColumnVarNameInTable="columnAnio" msprop:Generator_ColumnPropNameInRow="Anio" msprop:Generator_ColumnPropNameInTable="AnioColumn" msprop:Generator_UserColumnName="Anio" type="xs:int" minOccurs="0" />
+              <xs:element name="LegajoDesde" msprop:Generator_ColumnVarNameInTable="columnLegajoDesde" msprop:Generator_ColumnPropNameInRow="LegajoDesde" msprop:Generator_ColumnPropNameInTable="LegajoDesdeColumn" msprop:Generator_UserColumnName="LegajoDesde" type="xs:int" minOccurs="0" />
+              <xs:element name="LegajoHasta" msprop:Generator_ColumnVarNameInTable="columnLegajoHasta" msprop:Generator_ColumnPropNameInRow="LegajoHasta" msprop:Generator_ColumnPropNameInTable="LegajoHastaColumn" msprop:Generator_UserColumnName="LegajoHasta" type="xs:int" minOccurs="0" />
+              <xs:element name="Percepciones" msprop:Generator_ColumnVarNameInTable="columnPercepciones" msprop:Generator_ColumnPropNameInRow="Percepciones" msprop:Generator_ColumnPropNameInTable="PercepcionesColumn" msprop:Generator_UserColumnName="Percepciones" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deducciones" msprop:Generator_ColumnVarNameInTable="columnDeducciones" msprop:Generator_ColumnPropNameInRow="Deducciones" msprop:Generator_ColumnPropNameInTable="DeduccionesColumn" msprop:Generator_UserColumnName="Deducciones" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Aportes" msprop:Generator_ColumnVarNameInTable="columnAportes" msprop:Generator_ColumnPropNameInRow="Aportes" msprop:Generator_ColumnPropNameInTable="AportesColumn" msprop:Generator_UserColumnName="Aportes" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

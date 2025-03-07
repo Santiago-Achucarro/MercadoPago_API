@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CadenaProduccion" targetNamespace="http://tempuri.org/CadenaProduccion.xsd" xmlns:mstns="http://tempuri.org/CadenaProduccion.xsd" xmlns="http://tempuri.org/CadenaProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CadenaProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CadenaProduccion" msprop:Generator_UserDSName="CadenaProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CadenaProduccion" msprop:Generator_TableClassName="CadenaProduccionDataTable" msprop:Generator_TableVarName="tableCadenaProduccion" msprop:Generator_TablePropName="_CadenaProduccion" msprop:Generator_RowDeletingName="CadenaProduccionRowDeleting" msprop:Generator_RowChangingName="CadenaProduccionRowChanging" msprop:Generator_RowEvHandlerName="CadenaProduccionRowChangeEventHandler" msprop:Generator_RowDeletedName="CadenaProduccionRowDeleted" msprop:Generator_UserTableName="CadenaProduccion" msprop:Generator_RowChangedName="CadenaProduccionRowChanged" msprop:Generator_RowEvArgName="CadenaProduccionRowChangeEvent" msprop:Generator_RowClassName="CadenaProduccionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Receta_id" msprop:Generator_ColumnVarNameInTable="columnReceta_id" msprop:Generator_ColumnPropNameInRow="Receta_id" msprop:Generator_ColumnPropNameInTable="Receta_idColumn" msprop:Generator_UserColumnName="Receta_id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CtroProd_Id" msprop:Generator_ColumnVarNameInTable="columnCtroProd_Id" msprop:Generator_ColumnPropNameInRow="CtroProd_Id" msprop:Generator_ColumnPropNameInTable="CtroProd_IdColumn" msprop:Generator_UserColumnName="CtroProd_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCentro" msprop:Generator_ColumnVarNameInTable="columnDescripcionCentro" msprop:Generator_ColumnPropNameInRow="DescripcionCentro" msprop:Generator_ColumnPropNameInTable="DescripcionCentroColumn" msprop:Generator_UserColumnName="DescripcionCentro" type="xs:string" minOccurs="0" />
+              <xs:element name="Nivel" msprop:Generator_ColumnVarNameInTable="columnNivel" msprop:Generator_ColumnPropNameInRow="Nivel" msprop:Generator_ColumnPropNameInTable="NivelColumn" msprop:Generator_UserColumnName="Nivel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

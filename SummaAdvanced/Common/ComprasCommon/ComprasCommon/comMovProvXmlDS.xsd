@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="comMovProvXmlDS" targetNamespace="http://tempuri.org/comMovProvXmlDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/comMovProvXmlDS.xsd" xmlns:mstns="http://tempuri.org/comMovProvXmlDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="comMovProvXmlDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ProveedorDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ProveedorHasta" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Pendiente" type="xs:string" minOccurs="0" />
+<xs:element name="Upload" type="xs:string" minOccurs="0" />
+<xs:element name="lupXml" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="comMovProv" type="xs:long" minOccurs="0" />
+<xs:element name="XMLFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="Cuit" type="xs:string" minOccurs="0" />
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+<xs:element name="UUID" type="xs:string" minOccurs="0" />
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Pago" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

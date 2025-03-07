@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="conMayorResDS" targetNamespace="http://tempuri.org/conMayorResDS.xsd" xmlns:mstns="http://tempuri.org/conMayorResDS.xsd" xmlns="http://tempuri.org/conMayorResDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="conMayorResDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="conMayorResDS" msprop:Generator_UserDSName="conMayorResDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FechaDesde" msprop:Generator_ColumnVarNameInTable="columnFechaDesde" msprop:Generator_ColumnPropNameInRow="FechaDesde" msprop:Generator_ColumnPropNameInTable="FechaDesdeColumn" msprop:Generator_UserColumnName="FechaDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaHasta" msprop:Generator_ColumnVarNameInTable="columnFechaHasta" msprop:Generator_ColumnPropNameInRow="FechaHasta" msprop:Generator_ColumnPropNameInTable="FechaHastaColumn" msprop:Generator_UserColumnName="FechaHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaDesde" msprop:Generator_ColumnVarNameInTable="columnCuentaDesde" msprop:Generator_ColumnPropNameInRow="CuentaDesde" msprop:Generator_ColumnPropNameInTable="CuentaDesdeColumn" msprop:Generator_UserColumnName="CuentaDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaHasta" msprop:Generator_ColumnVarNameInTable="columnCuentaHasta" msprop:Generator_ColumnPropNameInRow="CuentaHasta" msprop:Generator_ColumnPropNameInTable="CuentaHastaColumn" msprop:Generator_UserColumnName="CuentaHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro1Desde" msprop:Generator_ColumnVarNameInTable="columnCentro1Desde" msprop:Generator_ColumnPropNameInRow="Centro1Desde" msprop:Generator_ColumnPropNameInTable="Centro1DesdeColumn" msprop:Generator_UserColumnName="Centro1Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro1Hasta" msprop:Generator_ColumnVarNameInTable="columnCentro1Hasta" msprop:Generator_ColumnPropNameInRow="Centro1Hasta" msprop:Generator_ColumnPropNameInTable="Centro1HastaColumn" msprop:Generator_UserColumnName="Centro1Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro2Desde" msprop:Generator_ColumnVarNameInTable="columnCentro2Desde" msprop:Generator_ColumnPropNameInRow="Centro2Desde" msprop:Generator_ColumnPropNameInTable="Centro2DesdeColumn" msprop:Generator_UserColumnName="Centro2Desde" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro2Hasta" msprop:Generator_ColumnVarNameInTable="columnCentro2Hasta" msprop:Generator_ColumnPropNameInRow="Centro2Hasta" msprop:Generator_ColumnPropNameInTable="Centro2HastaColumn" msprop:Generator_UserColumnName="Centro2Hasta" type="xs:string" minOccurs="0" />
+              <xs:element name="ConSaldo" msprop:Generator_ColumnVarNameInTable="columnConSaldo" msprop:Generator_ColumnPropNameInRow="ConSaldo" msprop:Generator_ColumnPropNameInTable="ConSaldoColumn" msprop:Generator_UserColumnName="ConSaldo" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

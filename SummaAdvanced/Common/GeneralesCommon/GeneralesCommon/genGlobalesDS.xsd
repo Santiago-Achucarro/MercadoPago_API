@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genGlobalesDS" targetNamespace="http://tempuri.org/genGlobalesDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genGlobalesDS.xsd" xmlns:mstns="http://tempuri.org/genGlobalesDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genGlobalesDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Nombre_Var" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+<xs:element name="Longitud" type="xs:short" minOccurs="0" />
+<xs:element name="Decimales" type="xs:decimal" minOccurs="0" />
+<xs:element name="nValor" type="xs:decimal" minOccurs="0" />
+<xs:element name="cValor" type="xs:string" minOccurs="0" />
+<xs:element name="fValor" type="xs:dateTime" minOccurs="0" />
+<xs:element name="mValor" type="xs:string" minOccurs="0" />
+<xs:element name="SubSistema" type="xs:string" minOccurs="0" />
+<xs:element name="SoloLectura" type="xs:boolean" minOccurs="0" />
+<xs:element name="lupIdentidad" type="xs:string" minOccurs="0" />
+<xs:element name="WhereF10" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionEmpresa" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

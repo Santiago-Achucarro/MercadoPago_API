@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="espvenClientesKSKDS" targetNamespace="http://tempuri.org/espvenClientesKSKDS.xsd" xmlns:mstns="http://tempuri.org/espvenClientesKSKDS.xsd" xmlns="http://tempuri.org/espvenClientesKSKDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="espvenClientesKSKDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="espvenClientesKSKDS" msprop:Generator_UserDSName="espvenClientesKSKDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClienteDesde" msprop:Generator_ColumnVarNameInTable="columnClienteDesde" msprop:Generator_ColumnPropNameInRow="ClienteDesde" msprop:Generator_ColumnPropNameInTable="ClienteDesdeColumn" msprop:Generator_UserColumnName="ClienteDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteHasta" msprop:Generator_ColumnVarNameInTable="columnClienteHasta" msprop:Generator_ColumnPropNameInRow="ClienteHasta" msprop:Generator_ColumnPropNameInTable="ClienteHastaColumn" msprop:Generator_UserColumnName="ClienteHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="ZonaDesde" msprop:Generator_ColumnVarNameInTable="columnZonaDesde" msprop:Generator_ColumnPropNameInRow="ZonaDesde" msprop:Generator_ColumnPropNameInTable="ZonaDesdeColumn" msprop:Generator_UserColumnName="ZonaDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="ZonaHasta" msprop:Generator_ColumnVarNameInTable="columnZonaHasta" msprop:Generator_ColumnPropNameInRow="ZonaHasta" msprop:Generator_ColumnPropNameInTable="ZonaHastaColumn" msprop:Generator_UserColumnName="ZonaHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="VendedorDesde" msprop:Generator_ColumnVarNameInTable="columnVendedorDesde" msprop:Generator_ColumnPropNameInRow="VendedorDesde" msprop:Generator_ColumnPropNameInTable="VendedorDesdeColumn" msprop:Generator_UserColumnName="VendedorDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="VendedorHasta" msprop:Generator_ColumnVarNameInTable="columnVendedorHasta" msprop:Generator_ColumnPropNameInRow="VendedorHasta" msprop:Generator_ColumnPropNameInTable="VendedorHastaColumn" msprop:Generator_UserColumnName="VendedorHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Posteado" msprop:Generator_ColumnVarNameInTable="columnPosteado" msprop:Generator_ColumnPropNameInRow="Posteado" msprop:Generator_ColumnPropNameInTable="PosteadoColumn" msprop:Generator_UserColumnName="Posteado" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

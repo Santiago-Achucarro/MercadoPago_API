@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="suePersonalDS" targetNamespace="http://tempuri.org/suePersonalDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/suePersonalDS.xsd" xmlns:mstns="http://tempuri.org/suePersonalDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="suePersonalDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="genEntidades" type="xs:long" minOccurs="0" />
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="Legajo_Nueva" type="xs:int" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Nombres" type="xs:string" minOccurs="0" />
+<xs:element name="ApellidoPaterno" type="xs:string" minOccurs="0" />
+<xs:element name="ApellidoMaterno" type="xs:string" minOccurs="0" />
+<xs:element name="NumeroDoc" type="xs:string" minOccurs="0" />
+<xs:element name="NroSegSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Telefonos" type="xs:string" minOccurs="0" />
+<xs:element name="Celular" type="xs:string" minOccurs="0" />
+<xs:element name="FechaNacimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Sexo" type="xs:string" minOccurs="0" />
+<xs:element name="Nacionalidad" type="xs:short" minOccurs="0" />
+<xs:element name="DescripcionNacionalidad" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoNatural" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCodigoNatural" type="xs:string" minOccurs="0" />
+<xs:element name="eMail" type="xs:string" minOccurs="0" />
+<xs:element name="FechaIngreso" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+<xs:element name="AniosReconocidos" type="xs:int" minOccurs="0" />
+<xs:element name="MesesReconocidos" type="xs:int" minOccurs="0" />
+<xs:element name="GrupoSanguineo" type="xs:string" minOccurs="0" />
+<xs:element name="RH" type="xs:string" minOccurs="0" />
+<xs:element name="BancoSucursal" type="xs:string" minOccurs="0" />
+<xs:element name="BancoCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="BancoTipoCta" type="xs:string" minOccurs="0" />
+<xs:element name="CuentaInactiva" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaveBancaria" type="xs:string" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="UMF" type="xs:string" minOccurs="0" />
+<xs:element name="AvisarA" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Actividad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionActividad" type="xs:string" minOccurs="0" />
+<xs:element name="Afore_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionAfore" type="xs:string" minOccurs="0" />
+<xs:element name="Categoria_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCategoria" type="xs:string" minOccurs="0" />
+<xs:element name="CondServicio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCondServicio" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="Convenio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcionconvenio" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion1" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion2" type="xs:string" minOccurs="0" />
+<xs:element name="EntreCalle1" type="xs:string" minOccurs="0" />
+<xs:element name="EntreCalle2" type="xs:string" minOccurs="0" />
+<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+<xs:element name="NroExterior" type="xs:string" minOccurs="0" />
+<xs:element name="NroInterior" type="xs:string" minOccurs="0" />
+<xs:element name="Provincia_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProvincia" type="xs:string" minOccurs="0" />
+<xs:element name="EstadoCivil_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionEdoCivil" type="xs:string" minOccurs="0" />
+<xs:element name="Localidad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionLocalidad" type="xs:string" minOccurs="0" />
+<xs:element name="ModContrata_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionModContrata" type="xs:string" minOccurs="0" />
+<xs:element name="Puesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionPuesto" type="xs:string" minOccurs="0" />
+<xs:element name="Siniestro_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSiniestro" type="xs:string" minOccurs="0" />
+<xs:element name="SituacionRevi_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSituacionRevi" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSucursal" type="xs:string" minOccurs="0" />
+<xs:element name="TipoContrato" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoContrato" type="xs:string" minOccurs="0" />
+<xs:element name="TipoEmpleador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoEmpleador" type="xs:string" minOccurs="0" />
+<xs:element name="TipoJornada" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoJornada" type="xs:string" minOccurs="0" />
+<xs:element name="TipoPago_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoPago" type="xs:string" minOccurs="0" />
+<xs:element name="TipoRegimen" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoRegimen" type="xs:string" minOccurs="0" />
+<xs:element name="TipoSDI" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoSDI" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Cuit" type="xs:string" minOccurs="0" />
+<xs:element name="IdFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="TipoDoc" type="xs:string" minOccurs="0" />
+<xs:element name="FechaOculta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Rebaja" type="xs:decimal" minOccurs="0" />
+<xs:element name="Reduccion" type="xs:decimal" minOccurs="0" />
+<xs:element name="Adicional" type="xs:decimal" minOccurs="0" />
+<xs:element name="Voluntario" type="xs:decimal" minOccurs="0" />
+<xs:element name="ObraSocial" type="xs:string" minOccurs="0" />
+<xs:element name="DescObraSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Actividades">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Actividad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionActividad" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Afore">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Afore_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionAfore" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Categorias">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Categoria_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCategorias" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="CondServicio">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="CondServicio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCondServicio" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Contable">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ContableDatos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentas" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Convenio">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Convenio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionConvenio" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Domicilio">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Direccion1" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion2" type="xs:string" minOccurs="0" />
+<xs:element name="NroExterior" type="xs:string" minOccurs="0" />
+<xs:element name="NroInterior" type="xs:string" minOccurs="0" />
+<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="EntreCalle1" type="xs:string" minOccurs="0" />
+<xs:element name="EntreCalle2" type="xs:string" minOccurs="0" />
+<xs:element name="Provincia_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProvincia" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="EdoCivil">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="EstadoCivil_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionEstadoCivil" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Localidad">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Localidad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionLocalidad" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ModContrata">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Modalidad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionModalidad_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Puestos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Puesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionPuesto" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Sinestrado">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Siniestro_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSiniestro" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="SituacionRevi">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Situacion_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSituacion" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Sucursal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSucursal" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoContrato">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoContrato" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoContrato" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoEmpleador">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoEmpleador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoEmpleador" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoJornada">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoJornada" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoJornada" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoPago">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoPago_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoRegimen">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoRegimen" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoRegimen" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="TipoSDI">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoSDI" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoSDI" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="RebajaPromo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Rebaja" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ReduccionZonal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Reduccion" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="AporteAdic">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Adicional" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="AporteVoluntario">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Voluntario" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ObraSocial">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="ObraSocial" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionObraSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ContableExtencion">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentas" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

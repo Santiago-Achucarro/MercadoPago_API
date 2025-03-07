@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venListasPreciosXLSCatalogoDS" targetNamespace="http://tempuri.org/venListasPreciosXLSCatalogoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venListasPreciosXLSCatalogoDS.xsd" xmlns:mstns="http://tempuri.org/venListasPreciosXLSCatalogoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venListasPreciosXLSCatalogoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ListaDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ListaHasta" type="xs:string" minOccurs="0" />
+<xs:element name="ProductoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ProductoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Listas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ListaPrecio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="UsuAutorizado" type="xs:string" minOccurs="0" />
+<xs:element name="DecimalesPu" type="xs:int" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:int" minOccurs="0" />
+<xs:element name="LlevaImpuestoInclu" type="xs:boolean" minOccurs="0" />
+<xs:element name="VigenciaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="VigenciaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Version" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Productos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ListaPrecio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="PrecioLista" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioPromocion" type="xs:decimal" minOccurs="0" />
+<xs:element name="AdmiteRegalo" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

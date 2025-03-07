@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venCotizFactuCuerpoDS" targetNamespace="http://tempuri.org/venCotizFactuCuerpoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venCotizFactuCuerpoDS.xsd" xmlns:mstns="http://tempuri.org/venCotizFactuCuerpoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venCotizFactuCuerpoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonCuerpo" type="xs:int" minOccurs="0" />
+<xs:element name="venCotizaciones" type="xs:int" minOccurs="0" />
+<xs:element name="Renglon_Co" type="xs:int" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

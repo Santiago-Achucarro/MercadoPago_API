@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="stkMercTransLoc" targetNamespace="http://tempuri.org/stkMercTransLoc.xsd" xmlns:mstns="http://tempuri.org/stkMercTransLoc.xsd" xmlns="http://tempuri.org/stkMercTransLoc.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="stkMercTransLoc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="stkMercTransLoc" msprop:Generator_UserDSName="stkMercTransLoc">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="stkMercTransLoc" msprop:Generator_TableClassName="stkMercTransLocDataTable" msprop:Generator_TableVarName="tablestkMercTransLoc" msprop:Generator_TablePropName="_stkMercTransLoc" msprop:Generator_RowDeletingName="stkMercTransLocRowDeleting" msprop:Generator_RowChangingName="stkMercTransLocRowChanging" msprop:Generator_RowEvHandlerName="stkMercTransLocRowChangeEventHandler" msprop:Generator_RowDeletedName="stkMercTransLocRowDeleted" msprop:Generator_UserTableName="stkMercTransLoc" msprop:Generator_RowChangedName="stkMercTransLocRowChanged" msprop:Generator_RowEvArgName="stkMercTransLocRowChangeEvent" msprop:Generator_RowClassName="stkMercTransLocRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Segmento" msprop:Generator_ColumnVarNameInTable="columnSegmento" msprop:Generator_ColumnPropNameInRow="Segmento" msprop:Generator_ColumnPropNameInTable="SegmentoColumn" msprop:Generator_UserColumnName="Segmento" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="StkMoviCabe" msprop:Generator_ColumnVarNameInTable="columnStkMoviCabe" msprop:Generator_ColumnPropNameInRow="StkMoviCabe" msprop:Generator_ColumnPropNameInTable="StkMoviCabeColumn" msprop:Generator_UserColumnName="StkMoviCabe" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Medida_Id" msprop:Generator_ColumnVarNameInTable="columnMedida_Id" msprop:Generator_ColumnPropNameInRow="Medida_Id" msprop:Generator_ColumnPropNameInTable="Medida_IdColumn" msprop:Generator_UserColumnName="Medida_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:string" minOccurs="0" />
+              <xs:element name="DepositoDestino" msprop:Generator_ColumnVarNameInTable="columnDepositoDestino" msprop:Generator_ColumnPropNameInRow="DepositoDestino" msprop:Generator_ColumnPropNameInTable="DepositoDestinoColumn" msprop:Generator_UserColumnName="DepositoDestino" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionDepoDestino" msprop:Generator_ColumnVarNameInTable="columnDescripcionDepoDestino" msprop:Generator_ColumnPropNameInRow="DescripcionDepoDestino" msprop:Generator_ColumnPropNameInTable="DescripcionDepoDestinoColumn" msprop:Generator_UserColumnName="DescripcionDepoDestino" type="xs:string" minOccurs="0" />
+              <xs:element name="Deposito" msprop:Generator_ColumnVarNameInTable="columnDeposito" msprop:Generator_ColumnPropNameInRow="Deposito" msprop:Generator_ColumnPropNameInTable="DepositoColumn" msprop:Generator_UserColumnName="Deposito" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionDepo" msprop:Generator_ColumnVarNameInTable="columnDescripcionDepo" msprop:Generator_ColumnPropNameInRow="DescripcionDepo" msprop:Generator_ColumnPropNameInTable="DescripcionDepoColumn" msprop:Generator_UserColumnName="DescripcionDepo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

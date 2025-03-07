@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C8F0F52-ECDD-40A4-BCA5-346E3E6B2BE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralesDAL</RootNamespace>
+    <AssemblyName>GeneralesDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Referencias\DAL\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global, Version=1.0.5997.29847, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Referencias\DAL\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="InterfaceDAAB">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="genAdjuntos.cs" />
+    <Compile Include="genAdjuntosIdentidad.cs" />
+    <Compile Include="genAlertas.cs" />
+    <Compile Include="genAplicaciones.cs" />
+    <Compile Include="genAsiSegmentos.cs" />
+    <Compile Include="genAtributosGenerales.cs" />
+    <Compile Include="genAtributosProvincia.cs" />
+    <Compile Include="genAtributosValores.cs" />
+    <Compile Include="genAtributosValoresAudit.cs" />
+    <Compile Include="genAtributosValoresXLS.cs" />
+    <Compile Include="genCancMov.cs" />
+    <Compile Include="genCancMovApliImpor.cs" />
+    <Compile Include="genCertificados.cs" />
+    <Compile Include="genCertificadosFeAr.cs" />
+    <Compile Include="genContadorSegmento.cs" />
+    <Compile Include="genCulturas.cs" />
+    <Compile Include="genDiasFestivos.cs" />
+    <Compile Include="genDominios.cs" />
+    <Compile Include="genEmpresas.cs" />
+    <Compile Include="genEntidades.cs" />
+    <Compile Include="genEntidadesBasicas.cs" />
+    <Compile Include="genEntidadesBasicasValor.cs" />
+    <Compile Include="genFavoritosUsuarios.cs" />
+    <Compile Include="genFechasAplicacion.cs" />
+    <Compile Include="genGlobales.cs" />
+    <Compile Include="genGrupos.cs" />
+    <Compile Include="genHorariosLogin.cs" />
+    <Compile Include="genInstalacion.cs" />
+    <Compile Include="genJurisCoeficientes.cs" />
+    <Compile Include="genLinksAyuda.cs" />
+    <Compile Include="genMensajes.cs" />
+    <Compile Include="genMensajesPantalla.cs" />
+    <Compile Include="genMenus.cs" />
+    <Compile Include="genMonedas.cs" />
+    <Compile Include="genMovCuotas.cs" />
+    <Compile Include="genMovimientos.cs" />
+    <Compile Include="genPaises.cs" />
+    <Compile Include="genPermisos.cs" />
+    <Compile Include="genProvincias.cs" />
+    <Compile Include="genReportes.cs" />
+    <Compile Include="genReportesSP.cs" />
+    <Compile Include="genReportesTodos.cs" />
+    <Compile Include="genSaldosAnticipos.cs" />
+    <Compile Include="genSegmentos.cs" />
+    <Compile Include="genSegmentosNombres.cs" />
+    <Compile Include="genSegmentoOrigenes.cs" />
+    <Compile Include="genSucursalesEmpr.cs" />
+    <Compile Include="genTamanioHoja.cs" />
+    <Compile Include="genTipoCambio.cs" />
+    <Compile Include="genTiposCompAfip.cs" />
+    <Compile Include="genUltPaginasVisitadasUsuarios.cs" />
+    <Compile Include="genUsuarios.cs" />
+    <Compile Include="genUsuariosSucursal.cs" />
+    <Compile Include="genWSFactElec.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

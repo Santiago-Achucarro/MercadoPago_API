@@ -1,0 +1,1652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8559DC7B-A346-4FA7-BB58-75E025FFFF03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralesCommon</RootNamespace>
+    <AssemblyName>GeneralesCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FechaBaseDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FechaBaseDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAdjuntosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAdjuntosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAdjuntosIdentidadDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAdjuntosIdentidadDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAlertasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAlertasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAlertasUsuarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAlertasUsuarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAplicacionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAplicacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAsiSegmentosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAsiSegmentosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosGeneralesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosGeneralesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosGeneralesIdentityDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosGeneralesIdentityDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosProvinciaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosProvinciaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValoresAuditFechaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValoresAuditFechaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValoresValoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValoresValoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValoresXLSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValoresXLSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValoresXLSValidaClaveDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValoresXLSValidaClaveDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtributosValorIdentidadDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtributosValorIdentidadDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genAtriGralesClasesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genAtriGralesClasesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCancMovApliImporDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCancMovApliImporDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCancMovContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCancMovContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCancMovCuentaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCancMovCuentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCancMovDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCancMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCancSaldosCuentaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCancSaldosCuentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCertificadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCertificadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCertificadosFeArDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCertificadosFeArDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genClavesComunesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genClavesComunesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCodPostalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCodPostalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genContadorCopiarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genContadorCopiarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genContadorSegmentoDatosTodosDS.cs">
+      <DependentUpon>genContadorSegmentoDatosTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genContadorSegmentoDatosTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genContadorSegmentoDatosTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genContadorSegmentoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genContadorSegmentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genControlesSeteosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genControlesSeteosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genCulturasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genCulturasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genDiasFestivosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genDiasFestivosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genDiasFestivosFechaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genDiasFestivosFechaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genDominiosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genDominiosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEmpresasDS.cs">
+      <DependentUpon>genEmpresasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEmpresasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genEmpresasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEmpresasTodasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genEmpresasTodasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEntidadesBasicasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genEntidadesBasicasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEntidadesBasicasValorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genEntidadesBasicasValorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genEntidadesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genEntidadesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genFavoritosUsuariosDS.cs">
+      <DependentUpon>genFavoritosUsuariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genFavoritosUsuariosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genFavoritosUsuariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genFechasAplicacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genFechasAplicacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genGlobalesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genGlobalesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genGruposDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genGruposDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genGruposPertenceDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genGruposPertenceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genHorariosIngresoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genHorariosIngresoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genInstalacionDS.Designer.cs">
+      <DependentUpon>genInstalacionDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="genJurisCoeficientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genJurisCoeficientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genLinksAyudaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genLinksAyudaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genLinksAyudaTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genLinksAyudaTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genLocalidadesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genLocalidadesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genLogRequestDatosTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genLogRequestDatosTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genLogRequestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genLogRequestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMensajesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMensajesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMensajesPantallaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMensajesPantallaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMensajesUsuarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMensajesUsuarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMenusDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMenusDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMonedasDatosCierreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMonedasDatosCierreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMonedasDS.cs">
+      <DependentUpon>genMonedasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMonedasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMonedasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMovCuotasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMovCuotasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMovimientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMovimientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMovimientosIntDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMovimientosIntDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genMunicipiosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genMunicipiosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPaisesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPaisesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPermisosEspDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPermisosEspDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPermisosCopiaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPermisosCopiaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPermisosDatosTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPermisosDatosTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPermisosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPermisosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genPermisosUsuarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genPermisosUsuarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genProvinciasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genProvinciasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genReporteEjecutarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genReporteEjecutarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genReportesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genReportesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genReportesSPDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genReportesSPDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genReportesTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genReportesTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSaldoAnticipoDS.Designer.cs">
+      <DependentUpon>genSaldoAnticipoDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="genSegmentosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentosNombresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentosNombresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentoOrigenesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentoOrigenesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentosOrigenesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentoOrigenesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentoStrDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentoStrDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentosValoresDS.cs">
+      <DependentUpon>genSegmentosValoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSegmentosValoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSegmentosValoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSemaforoDS.cs">
+      <DependentUpon>genSemaforoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSemaforoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSemaforoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genSucursalesEmprDS.cs">
+      <DependentUpon>genSucursalesEmprDS.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="genSucursalesEmprDS.Designer.cs">
+      <DependentUpon>genSucursalesEmprDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="genSucursalesListaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genSucursalesListaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTamanioHojaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTamanioHojaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTareasProgramadasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTareasProgramadasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTareasProgramadasEjecucionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTareasProgramadasEjecucionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTareasProgramadasErroresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTareasProgramadasErroresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTareasProgramadasTodasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTareasProgramadasTodasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTipoCambioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTipoCambioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genTiposCompAfipDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genTiposCompAfipDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUltPaginasVisitadasUsuariosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUltPaginasVisitadasUsuariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuarioLoginDS.cs">
+      <DependentUpon>genUsuarioLoginDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuarioLoginDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuarioLoginDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuarioLogoutDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuarioLogoutDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuarioPermisosEspDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuarioPermisosEspDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosCambiarClaveDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuariosCambiarClaveDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosDS.cs">
+      <DependentUpon>genUsuariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuariosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosLogueadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuariosLogueadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosRecuperarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuariosRecuperarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genUsuariosSucursalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genUsuariosSucursalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="genWSFactElecDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>genWSFactElecDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FechaBaseDS.xsc">
+      <DependentUpon>FechaBaseDS.xsd</DependentUpon>
+    </None>
+    <None Include="FechaBaseDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FechaBaseDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FechaBaseDS.xss">
+      <DependentUpon>FechaBaseDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAdjuntosDS.xsc">
+      <DependentUpon>genAdjuntosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAdjuntosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAdjuntosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAdjuntosDS.xss">
+      <DependentUpon>genAdjuntosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAdjuntosIdentidadDS.xsc">
+      <DependentUpon>genAdjuntosIdentidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAdjuntosIdentidadDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAdjuntosIdentidadDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAdjuntosIdentidadDS.xss">
+      <DependentUpon>genAdjuntosIdentidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAlertasDS.xsc">
+      <DependentUpon>genAlertasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAlertasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAlertasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAlertasDS.xss">
+      <DependentUpon>genAlertasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAlertasUsuarioDS.xsc">
+      <DependentUpon>genAlertasUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAlertasUsuarioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAlertasUsuarioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genAlertasUsuarioDS.xss">
+      <DependentUpon>genAlertasUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAplicacionesDS.xsc">
+      <DependentUpon>genAplicacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAplicacionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAplicacionesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAplicacionesDS.xss">
+      <DependentUpon>genAplicacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAsiSegmentosDS.xsc">
+      <DependentUpon>genAsiSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAsiSegmentosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAsiSegmentosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAsiSegmentosDS.xss">
+      <DependentUpon>genAsiSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosGeneralesDS.xsc">
+      <DependentUpon>genAtributosGeneralesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosGeneralesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>genAtributosGeneralesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genAtributosGeneralesDS.xss">
+      <DependentUpon>genAtributosGeneralesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosGeneralesIdentityDS.xsc">
+      <DependentUpon>genAtributosGeneralesIdentityDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosGeneralesIdentityDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosGeneralesIdentityDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosGeneralesIdentityDS.xss">
+      <DependentUpon>genAtributosGeneralesIdentityDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosProvinciaDS.xsc">
+      <DependentUpon>genAtributosProvinciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosProvinciaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosProvinciaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosProvinciaDS.xss">
+      <DependentUpon>genAtributosProvinciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresAuditFechaDS.xsc">
+      <DependentUpon>genAtributosValoresAuditFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresAuditFechaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValoresAuditFechaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosValoresAuditFechaDS.xss">
+      <DependentUpon>genAtributosValoresAuditFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresDS.xsc">
+      <DependentUpon>genAtributosValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValoresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosValoresDS.xss">
+      <DependentUpon>genAtributosValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresValoresDS.xsc">
+      <DependentUpon>genAtributosValoresValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresValoresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValoresValoresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosValoresValoresDS.xss">
+      <DependentUpon>genAtributosValoresValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresXLSDS.xsc">
+      <DependentUpon>genAtributosValoresXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresXLSDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValoresXLSDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosValoresXLSDS.xss">
+      <DependentUpon>genAtributosValoresXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresXLSValidaClaveDS.xsc">
+      <DependentUpon>genAtributosValoresXLSValidaClaveDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValoresXLSValidaClaveDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValoresXLSValidaClaveDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtributosValoresXLSValidaClaveDS.xss">
+      <DependentUpon>genAtributosValoresXLSValidaClaveDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValorIdentidadDS.xsc">
+      <DependentUpon>genAtributosValorIdentidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtributosValorIdentidadDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtributosValorIdentidadDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genAtributosValorIdentidadDS.xss">
+      <DependentUpon>genAtributosValorIdentidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtriGralesClasesDS.xsc">
+      <DependentUpon>genAtriGralesClasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genAtriGralesClasesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genAtriGralesClasesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genAtriGralesClasesDS.xss">
+      <DependentUpon>genAtriGralesClasesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovApliImporDS.xsc">
+      <DependentUpon>genCancMovApliImporDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovApliImporDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCancMovApliImporDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genCancMovApliImporDS.xss">
+      <DependentUpon>genCancMovApliImporDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovContDS.xsc">
+      <DependentUpon>genCancMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCancMovContDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genCancMovContDS.xss">
+      <DependentUpon>genCancMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovCuentaDS.xsc">
+      <DependentUpon>genCancMovCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovCuentaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCancMovCuentaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCancMovCuentaDS.xss">
+      <DependentUpon>genCancMovCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovDS.xsc">
+      <DependentUpon>genCancMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancMovDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCancMovDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCancMovDS.xss">
+      <DependentUpon>genCancMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancSaldosCuentaDS.xsc">
+      <DependentUpon>genCancSaldosCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCancSaldosCuentaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCancSaldosCuentaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCancSaldosCuentaDS.xss">
+      <DependentUpon>genCancSaldosCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCertificadosDS.xsc">
+      <DependentUpon>genCertificadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCertificadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCertificadosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCertificadosDS.xss">
+      <DependentUpon>genCertificadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCertificadosFeArDS.xsc">
+      <DependentUpon>genCertificadosFeArDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCertificadosFeArDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCertificadosFeArDS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCertificadosFeArDS.xss">
+      <DependentUpon>genCertificadosFeArDS.xsd</DependentUpon>
+    </None>
+    <None Include="genClavesComunesDS.xsc">
+      <DependentUpon>genClavesComunesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genClavesComunesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genClavesComunesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genClavesComunesDS.xss">
+      <DependentUpon>genClavesComunesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCodPostalDS.xsc">
+      <DependentUpon>genCodPostalDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCodPostalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCodPostalDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genCodPostalDS.xss">
+      <DependentUpon>genCodPostalDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorCopiarDS.xsc">
+      <DependentUpon>genContadorCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorCopiarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genContadorCopiarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genContadorCopiarDS.xss">
+      <DependentUpon>genContadorCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorSegmentoDatosTodosDS.xsc">
+      <DependentUpon>genContadorSegmentoDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorSegmentoDatosTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genContadorSegmentoDatosTodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genContadorSegmentoDatosTodosDS.xss">
+      <DependentUpon>genContadorSegmentoDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorSegmentoDS.xsc">
+      <DependentUpon>genContadorSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genContadorSegmentoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genContadorSegmentoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genContadorSegmentoDS.xss">
+      <DependentUpon>genContadorSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genControlesSeteosDS.xsc">
+      <DependentUpon>genControlesSeteosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genControlesSeteosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genControlesSeteosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genControlesSeteosDS.xss">
+      <DependentUpon>genControlesSeteosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCulturasDS.xsc">
+      <DependentUpon>genCulturasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genCulturasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genCulturasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genCulturasDS.xss">
+      <DependentUpon>genCulturasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDiasFestivosDS.xsc">
+      <DependentUpon>genDiasFestivosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDiasFestivosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genDiasFestivosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genDiasFestivosDS.xss">
+      <DependentUpon>genDiasFestivosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDiasFestivosFechaDS.xsc">
+      <DependentUpon>genDiasFestivosFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDiasFestivosFechaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genDiasFestivosFechaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genDiasFestivosFechaDS.xss">
+      <DependentUpon>genDiasFestivosFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDominiosDS.xsc">
+      <DependentUpon>genDominiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genDominiosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genDominiosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genDominiosDS.xss">
+      <DependentUpon>genDominiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEmpresasDS.xsc">
+      <DependentUpon>genEmpresasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEmpresasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genEmpresasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genEmpresasDS.xss">
+      <DependentUpon>genEmpresasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEmpresasTodasDS.xsc">
+      <DependentUpon>genEmpresasTodasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEmpresasTodasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genEmpresasTodasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genEmpresasTodasDS.xss">
+      <DependentUpon>genEmpresasTodasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesBasicasDS.xsc">
+      <DependentUpon>genEntidadesBasicasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesBasicasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genEntidadesBasicasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genEntidadesBasicasDS.xss">
+      <DependentUpon>genEntidadesBasicasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesBasicasValorDS.xsc">
+      <DependentUpon>genEntidadesBasicasValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesBasicasValorDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genEntidadesBasicasValorDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genEntidadesBasicasValorDS.xss">
+      <DependentUpon>genEntidadesBasicasValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesDS.xsc">
+      <DependentUpon>genEntidadesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genEntidadesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genEntidadesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genEntidadesDS.xss">
+      <DependentUpon>genEntidadesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genFavoritosUsuariosDS.xsc">
+      <DependentUpon>genFavoritosUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genFavoritosUsuariosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genFavoritosUsuariosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genFavoritosUsuariosDS.xss">
+      <DependentUpon>genFavoritosUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genFechasAplicacionDS.xsc">
+      <DependentUpon>genFechasAplicacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genFechasAplicacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genFechasAplicacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genFechasAplicacionDS.xss">
+      <DependentUpon>genFechasAplicacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGlobalesDS.xsc">
+      <DependentUpon>genGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGlobalesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genGlobalesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genGlobalesDS.xss">
+      <DependentUpon>genGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGruposDS.xsc">
+      <DependentUpon>genGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGruposDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genGruposDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genGruposDS.xss">
+      <DependentUpon>genGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGruposPertenceDS.xsc">
+      <DependentUpon>genGruposPertenceDS.xsd</DependentUpon>
+    </None>
+    <None Include="genGruposPertenceDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genGruposPertenceDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genGruposPertenceDS.xss">
+      <DependentUpon>genGruposPertenceDS.xsd</DependentUpon>
+    </None>
+    <None Include="genHorariosIngresoDS.xsc">
+      <DependentUpon>genHorariosIngresoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genHorariosIngresoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genHorariosIngresoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genHorariosIngresoDS.xss">
+      <DependentUpon>genHorariosIngresoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genInstalacionDS.xsc">
+      <DependentUpon>genInstalacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genInstalacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genInstalacionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genInstalacionDS.xss">
+      <DependentUpon>genInstalacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genJurisCoeficientesDS.xsc">
+      <DependentUpon>genJurisCoeficientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genJurisCoeficientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genJurisCoeficientesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genJurisCoeficientesDS.xss">
+      <DependentUpon>genJurisCoeficientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLinksAyudaDS.xsc">
+      <DependentUpon>genLinksAyudaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLinksAyudaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genLinksAyudaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genLinksAyudaDS.xss">
+      <DependentUpon>genLinksAyudaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLinksAyudaTodosDS.xsc">
+      <DependentUpon>genLinksAyudaTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLinksAyudaTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genLinksAyudaTodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genLinksAyudaTodosDS.xss">
+      <DependentUpon>genLinksAyudaTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLocalidadesDS.xsc">
+      <DependentUpon>genLocalidadesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLocalidadesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genLocalidadesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genLocalidadesDS.xss">
+      <DependentUpon>genLocalidadesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLogRequestDatosTodosDS.xsc">
+      <DependentUpon>genLogRequestDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLogRequestDatosTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genLogRequestDatosTodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genLogRequestDatosTodosDS.xss">
+      <DependentUpon>genLogRequestDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLogRequestDS.xsc">
+      <DependentUpon>genLogRequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="genLogRequestDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genLogRequestDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genLogRequestDS.xss">
+      <DependentUpon>genLogRequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesDS.xsc">
+      <DependentUpon>genMensajesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMensajesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genMensajesDS.xss">
+      <DependentUpon>genMensajesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesPantallaDS.xsc">
+      <DependentUpon>genMensajesPantallaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesPantallaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMensajesPantallaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genMensajesPantallaDS.xss">
+      <DependentUpon>genMensajesPantallaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesUsuarioDS.xsc">
+      <DependentUpon>genMensajesUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMensajesUsuarioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMensajesUsuarioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genMensajesUsuarioDS.xss">
+      <DependentUpon>genMensajesUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMenusDS.xsc">
+      <DependentUpon>genMenusDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMenusDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMenusDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genMenusDS.xss">
+      <DependentUpon>genMenusDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMonedasDatosCierreDS.xsc">
+      <DependentUpon>genMonedasDatosCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMonedasDatosCierreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMonedasDatosCierreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genMonedasDatosCierreDS.xss">
+      <DependentUpon>genMonedasDatosCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMonedasDS.xsc">
+      <DependentUpon>genMonedasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMonedasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMonedasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genMonedasDS.xss">
+      <DependentUpon>genMonedasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovCuotasDS.xsc">
+      <DependentUpon>genMovCuotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovCuotasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMovCuotasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genMovCuotasDS.xss">
+      <DependentUpon>genMovCuotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovimientosDS.xsc">
+      <DependentUpon>genMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovimientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMovimientosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genMovimientosDS.xss">
+      <DependentUpon>genMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovimientosIntDS.xsc">
+      <DependentUpon>genMovimientosIntDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMovimientosIntDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMovimientosIntDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genMovimientosIntDS.xss">
+      <DependentUpon>genMovimientosIntDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMunicipiosDS.xsc">
+      <DependentUpon>genMunicipiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genMunicipiosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genMunicipiosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genMunicipiosDS.xss">
+      <DependentUpon>genMunicipiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPaisesDS.xsc">
+      <DependentUpon>genPaisesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPaisesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPaisesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genPaisesDS.xss">
+      <DependentUpon>genPaisesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosEspDS.xsc">
+      <DependentUpon>genPermisosEspDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosEspDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPermisosEspDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genPermisosEspDS.xss">
+      <DependentUpon>genPermisosEspDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosCopiaDS.xsc">
+      <DependentUpon>genPermisosCopiaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosCopiaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPermisosCopiaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genPermisosCopiaDS.xss">
+      <DependentUpon>genPermisosCopiaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosDatosTodosDS.xsc">
+      <DependentUpon>genPermisosDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosDatosTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPermisosDatosTodosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genPermisosDatosTodosDS.xss">
+      <DependentUpon>genPermisosDatosTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosDS.xsc">
+      <DependentUpon>genPermisosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPermisosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genPermisosDS.xss">
+      <DependentUpon>genPermisosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosUsuarioDS.xsc">
+      <DependentUpon>genPermisosUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genPermisosUsuarioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genPermisosUsuarioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genPermisosUsuarioDS.xss">
+      <DependentUpon>genPermisosUsuarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genProvinciasDS.xsc">
+      <DependentUpon>genProvinciasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genProvinciasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genProvinciasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genProvinciasDS.xss">
+      <DependentUpon>genProvinciasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReporteEjecutarDS.xsc">
+      <DependentUpon>genReporteEjecutarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReporteEjecutarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genReporteEjecutarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genReporteEjecutarDS.xss">
+      <DependentUpon>genReporteEjecutarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesDS.xsc">
+      <DependentUpon>genReportesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genReportesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genReportesDS.xss">
+      <DependentUpon>genReportesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesSPDS.xsc">
+      <DependentUpon>genReportesSPDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesSPDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genReportesSPDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genReportesSPDS.xss">
+      <DependentUpon>genReportesSPDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesTodosDS.xsc">
+      <DependentUpon>genReportesTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genReportesTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genReportesTodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genReportesTodosDS.xss">
+      <DependentUpon>genReportesTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSaldoAnticipoDS.xsc">
+      <DependentUpon>genSaldoAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSaldoAnticipoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSaldoAnticipoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genSaldoAnticipoDS.xss">
+      <DependentUpon>genSaldoAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosDS.xsc">
+      <DependentUpon>genSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSegmentosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genSegmentosDS.xss">
+      <DependentUpon>genSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosNombresDS.xsc">
+      <DependentUpon>genSegmentosNombresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosNombresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSegmentosNombresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genSegmentosNombresDS.xss">
+      <DependentUpon>genSegmentosNombresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentoOrigenesDS.xsc">
+      <DependentUpon>genSegmentoOrigenesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentoOrigenesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSegmentosOrigenesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genSegmentoOrigenesDS.xss">
+      <DependentUpon>genSegmentoOrigenesDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentoStrDS.xsc">
+      <DependentUpon>genSegmentoStrDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentoStrDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSegmentoStrDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genSegmentoStrDS.xss">
+      <DependentUpon>genSegmentoStrDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosValoresDS.xsc">
+      <DependentUpon>genSegmentosValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSegmentosValoresDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSegmentosValoresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genSegmentosValoresDS.xss">
+      <DependentUpon>genSegmentosValoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSemaforoDS.xsc">
+      <DependentUpon>genSemaforoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSemaforoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSemaforoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genSemaforoDS.xss">
+      <DependentUpon>genSemaforoDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSucursalesEmprDS.xsc">
+      <DependentUpon>genSucursalesEmprDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSucursalesEmprDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSucursalesEmprDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genSucursalesEmprDS.xss">
+      <DependentUpon>genSucursalesEmprDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSucursalesListaDS.xsc">
+      <DependentUpon>genSucursalesListaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genSucursalesListaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genSucursalesListaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genSucursalesListaDS.xss">
+      <DependentUpon>genSucursalesListaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTamanioHojaDS.xsc">
+      <DependentUpon>genTamanioHojaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTamanioHojaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTamanioHojaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genTamanioHojaDS.xss">
+      <DependentUpon>genTamanioHojaDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasDS.xsc">
+      <DependentUpon>genTareasProgramadasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTareasProgramadasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genTareasProgramadasDS.xss">
+      <DependentUpon>genTareasProgramadasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasEjecucionDS.xsc">
+      <DependentUpon>genTareasProgramadasEjecucionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasEjecucionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTareasProgramadasEjecucionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genTareasProgramadasEjecucionDS.xss">
+      <DependentUpon>genTareasProgramadasEjecucionDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasErroresDS.xsc">
+      <DependentUpon>genTareasProgramadasErroresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasErroresDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTareasProgramadasErroresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genTareasProgramadasErroresDS.xss">
+      <DependentUpon>genTareasProgramadasErroresDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasTodasDS.xsc">
+      <DependentUpon>genTareasProgramadasTodasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTareasProgramadasTodasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTareasProgramadasTodasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genTareasProgramadasTodasDS.xss">
+      <DependentUpon>genTareasProgramadasTodasDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTipoCambioDS.xsc">
+      <DependentUpon>genTipoCambioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTipoCambioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTipoCambioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genTipoCambioDS.xss">
+      <DependentUpon>genTipoCambioDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTiposCompAfipDS.xsc">
+      <DependentUpon>genTiposCompAfipDS.xsd</DependentUpon>
+    </None>
+    <None Include="genTiposCompAfipDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genTiposCompAfipDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genTiposCompAfipDS.xss">
+      <DependentUpon>genTiposCompAfipDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUltPaginasVisitadasUsuariosDS.xsc">
+      <DependentUpon>genUltPaginasVisitadasUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUltPaginasVisitadasUsuariosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUltPaginasVisitadasUsuariosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genUltPaginasVisitadasUsuariosDS.xss">
+      <DependentUpon>genUltPaginasVisitadasUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioLoginDS.xsc">
+      <DependentUpon>genUsuarioLoginDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioLoginDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuarioLoginDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genUsuarioLoginDS.xss">
+      <DependentUpon>genUsuarioLoginDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioLogoutDS.xsc">
+      <DependentUpon>genUsuarioLogoutDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioLogoutDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuarioLogoutDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genUsuarioLogoutDS.xss">
+      <DependentUpon>genUsuarioLogoutDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioPermisosEspDS.xsc">
+      <DependentUpon>genUsuarioPermisosEspDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuarioPermisosEspDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuarioPermisosEspDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genUsuarioPermisosEspDS.xss">
+      <DependentUpon>genUsuarioPermisosEspDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosCambiarClaveDS.xsc">
+      <DependentUpon>genUsuariosCambiarClaveDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosCambiarClaveDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuariosCambiarClaveDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genUsuariosCambiarClaveDS.xss">
+      <DependentUpon>genUsuariosCambiarClaveDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosDS.xsc">
+      <DependentUpon>genUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuariosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genUsuariosDS.xss">
+      <DependentUpon>genUsuariosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosLogueadosDS.xsc">
+      <DependentUpon>genUsuariosLogueadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosLogueadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuariosLogueadosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genUsuariosLogueadosDS.xss">
+      <DependentUpon>genUsuariosLogueadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosRecuperarDS.xsc">
+      <DependentUpon>genUsuariosRecuperarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosRecuperarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuariosRecuperarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="genUsuariosRecuperarDS.xss">
+      <DependentUpon>genUsuariosRecuperarDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosSucursalDS.xsc">
+      <DependentUpon>genUsuariosSucursalDS.xsd</DependentUpon>
+    </None>
+    <None Include="genUsuariosSucursalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genUsuariosSucursalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genUsuariosSucursalDS.xss">
+      <DependentUpon>genUsuariosSucursalDS.xsd</DependentUpon>
+    </None>
+    <None Include="genWSFactElecDS.xsc">
+      <DependentUpon>genWSFactElecDS.xsd</DependentUpon>
+    </None>
+    <None Include="genWSFactElecDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>genWSFactElecDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="genWSFactElecDS.xss">
+      <DependentUpon>genWSFactElecDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteLibreDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

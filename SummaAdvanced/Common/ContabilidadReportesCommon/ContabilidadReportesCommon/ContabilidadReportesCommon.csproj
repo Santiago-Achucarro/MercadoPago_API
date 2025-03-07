@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A22C03EF-51A0-4C26-817C-071CDE455472}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContabilidadReportesCommon</RootNamespace>
+    <AssemblyName>ContabilidadReportesCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\summaadvancedq\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\summaadvancedq\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\summaadvancedq\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\summaadvancedq\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\summaadvancedq\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BalanceDS.cs">
+      <DependentUpon>BalanceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComprasEjercicioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComprasEjercicioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conBalanzaXCentroDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conBalanzaXCentroDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conEdoResDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conEdoResDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conGruposContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfAxiMXDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfAxiMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfCentro1DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfCentro1DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfCentro2DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfCentro2DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conMayorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conMayorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conMayorResDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conMayorResDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conPolizaDescuadradaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conPolizaDescuadradaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conSituPariDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conSituPariDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubDiarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubDiarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="subDiarioResDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>subDiarioResDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BalanceDS.xsc">
+      <DependentUpon>BalanceDS.xsd</DependentUpon>
+    </None>
+    <None Include="BalanceDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BalanceDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BalanceDS.xss">
+      <DependentUpon>BalanceDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComprasEjercicioDS.xsc">
+      <DependentUpon>ComprasEjercicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComprasEjercicioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComprasEjercicioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComprasEjercicioDS.xss">
+      <DependentUpon>ComprasEjercicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBalanzaXCentroDS.xsc">
+      <DependentUpon>conBalanzaXCentroDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBalanzaXCentroDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conBalanzaXCentroDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conBalanzaXCentroDS.xss">
+      <DependentUpon>conBalanzaXCentroDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasDS.xsc">
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuentasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conCuentasDS.xss">
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEdoResDS.xsc">
+      <DependentUpon>conEdoResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEdoResDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conEdoResDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conEdoResDS.xss">
+      <DependentUpon>conEdoResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGruposContDS.xsc">
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGruposContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conGruposContDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conGruposContDS.xss">
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfAxiMXDS.xsc">
+      <DependentUpon>conInfAxiMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfAxiMXDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfAxiMXDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfAxiMXDS.xss">
+      <DependentUpon>conInfAxiMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfCentro1DS.xsc">
+      <DependentUpon>conInfCentro1DS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfCentro1DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfCentro1DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfCentro1DS.xss">
+      <DependentUpon>conInfCentro1DS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfCentro2DS.xsc">
+      <DependentUpon>conInfCentro2DS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfCentro2DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfCentro2DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfCentro2DS.xss">
+      <DependentUpon>conInfCentro2DS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xsc">
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xss">
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMayorDS.xsc">
+      <DependentUpon>conMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMayorDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conMayorDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conMayorDS.xss">
+      <DependentUpon>conMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMayorResDS.xsc">
+      <DependentUpon>conMayorResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMayorResDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conMayorResDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conMayorResDS.xss">
+      <DependentUpon>conMayorResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPolizaDescuadradaDS.xsc">
+      <DependentUpon>conPolizaDescuadradaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPolizaDescuadradaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conPolizaDescuadradaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conPolizaDescuadradaDS.xss">
+      <DependentUpon>conPolizaDescuadradaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSituPariDS.xsc">
+      <DependentUpon>conSituPariDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSituPariDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conSituPariDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conSituPariDS.xss">
+      <DependentUpon>conSituPariDS.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SubDiarioDS.xsc">
+      <DependentUpon>SubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="SubDiarioDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubDiarioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SubDiarioDS.xss">
+      <DependentUpon>SubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="subDiarioResDS.xsc">
+      <DependentUpon>subDiarioResDS.xsd</DependentUpon>
+    </None>
+    <None Include="subDiarioResDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>subDiarioResDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="subDiarioResDS.xss">
+      <DependentUpon>subDiarioResDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

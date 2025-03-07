@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venMovimientosConsultaDS" targetNamespace="http://tempuri.org/venMovimientosConsultaDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venMovimientosConsultaDS.xsd" xmlns:mstns="http://tempuri.org/venMovimientosConsultaDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venMovimientosConsultaDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento1N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento2N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento3N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento4N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento1C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento2C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento3C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento4C" type="xs:string" minOccurs="0" />
+<xs:element name="venTipoMov" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaRegistro" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Cambio" type="xs:decimal" minOccurs="0" />
+<xs:element name="CambioMonedaOriginal" type="xs:decimal" minOccurs="0" />
+<xs:element name="Anulado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionMonedas" type="xs:string" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:int" minOccurs="0" />
+<xs:element name="NombreFantasia" type="xs:string" minOccurs="0" />
+<xs:element name="SubTipoMov_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSubTipoMov" type="xs:string" minOccurs="0" />
+<xs:element name="CondPagoCli_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCondPago" type="xs:string" minOccurs="0" />
+<xs:element name="Vendedor_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionVendedores" type="xs:string" minOccurs="0" />
+<xs:element name="Cobrador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCobradores" type="xs:string" minOccurs="0" />
+<xs:element name="FormaEntrega_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionFormaEntrega" type="xs:string" minOccurs="0" />
+<xs:element name="CondFisc_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCondFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Saldo" type="xs:decimal" minOccurs="0" />
+<xs:element name="SubTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="SubTotalBonif" type="xs:decimal" minOccurs="0" />
+<xs:element name="Comision1" type="xs:decimal" minOccurs="0" />
+<xs:element name="Comision2" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion1" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion2" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion3" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion4" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion5" type="xs:decimal" minOccurs="0" />
+<xs:element name="Dato1" type="xs:decimal" minOccurs="0" />
+<xs:element name="Dato2" type="xs:decimal" minOccurs="0" />
+<xs:element name="Dato3" type="xs:decimal" minOccurs="0" />
+<xs:element name="CobraAbasto" type="xs:boolean" minOccurs="0" />
+<xs:element name="CambioFijo" type="xs:boolean" minOccurs="0" />
+<xs:element name="ComprobanteDesde" type="xs:int" minOccurs="0" />
+<xs:element name="TipoPago" type="xs:int" minOccurs="0" />
+<xs:element name="Incoterm_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionIncoterm" type="xs:string" minOccurs="0" />
+<xs:element name="CtaClientes" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaClientes" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1DXV_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1DXV" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2DXV_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2DXV" type="xs:string" minOccurs="0" />
+<xs:element name="TipomovCont" type="xs:decimal" minOccurs="0" />
+<xs:element name="Clase" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteContable" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantCuotas" type="xs:short" minOccurs="0" />
+<xs:element name="Formulario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="LlamarAlWSFE" type="xs:boolean" minOccurs="0" />
+<xs:element name="SegmentoStr" type="xs:string" minOccurs="0" />
+<xs:element name="SucursalEmpr" type="xs:string" minOccurs="0" />
+<xs:element name="NoRecalcular" type="xs:boolean" minOccurs="0" />
+<xs:element name="SinEntrega" type="xs:boolean" minOccurs="0" />
+<xs:element name="EsSaldoInicial" type="xs:boolean" minOccurs="0" />
+<xs:element name="AceptarDatosExternos" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="venMovConStock">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="ListaPrecio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionListasPrecios" type="xs:string" minOccurs="0" />
+<xs:element name="TipoPrecioForm" type="xs:string" minOccurs="0" />
+<xs:element name="LlevaImpuestoInclu" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdCuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonCuerpo" type="xs:int" minOccurs="0" />
+<xs:element name="Producto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Detalle" type="xs:string" minOccurs="0" />
+<xs:element name="CFVenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCondFisVenta" type="xs:string" minOccurs="0" />
+<xs:element name="Deposito_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDepositos" type="xs:string" minOccurs="0" />
+<xs:element name="Medida_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUniMed" type="xs:string" minOccurs="0" />
+<xs:element name="Factor" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantFacturada" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantEntregada" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantPendiente" type="xs:decimal" minOccurs="0" />
+<xs:element name="CantOriginal" type="xs:decimal" minOccurs="0" />
+<xs:element name="MedidaAlterna" type="xs:string" minOccurs="0" />
+<xs:element name="CantidadAlternaForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="TipoPrecio" type="xs:string" minOccurs="0" />
+<xs:element name="PrecioForm" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioLista" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioVenta" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioFormImpuesto" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioFormImpuestoBon" type="xs:decimal" minOccurs="0" />
+<xs:element name="PrecioFormImpuestoTot" type="xs:decimal" minOccurs="0" />
+<xs:element name="ComiPorce" type="xs:decimal" minOccurs="0" />
+<xs:element name="Bonificacion" type="xs:decimal" minOccurs="0" />
+<xs:element name="SubTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="SubTotalFormImpuesto" type="xs:decimal" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="FechaEntrega" type="xs:dateTime" minOccurs="0" />
+<xs:element name="CantEntregadaForm" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdImpuestos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="conRenglon" type="xs:int" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionImpuestos" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponible" type="xs:decimal" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponibleMonedaNac" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="TipoMov" type="xs:decimal" minOccurs="0" />
+<xs:element name="Clase" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteContable" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdCuotas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="CuotaNro" type="xs:short" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Saldo" type="xs:decimal" minOccurs="0" />
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdImpuestosRenglonCS">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonCuerpo" type="xs:int" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionImpuestos" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponible" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponibleMonedaNac" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdImpuestosRenglonSS">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="ConRenglon" type="xs:int" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionImpuestos" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponible" type="xs:decimal" minOccurs="0" />
+<xs:element name="BaseImponibleMonedaNac" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="grdCuentasRenglon">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonCuerpo" type="xs:int" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="TipoMov" type="xs:decimal" minOccurs="0" />
+<xs:element name="Clase" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteContable" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="venMovimientosFiscal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="ClaveFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Letra" type="xs:string" minOccurs="0" />
+<xs:element name="Comprobante_Id" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionTipoComp" type="xs:string" minOccurs="0" />
+<xs:element name="EsFactElec" type="xs:boolean" minOccurs="0" />
+<xs:element name="Motivo" type="xs:string" minOccurs="0" />
+<xs:element name="XMLFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="SelloDigital" type="xs:string" minOccurs="0" />
+<xs:element name="FechaString" type="xs:string" minOccurs="0" />
+<xs:element name="SelloFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="NoCertificadoFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="NoCertificadoPropio" type="xs:string" minOccurs="0" />
+<xs:element name="FechaAutorizacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="NumeroDesde" type="xs:int" minOccurs="0" />
+<xs:element name="NumeroHasta" type="xs:int" minOccurs="0" />
+<xs:element name="RfcProvCertif" type="xs:string" minOccurs="0" />
+<xs:element name="Leyenda" type="xs:string" minOccurs="0" />
+<xs:element name="TipoProceso" type="xs:string" minOccurs="0" />
+<xs:element name="TipoComite" type="xs:string" minOccurs="0" />
+<xs:element name="idContabilidad" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Anticipo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Anulacion">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="FechaAnulacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="TipoEnvio" type="xs:string" minOccurs="0" />
+<xs:element name="Causa" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

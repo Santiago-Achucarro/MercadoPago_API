@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB2AC30C-82E9-417A-8231-E8E57AA898C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VentasDAL</RootNamespace>
+    <AssemblyName>VentasDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global">
+      <HintPath>..\..\..\Referencias\DAL\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data">
+      <HintPath>..\..\..\Referencias\DAL\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfaceDAAB, Version=1.0.7327.29815, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CuentasVentas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="venAjuEdoCta.cs" />
+    <Compile Include="venAnuladas.cs" />
+    <Compile Include="venAplicacion.cs" />
+    <Compile Include="venAsiCierre.cs" />
+    <Compile Include="venAsiCierreCr.cs" />
+    <Compile Include="venBonifTemporal.cs" />
+    <Compile Include="venBonifTemporalSegmento.cs" />
+    <Compile Include="venCamiones.cs" />
+    <Compile Include="venCanjeNotas.cs" />
+    <Compile Include="venCartaPorteCompUbi.cs" />
+    <Compile Include="venCartaPorteLibre.cs" />
+    <Compile Include="venCategCredito.cs" />
+    <Compile Include="venCFDISat.cs" />
+    <Compile Include="venClieContacto.cs" />
+    <Compile Include="venClieEstados.cs" />
+    <Compile Include="venClieHabitual.cs" />
+    <Compile Include="venClientes.cs" />
+    <Compile Include="venClientesCtas.cs" />
+    <Compile Include="venClientesCtasPlantilla.cs" />
+    <Compile Include="venClientesPlantilla.cs" />
+    <Compile Include="venClieSaldosIni.cs" />
+    <Compile Include="venCobradores.cs" />
+    <Compile Include="venCompCartaPorte.cs" />
+    <Compile Include="venCompCartaPorteDestino.cs" />
+    <Compile Include="venCompCartaPorteFact.cs" />
+    <Compile Include="venCompCartaPorteMercancia.cs" />
+    <Compile Include="venCompCartaPorteOrigen.cs" />
+    <Compile Include="venCondFiscal.cs" />
+    <Compile Include="venCondFiscImp.cs" />
+    <Compile Include="venCondPago.cs" />
+    <Compile Include="venCondPagoCuotas.cs" />
+    <Compile Include="venConsEdoCta.cs" />
+    <Compile Include="venConsEdoCtaClientes.cs" />
+    <Compile Include="venCotizaciones.cs" />
+    <Compile Include="venCotizAnul.cs" />
+    <Compile Include="venCotizCliente.cs" />
+    <Compile Include="venCotizCuerpo.cs" />
+    <Compile Include="venCotizFactuCuerpo.cs" />
+    <Compile Include="venCotizFactura.cs" />
+    <Compile Include="venCotizPediCuerpo.cs" />
+    <Compile Include="venCotizPedido.cs" />
+    <Compile Include="venCotizSegmento.cs" />
+    <Compile Include="venEsquemaAutoReng.cs" />
+    <Compile Include="venEsquemasAuto.cs" />
+    <Compile Include="venFacturacionRemito.cs" />
+    <Compile Include="venFormaEntrega.cs" />
+    <Compile Include="venGeneraRemitoFactura.cs" />
+    <Compile Include="venGraVentas.cs" />
+    <Compile Include="venImpuestos.cs" />
+    <Compile Include="venIncoterm.cs" />
+    <Compile Include="venIndicadores.cs" />
+    <Compile Include="venLibros.cs" />
+    <Compile Include="venLibrosColumnas.cs" />
+    <Compile Include="venLibrosImpuestos.cs" />
+    <Compile Include="venLibrosRetencion.cs" />
+    <Compile Include="venLimiteCredito.cs" />
+    <Compile Include="venListasPrecBoniRec.cs" />
+    <Compile Include="venListasPrecios.cs" />
+    <Compile Include="venListasPrecProd.cs" />
+    <Compile Include="venListasVersion.cs" />
+    <Compile Include="venLogCorreo.cs" />
+    <Compile Include="venLPTabla.cs" />
+    <Compile Include="venLPTablaCuerpo.cs" />
+    <Compile Include="venMovClieSuc.cs" />
+    <Compile Include="venMovConforma.cs" />
+    <Compile Include="venMovConStock.cs" />
+    <Compile Include="venMovConStockCr.cs" />
+    <Compile Include="venMovConStockCrCtas.cs" />
+    <Compile Include="venMovConStockCrPed.cs" />
+    <Compile Include="venMovCSImpuestos.cs" />
+    <Compile Include="venMovDetalle.cs" />
+    <Compile Include="venMoviAnticipo.cs" />
+    <Compile Include="venMovimientos.cs" />
+    <Compile Include="venMovimientosCFDIR.cs" />
+    <Compile Include="venMovimientosCRExpMx.cs" />
+    <Compile Include="venMovimientosExpMX.cs" />
+    <Compile Include="venMovimientosFiscal.cs" />
+    <Compile Include="venMovimientosFiscalINE.cs" />
+    <Compile Include="venMovimientosMetodoPago.cs" />
+    <Compile Include="venMovImpTraslado.cs" />
+    <Compile Include="venMovImpuestos.cs" />
+    <Compile Include="venMoviPredial.cs" />
+    <Compile Include="venMovSSImpuestos.cs" />
+    <Compile Include="venMovStkHist.cs" />
+    <Compile Include="venMovStkHistDevolverIdMovStockDS.cs" />
+    <Compile Include="venNivelesAuto.cs" />
+    <Compile Include="venNivelesAutoUsu.cs" />
+    <Compile Include="venNPAutorizando.cs" />
+    <Compile Include="venOperadores.cs" />
+    <Compile Include="venPediAutoriza.cs" />
+    <Compile Include="venPediCuerpo.cs" />
+    <Compile Include="venPedidos.cs" />
+    <Compile Include="venPedidosAnul.cs" />
+    <Compile Include="venPedidosConsultaDrillDown.cs" />
+    <Compile Include="venPedidosPendAuto.cs" />
+    <Compile Include="venPediFacturados.cs" />
+    <Compile Include="venPediRemiFactu.cs" />
+    <Compile Include="venPediRemitidos.cs" />
+    <Compile Include="venPediSegmentos.cs" />
+    <Compile Include="venPediValiComer.cs" />
+    <Compile Include="venPropArrenda.cs" />
+    <Compile Include="venRegion.cs" />
+    <Compile Include="venRepaPedi.cs" />
+    <Compile Include="venRepaPediSerie.cs" />
+    <Compile Include="venRepaPediSerieUbi.cs" />
+    <Compile Include="venReparto.cs" />
+    <Compile Include="venRepartoFacturas.cs" />
+    <Compile Include="venRepartoRemitos.cs" />
+    <Compile Include="venRepaSegmentos.cs" />
+    <Compile Include="venRepaUbicacion.cs" />
+    <Compile Include="venSaldosPendientesTarea.cs" />
+    <Compile Include="venSTMAfip.cs" />
+    <Compile Include="venSubTipoMov.cs" />
+    <Compile Include="ventasCanjeNotas.cs" />
+    <Compile Include="VentasCerrar.cs" />
+    <Compile Include="venTipoMov.cs" />
+    <Compile Include="venTiposClie.cs" />
+    <Compile Include="venTraePendientes.cs" />
+    <Compile Include="venVendedores.cs" />
+    <Compile Include="venVeriCredito.cs" />
+    <Compile Include="venZona.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\VentasCommon\VentasCommon\VentasCommon\VentasCommon.csproj">
+      <Project>{ff0479ce-a5f1-4dd3-ba1f-9d61c65038b6}</Project>
+      <Name>VentasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

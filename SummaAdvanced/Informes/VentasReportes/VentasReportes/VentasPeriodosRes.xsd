@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VentasPeriodosRes" targetNamespace="http://tempuri.org/VentasPeriodosRes.xsd" xmlns:mstns="http://tempuri.org/VentasPeriodosRes.xsd" xmlns="http://tempuri.org/VentasPeriodosRes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MontanaAdvProdConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MontanaAdvProdConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.VentasReportes.My.MySettings.GlobalReference.Default.MontanaAdvProdConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VentasPeriodosRes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VentasPeriodosRes" msprop:Generator_UserDSName="VentasPeriodosRes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ventasPeriodo" msprop:Generator_TableClassName="ventasPeriodoDataTable" msprop:Generator_TableVarName="tableventasPeriodo" msprop:Generator_TablePropName="ventasPeriodo" msprop:Generator_RowDeletingName="ventasPeriodoRowDeleting" msprop:Generator_RowChangingName="ventasPeriodoRowChanging" msprop:Generator_RowEvHandlerName="ventasPeriodoRowChangeEventHandler" msprop:Generator_RowDeletedName="ventasPeriodoRowDeleted" msprop:Generator_UserTableName="ventasPeriodo" msprop:Generator_RowChangedName="ventasPeriodoRowChanged" msprop:Generator_RowEvArgName="ventasPeriodoRowChangeEvent" msprop:Generator_RowClassName="ventasPeriodoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entidad" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionEntidad" msprop:Generator_ColumnVarNameInTable="columnDescripcionEntidad" msprop:Generator_ColumnPropNameInRow="DescripcionEntidad" msprop:Generator_ColumnPropNameInTable="DescripcionEntidadColumn" msprop:Generator_UserColumnName="DescripcionEntidad" type="xs:string" minOccurs="0" />
+              <xs:element name="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_UserColumnName="SubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bonificaciones" msprop:Generator_ColumnVarNameInTable="columnBonificaciones" msprop:Generator_ColumnPropNameInRow="Bonificaciones" msprop:Generator_ColumnPropNameInTable="BonificacionesColumn" msprop:Generator_UserColumnName="Bonificaciones" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Impuestos" msprop:Generator_ColumnVarNameInTable="columnImpuestos" msprop:Generator_ColumnPropNameInRow="Impuestos" msprop:Generator_ColumnPropNameInTable="ImpuestosColumn" msprop:Generator_UserColumnName="Impuestos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Importe" msprop:Generator_ColumnVarNameInTable="columnImporte" msprop:Generator_ColumnPropNameInRow="Importe" msprop:Generator_ColumnPropNameInTable="ImporteColumn" msprop:Generator_UserColumnName="Importe" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

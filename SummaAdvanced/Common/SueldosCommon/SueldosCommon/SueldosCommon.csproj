@@ -1,0 +1,1951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D300B465-E303-4BFA-A906-0BFA6D7105E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SueldosCommon</RootNamespace>
+    <AssemblyName>SueldosCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sueArchivosTxtCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueArchivosTxtCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueArchivosTxtDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueArchivosTxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueArchivoTxtObtenerConceptosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueArchivoTxtObtenerConceptosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueArchivoTxtObtenerEmpleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueArchivoTxtObtenerEmpleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueCalcularDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueCalcularDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueCategoriasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueCategoriasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueCateNombreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueCateNombreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueCierreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueCierreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueCierrePendientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueCierrePendientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConcAcumDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConcAcumDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConcAcumSegmentoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConcAcumSegmentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConcDescuentoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConcDescuentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosPropDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosPropDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosPropTodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosPropTodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosPropValorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosPropValorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosPropValorTieneInfoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosPropValorTieneInfoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConstantesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConstantesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConvenioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConvenioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDatoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDatoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDatoRetroDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDatoRetroDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDatoXConceptoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDatoXConceptoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDatoXLSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDatoXLSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFamiliaresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFamiliaresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormCONCACUMDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormCONCACUMDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormDVacDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormDVacDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormEnvacDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormEnvacDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormGananciasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormGananciasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormGanHijoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormGanHijoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormTablaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormTablaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueFormTablaGanDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueFormTablaGanDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGanTituloDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueGanTituloDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGenerarArchivosTxtDatos2DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueGenerarArchivosTxtDatos2DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGenerarArchivosTxtDS.cs">
+      <DependentUpon>sueGenerarArchivosTxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGenerarArchivosTxtDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueGenerarArchivosTxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGenerarInfDefiniblesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueGenerarInfDefiniblesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueGruposDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueGruposDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueImpNombreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueImpNombreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueInfDefEmpleadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueInfDefEmpleadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueInfDefFormulasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueInfDefFormulasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueInfDefiniblesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueInfDefiniblesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueInfDefiniblesImpresionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueInfDefiniblesImpresionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLegajoFamiliaresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLegajoFamiliaresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqAsientoResDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqAsientoResDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqCategoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqCategoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqCateNombreHistoricoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqCateNombreHistoricoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqEmpleadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqEmpleadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqEmpleadosEliminarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqEmpleadosEliminarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqPersImportesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqPersImportesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqPersImportesHistoricoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqPersImportesHistoricoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqPersImportesXLSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqPersImportesXLSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiquidacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiquidacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiquidacionGenerarDS.cs">
+      <DependentUpon>sueLiquidacionGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiquidacionGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiquidacionGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiquidacionNetoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiquidacionNetoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqVarGlobalesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqVarGlobalesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueLiqVarGlobalHistoricoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueLiqVarGlobalHistoricoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueMovContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueMovContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNominaCfdiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNominaCfdiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNominaCfdiRelacinadoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNominaCfdiRelacinadoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNominasQueEmpleadosCancelarSATDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNominasQueEmpleadosCancelarSATDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNominasQueEmpleadosDescargarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNominasQueEmpleadosDescargarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNominasQueEmpleadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNominasQueEmpleadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePagosHabiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePagosHabiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePagosHabiPendDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePagosHabiPendDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePagosHabiPorEmpleadoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePagosHabiPorEmpleadoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePagosHabiPorEmpleadoPendDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePagosHabiPorEmpleadoPendDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePeriodicidadDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePeriodicidadDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersActividadDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersActividadDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersAforeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersAforeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersAporteAdicDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersAporteAdicDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersAporteVoluntarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersAporteVoluntarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersCategoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersCategoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersCondServicioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersCondServicioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersContableDatosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersContableDatosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersContableDatosSPDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersContableDatosSPDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersConvenioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersConvenioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersDomicilioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersDomicilioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersEditableDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersEditableDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersEstadoCivilDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersEstadoCivilDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersLocalidadDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersLocalidadDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersModContrataDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersModContrataDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersObraSocialDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersObraSocialDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersonalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersonalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersonalXLSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersonalXLSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersPuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersPuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersRebPromoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersRebPromoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersRedZonalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersRedZonalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersSiniestradoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersSiniestradoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersSituacionReviDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersSituacionReviDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersSituaRevisHistoriaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersSituaRevisHistoriaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersSucursalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersSucursalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTareasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTareasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoContratoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoContratoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoEmpleadorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoEmpleadorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoJornadaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoJornadaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoRegimenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoRegimenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePersTipoSDIDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePersTipoSDIDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePlantillaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueRecibosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueRecibosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTablaVacacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTablaVacacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTablaVacRengDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTablaVacRengDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTabTituloDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTabTituloDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTareasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTareasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTerminadaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTerminadaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTerminadaRetroDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTerminadaRetroDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTimbradoRecibosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTimbradoRecibosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueTipoPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueTipoPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVacCorrespondenDatosRangoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVacCorrespondenDatosRangoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVacCorrespondenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVacCorrespondenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVacTomadasDatosDetalladoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVacTomadasDatosDetalladoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVacTomadasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVacTomadasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVarGlobalesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVarGlobalesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVariableCopiarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVariableCopiarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVariableDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVariableDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVariableGrupoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVariableGrupoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVariablesMasivoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVariablesMasivoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVariablesMasivoEliminarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVariablesMasivoEliminarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVezActivaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVezActivaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueXmlReciboDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueXmlReciboDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sueArchivosTxtCuerpoDS.xsc">
+      <DependentUpon>sueArchivosTxtCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivosTxtCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueArchivosTxtCuerpoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueArchivosTxtCuerpoDS.xss">
+      <DependentUpon>sueArchivosTxtCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivosTxtDS.xsc">
+      <DependentUpon>sueArchivosTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivosTxtDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueArchivosTxtDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueArchivosTxtDS.xss">
+      <DependentUpon>sueArchivosTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivoTxtObtenerConceptosDS.xsc">
+      <DependentUpon>sueArchivoTxtObtenerConceptosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivoTxtObtenerConceptosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueArchivoTxtObtenerConceptosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueArchivoTxtObtenerConceptosDS.xss">
+      <DependentUpon>sueArchivoTxtObtenerConceptosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivoTxtObtenerEmpleDS.xsc">
+      <DependentUpon>sueArchivoTxtObtenerEmpleDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueArchivoTxtObtenerEmpleDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueArchivoTxtObtenerEmpleDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueArchivoTxtObtenerEmpleDS.xss">
+      <DependentUpon>sueArchivoTxtObtenerEmpleDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCalcularDS.xsc">
+      <DependentUpon>sueCalcularDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCalcularDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueCalcularDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueCalcularDS.xss">
+      <DependentUpon>sueCalcularDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCategoriasDS.xsc">
+      <DependentUpon>sueCategoriasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCategoriasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>sueCategoriasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueCategoriasDS.xss">
+      <DependentUpon>sueCategoriasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCateNombreDS.xsc">
+      <DependentUpon>sueCateNombreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCateNombreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueCateNombreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueCateNombreDS.xss">
+      <DependentUpon>sueCateNombreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCierreDS.xsc">
+      <DependentUpon>sueCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCierreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueCierreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueCierreDS.xss">
+      <DependentUpon>sueCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCierrePendientesDS.xsc">
+      <DependentUpon>sueCierrePendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueCierrePendientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueCierrePendientesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueCierrePendientesDS.xss">
+      <DependentUpon>sueCierrePendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcAcumDS.xsc">
+      <DependentUpon>sueConcAcumDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcAcumDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConcAcumDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConcAcumDS.xss">
+      <DependentUpon>sueConcAcumDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcAcumSegmentoDS.xsc">
+      <DependentUpon>sueConcAcumSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcAcumSegmentoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConcAcumSegmentoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueConcAcumSegmentoDS.xss">
+      <DependentUpon>sueConcAcumSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcDescuentoDS.xsc">
+      <DependentUpon>sueConcDescuentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConcDescuentoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConcDescuentoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueConcDescuentoDS.xss">
+      <DependentUpon>sueConcDescuentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosDS.xsc">
+      <DependentUpon>sueConceptosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConceptosDS.xss">
+      <DependentUpon>sueConceptosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropDS.xsc">
+      <DependentUpon>sueConceptosPropDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosPropDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConceptosPropDS.xss">
+      <DependentUpon>sueConceptosPropDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropTodosDS.xsc">
+      <DependentUpon>sueConceptosPropTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropTodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosPropTodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConceptosPropTodosDS.xss">
+      <DependentUpon>sueConceptosPropTodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropValorDS.xsc">
+      <DependentUpon>sueConceptosPropValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropValorDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosPropValorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConceptosPropValorDS.xss">
+      <DependentUpon>sueConceptosPropValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropValorTieneInfoDS.xsc">
+      <DependentUpon>sueConceptosPropValorTieneInfoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosPropValorTieneInfoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosPropValorTieneInfoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConceptosPropValorTieneInfoDS.xss">
+      <DependentUpon>sueConceptosPropValorTieneInfoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConstantesDS.xsc">
+      <DependentUpon>sueConstantesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConstantesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConstantesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConstantesDS.xss">
+      <DependentUpon>sueConstantesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConvenioDS.xsc">
+      <DependentUpon>sueConvenioDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConvenioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConvenioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueConvenioDS.xss">
+      <DependentUpon>sueConvenioDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoDS.xsc">
+      <DependentUpon>sueDatoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDatoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueDatoDS.xss">
+      <DependentUpon>sueDatoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoRetroDS.xsc">
+      <DependentUpon>sueDatoRetroDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoRetroDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDatoRetroDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueDatoRetroDS.xss">
+      <DependentUpon>sueDatoRetroDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoXConceptoDS.xsc">
+      <DependentUpon>sueDatoXConceptoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoXConceptoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDatoXConceptoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueDatoXConceptoDS.xss">
+      <DependentUpon>sueDatoXConceptoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoXLSDS.xsc">
+      <DependentUpon>sueDatoXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueDatoXLSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDatoXLSDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueDatoXLSDS.xss">
+      <DependentUpon>sueDatoXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFamiliaresDS.xsc">
+      <DependentUpon>sueFamiliaresDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFamiliaresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFamiliaresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueFamiliaresDS.xss">
+      <DependentUpon>sueFamiliaresDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormCONCACUMDS.xsc">
+      <DependentUpon>sueFormCONCACUMDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormCONCACUMDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormCONCACUMDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueFormCONCACUMDS.xss">
+      <DependentUpon>sueFormCONCACUMDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormDVacDS.xsc">
+      <DependentUpon>sueFormDVacDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormDVacDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormDVacDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueFormDVacDS.xss">
+      <DependentUpon>sueFormDVacDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormEnvacDS.xsc">
+      <DependentUpon>sueFormEnvacDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormEnvacDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormEnvacDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueFormEnvacDS.xss">
+      <DependentUpon>sueFormEnvacDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormGananciasDS.xsc">
+      <DependentUpon>sueFormGananciasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormGananciasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormGananciasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueFormGananciasDS.xss">
+      <DependentUpon>sueFormGananciasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormGanHijoDS.xsc">
+      <DependentUpon>sueFormGanHijoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormGanHijoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormGanHijoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueFormGanHijoDS.xss">
+      <DependentUpon>sueFormGanHijoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormTablaDS.xsc">
+      <DependentUpon>sueFormTablaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormTablaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormTablaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueFormTablaDS.xss">
+      <DependentUpon>sueFormTablaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormTablaGanDS.xsc">
+      <DependentUpon>sueFormTablaGanDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueFormTablaGanDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueFormTablaGanDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueFormTablaGanDS.xss">
+      <DependentUpon>sueFormTablaGanDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGanTituloDS.xsc">
+      <DependentUpon>sueGanTituloDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGanTituloDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueGanTituloDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueGanTituloDS.xss">
+      <DependentUpon>sueGanTituloDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarArchivosTxtDatos2DS.xsc">
+      <DependentUpon>sueGenerarArchivosTxtDatos2DS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarArchivosTxtDatos2DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueGenerarArchivosTxtDatos2DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueGenerarArchivosTxtDatos2DS.xss">
+      <DependentUpon>sueGenerarArchivosTxtDatos2DS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarArchivosTxtDS.xsc">
+      <DependentUpon>sueGenerarArchivosTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarArchivosTxtDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueGenerarArchivosTxtDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueGenerarArchivosTxtDS.xss">
+      <DependentUpon>sueGenerarArchivosTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarInfDefiniblesDS.xsc">
+      <DependentUpon>sueGenerarInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGenerarInfDefiniblesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueGenerarInfDefiniblesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueGenerarInfDefiniblesDS.xss">
+      <DependentUpon>sueGenerarInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGruposDS.xsc">
+      <DependentUpon>sueGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueGruposDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueGruposDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueGruposDS.xss">
+      <DependentUpon>sueGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueImpNombreDS.xsc">
+      <DependentUpon>sueImpNombreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueImpNombreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueImpNombreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueImpNombreDS.xss">
+      <DependentUpon>sueImpNombreDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefEmpleadosDS.xsc">
+      <DependentUpon>sueInfDefEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefEmpleadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueInfDefEmpleadosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueInfDefEmpleadosDS.xss">
+      <DependentUpon>sueInfDefEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefFormulasDS.xsc">
+      <DependentUpon>sueInfDefFormulasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefFormulasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueInfDefFormulasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueInfDefFormulasDS.xss">
+      <DependentUpon>sueInfDefFormulasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefiniblesDS.xsc">
+      <DependentUpon>sueInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefiniblesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueInfDefiniblesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueInfDefiniblesDS.xss">
+      <DependentUpon>sueInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefiniblesImpresionDS.xsc">
+      <DependentUpon>sueInfDefiniblesImpresionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueInfDefiniblesImpresionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueInfDefiniblesImpresionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueInfDefiniblesImpresionDS.xss">
+      <DependentUpon>sueInfDefiniblesImpresionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLegajoFamiliaresDS.xsc">
+      <DependentUpon>sueLegajoFamiliaresDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLegajoFamiliaresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLegajoFamiliaresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLegajoFamiliaresDS.xss">
+      <DependentUpon>sueLegajoFamiliaresDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqAsientoResDS.xsc">
+      <DependentUpon>sueLiqAsientoResDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqAsientoResDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqAsientoResDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqAsientoResDS.xss">
+      <DependentUpon>sueLiqAsientoResDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqCategoDS.xsc">
+      <DependentUpon>sueLiqCategoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqCategoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqCategoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueLiqCategoDS.xss">
+      <DependentUpon>sueLiqCategoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqCateNombreHistoricoDS.xsc">
+      <DependentUpon>sueLiqCateNombreHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqCateNombreHistoricoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqCateNombreHistoricoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqCateNombreHistoricoDS.xss">
+      <DependentUpon>sueLiqCateNombreHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqEmpleadosDS.xsc">
+      <DependentUpon>sueLiqEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqEmpleadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqEmpleadosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqEmpleadosDS.xss">
+      <DependentUpon>sueLiqEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqEmpleadosEliminarDS.xsc">
+      <DependentUpon>sueLiqEmpleadosEliminarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqEmpleadosEliminarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqEmpleadosEliminarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqEmpleadosEliminarDS.xss">
+      <DependentUpon>sueLiqEmpleadosEliminarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesDS.xsc">
+      <DependentUpon>sueLiqPersImportesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqPersImportesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueLiqPersImportesDS.xss">
+      <DependentUpon>sueLiqPersImportesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesHistoricoDS.xsc">
+      <DependentUpon>sueLiqPersImportesHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesHistoricoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqPersImportesHistoricoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqPersImportesHistoricoDS.xss">
+      <DependentUpon>sueLiqPersImportesHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesXLSDS.xsc">
+      <DependentUpon>sueLiqPersImportesXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqPersImportesXLSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqPersImportesXLSDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueLiqPersImportesXLSDS.xss">
+      <DependentUpon>sueLiqPersImportesXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionDS.xsc">
+      <DependentUpon>sueLiquidacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiquidacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiquidacionDS.xss">
+      <DependentUpon>sueLiquidacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionGenerarDS.xsc">
+      <DependentUpon>sueLiquidacionGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiquidacionGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiquidacionGenerarDS.xss">
+      <DependentUpon>sueLiquidacionGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionNetoDS.xsc">
+      <DependentUpon>sueLiquidacionNetoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiquidacionNetoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiquidacionNetoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueLiquidacionNetoDS.xss">
+      <DependentUpon>sueLiquidacionNetoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqVarGlobalesDS.xsc">
+      <DependentUpon>sueLiqVarGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqVarGlobalesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqVarGlobalesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueLiqVarGlobalesDS.xss">
+      <DependentUpon>sueLiqVarGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqVarGlobalHistoricoDS.xsc">
+      <DependentUpon>sueLiqVarGlobalHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueLiqVarGlobalHistoricoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueLiqVarGlobalHistoricoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueLiqVarGlobalHistoricoDS.xss">
+      <DependentUpon>sueLiqVarGlobalHistoricoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueMovContDS.xsc">
+      <DependentUpon>sueMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueMovContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueMovContDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueMovContDS.xss">
+      <DependentUpon>sueMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominaCfdiDS.xsc">
+      <DependentUpon>sueNominaCfdiDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominaCfdiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNominaCfdiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueNominaCfdiDS.xss">
+      <DependentUpon>sueNominaCfdiDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominaCfdiRelacinadoDS.xsc">
+      <DependentUpon>sueNominaCfdiRelacinadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominaCfdiRelacinadoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNominaCfdiRelacinadoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueNominaCfdiRelacinadoDS.xss">
+      <DependentUpon>sueNominaCfdiRelacinadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosCancelarSATDS.xsc">
+      <DependentUpon>sueNominasQueEmpleadosCancelarSATDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosCancelarSATDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNominasQueEmpleadosCancelarSATDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueNominasQueEmpleadosCancelarSATDS.xss">
+      <DependentUpon>sueNominasQueEmpleadosCancelarSATDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosDescargarDS.xsc">
+      <DependentUpon>sueNominasQueEmpleadosDescargarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosDescargarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNominasQueEmpleadosDescargarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueNominasQueEmpleadosDescargarDS.xss">
+      <DependentUpon>sueNominasQueEmpleadosDescargarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosDS.xsc">
+      <DependentUpon>sueNominasQueEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueNominasQueEmpleadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNominasQueEmpleadosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueNominasQueEmpleadosDS.xss">
+      <DependentUpon>sueNominasQueEmpleadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiDS.xsc">
+      <DependentUpon>suePagosHabiDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePagosHabiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePagosHabiDS.xss">
+      <DependentUpon>suePagosHabiDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPendDS.xsc">
+      <DependentUpon>suePagosHabiPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPendDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePagosHabiPendDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="suePagosHabiPendDS.xss">
+      <DependentUpon>suePagosHabiPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoDS.xsc">
+      <DependentUpon>suePagosHabiPorEmpleadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePagosHabiPorEmpleadoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoDS.xss">
+      <DependentUpon>suePagosHabiPorEmpleadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoPendDS.xsc">
+      <DependentUpon>suePagosHabiPorEmpleadoPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoPendDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePagosHabiPorEmpleadoPendDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="suePagosHabiPorEmpleadoPendDS.xss">
+      <DependentUpon>suePagosHabiPorEmpleadoPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePeriodicidadDS.xsc">
+      <DependentUpon>suePeriodicidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePeriodicidadDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePeriodicidadDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePeriodicidadDS.xss">
+      <DependentUpon>suePeriodicidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersActividadDS.xsc">
+      <DependentUpon>suePersActividadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersActividadDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersActividadDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersActividadDS.xss">
+      <DependentUpon>suePersActividadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAforeDS.xsc">
+      <DependentUpon>suePersAforeDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAforeDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersAforeDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersAforeDS.xss">
+      <DependentUpon>suePersAforeDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAporteAdicDS.xsc">
+      <DependentUpon>suePersAporteAdicDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAporteAdicDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersAporteAdicDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersAporteAdicDS.xss">
+      <DependentUpon>suePersAporteAdicDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAporteVoluntarioDS.xsc">
+      <DependentUpon>suePersAporteVoluntarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersAporteVoluntarioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersAporteVoluntarioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersAporteVoluntarioDS.xss">
+      <DependentUpon>suePersAporteVoluntarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersCategoDS.xsc">
+      <DependentUpon>suePersCategoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersCategoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersCategoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersCategoDS.xss">
+      <DependentUpon>suePersCategoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersCondServicioDS.xsc">
+      <DependentUpon>suePersCondServicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersCondServicioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersCondServicioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersCondServicioDS.xss">
+      <DependentUpon>suePersCondServicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersContableDatosDS.xsc">
+      <DependentUpon>suePersContableDatosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersContableDatosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersContableDatosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersContableDatosDS.xss">
+      <DependentUpon>suePersContableDatosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersContableDatosSPDS.xsc">
+      <DependentUpon>suePersContableDatosSPDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersContableDatosSPDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersContableDatosSPDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersContableDatosSPDS.xss">
+      <DependentUpon>suePersContableDatosSPDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersConvenioDS.xsc">
+      <DependentUpon>suePersConvenioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersConvenioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersConvenioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersConvenioDS.xss">
+      <DependentUpon>suePersConvenioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersDomicilioDS.xsc">
+      <DependentUpon>suePersDomicilioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersDomicilioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersDomicilioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersDomicilioDS.xss">
+      <DependentUpon>suePersDomicilioDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersEditableDS.xsc">
+      <DependentUpon>suePersEditableDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersEditableDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersEditableDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersEditableDS.xss">
+      <DependentUpon>suePersEditableDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersEstadoCivilDS.xsc">
+      <DependentUpon>suePersEstadoCivilDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersEstadoCivilDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersEstadoCivilDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersEstadoCivilDS.xss">
+      <DependentUpon>suePersEstadoCivilDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersLocalidadDS.xsc">
+      <DependentUpon>suePersLocalidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersLocalidadDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersLocalidadDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersLocalidadDS.xss">
+      <DependentUpon>suePersLocalidadDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersModContrataDS.xsc">
+      <DependentUpon>suePersModContrataDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersModContrataDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersModContrataDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersModContrataDS.xss">
+      <DependentUpon>suePersModContrataDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersObraSocialDS.xsc">
+      <DependentUpon>suePersObraSocialDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersObraSocialDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersObraSocialDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersObraSocialDS.xss">
+      <DependentUpon>suePersObraSocialDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersonalDS.xsc">
+      <DependentUpon>suePersonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersonalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersonalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersonalDS.xss">
+      <DependentUpon>suePersonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersonalXLSDS.xsc">
+      <DependentUpon>suePersonalXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersonalXLSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersonalXLSDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="suePersonalXLSDS.xss">
+      <DependentUpon>suePersonalXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersPuestosDS.xsc">
+      <DependentUpon>suePersPuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersPuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersPuestosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersPuestosDS.xss">
+      <DependentUpon>suePersPuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersRebPromoDS.xsc">
+      <DependentUpon>suePersRebPromoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersRebPromoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersRebPromoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersRebPromoDS.xss">
+      <DependentUpon>suePersRebPromoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersRedZonalDS.xsc">
+      <DependentUpon>suePersRedZonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersRedZonalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersRedZonalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersRedZonalDS.xss">
+      <DependentUpon>suePersRedZonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSiniestradoDS.xsc">
+      <DependentUpon>suePersSiniestradoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSiniestradoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersSiniestradoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersSiniestradoDS.xss">
+      <DependentUpon>suePersSiniestradoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSituacionReviDS.xsc">
+      <DependentUpon>suePersSituacionReviDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSituacionReviDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersSituacionReviDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersSituacionReviDS.xss">
+      <DependentUpon>suePersSituacionReviDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSituaRevisHistoriaDS.xsc">
+      <DependentUpon>suePersSituaRevisHistoriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSituaRevisHistoriaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersSituaRevisHistoriaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersSituaRevisHistoriaDS.xss">
+      <DependentUpon>suePersSituaRevisHistoriaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSucursalDS.xsc">
+      <DependentUpon>suePersSucursalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersSucursalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersSucursalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersSucursalDS.xss">
+      <DependentUpon>suePersSucursalDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTareasDS.xsc">
+      <DependentUpon>suePersTareasDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTareasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTareasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTareasDS.xss">
+      <DependentUpon>suePersTareasDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoContratoDS.xsc">
+      <DependentUpon>suePersTipoContratoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoContratoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoContratoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoContratoDS.xss">
+      <DependentUpon>suePersTipoContratoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoEmpleadorDS.xsc">
+      <DependentUpon>suePersTipoEmpleadorDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoEmpleadorDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoEmpleadorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoEmpleadorDS.xss">
+      <DependentUpon>suePersTipoEmpleadorDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoJornadaDS.xsc">
+      <DependentUpon>suePersTipoJornadaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoJornadaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoJornadaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoJornadaDS.xss">
+      <DependentUpon>suePersTipoJornadaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoPagoDS.xsc">
+      <DependentUpon>suePersTipoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoPagoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoPagoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoPagoDS.xss">
+      <DependentUpon>suePersTipoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoRegimenDS.xsc">
+      <DependentUpon>suePersTipoRegimenDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoRegimenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoRegimenDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoRegimenDS.xss">
+      <DependentUpon>suePersTipoRegimenDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoSDIDS.xsc">
+      <DependentUpon>suePersTipoSDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePersTipoSDIDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePersTipoSDIDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePersTipoSDIDS.xss">
+      <DependentUpon>suePersTipoSDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDS.xsc">
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePlantillaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePlantillaDS.xss">
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePuestosDS.xsc">
+      <DependentUpon>suePuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>suePuestosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="suePuestosDS.xss">
+      <DependentUpon>suePuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueRecibosDS.xsc">
+      <DependentUpon>sueRecibosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueRecibosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueRecibosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueRecibosDS.xss">
+      <DependentUpon>sueRecibosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTablaVacacionDS.xsc">
+      <DependentUpon>sueTablaVacacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTablaVacacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTablaVacacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueTablaVacacionDS.xss">
+      <DependentUpon>sueTablaVacacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTablaVacRengDS.xsc">
+      <DependentUpon>sueTablaVacRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTablaVacRengDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTablaVacRengDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueTablaVacRengDS.xss">
+      <DependentUpon>sueTablaVacRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTabTituloDS.xsc">
+      <DependentUpon>sueTabTituloDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTabTituloDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTabTituloDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueTabTituloDS.xss">
+      <DependentUpon>sueTabTituloDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTareasDS.xsc">
+      <DependentUpon>sueTareasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTareasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>sueTareasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueTareasDS.xss">
+      <DependentUpon>sueTareasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTerminadaDS.xsc">
+      <DependentUpon>sueTerminadaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTerminadaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTerminadaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueTerminadaDS.xss">
+      <DependentUpon>sueTerminadaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTerminadaRetroDS.xsc">
+      <DependentUpon>sueTerminadaRetroDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTerminadaRetroDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTerminadaRetroDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueTerminadaRetroDS.xss">
+      <DependentUpon>sueTerminadaRetroDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTimbradoRecibosDS.xsc">
+      <DependentUpon>sueTimbradoRecibosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTimbradoRecibosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTimbradoRecibosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueTimbradoRecibosDS.xss">
+      <DependentUpon>sueTimbradoRecibosDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTipoPagoDS.xsc">
+      <DependentUpon>sueTipoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueTipoPagoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueTipoPagoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueTipoPagoDS.xss">
+      <DependentUpon>sueTipoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacCorrespondenDatosRangoDS.xsc">
+      <DependentUpon>sueVacCorrespondenDatosRangoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacCorrespondenDatosRangoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVacCorrespondenDatosRangoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVacCorrespondenDatosRangoDS.xss">
+      <DependentUpon>sueVacCorrespondenDatosRangoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacCorrespondenDS.xsc">
+      <DependentUpon>sueVacCorrespondenDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacCorrespondenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVacCorrespondenDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueVacCorrespondenDS.xss">
+      <DependentUpon>sueVacCorrespondenDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacTomadasDatosDetalladoDS.xsc">
+      <DependentUpon>sueVacTomadasDatosDetalladoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacTomadasDatosDetalladoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVacTomadasDatosDetalladoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVacTomadasDatosDetalladoDS.xss">
+      <DependentUpon>sueVacTomadasDatosDetalladoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacTomadasDS.xsc">
+      <DependentUpon>sueVacTomadasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacTomadasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVacTomadasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueVacTomadasDS.xss">
+      <DependentUpon>sueVacTomadasDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVarGlobalesDS.xsc">
+      <DependentUpon>sueVarGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVarGlobalesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVarGlobalesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVarGlobalesDS.xss">
+      <DependentUpon>sueVarGlobalesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableCopiarDS.xsc">
+      <DependentUpon>sueVariableCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableCopiarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVariableCopiarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVariableCopiarDS.xss">
+      <DependentUpon>sueVariableCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableDS.xsc">
+      <DependentUpon>sueVariableDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVariableDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVariableDS.xss">
+      <DependentUpon>sueVariableDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableGrupoDS.xsc">
+      <DependentUpon>sueVariableGrupoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariableGrupoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVariableGrupoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueVariableGrupoDS.xss">
+      <DependentUpon>sueVariableGrupoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariablesMasivoDS.xsc">
+      <DependentUpon>sueVariablesMasivoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariablesMasivoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVariablesMasivoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVariablesMasivoDS.xss">
+      <DependentUpon>sueVariablesMasivoDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariablesMasivoEliminarDS.xsc">
+      <DependentUpon>sueVariablesMasivoEliminarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVariablesMasivoEliminarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVariablesMasivoEliminarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVariablesMasivoEliminarDS.xss">
+      <DependentUpon>sueVariablesMasivoEliminarDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVezActivaDS.xsc">
+      <DependentUpon>sueVezActivaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVezActivaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVezActivaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVezActivaDS.xss">
+      <DependentUpon>sueVezActivaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueXmlReciboDS.xsc">
+      <DependentUpon>sueXmlReciboDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueXmlReciboDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueXmlReciboDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueXmlReciboDS.xss">
+      <DependentUpon>sueXmlReciboDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

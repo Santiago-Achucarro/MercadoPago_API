@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tesCheqTercerosCambioDS" targetNamespace="http://tempuri.org/tesCheqTercerosCambioDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/tesCheqTercerosCambioDS.xsd" xmlns:mstns="http://tempuri.org/tesCheqTercerosCambioDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="tesCheqTercerosCambioDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Banco_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescBanco" type="xs:string" minOccurs="0" />
+<xs:element name="numCheque" type="xs:int" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cheques">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="tesCheqTerceros" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento" type="xs:string" minOccurs="0" />
+<xs:element name="Cartera_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescCartera" type="xs:string" minOccurs="0" />
+<xs:element name="Banco_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescBanco" type="xs:string" minOccurs="0" />
+<xs:element name="numCheque" type="xs:int" minOccurs="0" />
+<xs:element name="sucBanco" type="xs:string" minOccurs="0" />
+<xs:element name="Estado_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescEstado" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Clearing" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionClearing" type="xs:string" minOccurs="0" />
+<xs:element name="SecuenciaActual" type="xs:short" minOccurs="0" />
+<xs:element name="ClearingDias" type="xs:short" minOccurs="0" />
+<xs:element name="cuentaBanco" type="xs:string" minOccurs="0" />
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

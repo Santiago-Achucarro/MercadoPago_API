@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genPermisosDatosTodosDS" targetNamespace="http://tempuri.org/genPermisosDatosTodosDS.xsd" xmlns:mstns="http://tempuri.org/genPermisosDatosTodosDS.xsd" xmlns="http://tempuri.org/genPermisosDatosTodosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genPermisosDatosTodosDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="genPermisosDatosTodosDS" msprop:Generator_UserDSName="genPermisosDatosTodosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usuario_Id" msprop:Generator_ColumnVarNameInTable="columnUsuario_Id" msprop:Generator_ColumnPropNameInRow="Usuario_Id" msprop:Generator_ColumnPropNameInTable="Usuario_IdColumn" msprop:Generator_UserColumnName="Usuario_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellido_y_Nombres" msprop:Generator_ColumnVarNameInTable="columnApellido_y_Nombres" msprop:Generator_ColumnPropNameInRow="Apellido_y_Nombres" msprop:Generator_ColumnPropNameInTable="Apellido_y_NombresColumn" msprop:Generator_UserColumnName="Apellido_y_Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Permisos" msprop:Generator_TableClassName="PermisosDataTable" msprop:Generator_TableVarName="tablePermisos" msprop:Generator_TablePropName="Permisos" msprop:Generator_RowDeletingName="PermisosRowDeleting" msprop:Generator_RowChangingName="PermisosRowChanging" msprop:Generator_RowEvHandlerName="PermisosRowChangeEventHandler" msprop:Generator_RowDeletedName="PermisosRowDeleted" msprop:Generator_UserTableName="Permisos" msprop:Generator_RowChangedName="PermisosRowChanged" msprop:Generator_RowEvArgName="PermisosRowChangeEvent" msprop:Generator_RowClassName="PermisosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Formulario_Id" msprop:Generator_ColumnVarNameInTable="columnFormulario_Id" msprop:Generator_ColumnPropNameInRow="Formulario_Id" msprop:Generator_ColumnPropNameInTable="Formulario_IdColumn" msprop:Generator_UserColumnName="Formulario_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionFormulario" msprop:Generator_ColumnVarNameInTable="columnDescripcionFormulario" msprop:Generator_ColumnPropNameInRow="DescripcionFormulario" msprop:Generator_ColumnPropNameInTable="DescripcionFormularioColumn" msprop:Generator_UserColumnName="DescripcionFormulario" type="xs:string" minOccurs="0" />
+              <xs:element name="disFormularios" msprop:Generator_ColumnVarNameInTable="columndisFormularios" msprop:Generator_ColumnPropNameInRow="disFormularios" msprop:Generator_ColumnPropNameInTable="disFormulariosColumn" msprop:Generator_UserColumnName="disFormularios" type="xs:int" minOccurs="0" />
+              <xs:element name="Empresa_id" msprop:Generator_ColumnVarNameInTable="columnEmpresa_id" msprop:Generator_ColumnPropNameInRow="Empresa_id" msprop:Generator_ColumnPropNameInTable="Empresa_idColumn" msprop:Generator_UserColumnName="Empresa_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Consultar" msprop:Generator_ColumnVarNameInTable="columnConsultar" msprop:Generator_ColumnPropNameInRow="Consultar" msprop:Generator_ColumnPropNameInTable="ConsultarColumn" msprop:Generator_UserColumnName="Consultar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Actualizar" msprop:Generator_ColumnVarNameInTable="columnActualizar" msprop:Generator_ColumnPropNameInRow="Actualizar" msprop:Generator_ColumnPropNameInTable="ActualizarColumn" msprop:Generator_UserColumnName="Actualizar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Borrar" msprop:Generator_ColumnVarNameInTable="columnBorrar" msprop:Generator_ColumnPropNameInRow="Borrar" msprop:Generator_ColumnPropNameInTable="BorrarColumn" msprop:Generator_UserColumnName="Borrar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Postear" msprop:Generator_ColumnVarNameInTable="columnPostear" msprop:Generator_ColumnPropNameInRow="Postear" msprop:Generator_ColumnPropNameInTable="PostearColumn" msprop:Generator_UserColumnName="Postear" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ModificaCodigos" msprop:Generator_ColumnVarNameInTable="columnModificaCodigos" msprop:Generator_ColumnPropNameInRow="ModificaCodigos" msprop:Generator_ColumnPropNameInTable="ModificaCodigosColumn" msprop:Generator_UserColumnName="ModificaCodigos" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

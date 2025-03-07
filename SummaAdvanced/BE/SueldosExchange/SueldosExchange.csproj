@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07B53804-7A1F-41A2-AD34-6878335A6635}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SueldosExchange</RootNamespace>
+    <AssemblyName>SueldosExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sueArchivosTxtActionEnum.cs" />
+    <Compile Include="sueArchivosTxtActionExchange.cs" />
+    <Compile Include="sueArchivosTxtCuerpoActionEnum.cs" />
+    <Compile Include="sueArchivosTxtCuerpoActionExchange.cs" />
+    <Compile Include="sueArchivoTxtObtenerEmpleActionEnum.cs" />
+    <Compile Include="sueArchivoTxtObtenerEmpleActionExchange.cs" />
+    <Compile Include="sueCalcularActionEnum.cs" />
+    <Compile Include="sueCalcularActionExchange.cs" />
+    <Compile Include="sueCategoriasActionEnum.cs" />
+    <Compile Include="sueCategoriasActionExchange.cs" />
+    <Compile Include="sueCateNombreActionEnum.cs" />
+    <Compile Include="sueCateNombreActionExchange.cs" />
+    <Compile Include="sueCierreActionEnum.cs" />
+    <Compile Include="sueCierreActionExchange.cs" />
+    <Compile Include="sueCierrePendientesActionEnum.cs" />
+    <Compile Include="sueCierrePendientesActionExchange.cs" />
+    <Compile Include="sueConcAcumActionEnum.cs" />
+    <Compile Include="sueConcAcumActionExchange.cs" />
+    <Compile Include="sueConcAcumSegmentoActionEnum.cs" />
+    <Compile Include="sueConcAcumSegmentoActionExchange.cs" />
+    <Compile Include="sueConcDescuentoActionEnum.cs" />
+    <Compile Include="sueConcDescuentoActionExchange.cs" />
+    <Compile Include="sueConceptosActionEnum.cs" />
+    <Compile Include="sueConceptosActionExchange.cs" />
+    <Compile Include="sueConceptosPropActionEnum.cs" />
+    <Compile Include="sueConceptosPropActionExchange.cs" />
+    <Compile Include="sueConceptosPropTodosActionEnum.cs" />
+    <Compile Include="sueConceptosPropTodosActionExchange.cs" />
+    <Compile Include="sueConvenioActionEnum.cs" />
+    <Compile Include="sueConvenioActionExchange.cs" />
+    <Compile Include="sueDatoActionEnum.cs" />
+    <Compile Include="sueDatoActionExchange.cs" />
+    <Compile Include="sueDatoXConceptoActionEnum.cs" />
+    <Compile Include="sueDatoXConceptoActionExchange.cs" />
+    <Compile Include="sueDatoXLSActionEnum.cs" />
+    <Compile Include="sueDatoXLSActionExchange.cs" />
+    <Compile Include="sueFamiliaresActionEnum.cs" />
+    <Compile Include="sueFamiliaresActionExchange.cs" />
+    <Compile Include="sueGanTituloActionEnum.cs" />
+    <Compile Include="sueGanTituloActionExchange.cs" />
+    <Compile Include="sueGenerarArchivosTxtActionEnum.cs" />
+    <Compile Include="sueGenerarArchivosTxtActionExchange.cs" />
+    <Compile Include="sueGenerarArchivosTxtDatos2ActionEnum.cs" />
+    <Compile Include="sueGenerarArchivosTxtDatos2ActionExchange.cs" />
+    <Compile Include="sueGenerarInfDefiniblesActionEnum.cs" />
+    <Compile Include="sueGenerarInfDefiniblesActionExchange.cs" />
+    <Compile Include="sueGruposActionEnum.cs" />
+    <Compile Include="sueGruposActionExchange.cs" />
+    <Compile Include="sueImpNombreActionEnum.cs" />
+    <Compile Include="sueImpNombreActionExchange.cs" />
+    <Compile Include="sueInfDefiniblesActionEnum.cs" />
+    <Compile Include="sueInfDefiniblesActionExchange.cs" />
+    <Compile Include="sueLegajoFamiliaresActionEnum.cs" />
+    <Compile Include="sueLegajoFamiliaresActionExchange.cs" />
+    <Compile Include="sueLiqCateNombreHistoricoActionEnum.cs" />
+    <Compile Include="sueLiqCateNombreHistoricoActionExchange.cs" />
+    <Compile Include="sueLiqEmpleadosActionEnum.cs" />
+    <Compile Include="sueLiqEmpleadosActionExchange.cs" />
+    <Compile Include="sueLiqPersImportesActionEnum.cs" />
+    <Compile Include="sueLiqPersImportesActionExchange.cs" />
+    <Compile Include="sueLiqPersImportesHistoricoActionEnum.cs" />
+    <Compile Include="sueLiqPersImportesHistoricoActionExchange.cs" />
+    <Compile Include="sueLiqPersImportesXLSActionEnum.cs" />
+    <Compile Include="sueLiqPersImportesXLSActionExchange.cs" />
+    <Compile Include="sueLiquidacionActionEnum.cs" />
+    <Compile Include="sueLiquidacionActionExchange.cs" />
+    <Compile Include="sueLiquidacionGenerarActionEnum.cs" />
+    <Compile Include="sueLiquidacionGenerarActionExchange.cs" />
+    <Compile Include="sueLiqVarGlobalesActionEnum.cs" />
+    <Compile Include="sueLiqVarGlobalesActionExchange.cs" />
+    <Compile Include="sueLiqVarGlobalHistoricoActionEnum.cs" />
+    <Compile Include="sueLiqVarGlobalHistoricoActionExchange.cs" />
+    <Compile Include="sueMovContActionEnum.cs" />
+    <Compile Include="sueMovContActionExchange.cs" />
+    <Compile Include="sueNominaCfdiActionEnum.cs" />
+    <Compile Include="sueNominaCfdiActionExchange.cs" />
+    <Compile Include="suePagosHabiActionEnum.cs" />
+    <Compile Include="suePagosHabiActionExchange.cs" />
+    <Compile Include="suePagosHabiPendActionEnum.cs" />
+    <Compile Include="suePagosHabiPendActionExchange.cs" />
+    <Compile Include="suePagosHabiPorEmpleadoActionEnum.cs" />
+    <Compile Include="suePagosHabiPorEmpleadoActionExchange.cs" />
+    <Compile Include="suePagosHabiPorEmpleadoPendActionEnum.cs" />
+    <Compile Include="suePagosHabiPorEmpleadoPendActionExchange.cs" />
+    <Compile Include="suePeriodicidadActionEnum.cs" />
+    <Compile Include="suePeriodicidadActionExchange.cs" />
+    <Compile Include="suePersonalActionEnum.cs" />
+    <Compile Include="suePersonalActionExchange.cs" />
+    <Compile Include="suePersonalXLSActionEnum.cs" />
+    <Compile Include="suePersonalXLSActionExchange.cs" />
+    <Compile Include="suePersRebPromoActionEnum.cs" />
+    <Compile Include="suePersRebPromoActionExchange.cs" />
+    <Compile Include="suePlantillaActionEnum.cs" />
+    <Compile Include="suePlantillaActionExchange.cs" />
+    <Compile Include="suePuestosActionEnum.cs" />
+    <Compile Include="suePuestosActionExchange.cs" />
+    <Compile Include="sueRecibosActionEnum.cs" />
+    <Compile Include="sueRecibosActionExchange.cs" />
+    <Compile Include="sueTablaVacacionActionEnum.cs" />
+    <Compile Include="sueTablaVacacionActionExchange.cs" />
+    <Compile Include="sueTablaVacRengActionEnum.cs" />
+    <Compile Include="sueTablaVacRengActionExchange.cs" />
+    <Compile Include="sueTabTituloActionEnum.cs" />
+    <Compile Include="sueTabTituloActionExchange.cs" />
+    <Compile Include="sueTareasActionEnum.cs" />
+    <Compile Include="sueTareasActionExchange.cs" />
+    <Compile Include="sueTerminadaActionEnum.cs" />
+    <Compile Include="sueTerminadaActionExchange.cs" />
+    <Compile Include="sueTerminadaRetroActionEnum.cs" />
+    <Compile Include="sueTerminadaRetroActionExchange.cs" />
+    <Compile Include="sueTimbradoRecibosActionEnum.cs" />
+    <Compile Include="sueTimbradoRecibosActionExchange.cs" />
+    <Compile Include="sueTipoPagoActionEnum.cs" />
+    <Compile Include="sueTipoPagoActionExchange.cs" />
+    <Compile Include="sueVacCorrespondenActionEnum.cs" />
+    <Compile Include="sueVacCorrespondenActionExchange.cs" />
+    <Compile Include="sueVacCorrespondenDatosRangoActionEnum.cs" />
+    <Compile Include="sueVacCorrespondenDatosRangoActionExchange.cs" />
+    <Compile Include="sueVacTomadasActionEnum.cs" />
+    <Compile Include="sueVacTomadasActionExchange.cs" />
+    <Compile Include="sueVacTomadasDatosDetalladoActionEnum.cs" />
+    <Compile Include="sueVacTomadasDatosDetalladoActionExchange.cs" />
+    <Compile Include="sueVarGlobalesActionEnum.cs" />
+    <Compile Include="sueVarGlobalesActionExchange.cs" />
+    <Compile Include="sueVariableActionEnum.cs" />
+    <Compile Include="sueVariableActionExchange.cs" />
+    <Compile Include="sueVariableCopiarActionEnum.cs" />
+    <Compile Include="sueVariableCopiarActionExchange.cs" />
+    <Compile Include="sueVariableGrupoActionEnum.cs" />
+    <Compile Include="sueVariableGrupoActionExchange.cs" />
+    <Compile Include="sueVariablesMasivoActionEnum.cs" />
+    <Compile Include="sueVariablesMasivoActionExchange.cs" />
+    <Compile Include="sueVariablesMasivoEliminarActionEnum.cs" />
+    <Compile Include="sueVariablesMasivoEliminarActionExchange.cs" />
+    <Compile Include="sueInfDefiniblesImpresionActionEnum.cs" />
+    <Compile Include="sueInfDefiniblesImpresionActionExchange.cs" />
+    <Compile Include="sueVezActivaActionEnum.cs" />
+    <Compile Include="sueVezActivaActionExchange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\SueldosCommon\SueldosCommon\SueldosCommon.csproj">
+      <Project>{d300b465-e303-4bfa-a906-0bfa6d7105e8}</Project>
+      <Name>SueldosCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

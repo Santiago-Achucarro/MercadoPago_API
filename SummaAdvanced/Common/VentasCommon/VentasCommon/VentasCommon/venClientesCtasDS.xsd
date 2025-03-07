@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="venClientesCtasDS" targetNamespace="http://tempuri.org/venClientesCtasDS.xsd" xmlns:mstns="http://tempuri.org/venClientesCtasDS.xsd" xmlns="http://tempuri.org/venClientesCtasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="venClientesCtasDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="venClientesCtasDS" msprop:Generator_UserDSName="venClientesCtasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="genEntidades" msprop:Generator_ColumnVarNameInTable="columngenEntidades" msprop:Generator_ColumnPropNameInRow="genEntidades" msprop:Generator_ColumnPropNameInTable="genEntidadesColumn" msprop:Generator_UserColumnName="genEntidades" type="xs:long" minOccurs="0" />
+              <xs:element name="Cliente_Id" msprop:Generator_ColumnVarNameInTable="columnCliente_Id" msprop:Generator_ColumnPropNameInRow="Cliente_Id" msprop:Generator_ColumnPropNameInTable="Cliente_IdColumn" msprop:Generator_UserColumnName="Cliente_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Moneda_Id" msprop:Generator_ColumnVarNameInTable="columnMoneda_Id" msprop:Generator_ColumnPropNameInRow="Moneda_Id" msprop:Generator_ColumnPropNameInTable="Moneda_IdColumn" msprop:Generator_UserColumnName="Moneda_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionMonedas" msprop:Generator_ColumnVarNameInTable="columnDescripcionMonedas" msprop:Generator_ColumnPropNameInRow="DescripcionMonedas" msprop:Generator_ColumnPropNameInTable="DescripcionMonedasColumn" msprop:Generator_UserColumnName="DescripcionMonedas" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaDxVtas" msprop:Generator_ColumnVarNameInTable="columnCuentaDxVtas" msprop:Generator_ColumnPropNameInRow="CuentaDxVtas" msprop:Generator_ColumnPropNameInTable="CuentaDxVtasColumn" msprop:Generator_UserColumnName="CuentaDxVtas" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCuentaDxVtas" msprop:Generator_ColumnVarNameInTable="columnDescripcionCuentaDxVtas" msprop:Generator_ColumnPropNameInRow="DescripcionCuentaDxVtas" msprop:Generator_ColumnPropNameInTable="DescripcionCuentaDxVtasColumn" msprop:Generator_UserColumnName="DescripcionCuentaDxVtas" type="xs:string" minOccurs="0" />
+              <xs:element name="CtaFactAnticipo" msprop:Generator_ColumnVarNameInTable="columnCtaFactAnticipo" msprop:Generator_ColumnPropNameInRow="CtaFactAnticipo" msprop:Generator_ColumnPropNameInTable="CtaFactAnticipoColumn" msprop:Generator_UserColumnName="CtaFactAnticipo" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCtaFactAnticipo" msprop:Generator_ColumnVarNameInTable="columnDescripcionCtaFactAnticipo" msprop:Generator_ColumnPropNameInRow="DescripcionCtaFactAnticipo" msprop:Generator_ColumnPropNameInTable="DescripcionCtaFactAnticipoColumn" msprop:Generator_UserColumnName="DescripcionCtaFactAnticipo" type="xs:string" minOccurs="0" />
+              <xs:element name="CtaAnticipo" msprop:Generator_ColumnVarNameInTable="columnCtaAnticipo" msprop:Generator_ColumnPropNameInRow="CtaAnticipo" msprop:Generator_ColumnPropNameInTable="CtaAnticipoColumn" msprop:Generator_UserColumnName="CtaAnticipo" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCtaAnticipo" msprop:Generator_ColumnVarNameInTable="columnDescripcionCtaAnticipo" msprop:Generator_ColumnPropNameInRow="DescripcionCtaAnticipo" msprop:Generator_ColumnPropNameInTable="DescripcionCtaAnticipoColumn" msprop:Generator_UserColumnName="DescripcionCtaAnticipo" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

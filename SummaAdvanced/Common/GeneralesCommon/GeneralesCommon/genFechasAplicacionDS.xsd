@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genFechasAplicacionDS" targetNamespace="http://tempuri.org/genFechasAplicacionDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genFechasAplicacionDS.xsd" xmlns:mstns="http://tempuri.org/genFechasAplicacionDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genFechasAplicacionDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Fecha_Ap" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreCompras" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreVentas" type="xs:dateTime" minOccurs="0" />
+<xs:element name="EsCompras" type="xs:string" minOccurs="0" />
+<xs:element name="EsVentas" type="xs:string" minOccurs="0" />
+<xs:element name="EsCompras_Ap" type="xs:string" minOccurs="0" />
+<xs:element name="EsVentas_AP" type="xs:string" minOccurs="0" />
+<xs:element name="Asiento_Id" type="xs:long" minOccurs="0" />
+<xs:element name="Asiento_Id_Ap" type="xs:long" minOccurs="0" />
+<xs:element name="Cambio" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cambio_Ap" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

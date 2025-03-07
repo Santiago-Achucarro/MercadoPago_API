@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sueRecibosDS" targetNamespace="http://tempuri.org/sueRecibosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/sueRecibosDS.xsd" xmlns:mstns="http://tempuri.org/sueRecibosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="sueRecibosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Segmento_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento1N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento2N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento3N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento4N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento1C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento2C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento3C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento4C" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionNomina" type="xs:string" minOccurs="0" />
+<xs:element name="Anio" type="xs:int" minOccurs="0" />
+<xs:element name="Mes" type="xs:int" minOccurs="0" />
+<xs:element name="Decena" type="xs:int" minOccurs="0" />
+<xs:element name="Quincena" type="xs:int" minOccurs="0" />
+<xs:element name="Semana" type="xs:int" minOccurs="0" />
+<xs:element name="Vez" type="xs:int" minOccurs="0" />
+<xs:element name="Grupo_Id" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionGrupo" type="xs:string" minOccurs="0" />
+<xs:element name="FechaPago" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+<xs:element name="FechaIngreso" type="xs:dateTime" minOccurs="0" />
+<xs:element name="SDI" type="xs:decimal" minOccurs="0" />
+<xs:element name="SD" type="xs:decimal" minOccurs="0" />
+<xs:element name="DiasPagados" type="xs:int" minOccurs="0" />
+<xs:element name="Neto" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Concepto_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Dato" type="xs:decimal" minOccurs="0" />
+<xs:element name="Dato2" type="xs:decimal" minOccurs="0" />
+<xs:element name="Percepciones" type="xs:decimal" minOccurs="0" />
+<xs:element name="Deducciones" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

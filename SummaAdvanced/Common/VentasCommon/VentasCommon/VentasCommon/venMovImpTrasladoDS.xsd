@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venMovImpTrasladoDS" targetNamespace="http://tempuri.org/venMovImpTrasladoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venMovImpTrasladoDS.xsd" xmlns:mstns="http://tempuri.org/venMovImpTrasladoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venMovImpTrasladoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Asiento_Id" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonDebe" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Asiento_Id" type="xs:long" minOccurs="0" />
+<xs:element name="RenglonDebe" type="xs:int" minOccurs="0" />
+<xs:element name="RenglonHaber" type="xs:int" minOccurs="0" />
+<xs:element name="venMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="tesMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionImpuestos" type="xs:string" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionClientes" type="xs:string" minOccurs="0" />
+<xs:element name="Cartera_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionIdentifica" type="xs:string" minOccurs="0" />
+<xs:element name="Banco_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionIdBancoPropio" type="xs:string" minOccurs="0" />
+<xs:element name="BaseImponible" type="xs:decimal" minOccurs="0" />
+<xs:element name="Monto" type="xs:decimal" minOccurs="0" />
+<xs:element name="TotalCobro" type="xs:decimal" minOccurs="0" />
+<xs:element name="DifCambio" type="xs:decimal" minOccurs="0" />
+<xs:element name="RenDifCambio" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

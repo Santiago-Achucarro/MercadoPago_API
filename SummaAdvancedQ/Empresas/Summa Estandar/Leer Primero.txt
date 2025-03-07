@@ -1,0 +1,2 @@
+En esta carpeta se encuentran los procedimientos almacenados originales de Summa Advanced. Estos los guardamos aquí ya que modificamos los mismos para un correcto funcionamiento de acuerdo a lo que soliictan los clientes.
+Para evitar errores al momento de actualizar el summa en la carpeta de personalizaciones vamos a encontrar el mismo procedimiento almacenado pero modificado y allí apuntamos la personalización, por ejemplo en reportes.

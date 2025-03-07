@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="tesCheqPropImpresionDS" 
+                  targetNamespace="http://tempuri.org/tesCheqPropImpresionDS.xsd"
+                  elementFormDefault="qualified"
+                  attributeFormDefault="qualified"
+                  xmlns="http://tempuri.org/tesCheqPropImpresionDS.xsd"
+                  xmlns:mstns="http://tempuri.org/tesCheqPropImpresionDS.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="tesCheqPropImpresionDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Cartera_Id" msprop:Generator_ColumnVarNameInTable="columnCartera_Id" msprop:Generator_ColumnPropNameInRow="Cartera_Id" msprop:Generator_ColumnPropNameInTable="Cartera_IdColumn" msprop:Generator_UserColumnName="Cartera_Id" type="xs:string" minOccurs="0" />
+                    <xs:element name="DescripcionCartera" msprop:Generator_ColumnVarNameInTable="columnDescripcionCartera" msprop:Generator_ColumnPropNameInRow="DescripcionCartera" msprop:Generator_ColumnPropNameInTable="DescripcionCarteraColumn" msprop:Generator_UserColumnName="DescripcionCartera" type="xs:string" minOccurs="0" />
+                    <xs:element name="Chequera_Id" msprop:Generator_ColumnVarNameInTable="columnChequera_Id" msprop:Generator_ColumnPropNameInRow="Chequera_Id" msprop:Generator_ColumnPropNameInTable="Chequera_IdColumn" msprop:Generator_UserColumnName="Chequera_Id" type="xs:int" minOccurs="0" />
+                    <xs:element name="NumChequeDesde" msprop:Generator_ColumnVarNameInTable="columnNumChequeDesde" msprop:Generator_ColumnPropNameInRow="NumChequeDesde" msprop:Generator_ColumnPropNameInTable="NumChequeDesdeColumn" msprop:Generator_UserColumnName="NumChequeDesde" type="xs:int" minOccurs="0" />
+                    <xs:element name="NumChequeHasta" msprop:Generator_ColumnVarNameInTable="columnNumChequeHasta" msprop:Generator_ColumnPropNameInRow="NumChequeHasta" msprop:Generator_ColumnPropNameInTable="NumChequeHastaColumn" msprop:Generator_UserColumnName="NumChequeHasta" type="xs:int" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

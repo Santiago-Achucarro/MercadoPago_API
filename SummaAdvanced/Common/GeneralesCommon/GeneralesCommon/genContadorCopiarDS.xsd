@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genContadorCopiarDS" targetNamespace="http://tempuri.org/genContadorCopiarDS.xsd" xmlns:mstns="http://tempuri.org/genContadorCopiarDS.xsd" xmlns="http://tempuri.org/genContadorCopiarDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genContadorCopiarDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="genContadorCopiarDS" msprop:Generator_UserDSName="genContadorCopiarDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SucursalOrigen" msprop:Generator_ColumnVarNameInTable="columnSucursalOrigen" msprop:Generator_ColumnPropNameInRow="SucursalOrigen" msprop:Generator_ColumnPropNameInTable="SucursalOrigenColumn" msprop:Generator_UserColumnName="SucursalOrigen" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionOrigen" msprop:Generator_ColumnVarNameInTable="columnDescripcionOrigen" msprop:Generator_ColumnPropNameInRow="DescripcionOrigen" msprop:Generator_ColumnPropNameInTable="DescripcionOrigenColumn" msprop:Generator_UserColumnName="DescripcionOrigen" type="xs:string" minOccurs="0" />
+              <xs:element name="SucursalDestinoDesde" msprop:Generator_ColumnVarNameInTable="columnSucursalDestinoDesde" msprop:Generator_ColumnPropNameInRow="SucursalDestinoDesde" msprop:Generator_ColumnPropNameInTable="SucursalDestinoDesdeColumn" msprop:Generator_UserColumnName="SucursalDestinoDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionDestinoDesde" msprop:Generator_ColumnVarNameInTable="columnDescripcionDestinoDesde" msprop:Generator_ColumnPropNameInRow="DescripcionDestinoDesde" msprop:Generator_ColumnPropNameInTable="DescripcionDestinoDesdeColumn" msprop:Generator_UserColumnName="DescripcionDestinoDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="SucursalDestinoHasta" msprop:Generator_ColumnVarNameInTable="columnSucursalDestinoHasta" msprop:Generator_ColumnPropNameInRow="SucursalDestinoHasta" msprop:Generator_ColumnPropNameInTable="SucursalDestinoHastaColumn" msprop:Generator_UserColumnName="SucursalDestinoHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionDestinoHasta" msprop:Generator_ColumnVarNameInTable="columnDescripcionDestinoHasta" msprop:Generator_ColumnPropNameInRow="DescripcionDestinoHasta" msprop:Generator_ColumnPropNameInTable="DescripcionDestinoHastaColumn" msprop:Generator_UserColumnName="DescripcionDestinoHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6292A74C-F7F2-46E1-91E5-5E2C73263CE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestCommon</RootNamespace>
+    <AssemblyName>TestCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="espMovConStkCodBarraDS.cs">
+      <DependentUpon>espMovConStkCodBarraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espMovConStkCodBarraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espMovConStkCodBarraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espProductosColorTalleTestDS.cs">
+      <DependentUpon>espProductosColorTalleTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espProductosColorTalleTestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espProductosColorTalleTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espstkColorTestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espstkColorTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espstkTalleTestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espstkTalleTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenCondFiscImpTestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenCondFiscImpTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenPedidosTestDS.cs">
+      <DependentUpon>espvenPedidosTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenPedidosTestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenPedidosTestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="espMovConStkCodBarraDS.xsc">
+      <DependentUpon>espMovConStkCodBarraDS.xsd</DependentUpon>
+    </None>
+    <None Include="espMovConStkCodBarraDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espMovConStkCodBarraDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="espMovConStkCodBarraDS.xss">
+      <DependentUpon>espMovConStkCodBarraDS.xsd</DependentUpon>
+    </None>
+    <None Include="espProductosColorTalleTestDS.xsc">
+      <DependentUpon>espProductosColorTalleTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espProductosColorTalleTestDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espProductosColorTalleTestDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espProductosColorTalleTestDS.xss">
+      <DependentUpon>espProductosColorTalleTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkColorTestDS.xsc">
+      <DependentUpon>espstkColorTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkColorTestDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espstkColorTestDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espstkColorTestDS.xss">
+      <DependentUpon>espstkColorTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkTalleTestDS.xsc">
+      <DependentUpon>espstkTalleTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkTalleTestDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espstkTalleTestDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espstkTalleTestDS.xss">
+      <DependentUpon>espstkTalleTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenCondFiscImpTestDS.xsc">
+      <DependentUpon>espvenCondFiscImpTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenCondFiscImpTestDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenCondFiscImpTestDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espvenCondFiscImpTestDS.xss">
+      <DependentUpon>espvenCondFiscImpTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenPedidosTestDS.xsc">
+      <DependentUpon>espvenPedidosTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenPedidosTestDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenPedidosTestDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="espvenPedidosTestDS.xss">
+      <DependentUpon>espvenPedidosTestDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesMercadoPagoDS.xsd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

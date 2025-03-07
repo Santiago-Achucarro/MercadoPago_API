@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C359022-BC95-463A-8B63-36A87057D0C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesoreriaReportes</RootNamespace>
+    <AssemblyName>TesoreriaReportes</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Recursos">
+      <HintPath>..\..\..\Servicio\Actions\Recursos.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CfdiCobranzaCabe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CfdiCobranzaCabe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CFDIComplemento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CFDIComplemento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CfdiConcepto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CfdiConcepto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CfdiEmisor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CfdiEmisor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CFDIPagos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CFDIPagos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CfdiReceptor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CfdiReceptor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CFDIRelacionado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CFDIRelacionado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Haber.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Haber.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientosXCartera.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovimientosXCartera.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RelacionadoCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelacionadoCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvQADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvQADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvQADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvQADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesDevueltos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesDevueltos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesChequesEmitidos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesChequesEmitidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobranzasAdicional.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobranzasAdicional.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobranzasCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobranzasCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobranzasPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobranzasPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobraProvAdicional.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobraProvAdicional.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobraProvCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobraProvCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesCobraProvPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesCobraProvPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesConcBancaria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesConcBancaria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesEstadoCuenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesEstadoCuenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesFlujoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesFlujoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesIdentifica.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesIdentifica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesIngCobranzaRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesIngCobranzaRes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesIngCobranzas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesIngCobranzas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesLibroBanco.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesLibroBanco.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovimientosDHPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesMovimientosDHPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovimientosDHProve.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesMovimientosDHProve.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesMovPorSubTipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesMovPorSubTipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesPagoProvAdicional.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesPagoProvAdicional.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesPagoProvPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesPagoProvPrincipal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesPagosEmitidos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesPagosEmitidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesPagosProvCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesPagosProvCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRendCajaMov.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRendCajaMov.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRendCajaSF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRendCajaSF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesRendicionCaja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesRendicionCaja.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesSubDiario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesSubDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesSubMayor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesSubMayor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tesTiposCambio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tesTiposCambio.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="tesAnticiposPago.rdlc" />
+    <EmbeddedResource Include="tesAnticiposRendicion.rdlc" />
+    <EmbeddedResource Include="tesCarteras.rdlc" />
+    <EmbeddedResource Include="tesCFDICobranza.rdlc" />
+    <EmbeddedResource Include="tesCheqBusqueda.rdlc" />
+    <EmbeddedResource Include="tesCheqPropImpresion.rdlc" />
+    <EmbeddedResource Include="tesCheqPropImpresionCitiAR.rdlc" />
+    <EmbeddedResource Include="tesChequesClientes.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tesChequesDevueltos.rdlc" />
+    <EmbeddedResource Include="tesChequesEmitidos.rdlc" />
+    <EmbeddedResource Include="tesCobranzas.rdlc" />
+    <EmbeddedResource Include="tesConcBancaria.rdlc" />
+    <EmbeddedResource Include="tesConcBancariaConc.rdlc" />
+    <EmbeddedResource Include="tesEstadoDeCuenta.rdlc" />
+    <EmbeddedResource Include="tesFlujoFondo.rdlc" />
+    <EmbeddedResource Include="tesIngCobranzasRes.rdlc" />
+    <EmbeddedResource Include="tesLibroBanco.rdlc" />
+    <EmbeddedResource Include="tesMovimientosDH.rdlc" />
+    <EmbeddedResource Include="tesCobranzasProveedores.rdlc" />
+    <EmbeddedResource Include="tesMovimientosXCartera.rdlc" />
+    <EmbeddedResource Include="tesMovPorSubTipo.rdlc" />
+    <EmbeddedResource Include="tesPagosEmitidos.rdlc" />
+    <EmbeddedResource Include="tesPagosProv.rdlc" />
+    <EmbeddedResource Include="tesRendicionCaja.rdlc" />
+    <EmbeddedResource Include="tesRetencion1.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tesRetenciones.rdlc" />
+    <EmbeddedResource Include="tesSolicutudGastos.rdlc" />
+    <EmbeddedResource Include="tesSolicutudGastosDeta.rdlc" />
+    <EmbeddedResource Include="tesSubDiario.rdlc" />
+    <EmbeddedResource Include="tesSubMayor.rdlc" />
+    <EmbeddedResource Include="tesTiposCambio.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CfdiCobranzaCabe.xsc">
+      <DependentUpon>CfdiCobranzaCabe.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiCobranzaCabe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CfdiCobranzaCabe.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CfdiCobranzaCabe.xss">
+      <DependentUpon>CfdiCobranzaCabe.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIComplemento.xsc">
+      <DependentUpon>CFDIComplemento.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIComplemento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CFDIComplemento.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CFDIComplemento.xss">
+      <DependentUpon>CFDIComplemento.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiConcepto.xsc">
+      <DependentUpon>CfdiConcepto.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiConcepto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CfdiConcepto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CfdiConcepto.xss">
+      <DependentUpon>CfdiConcepto.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiEmisor.xsc">
+      <DependentUpon>CfdiEmisor.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiEmisor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CfdiEmisor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CfdiEmisor.xss">
+      <DependentUpon>CfdiEmisor.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIPagos.xsc">
+      <DependentUpon>CFDIPagos.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIPagos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CFDIPagos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CFDIPagos.xss">
+      <DependentUpon>CFDIPagos.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiReceptor.xsc">
+      <DependentUpon>CfdiReceptor.xsd</DependentUpon>
+    </None>
+    <None Include="CfdiReceptor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CfdiReceptor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CfdiReceptor.xss">
+      <DependentUpon>CfdiReceptor.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIRelacionado.xsc">
+      <DependentUpon>CFDIRelacionado.xsd</DependentUpon>
+    </None>
+    <None Include="CFDIRelacionado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CFDIRelacionado.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CFDIRelacionado.xss">
+      <DependentUpon>CFDIRelacionado.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsc">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empresas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Empresas.xss">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="Haber.xsc">
+      <DependentUpon>Haber.xsd</DependentUpon>
+    </None>
+    <None Include="Haber.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Haber.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Haber.xss">
+      <DependentUpon>Haber.xsd</DependentUpon>
+    </None>
+    <None Include="MovimientosXCartera.xsc">
+      <DependentUpon>MovimientosXCartera.xsd</DependentUpon>
+    </None>
+    <None Include="MovimientosXCartera.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovimientosXCartera.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovimientosXCartera.xss">
+      <DependentUpon>MovimientosXCartera.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RelacionadoCuerpo.xsc">
+      <DependentUpon>RelacionadoCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="RelacionadoCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelacionadoCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RelacionadoCuerpo.xss">
+      <DependentUpon>RelacionadoCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvDataSet.xsc">
+      <DependentUpon>SummaAdvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvDataSet.xss">
+      <DependentUpon>SummaAdvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvQADataSet.xsc">
+      <DependentUpon>SummaAdvQADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvQADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvQADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvQADataSet.xss">
+      <DependentUpon>SummaAdvQADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvQADataSet1.xsc">
+      <DependentUpon>SummaAdvQADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvQADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvQADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvQADataSet1.xss">
+      <DependentUpon>SummaAdvQADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesClientes.xsc">
+      <DependentUpon>tesChequesClientes.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesClientes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesChequesClientes.xss">
+      <DependentUpon>tesChequesClientes.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesDevueltos.xsc">
+      <DependentUpon>tesChequesDevueltos.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesDevueltos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesDevueltos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesChequesDevueltos.xss">
+      <DependentUpon>tesChequesDevueltos.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesEmitidos.xsc">
+      <DependentUpon>tesChequesEmitidos.xsd</DependentUpon>
+    </None>
+    <None Include="tesChequesEmitidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesChequesEmitidos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesChequesEmitidos.xss">
+      <DependentUpon>tesChequesEmitidos.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasAdicional.xsc">
+      <DependentUpon>tesCobranzasAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasAdicional.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobranzasAdicional.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobranzasAdicional.xss">
+      <DependentUpon>tesCobranzasAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasCuerpo.xsc">
+      <DependentUpon>tesCobranzasCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobranzasCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobranzasCuerpo.xss">
+      <DependentUpon>tesCobranzasCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasPrincipal.xsc">
+      <DependentUpon>tesCobranzasPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobranzasPrincipal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobranzasPrincipal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobranzasPrincipal.xss">
+      <DependentUpon>tesCobranzasPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvAdicional.xsc">
+      <DependentUpon>tesCobraProvAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvAdicional.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobraProvAdicional.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobraProvAdicional.xss">
+      <DependentUpon>tesCobraProvAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvCuerpo.xsc">
+      <DependentUpon>tesCobraProvCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobraProvCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobraProvCuerpo.xss">
+      <DependentUpon>tesCobraProvCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvPrincipal.xsc">
+      <DependentUpon>tesCobraProvPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesCobraProvPrincipal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesCobraProvPrincipal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesCobraProvPrincipal.xss">
+      <DependentUpon>tesCobraProvPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesConcBancaria.xsc">
+      <DependentUpon>tesConcBancaria.xsd</DependentUpon>
+    </None>
+    <None Include="tesConcBancaria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesConcBancaria.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesConcBancaria.xss">
+      <DependentUpon>tesConcBancaria.xsd</DependentUpon>
+    </None>
+    <None Include="tesEstadoCuenta.xsc">
+      <DependentUpon>tesEstadoCuenta.xsd</DependentUpon>
+    </None>
+    <None Include="tesEstadoCuenta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesEstadoCuenta.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesEstadoCuenta.xss">
+      <DependentUpon>tesEstadoCuenta.xsd</DependentUpon>
+    </None>
+    <None Include="tesFlujoDS.xsc">
+      <DependentUpon>tesFlujoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesFlujoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesFlujoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="tesFlujoDS.xss">
+      <DependentUpon>tesFlujoDS.xsd</DependentUpon>
+    </None>
+    <None Include="tesIdentifica.xsc">
+      <DependentUpon>tesIdentifica.xsd</DependentUpon>
+    </None>
+    <None Include="tesIdentifica.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesIdentifica.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesIdentifica.xss">
+      <DependentUpon>tesIdentifica.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzaRes.xsc">
+      <DependentUpon>tesIngCobranzaRes.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzaRes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesIngCobranzaRes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesIngCobranzaRes.xss">
+      <DependentUpon>tesIngCobranzaRes.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzas.xsc">
+      <DependentUpon>tesIngCobranzas.xsd</DependentUpon>
+    </None>
+    <None Include="tesIngCobranzas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesIngCobranzas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesIngCobranzas.xss">
+      <DependentUpon>tesIngCobranzas.xsd</DependentUpon>
+    </None>
+    <None Include="tesLibroBanco.xsc">
+      <DependentUpon>tesLibroBanco.xsd</DependentUpon>
+    </None>
+    <None Include="tesLibroBanco.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesLibroBanco.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesLibroBanco.xss">
+      <DependentUpon>tesLibroBanco.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovimientosDHPrincipal.xsc">
+      <DependentUpon>tesMovimientosDHPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovimientosDHPrincipal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesMovimientosDHPrincipal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesMovimientosDHPrincipal.xss">
+      <DependentUpon>tesMovimientosDHPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovimientosDHProve.xsc">
+      <DependentUpon>tesMovimientosDHProve.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovimientosDHProve.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesMovimientosDHProve.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesMovimientosDHProve.xss">
+      <DependentUpon>tesMovimientosDHProve.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovPorSubTipo.xsc">
+      <DependentUpon>tesMovPorSubTipo.xsd</DependentUpon>
+    </None>
+    <None Include="tesMovPorSubTipo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesMovPorSubTipo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesMovPorSubTipo.xss">
+      <DependentUpon>tesMovPorSubTipo.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagoProvAdicional.xsc">
+      <DependentUpon>tesPagoProvAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagoProvAdicional.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesPagoProvAdicional.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesPagoProvAdicional.xss">
+      <DependentUpon>tesPagoProvAdicional.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagoProvPrincipal.xsc">
+      <DependentUpon>tesPagoProvPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagoProvPrincipal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesPagoProvPrincipal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesPagoProvPrincipal.xss">
+      <DependentUpon>tesPagoProvPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosEmitidos.xsc">
+      <DependentUpon>tesPagosEmitidos.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosEmitidos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesPagosEmitidos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesPagosEmitidos.xss">
+      <DependentUpon>tesPagosEmitidos.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosProvCuerpo.xsc">
+      <DependentUpon>tesPagosProvCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesPagosProvCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesPagosProvCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesPagosProvCuerpo.xss">
+      <DependentUpon>tesPagosProvCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendCajaMov.xsc">
+      <DependentUpon>tesRendCajaMov.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendCajaMov.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRendCajaMov.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesRendCajaMov.xss">
+      <DependentUpon>tesRendCajaMov.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendCajaSF.xsc">
+      <DependentUpon>tesRendCajaSF.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendCajaSF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRendCajaSF.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesRendCajaSF.xss">
+      <DependentUpon>tesRendCajaSF.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendicionCaja.xsc">
+      <DependentUpon>tesRendicionCaja.xsd</DependentUpon>
+    </None>
+    <None Include="tesRendicionCaja.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesRendicionCaja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesRendicionCaja.xss">
+      <DependentUpon>tesRendicionCaja.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubDiario.xsc">
+      <DependentUpon>tesSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubDiario.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesSubDiario.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesSubDiario.xss">
+      <DependentUpon>tesSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubMayor.xsc">
+      <DependentUpon>tesSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="tesSubMayor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesSubMayor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesSubMayor.xss">
+      <DependentUpon>tesSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="tesTiposCambio.xsc">
+      <DependentUpon>tesTiposCambio.xsd</DependentUpon>
+    </None>
+    <None Include="tesTiposCambio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tesTiposCambio.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tesTiposCambio.xss">
+      <DependentUpon>tesTiposCambio.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

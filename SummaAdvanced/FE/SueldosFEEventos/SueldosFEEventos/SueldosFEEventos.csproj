@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{563DF974-186B-4CCB-9ED0-A414C6CFEC6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SueldosFEEventos</RootNamespace>
+    <AssemblyName>SueldosFEEventos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FormulasValidacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\FormulasValidacion.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore">
+      <HintPath>..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesFEAdv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesFEAdv.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptsueConceptosDet.cs" />
+    <Compile Include="rptsueConceptosRes.cs" />
+    <Compile Include="rptsueLibro.cs" />
+    <Compile Include="rptsueNetos.cs" />
+    <Compile Include="rptsueNomina.cs" />
+    <Compile Include="rptsueRecibo.cs" />
+    <Compile Include="sueArchivosTxt.cs" />
+    <Compile Include="sueConceptos.cs" />
+    <Compile Include="sueDato.cs" />
+    <Compile Include="sueDatoXConcepto.cs" />
+    <Compile Include="sueDatoXLS.cs" />
+    <Compile Include="sueGenerarArchivosTxt.cs" />
+    <Compile Include="sueGrupos.cs" />
+    <Compile Include="sueInfDefinibles.cs" />
+    <Compile Include="sueLiquidacion.cs" />
+    <Compile Include="suePagosHabi.cs" />
+    <Compile Include="suePersonal.cs" />
+    <Compile Include="sueTimbradoRecibos.cs" />
+    <Compile Include="sueVacCorrespondientes.cs" />
+    <Compile Include="sueVacTomadas.cs" />
+    <Compile Include="sueVariables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\GeneralesBE\GeneralesValidacion\GeneralesValidacion.csproj">
+      <Project>{bd4fd30c-d5fa-4c15-84ea-6d46f45f3d0b}</Project>
+      <Name>GeneralesValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\SueldosBE\SueldosValidacion\SueldosValidacion.csproj">
+      <Project>{76b42409-2b72-4d24-962a-788f1638c73c}</Project>
+      <Name>SueldosValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\GeneralesExchange\GeneralesExchange.csproj">
+      <Project>{678dcd1e-d8ac-4fd8-934a-b775110c81d5}</Project>
+      <Name>GeneralesExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\SueldosExchange\SueldosExchange.csproj">
+      <Project>{07b53804-7a1f-41a2-ad34-6878335a6635}</Project>
+      <Name>SueldosExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\SueldosCommon\SueldosCommon\SueldosCommon.csproj">
+      <Project>{d300b465-e303-4bfa-a906-0bfa6d7105e8}</Project>
+      <Name>SueldosCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\SueldosReportesCommon\SueldosReportesCommon\SueldosReportesCommon.csproj">
+      <Project>{b50a80bd-1eac-4518-b8a8-2dee6a32e52e}</Project>
+      <Name>SueldosReportesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DAL\SueldosDAL\SueldosDAL\SueldosDAL.csproj">
+      <Project>{9772547e-48fd-43be-a6fd-8e4f115f053f}</Project>
+      <Name>SueldosDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

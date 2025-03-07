@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9772547E-48FD-43BE-A6FD-8E4F115F053F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SueldosDAL</RootNamespace>
+    <AssemblyName>SueldosDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global">
+      <HintPath>..\..\..\Servicio\Actions\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfaceDAAB">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sueArchivosTxt.cs" />
+    <Compile Include="sueArchivosTxtCuerpo.cs" />
+    <Compile Include="sueCalculos.cs" />
+    <Compile Include="sueCategorias.cs" />
+    <Compile Include="sueCateNombre.cs" />
+    <Compile Include="sueConcAcum.cs" />
+    <Compile Include="sueConcAcumSegmento.cs" />
+    <Compile Include="sueConcDescuento.cs" />
+    <Compile Include="sueConceptos.cs" />
+    <Compile Include="sueConceptosProp.cs" />
+    <Compile Include="sueConceptosPropValor.cs" />
+    <Compile Include="sueConstantes.cs" />
+    <Compile Include="sueConvenio.cs" />
+    <Compile Include="sueDato.cs" />
+    <Compile Include="sueDatoRetro.cs" />
+    <Compile Include="sueFamiliares.cs" />
+    <Compile Include="sueGanancias.cs" />
+    <Compile Include="sueGanTitulo.cs" />
+    <Compile Include="sueGenerarArchivosTxt.cs" />
+    <Compile Include="sueGenerarInfDefinibles.cs" />
+    <Compile Include="sueGrupos.cs" />
+    <Compile Include="sueImpNombre.cs" />
+    <Compile Include="sueInfDefFormulas.cs" />
+    <Compile Include="sueInfDefinibles.cs" />
+    <Compile Include="sueLiqCatego.cs" />
+    <Compile Include="sueLiqPersImportes.cs" />
+    <Compile Include="sueLiquidacion.cs" />
+    <Compile Include="sueLiqVarGlobales.cs" />
+    <Compile Include="sueMovCont.cs" />
+    <Compile Include="sueNominaCFDI.cs" />
+    <Compile Include="suePagosHabi.cs" />
+    <Compile Include="suePagosHabiPorEmpleado.cs" />
+    <Compile Include="suePeriodicidad.cs" />
+    <Compile Include="suePersActividad.cs" />
+    <Compile Include="suePersAfore.cs" />
+    <Compile Include="suePersAporteAdic.cs" />
+    <Compile Include="suePersAporteVoluntario.cs" />
+    <Compile Include="suePersCatego.cs" />
+    <Compile Include="suePersCondServicio.cs" />
+    <Compile Include="suePersContable.cs" />
+    <Compile Include="suePersContableDatos.cs" />
+    <Compile Include="suePersConvenio.cs" />
+    <Compile Include="suePersDomicilio.cs" />
+    <Compile Include="suePersEstadoCivil.cs" />
+    <Compile Include="suePersLocalidad.cs" />
+    <Compile Include="suePersModContrata.cs" />
+    <Compile Include="suePersObraSocial.cs" />
+    <Compile Include="suePersonal.cs" />
+    <Compile Include="suePersPuestos.cs" />
+    <Compile Include="suePersRebPromo.cs" />
+    <Compile Include="suePersRedZona.cs" />
+    <Compile Include="suePersSinestrado.cs" />
+    <Compile Include="suePersSituacionRevi.cs" />
+    <Compile Include="suePersSucursal.cs" />
+    <Compile Include="suePersTareas.cs" />
+    <Compile Include="suePersTipoContrato.cs" />
+    <Compile Include="suePersTipoEmpleador.cs" />
+    <Compile Include="suePersTipoJornada.cs" />
+    <Compile Include="suePersTipoPago.cs" />
+    <Compile Include="suePersTipoRegimen.cs" />
+    <Compile Include="suePersTipoSDI.cs" />
+    <Compile Include="suePlantilla.cs" />
+    <Compile Include="suePuestos.cs" />
+    <Compile Include="sueRecibos.cs" />
+    <Compile Include="SueTablas.cs" />
+    <Compile Include="sueTablaVacacion.cs" />
+    <Compile Include="sueTablaVacReng.cs" />
+    <Compile Include="sueTabTitulo.cs" />
+    <Compile Include="sueTareas.cs" />
+    <Compile Include="sueTerminada.cs" />
+    <Compile Include="sueTerminadaRetro.cs" />
+    <Compile Include="sueTipoPago.cs" />
+    <Compile Include="sueVacCorresponden.cs" />
+    <Compile Include="sueVacTomadas.cs" />
+    <Compile Include="sueVarGlobales.cs" />
+    <Compile Include="sueVariables.cs" />
+    <Compile Include="sueVaribalesMasivas.cs" />
+    <Compile Include="sueCierre.cs" />
+    <Compile Include="sueVezActiva.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\SueldosCommon\SueldosCommon\SueldosCommon.csproj">
+      <Project>{d300b465-e303-4bfa-a906-0bfa6d7105e8}</Project>
+      <Name>SueldosCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

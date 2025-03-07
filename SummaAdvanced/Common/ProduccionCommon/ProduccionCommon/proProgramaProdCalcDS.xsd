@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proProgramaProdCalcDS" targetNamespace="http://tempuri.org/proProgramaProdCalcDS.xsd" xmlns:mstns="http://tempuri.org/proProgramaProdCalcDS.xsd" xmlns="http://tempuri.org/proProgramaProdCalcDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proProgramaProdCalcDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="proProgramaProdCalcDS" msprop:Generator_UserDSName="proProgramaProdCalcDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionProductos" msprop:Generator_ColumnVarNameInTable="columnDescripcionProductos" msprop:Generator_ColumnPropNameInRow="DescripcionProductos" msprop:Generator_ColumnPropNameInTable="DescripcionProductosColumn" msprop:Generator_UserColumnName="DescripcionProductos" type="xs:string" minOccurs="0" />
+              <xs:element name="Medida_Id" msprop:Generator_ColumnVarNameInTable="columnMedida_Id" msprop:Generator_ColumnPropNameInRow="Medida_Id" msprop:Generator_ColumnPropNameInTable="Medida_IdColumn" msprop:Generator_UserColumnName="Medida_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionMedida" msprop:Generator_ColumnVarNameInTable="columnDescripcionMedida" msprop:Generator_ColumnPropNameInRow="DescripcionMedida" msprop:Generator_ColumnPropNameInTable="DescripcionMedidaColumn" msprop:Generator_UserColumnName="DescripcionMedida" type="xs:string" minOccurs="0" />
+              <xs:element name="Pedidos" msprop:Generator_ColumnVarNameInTable="columnPedidos" msprop:Generator_ColumnPropNameInRow="Pedidos" msprop:Generator_ColumnPropNameInTable="PedidosColumn" msprop:Generator_UserColumnName="Pedidos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinNecesario" msprop:Generator_ColumnVarNameInTable="columnMinNecesario" msprop:Generator_ColumnPropNameInRow="MinNecesario" msprop:Generator_ColumnPropNameInTable="MinNecesarioColumn" msprop:Generator_UserColumnName="MinNecesario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Minimo" msprop:Generator_ColumnVarNameInTable="columnMinimo" msprop:Generator_ColumnPropNameInRow="Minimo" msprop:Generator_ColumnPropNameInTable="MinimoColumn" msprop:Generator_UserColumnName="Minimo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OrdProducto" msprop:Generator_ColumnVarNameInTable="columnOrdProducto" msprop:Generator_ColumnPropNameInRow="OrdProducto" msprop:Generator_ColumnPropNameInTable="OrdProductoColumn" msprop:Generator_UserColumnName="OrdProducto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Faltantes" msprop:Generator_ColumnVarNameInTable="columnFaltantes" msprop:Generator_ColumnPropNameInRow="Faltantes" msprop:Generator_ColumnPropNameInTable="FaltantesColumn" msprop:Generator_UserColumnName="Faltantes" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Maximo" msprop:Generator_ColumnVarNameInTable="columnMaximo" msprop:Generator_ColumnPropNameInRow="Maximo" msprop:Generator_ColumnPropNameInTable="MaximoColumn" msprop:Generator_UserColumnName="Maximo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ult90Dias" msprop:Generator_ColumnVarNameInTable="columnUlt90Dias" msprop:Generator_ColumnPropNameInRow="Ult90Dias" msprop:Generator_ColumnPropNameInTable="Ult90DiasColumn" msprop:Generator_UserColumnName="Ult90Dias" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProdPeriodo" msprop:Generator_ColumnVarNameInTable="columnProdPeriodo" msprop:Generator_ColumnPropNameInRow="ProdPeriodo" msprop:Generator_ColumnPropNameInTable="ProdPeriodoColumn" msprop:Generator_UserColumnName="ProdPeriodo" type="xs:int" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

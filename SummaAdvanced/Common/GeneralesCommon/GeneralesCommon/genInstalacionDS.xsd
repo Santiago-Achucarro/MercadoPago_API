@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genInstalacionDS" targetNamespace="http://tempuri.org/genInstalacionDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genInstalacionDS.xsd" xmlns:mstns="http://tempuri.org/genInstalacionDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genInstalacionDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Dominio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDominios" type="xs:string" minOccurs="0" />
+<xs:element name="Licencias" type="xs:int" minOccurs="0" />
+<xs:element name="RptServidor" type="xs:string" minOccurs="0" />
+<xs:element name="RptCarpeta" type="xs:string" minOccurs="0" />
+<xs:element name="RptUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="RptClave" type="xs:string" minOccurs="0" />
+<xs:element name="RptDominio" type="xs:string" minOccurs="0" />
+<xs:element name="Licencia" type="xs:string" minOccurs="0" />
+<xs:element name="Clave" type="xs:string" minOccurs="0" />
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="UsoHorario" type="xs:int" minOccurs="0" />
+<xs:element name="PorEmpresa" type="xs:boolean" minOccurs="0" />
+<xs:element name="TamanioHoja" type="xs:string" minOccurs="0" />
+<xs:element name="LongitudClave" type="xs:int" minOccurs="0" />
+<xs:element name="DiasDuracionClave" type="xs:int" minOccurs="0" />
+<xs:element name="LoginGracia" type="xs:int" minOccurs="0" />
+<xs:element name="CantIntentosFallidos" type="xs:int" minOccurs="0" />
+<xs:element name="ClaveSimbolos" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaveNumero" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaveMayuscula" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaveMinuscula" type="xs:boolean" minOccurs="0" />
+<xs:element name="ClaveComunes" type="xs:boolean" minOccurs="0" />
+<xs:element name="conDigiCta" type="xs:short" minOccurs="0" />
+<xs:element name="conDigiSubCta" type="xs:short" minOccurs="0" />
+<xs:element name="contMascaraCuenta" type="xs:string" minOccurs="0" />
+<xs:element name="TwoFactor" type="xs:boolean" minOccurs="0" />
+<xs:element name="EntrarSiFallaCorreo" type="xs:boolean" minOccurs="0" />
+<xs:element name="DuracionCookie" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

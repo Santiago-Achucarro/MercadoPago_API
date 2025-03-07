@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBF1E491-9A3F-453F-9D5D-844978E71DD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProduccionDAL</RootNamespace>
+    <AssemblyName>ProduccionDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global">
+      <HintPath>..\..\..\Servicio\Actions\Actions\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfaceDAAB">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="proCausas.cs" />
+    <Compile Include="proCentroProductivo.cs" />
+    <Compile Include="proMovCierreOrden.cs" />
+    <Compile Include="proMovCierreRecursos.cs" />
+    <Compile Include="proMovCierreTrabajos3.cs" />
+    <Compile Include="proOrden.cs" />
+    <Compile Include="proOrdenCerrar.cs" />
+    <Compile Include="proOrdenLimpiar.cs" />
+    <Compile Include="proOrdenPasarProduccion.cs" />
+    <Compile Include="proOrdenProd.cs" />
+    <Compile Include="proOrdenProdSerie.cs" />
+    <Compile Include="proOrdenRecurso.cs" />
+    <Compile Include="proOrdenSegmento.cs" />
+    <Compile Include="proOrdenStock.cs" />
+    <Compile Include="proOrdenStockCosto.cs" />
+    <Compile Include="proOrdenSubRecursos.cs" />
+    <Compile Include="proOrdenTrabajo3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proProductosReceta.cs" />
+    <Compile Include="proPrograma.cs" />
+    <Compile Include="proProgramaCuerpo.cs" />
+    <Compile Include="proProgramaOrden.cs" />
+    <Compile Include="proProgramaProduccion.cs" />
+    <Compile Include="proProgramaSegmento.cs" />
+    <Compile Include="proProgramaSubRecursos.cs" />
+    <Compile Include="proRecetas.cs" />
+    <Compile Include="proRecetasProd.cs" />
+    <Compile Include="proRecetasRecursos.cs" />
+    <Compile Include="proRecetasTrabajo3.cs" />
+    <Compile Include="proRecursos.cs" />
+    <Compile Include="proSubRecursos.cs" />
+    <Compile Include="proTrabajo3.cs" />
+    <Compile Include="proTrabajo3Prov.cs" />
+    <Compile Include="proVarGlobales.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ProduccionCommon\ProduccionCommon\ProduccionCommon.csproj">
+      <Project>{d4466173-db34-4721-9e5f-1abc4c463ce2}</Project>
+      <Name>ProduccionCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

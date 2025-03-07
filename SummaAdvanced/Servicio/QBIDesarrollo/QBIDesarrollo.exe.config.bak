@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <appSettings>
+    <add key="ConStrStandard" value="Server=BJ10\SQLEXPRESS2014;Database=SummaAdvQA;User Id=sa;Password=tatinga2014;" />
+    <add key="ConStrStandard1" value="Server=BJ10\SQLEXPRESS2014;Database=SummaAdvVaes;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrVentapel" value="Server=BJ10\SQL2019;Database=VentapelAdv;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrRDLV" value="Server=BJ10\SQLEXPRESS2014;Database=RioVueltasAdvV2;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrPP" value="Server=BJ10\SQLEXPRESS2014;Database=HarmonyAdv;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrKSK" value="Server=BJ10\SQLEXPRESS2014;Database=KSKAdv;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrBiomille" value="Server=BJ10\SQLEXPRESS2014;Database=BiomilleAdvV2;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrGYDM" value="Server=BJ10\SQLEXPRESS2014;Database=GYDMontesAdv;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrGYDDev" value="Server=BJ10\SQLEXPRESS2014;Database=GYDDevelopersAdv;User Id=sa;Password=tatinga2014;;Connection Timeout=150" />
+    <add key="ConStrHerramientasAr" value="Server=BJ10\SQL2019;Database=HerramientasAdv;User Id=sa;Password=tatinga2014;" />
+    <add key="ConStrQA" value="Server=BJ10\SQL2019;Database=SummaAdvAr;User Id=sa;Password=tatinga2014;" />
+    <add key="ConStrVincenti" value="Server=BJ10\SQLEXPRESS2008R2;Database=VincentiAdv;User Id=sa;Password=tatinga2014;" />
+    <add key="ConStrArPruebas" value="Server=BJ10\SQL2019;Database=SummaAdvArPruebas;User Id=sa;Password=tatinga2014;"/>
+    <add key="ServicePath" value="C:\V3\SummaAdvanced\Servicio" />
+    <add key="UpLoadFilesPath" value="C:\temp" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <system.serviceModel>
+    <bindings>
+      <netTcpBinding>
+        <binding name="NetTcpBindingEndpoint" maxBufferPoolSize="2147483647" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" closeTimeout="00:10:00" openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00">
+          <readerQuotas maxDepth="32" maxStringContentLength="2147483647" maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxNameTableCharCount="2147483647"/>
+          <security mode="None">
+            <transport protectionLevel="None" clientCredentialType="None" ></transport>
+            <message clientCredentialType="None" />
+          </security>
+		</binding>
+      </netTcpBinding>
+    </bindings>
+    <client>
+      <endpoint address="net.tcp://localhost:6019/WCFServicioQBI" binding="netTcpBinding" bindingConfiguration="NetTcpBindingEndpoint" contract="QBIService.IQBIManejoDeAcciones" name="NetTcpBindingEndpoint">
+        <identity>
+          <dns value="localhost" />
+        </identity>
+      </endpoint>
+    </client>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="QBIHostWCF.QBIManejoDeAccionesBehavior">
+          <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />
+          <serviceDebug includeExceptionDetailInFaults="true" />
+          <!--
+          <serviceAuthorization impersonateCallerForAllOperations="true" />
+          -->
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <services>
+      <service name="QBIHostWCF.QBIManejoDeAcciones" behaviorConfiguration="QBIHostWCF.QBIManejoDeAccionesBehavior">
+        <endpoint address="" binding="netTcpBinding" bindingConfiguration="" name="NetTcpBindingEndpoint" contract="QBIHostWCF.IQBIManejoDeAcciones">
+          <identity>
+            <dns value="localhost" />
+          </identity>
+        </endpoint>
+        <endpoint address="mex" binding="mexTcpBinding" bindingConfiguration="" name="MexTcpBindingEndpoint" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="net.tcp://localhost:6019/WCFServicioQBI" />
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+  </system.serviceModel>
+  <!--
+<system.diagnostics>
+  <sources>
+    <source name="System.ServiceModel"
+            switchValue="Information, ActivityTracing"
+            propagateActivity="true">
+      <listeners>
+        <add name="traceListener"
+            type="System.Diagnostics.XmlWriterTraceListener"
+            initializeData="C:\SummaAdv\Traces.svclog"  />
+      </listeners>
+    </source>
+  </sources>
+</system.diagnostics>
+-->
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

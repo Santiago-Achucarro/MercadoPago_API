@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6162C49-FCA4-4A01-9205-B0F5BEA69795}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesoreriaDAL</RootNamespace>
+    <AssemblyName>TesoreriaDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global, Version=1.0.5686.31124, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfaceDAAB, Version=1.0.7327.29815, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CuentasTesoreria.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tesAICheques.cs" />
+    <Compile Include="tesAIDepositos.cs" />
+    <Compile Include="tesAISaldos.cs" />
+    <Compile Include="tesAperturaCajaMonedas.cs" />
+    <Compile Include="tesAsiCierre.cs" />
+    <Compile Include="tesBancos.cs" />
+    <Compile Include="tesBPlink.cs" />
+    <Compile Include="tesCausasRechazo.cs" />
+    <Compile Include="tesCFDICobranza.cs" />
+    <Compile Include="tesCFDICobranzaCuerpo.cs" />
+    <Compile Include="tesCFDICobranzaRel.cs" />
+    <Compile Include="tesCFDICobranzaSegmentos.cs" />
+    <Compile Include="tesCheqProp.cs" />
+    <Compile Include="tesCheqPropAnul.cs" />
+    <Compile Include="tesCheqPropDiferidos.cs" />
+    <Compile Include="tesCheqPropEstado.cs" />
+    <Compile Include="tesCheqPropImpresion.cs" />
+    <Compile Include="tesCheqTerceros.cs" />
+    <Compile Include="tesCheqTercerosCambio.cs" />
+    <Compile Include="tesCheqTerEstado.cs" />
+    <Compile Include="tesChequeras.cs" />
+    <Compile Include="tesChequerasCheques.cs" />
+    <Compile Include="tesChequerasEstado.cs" />
+    <Compile Include="tesClearing.cs" />
+    <Compile Include="tesConciliacion.cs" />
+    <Compile Include="tesCTLink.cs" />
+    <Compile Include="tesDeposito.cs" />
+    <Compile Include="tesDepPorIdent.cs" />
+    <Compile Include="tesDepPorIdentImp.cs" />
+    <Compile Include="tesFFCobClientes.cs" />
+    <Compile Include="tesFFCobranzaOtros.cs" />
+    <Compile Include="tesFFDepositos.cs" />
+    <Compile Include="tesFFPagosOtros.cs" />
+    <Compile Include="tesFFPagosProveedores.cs" />
+    <Compile Include="tesFFSegmentos.cs" />
+    <Compile Include="tesFlujo.cs" />
+    <Compile Include="tesFlujoFondos.cs" />
+    <Compile Include="tesGanancias.cs" />
+    <Compile Include="tesGanCuerpo.cs" />
+    <Compile Include="tesGraPagosDiarios.cs" />
+    <Compile Include="tesIdBancoPropio.cs" />
+    <Compile Include="tesIdCajaAhorro.cs" />
+    <Compile Include="tesIdCheqTerceros.cs" />
+    <Compile Include="tesIdentifica.cs" />
+    <Compile Include="tesIdentificaSaldos.cs" />
+    <Compile Include="tesIdRetClien.cs" />
+    <Compile Include="tesIdRetProv.cs" />
+    <Compile Include="tesIdTarjetas3.cs" />
+    <Compile Include="tesIdTarjetas3Tipo.cs" />
+    <Compile Include="tesIdVarios.cs" />
+    <Compile Include="tesIngDepPorIdent.cs" />
+    <Compile Include="tesMoviGravado.cs" />
+    <Compile Include="tesMovimientos.cs" />
+    <Compile Include="tesMoviReversa.cs" />
+    <Compile Include="tesPagosClie.cs" />
+    <Compile Include="tesPagosImpuestos.cs" />
+    <Compile Include="tesPagoSueldos.cs" />
+    <Compile Include="tesPartidasInCon.cs" />
+    <Compile Include="tesRengConcilEsp.cs" />
+    <Compile Include="tesRengConciliac.cs" />
+    <Compile Include="tesRengMovi.cs" />
+    <Compile Include="tesRengMovicomMovProv.cs" />
+    <Compile Include="tesRengMoviRetClie.cs" />
+    <Compile Include="tesRengMoviRetProv.cs" />
+    <Compile Include="tesRetProvSegmento.cs" />
+    <Compile Include="tesRetProvxOP.cs" />
+    <Compile Include="tesReversionOP.cs" />
+    <Compile Include="tesSolicitantes.cs" />
+    <Compile Include="tesSolicitud.cs" />
+    <Compile Include="tesSolPago.cs" />
+    <Compile Include="tesSolRendicion.cs" />
+    <Compile Include="tesSolSegmentos.cs" />
+    <Compile Include="tesSubTiposMov.cs" />
+    <Compile Include="tesT3Promociones.cs" />
+    <Compile Include="tesT3PromocionesCuotas.cs" />
+    <Compile Include="tesTarjetasPromociones.cs" />
+    <Compile Include="tesTiposId.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon.csproj">
+      <Project>{8ce1debf-54f4-4e33-94fb-2e316fe994f8}</Project>
+      <Name>TesoreriaCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

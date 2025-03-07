@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="conFechasCierresDS" targetNamespace="http://tempuri.org/conFechasCierresDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/conFechasCierresDS.xsd" xmlns:mstns="http://tempuri.org/conFechasCierresDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="conFechasCierresDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="FechaCierreCompras" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreImpuestos" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreTesoreria" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreStock" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreVentas" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreActivoFijo" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaCierreSueldos" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

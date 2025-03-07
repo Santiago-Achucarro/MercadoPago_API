@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10368F5B-AAB5-4FAF-8BD3-4E50420F3787}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContabilidadDAL</RootNamespace>
+    <AssemblyName>ContabilidadDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global">
+      <HintPath>..\..\..\Referencias\DAL\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data">
+      <HintPath>..\..\..\Referencias\DAL\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="InterfaceDAAB">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conActualizarCuentaMovimientos.cs" />
+    <Compile Include="conActualizarCuentas.cs" />
+    <Compile Include="conAnexoGrupoTipos.cs" />
+    <Compile Include="conAnexosGrupos.cs" />
+    <Compile Include="conAnexosOrigenes.cs" />
+    <Compile Include="conArbolResultados.cs" />
+    <Compile Include="conAsieCierre.cs" />
+    <Compile Include="conAsientos.cs" />
+    <Compile Include="conAsientosAnul.cs" />
+    <Compile Include="conAsientosApertura.cs" />
+    <Compile Include="conAsientosContInver.cs" />
+    <Compile Include="conAsientosTipo.cs" />
+    <Compile Include="conAsieReversion.cs" />
+    <Compile Include="conAsieTipoCuerpo.cs" />
+    <Compile Include="conBalanzaElectroMX.cs" />
+    <Compile Include="conBaseCentro.cs" />
+    <Compile Include="conBaseDistri.cs" />
+    <Compile Include="conCatalogoElectroMx.cs" />
+    <Compile Include="conCentro1.cs" />
+    <Compile Include="conCentro2.cs" />
+    <Compile Include="conCuadro1Filas.cs" />
+    <Compile Include="conCuentas.cs" />
+    <Compile Include="conCuentasSinSC.cs" />
+    <Compile Include="conEjercicio.cs" />
+    <Compile Include="conFechasCierres.cs" />
+    <Compile Include="conGrupoCentro.cs" />
+    <Compile Include="conGruposCont.cs" />
+    <Compile Include="conIndAjus.cs" />
+    <Compile Include="conIndicesAjustes.cs" />
+    <Compile Include="conInfDefCuentas.cs" />
+    <Compile Include="conInfDefFilas.cs" />
+    <Compile Include="conInfDefinibles.cs" />
+    <Compile Include="conMovCont.cs" />
+    <Compile Include="conMovContCon.cs" />
+    <Compile Include="conOrigAplicReng.cs" />
+    <Compile Include="conPeriodos.cs" />
+    <Compile Include="conPolizaElectroMx.cs" />
+    <Compile Include="conRubroPrevi.cs" />
+    <Compile Include="conRubros.cs" />
+    <Compile Include="conRubrosAxi.cs" />
+    <Compile Include="conSituPatri.cs" />
+    <Compile Include="conSubCuentas.cs" />
+    <Compile Include="conTipoEspeciales.cs" />
+    <Compile Include="conTipoEspecialesCuerpo.cs" />
+    <Compile Include="conTiposContables.cs" />
+    <Compile Include="conTiposSAT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\ContabilidadCommon\ContabilidadCommon\ContabilidadCommon.csproj">
+      <Project>{a1732112-8817-4321-99cc-3c0069457061}</Project>
+      <Name>ContabilidadCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

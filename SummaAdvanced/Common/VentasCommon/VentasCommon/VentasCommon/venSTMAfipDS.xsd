@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="venSTMAfipDS" targetNamespace="http://tempuri.org/venSTMAfipDS.xsd" xmlns:mstns="http://tempuri.org/venSTMAfipDS.xsd" xmlns="http://tempuri.org/venSTMAfipDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="venSTMAfipDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="venSTMAfipDS" msprop:Generator_UserDSName="venSTMAfipDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="venSubTipoMov" msprop:Generator_ColumnVarNameInTable="columnvenSubTipoMov" msprop:Generator_ColumnPropNameInRow="venSubTipoMov" msprop:Generator_ColumnPropNameInTable="venSubTipoMovColumn" msprop:Generator_UserColumnName="venSubTipoMov" type="xs:int" minOccurs="0" />
+              <xs:element name="Letra" msprop:Generator_ColumnVarNameInTable="columnLetra" msprop:Generator_ColumnPropNameInRow="Letra" msprop:Generator_ColumnPropNameInTable="LetraColumn" msprop:Generator_UserColumnName="Letra" type="xs:string" minOccurs="0" />
+              <xs:element name="Comprobante_Id" msprop:Generator_ColumnVarNameInTable="columnComprobante_Id" msprop:Generator_ColumnPropNameInRow="Comprobante_Id" msprop:Generator_ColumnPropNameInTable="Comprobante_IdColumn" msprop:Generator_UserColumnName="Comprobante_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="DescripcionTiposCompAfip" msprop:Generator_ColumnVarNameInTable="columnDescripcionTiposCompAfip" msprop:Generator_ColumnPropNameInRow="DescripcionTiposCompAfip" msprop:Generator_ColumnPropNameInTable="DescripcionTiposCompAfipColumn" msprop:Generator_UserColumnName="DescripcionTiposCompAfip" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

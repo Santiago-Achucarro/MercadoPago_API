@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BA87DBF-C085-4682-8967-A2BD181E64BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComprasReportesCommon</RootNamespace>
+    <AssemblyName>ComprasReportesCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatProvDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatProvDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comAplicacionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comAplicacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comCFDISatDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comCFDISatDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comCierreDetaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comCierreDetaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comCompRegistradosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comCompRegistradosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comCompSaldoDS.cs">
+      <DependentUpon>comCompSaldoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comCompSaldoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comCompSaldoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComEdoctaDS.cs">
+      <DependentUpon>ComEdoctaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComEdoctaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComEdoctaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comEmbCierresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comEmbCierresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComFactARecibirImpDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComFactARecibirImpDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComFactARecibirNacDS.cs">
+      <DependentUpon>ComFactARecibirNacDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComFactARecibirNacDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComFactARecibirNacDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comFactProvMenoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comFactProvMenoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comImpPagadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comImpPagadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comLibrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comLibrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comOrdenCompDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comOrdenCompDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comOrdenCompraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comOrdenCompraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comOrdenCompRIDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comOrdenCompRIDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comPagosHabiDS.cs">
+      <DependentUpon>comPagosHabiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comPagosHabiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comPagosHabiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComPosfinancieraDetaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComPosfinancieraDetaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comPrevComprasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comPrevComprasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comProveListaNegraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comProveListaNegraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comReqInternoDETDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comReqInternoDETDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComSaldoXCuentaDS.cs">
+      <DependentUpon>ComSaldoXCuentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComSaldoXCuentaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComSaldoXCuentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComSubDiarioDS.cs">
+      <DependentUpon>ComSubDiarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComSubDiarioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComSubDiarioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ComSubMayorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComSubMayorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="comUltimasComprasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comUltimasComprasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CostoImportacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CostoImportacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RankProvDS.cs">
+      <DependentUpon>RankProvDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RankProvDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RankProvDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaldosProvDS.cs">
+      <DependentUpon>SaldosProvDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaldosProvDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaldosProvDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CatProvDS.xsc">
+      <DependentUpon>CatProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="CatProvDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatProvDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CatProvDS.xss">
+      <DependentUpon>CatProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="comAplicacionesDS.xsc">
+      <DependentUpon>comAplicacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="comAplicacionesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comAplicacionesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comAplicacionesDS.xss">
+      <DependentUpon>comAplicacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCFDISatDS.xsc">
+      <DependentUpon>comCFDISatDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCFDISatDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comCFDISatDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comCFDISatDS.xss">
+      <DependentUpon>comCFDISatDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCierreDetaDS.xsc">
+      <DependentUpon>comCierreDetaDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCierreDetaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comCierreDetaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comCierreDetaDS.xss">
+      <DependentUpon>comCierreDetaDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCompRegistradosDS.xsc">
+      <DependentUpon>comCompRegistradosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCompRegistradosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comCompRegistradosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comCompRegistradosDS.xss">
+      <DependentUpon>comCompRegistradosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCompSaldoDS.xsc">
+      <DependentUpon>comCompSaldoDS.xsd</DependentUpon>
+    </None>
+    <None Include="comCompSaldoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comCompSaldoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comCompSaldoDS.xss">
+      <DependentUpon>comCompSaldoDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComEdoctaDS.xsc">
+      <DependentUpon>ComEdoctaDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComEdoctaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComEdoctaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComEdoctaDS.xss">
+      <DependentUpon>ComEdoctaDS.xsd</DependentUpon>
+    </None>
+    <None Include="comEmbCierresDS.xsc">
+      <DependentUpon>comEmbCierresDS.xsd</DependentUpon>
+    </None>
+    <None Include="comEmbCierresDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comEmbCierresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comEmbCierresDS.xss">
+      <DependentUpon>comEmbCierresDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComFactARecibirImpDS.xsc">
+      <DependentUpon>ComFactARecibirImpDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComFactARecibirImpDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComFactARecibirImpDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComFactARecibirImpDS.xss">
+      <DependentUpon>ComFactARecibirImpDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComFactARecibirNacDS.xsc">
+      <DependentUpon>ComFactARecibirNacDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComFactARecibirNacDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComFactARecibirNacDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComFactARecibirNacDS.xss">
+      <DependentUpon>ComFactARecibirNacDS.xsd</DependentUpon>
+    </None>
+    <None Include="comFactProvMenoresDS.xsc">
+      <DependentUpon>comFactProvMenoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="comFactProvMenoresDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comFactProvMenoresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comFactProvMenoresDS.xss">
+      <DependentUpon>comFactProvMenoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="comImpPagadosDS.xsc">
+      <DependentUpon>comImpPagadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comImpPagadosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comImpPagadosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comImpPagadosDS.xss">
+      <DependentUpon>comImpPagadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comLibrosDS.xsc">
+      <DependentUpon>comLibrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comLibrosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comLibrosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comLibrosDS.xss">
+      <DependentUpon>comLibrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompDS.xsc">
+      <DependentUpon>comOrdenCompDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comOrdenCompDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comOrdenCompDS.xss">
+      <DependentUpon>comOrdenCompDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompraDS.xsc">
+      <DependentUpon>comOrdenCompraDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompraDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comOrdenCompraDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comOrdenCompraDS.xss">
+      <DependentUpon>comOrdenCompraDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompRIDS.xsc">
+      <DependentUpon>comOrdenCompRIDS.xsd</DependentUpon>
+    </None>
+    <None Include="comOrdenCompRIDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comOrdenCompRIDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comOrdenCompRIDS.xss">
+      <DependentUpon>comOrdenCompRIDS.xsd</DependentUpon>
+    </None>
+    <None Include="comPagosHabiDS.xsc">
+      <DependentUpon>comPagosHabiDS.xsd</DependentUpon>
+    </None>
+    <None Include="comPagosHabiDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comPagosHabiDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comPagosHabiDS.xss">
+      <DependentUpon>comPagosHabiDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComPosfinancieraDetaDS.xsc">
+      <DependentUpon>ComPosfinancieraDetaDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComPosfinancieraDetaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComPosfinancieraDetaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComPosfinancieraDetaDS.xss">
+      <DependentUpon>ComPosfinancieraDetaDS.xsd</DependentUpon>
+    </None>
+    <None Include="comPrevComprasDS.xsc">
+      <DependentUpon>comPrevComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="comPrevComprasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comPrevComprasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comPrevComprasDS.xss">
+      <DependentUpon>comPrevComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="comProveListaNegraDS.xsc">
+      <DependentUpon>comProveListaNegraDS.xsd</DependentUpon>
+    </None>
+    <None Include="comProveListaNegraDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comProveListaNegraDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="comProveListaNegraDS.xss">
+      <DependentUpon>comProveListaNegraDS.xsd</DependentUpon>
+    </None>
+    <None Include="comReqInternoDETDS.xsc">
+      <DependentUpon>comReqInternoDETDS.xsd</DependentUpon>
+    </None>
+    <None Include="comReqInternoDETDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comReqInternoDETDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="comReqInternoDETDS.xss">
+      <DependentUpon>comReqInternoDETDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSaldoXCuentaDS.xsc">
+      <DependentUpon>ComSaldoXCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSaldoXCuentaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComSaldoXCuentaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComSaldoXCuentaDS.xss">
+      <DependentUpon>ComSaldoXCuentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSubDiarioDS.xsc">
+      <DependentUpon>ComSubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSubDiarioDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComSubDiarioDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComSubDiarioDS.xss">
+      <DependentUpon>ComSubDiarioDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSubMayorDS.xsc">
+      <DependentUpon>ComSubMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="ComSubMayorDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComSubMayorDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComSubMayorDS.xss">
+      <DependentUpon>ComSubMayorDS.xsd</DependentUpon>
+    </None>
+    <None Include="comUltimasComprasDS.xsc">
+      <DependentUpon>comUltimasComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="comUltimasComprasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comUltimasComprasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="comUltimasComprasDS.xss">
+      <DependentUpon>comUltimasComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="CostoImportacionDS.xsc">
+      <DependentUpon>CostoImportacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="CostoImportacionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CostoImportacionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CostoImportacionDS.xss">
+      <DependentUpon>CostoImportacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="RankProvDS.xsc">
+      <DependentUpon>RankProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="RankProvDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RankProvDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RankProvDS.xss">
+      <DependentUpon>RankProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="SaldosProvDS.xsc">
+      <DependentUpon>SaldosProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="SaldosProvDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaldosProvDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaldosProvDS.xss">
+      <DependentUpon>SaldosProvDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

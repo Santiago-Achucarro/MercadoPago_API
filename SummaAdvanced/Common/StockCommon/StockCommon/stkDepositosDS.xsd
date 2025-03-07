@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="stkDepositosDS" targetNamespace="http://tempuri.org/stkDepositosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/stkDepositosDS.xsd" xmlns:mstns="http://tempuri.org/stkDepositosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="stkDepositosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="stkDepositos" type="xs:int" minOccurs="0" />
+<xs:element name="Deposito_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Deposito_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSucursalesEmpr" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Direccion" type="xs:string" minOccurs="0" />
+<xs:element name="GrupoUsuarios" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionGrupoUsuarios" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro1" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCentro2" type="xs:string" minOccurs="0" />
+<xs:element name="AdmiteVentas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Consignacion" type="xs:boolean" minOccurs="0" />
+<xs:element name="CuentaDeudCons" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentaDeudCons" type="xs:string" minOccurs="0" />
+<xs:element name="CuentaAcredCons" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentaAcredCons" type="xs:string" minOccurs="0" />
+<xs:element name="CtaBienesCambio" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaBienesCambio" type="xs:string" minOccurs="0" />
+<xs:element name="CtaMercEnCons" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaMercEnCons" type="xs:string" minOccurs="0" />
+<xs:element name="DepositoReal" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionDepositoReal" type="xs:string" minOccurs="0" />
+<xs:element name="consCompra_Venta" type="xs:boolean" minOccurs="0" />
+<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="Provincia_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProvincias" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="UsaUbicacion" type="xs:boolean" minOccurs="0" />
+<xs:element name="c_ColoniaEntr" type="xs:string" minOccurs="0" />
+<xs:element name="c_LocalidadEntr" type="xs:string" minOccurs="0" />
+<xs:element name="c_MunicipioEntr" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

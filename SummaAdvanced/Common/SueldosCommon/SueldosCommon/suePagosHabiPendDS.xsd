@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="suePagosHabiPendDS" targetNamespace="http://tempuri.org/suePagosHabiPendDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/suePagosHabiPendDS.xsd" xmlns:mstns="http://tempuri.org/suePagosHabiPendDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="suePagosHabiPendDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Liquidaciones">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="sueLiquidacion" type="xs:long" minOccurs="0" />
+<xs:element name="DescripcionLiquidacion" type="xs:string" minOccurs="0" />
+<xs:element name="PorEmpleado" type="xs:boolean" minOccurs="0" />
+<xs:element name="FechaHabilitacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+<xs:element name="Segmento" type="xs:string" minOccurs="0" />
+<xs:element name="Anio" type="xs:int" minOccurs="0" />
+<xs:element name="Mes" type="xs:int" minOccurs="0" />
+<xs:element name="Quincena" type="xs:int" minOccurs="0" />
+<xs:element name="Decena" type="xs:int" minOccurs="0" />
+<xs:element name="Semana" type="xs:int" minOccurs="0" />
+<xs:element name="Vez" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Empleados">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+<xs:element name="Secuencia" type="xs:int" minOccurs="0" />
+<xs:element name="Legajo" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionPersonal" type="xs:string" minOccurs="0" />
+<xs:element name="sueLiquidacion" type="xs:long" minOccurs="0" />
+<xs:element name="tesMovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="FechaHabilitacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Anio" type="xs:int" minOccurs="0" />
+<xs:element name="Mes" type="xs:int" minOccurs="0" />
+<xs:element name="Quincena" type="xs:int" minOccurs="0" />
+<xs:element name="Decena" type="xs:int" minOccurs="0" />
+<xs:element name="Semana" type="xs:int" minOccurs="0" />
+<xs:element name="Vez" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

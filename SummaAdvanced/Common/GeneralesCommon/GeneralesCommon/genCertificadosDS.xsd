@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genCertificadosDS" targetNamespace="http://tempuri.org/genCertificadosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genCertificadosDS.xsd" xmlns:mstns="http://tempuri.org/genCertificadosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genCertificadosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="NoCertificado" type="xs:string" minOccurs="0" />
+<xs:element name="GENWSAAPRIVATEKEY" type="xs:string" minOccurs="0" />
+<xs:element name="GENWSAAPUBLICKEY" type="xs:string" minOccurs="0" />
+<xs:element name="ClavePubKey" type="xs:string" minOccurs="0" />
+<xs:element name="ArchivoKey" type="xs:string" minOccurs="0" />
+<xs:element name="ArchivoCer" type="xs:string" minOccurs="0" />
+<xs:element name="VENPAC" type="xs:string" minOccurs="0" />
+<xs:element name="VENCLAVEPAC" type="xs:string" minOccurs="0" />
+<xs:element name="VENUSUARIOPAC" type="xs:string" minOccurs="0" />
+<xs:element name="VENCLAVEPACCANC" type="xs:string" minOccurs="0" />
+<xs:element name="VENUSUARIOPACANC" type="xs:string" minOccurs="0" />
+<xs:element name="EMPDIRPDFFACT" type="xs:string" minOccurs="0" />
+<xs:element name="VENLLAMAPAC" type="xs:boolean" minOccurs="0" />
+<xs:element name="CLAVEPRIVATEKEY" type="xs:string" minOccurs="0" />
+<xs:element name="VENCLAPFXCANC" type="xs:string" minOccurs="0" />
+<xs:element name="VENCANCCONTRA" type="xs:boolean" minOccurs="0" />
+<xs:element name="GENVERSIONCFDI" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

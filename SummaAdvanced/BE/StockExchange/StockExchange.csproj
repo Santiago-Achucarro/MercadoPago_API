@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93E23FA8-C960-4B51-A145-03D16483CAFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockExchange</RootNamespace>
+    <AssemblyName>StockExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="grdMoviSerieActionEnum.cs" />
+    <Compile Include="grdMoviSerieActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuePedimentoActionEnum.cs" />
+    <Compile Include="QuePedimentoActionExchange.cs" />
+    <Compile Include="stkAFechaActionEnum.cs" />
+    <Compile Include="stkAFechaActionExchange.cs" />
+    <Compile Include="stkArtiUMActionEnum.cs" />
+    <Compile Include="stkArtiUMActionExchange.cs" />
+    <Compile Include="stkAsiCierreDatosCierreActionEnum.cs" />
+    <Compile Include="stkAsiCierreDatosCierreActionExchange.cs" />
+    <Compile Include="stkCambioPrecioProdActionEnum.cs" />
+    <Compile Include="stkCambioPrecioProdActionExchange.cs" />
+    <Compile Include="stkCataProductosActionEnum.cs" />
+    <Compile Include="stkCataProductosActionExchange.cs" />
+    <Compile Include="stkCausasMoviActionEnum.cs" />
+    <Compile Include="stkCausasMoviActionExchange.cs" />
+    <Compile Include="stkCondFisCompraActionEnum.cs" />
+    <Compile Include="stkCondFisCompraActionExchange.cs" />
+    <Compile Include="stkCondFisVentaActionEnum.cs" />
+    <Compile Include="stkCondFisVentaActionExchange.cs" />
+    <Compile Include="stkConsKardexActionEnum.cs" />
+    <Compile Include="stkConsKardexActionExchange.cs" />
+    <Compile Include="stkConsStockActionEnum.cs" />
+    <Compile Include="stkConsStockActionExchange.cs" />
+    <Compile Include="stkConsStockDetalleActionEnum.cs" />
+    <Compile Include="stkConsStockDetalleActionExchange.cs" />
+    <Compile Include="stkCostoUltimaCompraActionEnum.cs" />
+    <Compile Include="stkCostoUltimaCompraActionExchange.cs" />
+    <Compile Include="stkCOTArActionEnum.cs" />
+    <Compile Include="stkCOTArActionExchange.cs" />
+    <Compile Include="stkCOTArLimitesActionEnum.cs" />
+    <Compile Include="stkCOTArLimitesActionExchange.cs" />
+    <Compile Include="stkDepositosActionEnum.cs" />
+    <Compile Include="stkDepositosActionExchange.cs" />
+    <Compile Include="stkDevolucionesClieActionEnum.cs" />
+    <Compile Include="stkDevolucionesClieActionExchange.cs" />
+    <Compile Include="stkDevolucionesProvActionEnum.cs" />
+    <Compile Include="stkDevolucionesProvActionExchange.cs" />
+    <Compile Include="stkEntradasCancRemiActionEnum.cs" />
+    <Compile Include="stkEntradasCancRemiActionExchange.cs" />
+    <Compile Include="stkEntradasCancRemiPendActionEnum.cs" />
+    <Compile Include="stkEntradasCancRemiPendActionExchange.cs" />
+    <Compile Include="stkEntradasCDActionEnum.cs" />
+    <Compile Include="stkEntradasCDActionExchange.cs" />
+    <Compile Include="stkEntradasEmbarqueActionEnum.cs" />
+    <Compile Include="stkEntradasEmbarqueActionExchange.cs" />
+    <Compile Include="stkEntradasOcActionEnum.cs" />
+    <Compile Include="stkEntradasOcActionExchange.cs" />
+    <Compile Include="stkEntradasRIActionEnum.cs" />
+    <Compile Include="stkEntradasRIActionExchange.cs" />
+    <Compile Include="stkEnTransitoActionEnum.cs" />
+    <Compile Include="stkEnTransitoActionExchange.cs" />
+    <Compile Include="stkExistenciaActionEnum.cs" />
+    <Compile Include="stkExistenciaActionExchange.cs" />
+    <Compile Include="stkExistenciaDespaActionEnum.cs" />
+    <Compile Include="stkExistenciaDespaActionExchange.cs" />
+    <Compile Include="stkExistenciaDespaXFifoActionEnum.cs" />
+    <Compile Include="stkExistenciaDespaXFifoActionExchange.cs" />
+    <Compile Include="stkExistenciaSerieActionEnum.cs" />
+    <Compile Include="stkExistenciaSerieActionExchange.cs" />
+    <Compile Include="stkExistenciaSerieXFifoOVtoActionEnum.cs" />
+    <Compile Include="stkExistenciaSerieXFifoOVtoActionExchange.cs" />
+    <Compile Include="stkExistenciasXDepositoActionEnum.cs" />
+    <Compile Include="stkExistenciasXDepositoActionExchange.cs" />
+    <Compile Include="stkExistenciasXDepositoXLoteActionEnum.cs" />
+    <Compile Include="stkExistenciasXDepositoXLoteActionExchange.cs" />
+    <Compile Include="stkExistenciaUbiActionEnum.cs" />
+    <Compile Include="stkExistenciaUbiActionExchange.cs" />
+    <Compile Include="stkExistenciaUbiSerieActionEnum.cs" />
+    <Compile Include="stkExistenciaUbiSerieActionExchange.cs" />
+    <Compile Include="stkExistenciaXSerieXUbiActionEnum.cs" />
+    <Compile Include="stkExistenciaXSerieXUbiActionExchange.cs" />
+    <Compile Include="stkFamiliasActionEnum.cs" />
+    <Compile Include="stkFamiliasActionExchange.cs" />
+    <Compile Include="stkGruposActionEnum.cs" />
+    <Compile Include="stkGruposActionExchange.cs" />
+    <Compile Include="stkHojaDeRutaActionEnum.cs" />
+    <Compile Include="stkHojaDeRutaActionExchange.cs" />
+    <Compile Include="stkHojaDeRutaCerrarActionEnum.cs" />
+    <Compile Include="stkHojaDeRutaCerrarActionExchange.cs" />
+    <Compile Include="stkHojaDeRutaCuerpoActionEnum.cs" />
+    <Compile Include="stkHojaDeRutaCuerpoActionExchange.cs" />
+    <Compile Include="stkHojaSegmentosActionEnum.cs" />
+    <Compile Include="stkHojaSegmentosActionExchange.cs" />
+    <Compile Include="stkInvenSegmentosActionEnum.cs" />
+    <Compile Include="stkInvenSegmentosActionExchange.cs" />
+    <Compile Include="stkInvenSegmentosProximoActionEnum.cs" />
+    <Compile Include="stkInvenSegmentosProximoActionExchange.cs" />
+    <Compile Include="stkInventarioActionEnum.cs" />
+    <Compile Include="stkInventarioActionExchange.cs" />
+    <Compile Include="stkInventCuerpoActionEnum.cs" />
+    <Compile Include="stkInventCuerpoActionExchange.cs" />
+    <Compile Include="stkInventSerieActionEnum.cs" />
+    <Compile Include="stkInventSerieActionExchange.cs" />
+    <Compile Include="stkInvMoviStkActionEnum.cs" />
+    <Compile Include="stkInvMoviStkActionExchange.cs" />
+    <Compile Include="stkMaxMinActionEnum.cs" />
+    <Compile Include="stkMaxMinActionExchange.cs" />
+    <Compile Include="stkMoviCabeActionEnum.cs" />
+    <Compile Include="stkMoviCabeActionExchange.cs" />
+    <Compile Include="stkMoviCabeCentroActionEnum.cs" />
+    <Compile Include="stkMoviCabeCentroActionExchange.cs" />
+    <Compile Include="stkMoviCabeDatosCausaActionEnum.cs" />
+    <Compile Include="stkMoviCabeDatosCausaActionExchange.cs" />
+    <Compile Include="stkMoviCabeDatosEmpleadoActionEnum.cs" />
+    <Compile Include="stkMoviCabeDatosEmpleadoActionExchange.cs" />
+    <Compile Include="stkMoviCabeDatosProvActionEnum.cs" />
+    <Compile Include="stkMoviCabeDatosProvActionExchange.cs" />
+    <Compile Include="stkMoviCabeDatosSalidasRemitoActionEnum.cs" />
+    <Compile Include="stkMoviCabeDatosSalidasRemitoActionExchange.cs" />
+    <Compile Include="stkMoviCabeEntradasCausaActionEnum.cs" />
+    <Compile Include="stkMoviCabeEntradasCausaActionExchange.cs" />
+    <Compile Include="stkMoviCabeImprimirActionEnum.cs" />
+    <Compile Include="stkMoviCabeImprimirActionExchange.cs" />
+    <Compile Include="stkMoviCabeRevaActionEnum.cs" />
+    <Compile Include="stkMoviCabeRevaActionExchange.cs" />
+    <Compile Include="stkMoviCabeSalidasCausaActionEnum.cs" />
+    <Compile Include="stkMoviCabeSalidasCausaActionExchange.cs" />
+    <Compile Include="stkMoviCausaActionEnum.cs" />
+    <Compile Include="stkMoviCausaActionExchange.cs" />
+    <Compile Include="stkMoviConsignaActionEnum.cs" />
+    <Compile Include="stkMoviConsignaActionExchange.cs" />
+    <Compile Include="stkMoviCRevaluoActionEnum.cs" />
+    <Compile Include="stkMoviCRevaluoActionExchange.cs" />
+    <Compile Include="stkMoviCuerpoActionEnum.cs" />
+    <Compile Include="stkMoviCuerpoActionExchange.cs" />
+    <Compile Include="stkMoviCuerpoRevaActionEnum.cs" />
+    <Compile Include="stkMoviCuerpoRevaActionExchange.cs" />
+    <Compile Include="stkMoviCuerpoWrapper.cs" />
+    <Compile Include="stkMoviDespaActionEnum.cs" />
+    <Compile Include="stkMoviDespaActionExchange.cs" />
+    <Compile Include="stkMoviEmbarqueActionEnum.cs" />
+    <Compile Include="stkMoviEmbarqueActionExchange.cs" />
+    <Compile Include="stkMoviLegaActionEnum.cs" />
+    <Compile Include="stkMoviLegaActionExchange.cs" />
+    <Compile Include="stkMoviOCActionEnum.cs" />
+    <Compile Include="stkMoviOCActionExchange.cs" />
+    <Compile Include="stkMoviProvActionEnum.cs" />
+    <Compile Include="stkMoviProvActionExchange.cs" />
+    <Compile Include="stkMoviSerieActionEnum.cs" />
+    <Compile Include="stkMoviSerieActionExchange.cs" />
+    <Compile Include="stkMoviSerieUbicacionActionEnum.cs" />
+    <Compile Include="stkMoviSerieUbicacionActionExchange.cs" />
+    <Compile Include="stkMoviUbicacionActionEnum.cs" />
+    <Compile Include="stkMoviUbicacionActionExchange.cs" />
+    <Compile Include="stkNotasCreditoXDevolucionActionEnum.cs" />
+    <Compile Include="stkNotasCreditoXDevolucionActionExchange.cs" />
+    <Compile Include="stkProdImagenesXLSActionEnum.cs" />
+    <Compile Include="stkProdImagenesXLSActionExchange.cs" />
+    <Compile Include="stkProductosActionEnum.cs" />
+    <Compile Include="stkProductosActionExchange.cs" />
+    <Compile Include="stkProductosActuCostoActionEnum.cs" />
+    <Compile Include="stkProductosActuCostoActionExchange.cs" />
+    <Compile Include="stkProductosCodFiscalActionEnum.cs" />
+    <Compile Include="stkProductosCodFiscalActionExchange.cs" />
+    <Compile Include="stkProductosCostoCierreSucursalActionEnum.cs" />
+    <Compile Include="stkProductosCostoCierreSucursalActionExchange.cs" />
+    <Compile Include="stkProductosCostosActionEnum.cs" />
+    <Compile Include="stkProductosCostosActionExchange.cs" />
+    <Compile Include="stkProductosCostosSucursalActionEnum.cs" />
+    <Compile Include="stkProductosCostosSucursalActionExchange.cs" />
+    <Compile Include="stkProductosCtasVentasActionEnum.cs" />
+    <Compile Include="stkProductosCtasVentasActionExchange.cs" />
+    <Compile Include="stkProductosPlantillaActionEnum.cs" />
+    <Compile Include="stkProductosPlantillaActionExchange.cs" />
+    <Compile Include="stkProductosXLSActionEnum.cs" />
+    <Compile Include="stkProductosXLSActionExchange.cs" />
+    <Compile Include="stkRemiCancPendActionEnum.cs" />
+    <Compile Include="stkRemiCancPendActionExchange.cs" />
+    <Compile Include="stkRemiConformaActionEnum.cs" />
+    <Compile Include="stkRemiConformaActionExchange.cs" />
+    <Compile Include="stkRemiPendFactActionEnum.cs" />
+    <Compile Include="stkRemiPendFactActionExchange.cs" />
+    <Compile Include="stkRemiPendFactProActionEnum.cs" />
+    <Compile Include="stkRemiPendFactProActionExchange.cs" />
+    <Compile Include="stkRemiProvActionEnum.cs" />
+    <Compile Include="stkRemiProvActionExchange.cs" />
+    <Compile Include="stkRemisionFacturaActionEnum.cs" />
+    <Compile Include="stkRemisionFacturaActionExchange.cs" />
+    <Compile Include="stkRemitosActionEnum.cs" />
+    <Compile Include="stkRemitosActionExchange.cs" />
+    <Compile Include="stkRevaCostoManualActionEnum.cs" />
+    <Compile Include="stkRevaCostoManualActionExchange.cs" />
+    <Compile Include="stkSalidasCDActionEnum.cs" />
+    <Compile Include="stkSalidasCDActionExchange.cs" />
+    <Compile Include="stkSalidasCDDirectasActionEnum.cs" />
+    <Compile Include="stkSalidasCDDirectasActionExchange.cs" />
+    <Compile Include="stkSalidasRemitoConsultaDrillDownActionEnum.cs" />
+    <Compile Include="stkSalidasRemitoConsultaDrillDownActionExchange.cs" />
+    <Compile Include="stkSalidasRIActionEnum.cs" />
+    <Compile Include="stkSalidasRIActionExchange.cs" />
+    <Compile Include="stkSerieVencimientoActionEnum.cs" />
+    <Compile Include="stkSerieVencimientoActionExchange.cs" />
+    <Compile Include="stkSolicitudCDActionEnum.cs" />
+    <Compile Include="stkSolicitudCDActionExchange.cs" />
+    <Compile Include="stkSubTipoMovActionEnum.cs" />
+    <Compile Include="stkSubTipoMovActionExchange.cs" />
+    <Compile Include="stkTiposActionEnum.cs" />
+    <Compile Include="stkTiposActionExchange.cs" />
+    <Compile Include="stkTiposMovActionEnum.cs" />
+    <Compile Include="stkTiposMovActionExchange.cs" />
+    <Compile Include="stkUbiAlmacenActionEnum.cs" />
+    <Compile Include="stkUbiAlmacenActionExchange.cs" />
+    <Compile Include="stkUbiAlmacenDefectoActionEnum.cs" />
+    <Compile Include="stkUbiAlmacenDefectoActionExchange.cs" />
+    <Compile Include="stkUbicacionesActionEnum.cs" />
+    <Compile Include="stkUbicacionesActionExchange.cs" />
+    <Compile Include="stkUltimaSalidaDespaActionEnum.cs" />
+    <Compile Include="stkUltimaSalidaDespaActionExchange.cs" />
+    <Compile Include="stkUniMedActionEnum.cs" />
+    <Compile Include="stkUniMedActionExchange.cs" />
+    <Compile Include="StockCerrarActionEnum.cs" />
+    <Compile Include="StockCerrarActionExchange.cs" />
+    <Compile Include="stockMovCuerpoCierreActionEnum.cs" />
+    <Compile Include="stockMovCuerpoCierreActionExchange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\StockCommon\StockCommon\StockCommon.csproj">
+      <Project>{b5aadc9c-a68c-4b7e-9b17-c7fa162283a4}</Project>
+      <Name>StockCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E303C8E2-66F2-422E-BDB3-E52E72433C18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesoreriaFEEventos</RootNamespace>
+    <AssemblyName>TesoreriaFEEventos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesFEAdv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesFEAdv.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Reports, Version=0.8.1901.32310, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tesAperturaCaja.cs" />
+    <Compile Include="tesCFDICobranza.cs" />
+    <Compile Include="tesCheqBusqueda.cs" />
+    <Compile Include="tesCheqPropImpresion.cs" />
+    <Compile Include="tesChequeras.cs" />
+    <Compile Include="tesConciliacion.cs" />
+    <Compile Include="tesDepIdentificacion.cs" />
+    <Compile Include="tesFlujoFondo.cs" />
+    <Compile Include="tesMovientos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tesRengMoviVirtual.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\ComprasBE\ComprasValidacion\ComprasValidacion.csproj">
+      <Project>{2ebbad1b-4fcd-4bb0-a358-5a5e043b3941}</Project>
+      <Name>ComprasValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\ContabilidadBE\ContabilidadValidacion\ContabilidadValidacion.csproj">
+      <Project>{8de70d60-5727-4f7a-ac20-732e3ea9f4d3}</Project>
+      <Name>ContabilidadValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\GeneralesBE\GeneralesValidacion\GeneralesValidacion.csproj">
+      <Project>{bd4fd30c-d5fa-4c15-84ea-6d46f45f3d0b}</Project>
+      <Name>GeneralesValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\TesoreriaBE\TesoreriaValidacion\TesoreriaValidacion.csproj">
+      <Project>{ee0c8eca-6b0d-49d6-ac35-a42f8246510c}</Project>
+      <Name>TesoreriaValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\VentasBE\VentasValidacion\VentasValidacion.csproj">
+      <Project>{aec868c2-7e39-4678-a7e0-15895cc16008}</Project>
+      <Name>VentasValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\ComprasExchange\ComprasExchange.csproj">
+      <Project>{0d3b3347-a8cf-4909-aea6-62c5d45244a3}</Project>
+      <Name>ComprasExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\ContabilidadExchange\ContabilidadExchange.csproj">
+      <Project>{24e4cba8-710c-4a3d-8e5f-a24e8d976541}</Project>
+      <Name>ContabilidadExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\GeneralesExchange\GeneralesExchange.csproj">
+      <Project>{678dcd1e-d8ac-4fd8-934a-b775110c81d5}</Project>
+      <Name>GeneralesExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\TesoreriaExchange\TesoreriaExchange.csproj">
+      <Project>{8056579c-2e84-4dcb-af7e-4ae2cdb88186}</Project>
+      <Name>TesoreriaExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\VentasExchange\VentasExchange.csproj">
+      <Project>{9086dc67-3a32-4c61-9c2d-5af1f42a37bc}</Project>
+      <Name>VentasExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ComprasCommon\ComprasCommon\ComprasCommon.csproj">
+      <Project>{426a7287-f5d3-42c3-b096-e963f20d1513}</Project>
+      <Name>ComprasCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ContabilidadCommon\ContabilidadCommon\ContabilidadCommon.csproj">
+      <Project>{a1732112-8817-4321-99cc-3c0069457061}</Project>
+      <Name>ContabilidadCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon.csproj">
+      <Project>{8ce1debf-54f4-4e33-94fb-2e316fe994f8}</Project>
+      <Name>TesoreriaCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\TesoreriaReportesCommon\TesoreriaReportesCommon\TesoreriaReportesCommon.csproj">
+      <Project>{ba57deba-ead3-459e-b319-912f31710d87}</Project>
+      <Name>TesoreriaReportesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\VentasCommon\VentasCommon\VentasCommon\VentasCommon.csproj">
+      <Project>{ff0479ce-a5f1-4dd3-ba1f-9d61c65038b6}</Project>
+      <Name>VentasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

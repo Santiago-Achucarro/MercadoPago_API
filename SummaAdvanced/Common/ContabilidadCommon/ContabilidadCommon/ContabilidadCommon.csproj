@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1732112-8817-4321-99CC-3C0069457061}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContabilidadCommon</RootNamespace>
+    <AssemblyName>ContabilidadCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conActualizarCuentasMovimientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conActualizarCuentasMovimientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAnexoGrupoTiposDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAnexoGrupoTiposDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAnexosGruposDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAnexosGruposDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAnexosOrigenesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAnexosOrigenesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conArbolAsientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conArbolAsientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsiDistribuirDS.cs">
+      <DependentUpon>conAsiDistribuirDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsiDistribuirDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsiDistribuirDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieApeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieApeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieCierreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieCierreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieCierrePatDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieCierrePatDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieCierreResDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieCierreResDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosAnulDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosAnulDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosAperturaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosAperturaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosDS.cs">
+      <DependentUpon>conAsientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosInverDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosInverDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsientosTipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsientosTipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieReversionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieReversionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsieTipoCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsieTipoCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conAsiMarcaAperturaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conAsiMarcaAperturaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conBalanzaElectroMXDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conBalanzaElectroMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conBaseDistriDS.cs">
+      <DependentUpon>conBaseDistriDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conBaseDistriDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conBaseDistriDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCatalogoElectroMXDS.cs">
+      <DependentUpon>conCatalogoElectroMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCatalogoElectroMXDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCatalogoElectroMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCentro1DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCentro1DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCentro2DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCentro2DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuadro1FilasDS.cs">
+      <DependentUpon>conCuadro1FilasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuadro1FilasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuadro1FilasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuentasActualizacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuentasActualizacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuentasCuentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuentasCuentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conCuentasSinSCDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conCuentasSinSCDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conDetalleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conDetalleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conEjercicioDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conEjercicioDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conEjercicioPeriodoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conEjercicioPeriodoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conFechasCierresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conFechasCierresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conGrupoCentroDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conGrupoCentroDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conGruposContDS.cs">
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conGruposContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conIndAjusDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conIndAjusDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conIndicesAjustesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conIndicesAjustesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefCuentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefCuentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefFilasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefFilasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesAcu1GenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesAcu1GenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesAcuGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesAcuGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conInfDefiniblesMenGenerarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conInfDefiniblesMenGenerarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conMovContConDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conMovContConDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conMovContDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conMovContDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conOrigAplicRengDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conOrigAplicRengDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conPeriodosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conPeriodosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conPolizasElectroMxDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conPolizasElectroMxDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conResumenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conResumenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conRubroPreviDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conRubroPreviDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conRubrosAxiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conRubrosAxiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conRubrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conRubrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conSituPatriDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conSituPatriDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conSubCuentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conSubCuentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conTipoEspecialesCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conTipoEspecialesCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conTipoEspecialesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conTipoEspecialesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conTiposContablesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conTiposContablesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conTiposSATDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conTiposSATDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="conVeriCentro12DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>conVeriCentro12DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="conActualizarCuentasMovimientosDS.xsc">
+      <DependentUpon>conActualizarCuentasMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conActualizarCuentasMovimientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conActualizarCuentasMovimientosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conActualizarCuentasMovimientosDS.xss">
+      <DependentUpon>conActualizarCuentasMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexoGrupoTiposDS.xsc">
+      <DependentUpon>conAnexoGrupoTiposDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexoGrupoTiposDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAnexoGrupoTiposDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAnexoGrupoTiposDS.xss">
+      <DependentUpon>conAnexoGrupoTiposDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexosGruposDS.xsc">
+      <DependentUpon>conAnexosGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexosGruposDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAnexosGruposDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAnexosGruposDS.xss">
+      <DependentUpon>conAnexosGruposDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexosOrigenesDS.xsc">
+      <DependentUpon>conAnexosOrigenesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAnexosOrigenesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAnexosOrigenesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAnexosOrigenesDS.xss">
+      <DependentUpon>conAnexosOrigenesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conArbolAsientosDS.xsc">
+      <DependentUpon>conArbolAsientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conArbolAsientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conArbolAsientosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conArbolAsientosDS.xss">
+      <DependentUpon>conArbolAsientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsiDistribuirDS.xsc">
+      <DependentUpon>conAsiDistribuirDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsiDistribuirDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsiDistribuirDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsiDistribuirDS.xss">
+      <DependentUpon>conAsiDistribuirDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieApeDS.xsc">
+      <DependentUpon>conAsieApeDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieApeDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieApeDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsieApeDS.xss">
+      <DependentUpon>conAsieApeDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierreDS.xsc">
+      <DependentUpon>conAsieCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieCierreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsieCierreDS.xss">
+      <DependentUpon>conAsieCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierrePatDS.xsc">
+      <DependentUpon>conAsieCierrePatDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierrePatDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieCierrePatDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsieCierrePatDS.xss">
+      <DependentUpon>conAsieCierrePatDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierreResDS.xsc">
+      <DependentUpon>conAsieCierreResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieCierreResDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieCierreResDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsieCierreResDS.xss">
+      <DependentUpon>conAsieCierreResDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosAnulDS.xsc">
+      <DependentUpon>conAsientosAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosAnulDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosAnulDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsientosAnulDS.xss">
+      <DependentUpon>conAsientosAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosAperturaDS.xsc">
+      <DependentUpon>conAsientosAperturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosAperturaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosAperturaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsientosAperturaDS.xss">
+      <DependentUpon>conAsientosAperturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosContDS.xsc">
+      <DependentUpon>conAsientosContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosContDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsientosContDS.xss">
+      <DependentUpon>conAsientosContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosDS.xsc">
+      <DependentUpon>conAsientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsientosDS.xss">
+      <DependentUpon>conAsientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosInverDS.xsc">
+      <DependentUpon>conAsientosInverDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosInverDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosInverDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conAsientosInverDS.xss">
+      <DependentUpon>conAsientosInverDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosTipoDS.xsc">
+      <DependentUpon>conAsientosTipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsientosTipoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsientosTipoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsientosTipoDS.xss">
+      <DependentUpon>conAsientosTipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieReversionDS.xsc">
+      <DependentUpon>conAsieReversionDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieReversionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieReversionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsieReversionDS.xss">
+      <DependentUpon>conAsieReversionDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieTipoCuerpoDS.xsc">
+      <DependentUpon>conAsieTipoCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsieTipoCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsieTipoCuerpoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsieTipoCuerpoDS.xss">
+      <DependentUpon>conAsieTipoCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsiMarcaAperturaDS.xsc">
+      <DependentUpon>conAsiMarcaAperturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conAsiMarcaAperturaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conAsiMarcaAperturaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conAsiMarcaAperturaDS.xss">
+      <DependentUpon>conAsiMarcaAperturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBalanzaElectroMXDS.xsc">
+      <DependentUpon>conBalanzaElectroMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBalanzaElectroMXDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conBalanzaElectroMXDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conBalanzaElectroMXDS.xss">
+      <DependentUpon>conBalanzaElectroMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBaseDistriDS.xsc">
+      <DependentUpon>conBaseDistriDS.xsd</DependentUpon>
+    </None>
+    <None Include="conBaseDistriDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conBaseDistriDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conBaseDistriDS.xss">
+      <DependentUpon>conBaseDistriDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCatalogoElectroMXDS.xsc">
+      <DependentUpon>conCatalogoElectroMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCatalogoElectroMXDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCatalogoElectroMXDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCatalogoElectroMXDS.xss">
+      <DependentUpon>conCatalogoElectroMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCentro1DS.xsc">
+      <DependentUpon>conCentro1DS.xsd</DependentUpon>
+    </None>
+    <None Include="conCentro1DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCentro1DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conCentro1DS.xss">
+      <DependentUpon>conCentro1DS.xsd</DependentUpon>
+    </None>
+    <None Include="conCentro2DS.xsc">
+      <DependentUpon>conCentro2DS.xsd</DependentUpon>
+    </None>
+    <None Include="conCentro2DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCentro2DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCentro2DS.xss">
+      <DependentUpon>conCentro2DS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuadro1FilasDS.xsc">
+      <DependentUpon>conCuadro1FilasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuadro1FilasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuadro1FilasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCuadro1FilasDS.xss">
+      <DependentUpon>conCuadro1FilasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasActualizacionDS.xsc">
+      <DependentUpon>conCuentasActualizacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasActualizacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuentasActualizacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCuentasActualizacionDS.xss">
+      <DependentUpon>conCuentasActualizacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasCuentasDS.xsc">
+      <DependentUpon>conCuentasCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasCuentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuentasCuentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCuentasCuentasDS.xss">
+      <DependentUpon>conCuentasCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasDS.xsc">
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCuentasDS.xss">
+      <DependentUpon>conCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasSinSCDS.xsc">
+      <DependentUpon>conCuentasSinSCDS.xsd</DependentUpon>
+    </None>
+    <None Include="conCuentasSinSCDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conCuentasSinSCDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conCuentasSinSCDS.xss">
+      <DependentUpon>conCuentasSinSCDS.xsd</DependentUpon>
+    </None>
+    <None Include="conDetalleDS.xsc">
+      <DependentUpon>conDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="conDetalleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conDetalleDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conDetalleDS.xss">
+      <DependentUpon>conDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEjercicioDS.xsc">
+      <DependentUpon>conEjercicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEjercicioDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conEjercicioDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conEjercicioDS.xss">
+      <DependentUpon>conEjercicioDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEjercicioPeriodoDS.xsc">
+      <DependentUpon>conEjercicioPeriodoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conEjercicioPeriodoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conEjercicioPeriodoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conEjercicioPeriodoDS.xss">
+      <DependentUpon>conEjercicioPeriodoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conFechasCierresDS.xsc">
+      <DependentUpon>conFechasCierresDS.xsd</DependentUpon>
+    </None>
+    <None Include="conFechasCierresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conFechasCierresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conFechasCierresDS.xss">
+      <DependentUpon>conFechasCierresDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGrupoCentroDS.xsc">
+      <DependentUpon>conGrupoCentroDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGrupoCentroDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conGrupoCentroDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conGrupoCentroDS.xss">
+      <DependentUpon>conGrupoCentroDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGruposContDS.xsc">
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conGruposContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conGruposContDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conGruposContDS.xss">
+      <DependentUpon>conGruposContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conIndAjusDS.xsc">
+      <DependentUpon>conIndAjusDS.xsd</DependentUpon>
+    </None>
+    <None Include="conIndAjusDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conIndAjusDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conIndAjusDS.xss">
+      <DependentUpon>conIndAjusDS.xsd</DependentUpon>
+    </None>
+    <None Include="conIndicesAjustesDS.xsc">
+      <DependentUpon>conIndicesAjustesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conIndicesAjustesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conIndicesAjustesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conIndicesAjustesDS.xss">
+      <DependentUpon>conIndicesAjustesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefCuentasDS.xsc">
+      <DependentUpon>conInfDefCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefCuentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefCuentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefCuentasDS.xss">
+      <DependentUpon>conInfDefCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefFilasDS.xsc">
+      <DependentUpon>conInfDefFilasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefFilasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefFilasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefFilasDS.xss">
+      <DependentUpon>conInfDefFilasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesAcu1GenerarDS.xsc">
+      <DependentUpon>conInfDefiniblesAcu1GenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesAcu1GenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesAcu1GenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesAcu1GenerarDS.xss">
+      <DependentUpon>conInfDefiniblesAcu1GenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesAcuGenerarDS.xsc">
+      <DependentUpon>conInfDefiniblesAcuGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesAcuGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesAcuGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesAcuGenerarDS.xss">
+      <DependentUpon>conInfDefiniblesAcuGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesDS.xsc">
+      <DependentUpon>conInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesDS.xss">
+      <DependentUpon>conInfDefiniblesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xsc">
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesGenerarDS.xss">
+      <DependentUpon>conInfDefiniblesGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesMenGenerarDS.xsc">
+      <DependentUpon>conInfDefiniblesMenGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conInfDefiniblesMenGenerarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conInfDefiniblesMenGenerarDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conInfDefiniblesMenGenerarDS.xss">
+      <DependentUpon>conInfDefiniblesMenGenerarDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMovContConDS.xsc">
+      <DependentUpon>conMovContConDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMovContConDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conMovContConDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conMovContConDS.xss">
+      <DependentUpon>conMovContConDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMovContDS.xsc">
+      <DependentUpon>conMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conMovContDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conMovContDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conMovContDS.xss">
+      <DependentUpon>conMovContDS.xsd</DependentUpon>
+    </None>
+    <None Include="conOrigAplicRengDS.xsc">
+      <DependentUpon>conOrigAplicRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="conOrigAplicRengDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conOrigAplicRengDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conOrigAplicRengDS.xss">
+      <DependentUpon>conOrigAplicRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPeriodosDS.xsc">
+      <DependentUpon>conPeriodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPeriodosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conPeriodosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conPeriodosDS.xss">
+      <DependentUpon>conPeriodosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPolizasElectroMxDS.xsc">
+      <DependentUpon>conPolizasElectroMxDS.xsd</DependentUpon>
+    </None>
+    <None Include="conPolizasElectroMxDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conPolizasElectroMxDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conPolizasElectroMxDS.xss">
+      <DependentUpon>conPolizasElectroMxDS.xsd</DependentUpon>
+    </None>
+    <None Include="conResumenDS.xsc">
+      <DependentUpon>conResumenDS.xsd</DependentUpon>
+    </None>
+    <None Include="conResumenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conResumenDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conResumenDS.xss">
+      <DependentUpon>conResumenDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubroPreviDS.xsc">
+      <DependentUpon>conRubroPreviDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubroPreviDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conRubroPreviDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conRubroPreviDS.xss">
+      <DependentUpon>conRubroPreviDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubrosAxiDS.xsc">
+      <DependentUpon>conRubrosAxiDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubrosAxiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conRubrosAxiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conRubrosAxiDS.xss">
+      <DependentUpon>conRubrosAxiDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubrosDS.xsc">
+      <DependentUpon>conRubrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conRubrosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conRubrosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conRubrosDS.xss">
+      <DependentUpon>conRubrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSituPatriDS.xsc">
+      <DependentUpon>conSituPatriDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSituPatriDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conSituPatriDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conSituPatriDS.xss">
+      <DependentUpon>conSituPatriDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSubCuentasDS.xsc">
+      <DependentUpon>conSubCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conSubCuentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conSubCuentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conSubCuentasDS.xss">
+      <DependentUpon>conSubCuentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTipoEspecialesCuerpoDS.xsc">
+      <DependentUpon>conTipoEspecialesCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTipoEspecialesCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conTipoEspecialesCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conTipoEspecialesCuerpoDS.xss">
+      <DependentUpon>conTipoEspecialesCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTipoEspecialesDS.xsc">
+      <DependentUpon>conTipoEspecialesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTipoEspecialesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conTipoEspecialesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="conTipoEspecialesDS.xss">
+      <DependentUpon>conTipoEspecialesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTiposContablesDS.xsc">
+      <DependentUpon>conTiposContablesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTiposContablesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conTiposContablesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conTiposContablesDS.xss">
+      <DependentUpon>conTiposContablesDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTiposSATDS.xsc">
+      <DependentUpon>conTiposSATDS.xsd</DependentUpon>
+    </None>
+    <None Include="conTiposSATDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conTiposSATDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conTiposSATDS.xss">
+      <DependentUpon>conTiposSATDS.xsd</DependentUpon>
+    </None>
+    <None Include="conVeriCentro12DS.xsc">
+      <DependentUpon>conVeriCentro12DS.xsd</DependentUpon>
+    </None>
+    <None Include="conVeriCentro12DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>conVeriCentro12DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conVeriCentro12DS.xss">
+      <DependentUpon>conVeriCentro12DS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

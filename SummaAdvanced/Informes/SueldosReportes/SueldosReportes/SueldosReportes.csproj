@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{164230A0-A92A-4271-B1EA-E3F5C7D29364}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SueldosInfomres</RootNamespace>
+    <AssemblyName>SueldosInfomres</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comEmbarqueEdoCta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>comEmbarqueEdoCta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MancillaAdvDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MancillaAdvDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NominaCfdi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NominaCfdi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Recibos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recibos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueAcumAnual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueAcumAnual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueBasePruebaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueBasePruebaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosLiqDet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosLiqDet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueConceptosLiqRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueConceptosLiqRes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDescTope.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDescTope.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueDetAsiConc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueDetAsiConc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueEmpeladosMX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueEmpeladosMX.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNetos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNetos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueNomina.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueNomina.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePlantillaDetalle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePlantillaDetalle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="suePlantillaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SueRecibosCabe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SueRecibosCabe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SueRecibosComple.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SueRecibosComple.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SueRecibosCuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SueRecibosCuerpo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueSubDiario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueSubDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueSubMayor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueSubMayor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sueVacacionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sueVacacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvArPruebaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvArPruebaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvArPruebaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvArPruebaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvArPruebaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvArPruebaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvArPruebaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvArPruebaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SummaAdvArPruebaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SummaAdvArPruebaDataSet4.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Prueba.rdlc" />
+    <EmbeddedResource Include="sueBasePrueba.rdlc" />
+    <EmbeddedResource Include="sueConcAcum.rdlc" />
+    <EmbeddedResource Include="sueConceptos.rdlc" />
+    <EmbeddedResource Include="sueConceptosLiqDet.rdlc" />
+    <EmbeddedResource Include="sueConceptosLiqRes.rdlc" />
+    <EmbeddedResource Include="sueDescTope.rdlc" />
+    <EmbeddedResource Include="sueDetAsiConc.rdlc" />
+    <EmbeddedResource Include="sueEmpleadosMX.rdlc" />
+    <EmbeddedResource Include="sueLibro.rdlc" />
+    <EmbeddedResource Include="sueNetos.rdlc" />
+    <EmbeddedResource Include="sueNomina.rdlc" />
+    <EmbeddedResource Include="sueNominaCfdi.rdlc" />
+    <EmbeddedResource Include="suePlantilla.rdlc" />
+    <EmbeddedResource Include="suePlantillaDetalle.rdlc" />
+    <EmbeddedResource Include="sueRecibo.rdlc" />
+    <EmbeddedResource Include="sueReciboAR.rdlc" />
+    <EmbeddedResource Include="sueReciboMX.rdlc" />
+    <EmbeddedResource Include="sueSubDiario.rdlc" />
+    <EmbeddedResource Include="sueSubMayor.rdlc" />
+    <EmbeddedResource Include="sueVacaciones.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="comEmbarqueEdoCta.xsc">
+      <DependentUpon>comEmbarqueEdoCta.xsd</DependentUpon>
+    </None>
+    <None Include="comEmbarqueEdoCta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>comEmbarqueEdoCta.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="comEmbarqueEdoCta.xss">
+      <DependentUpon>comEmbarqueEdoCta.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsc">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empresas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Empresas.xss">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="MancillaAdvDataSet.xsc">
+      <DependentUpon>MancillaAdvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MancillaAdvDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MancillaAdvDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MancillaAdvDataSet.xss">
+      <DependentUpon>MancillaAdvDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NominaCfdi.xsc">
+      <DependentUpon>NominaCfdi.xsd</DependentUpon>
+    </None>
+    <None Include="NominaCfdi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NominaCfdi.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NominaCfdi.xss">
+      <DependentUpon>NominaCfdi.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Recibos.xsc">
+      <DependentUpon>Recibos.xsd</DependentUpon>
+    </None>
+    <None Include="Recibos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Recibos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Recibos.xss">
+      <DependentUpon>Recibos.xsd</DependentUpon>
+    </None>
+    <None Include="sueAcumAnual.xsc">
+      <DependentUpon>sueAcumAnual.xsd</DependentUpon>
+    </None>
+    <None Include="sueAcumAnual.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueAcumAnual.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueAcumAnual.xss">
+      <DependentUpon>sueAcumAnual.xsd</DependentUpon>
+    </None>
+    <None Include="sueBasePruebaDS.xsc">
+      <DependentUpon>sueBasePruebaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueBasePruebaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueBasePruebaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueBasePruebaDS.xss">
+      <DependentUpon>sueBasePruebaDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptos.xsc">
+      <DependentUpon>sueConceptos.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueConceptos.xss">
+      <DependentUpon>sueConceptos.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosLiqDet.xsc">
+      <DependentUpon>sueConceptosLiqDet.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosLiqDet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosLiqDet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueConceptosLiqDet.xss">
+      <DependentUpon>sueConceptosLiqDet.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosLiqRes.xsc">
+      <DependentUpon>sueConceptosLiqRes.xsd</DependentUpon>
+    </None>
+    <None Include="sueConceptosLiqRes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueConceptosLiqRes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueConceptosLiqRes.xss">
+      <DependentUpon>sueConceptosLiqRes.xsd</DependentUpon>
+    </None>
+    <None Include="sueDescTope.xsc">
+      <DependentUpon>sueDescTope.xsd</DependentUpon>
+    </None>
+    <None Include="sueDescTope.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDescTope.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueDescTope.xss">
+      <DependentUpon>sueDescTope.xsd</DependentUpon>
+    </None>
+    <None Include="sueDetAsiConc.xsc">
+      <DependentUpon>sueDetAsiConc.xsd</DependentUpon>
+    </None>
+    <None Include="sueDetAsiConc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueDetAsiConc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueDetAsiConc.xss">
+      <DependentUpon>sueDetAsiConc.xsd</DependentUpon>
+    </None>
+    <None Include="sueEmpeladosMX.xsc">
+      <DependentUpon>sueEmpeladosMX.xsd</DependentUpon>
+    </None>
+    <None Include="sueEmpeladosMX.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueEmpeladosMX.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueEmpeladosMX.xss">
+      <DependentUpon>sueEmpeladosMX.xsd</DependentUpon>
+    </None>
+    <None Include="sueNetos.xsc">
+      <DependentUpon>sueNetos.xsd</DependentUpon>
+    </None>
+    <None Include="sueNetos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNetos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueNetos.xss">
+      <DependentUpon>sueNetos.xsd</DependentUpon>
+    </None>
+    <None Include="sueNomina.xsc">
+      <DependentUpon>sueNomina.xsd</DependentUpon>
+    </None>
+    <None Include="sueNomina.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueNomina.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueNomina.xss">
+      <DependentUpon>sueNomina.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDetalle.xsc">
+      <DependentUpon>suePlantillaDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDetalle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePlantillaDetalle.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePlantillaDetalle.xss">
+      <DependentUpon>suePlantillaDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDS.xsc">
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="suePlantillaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>suePlantillaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="suePlantillaDS.xss">
+      <DependentUpon>suePlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosCabe.xsc">
+      <DependentUpon>SueRecibosCabe.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosCabe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SueRecibosCabe.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SueRecibosCabe.xss">
+      <DependentUpon>SueRecibosCabe.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosComple.xsc">
+      <DependentUpon>SueRecibosComple.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosComple.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SueRecibosComple.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SueRecibosComple.xss">
+      <DependentUpon>SueRecibosComple.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosCuerpo.xsc">
+      <DependentUpon>SueRecibosCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="SueRecibosCuerpo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SueRecibosCuerpo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SueRecibosCuerpo.xss">
+      <DependentUpon>SueRecibosCuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="sueSubDiario.xsc">
+      <DependentUpon>sueSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="sueSubDiario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueSubDiario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueSubDiario.xss">
+      <DependentUpon>sueSubDiario.xsd</DependentUpon>
+    </None>
+    <None Include="sueSubMayor.xsc">
+      <DependentUpon>sueSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="sueSubMayor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueSubMayor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sueSubMayor.xss">
+      <DependentUpon>sueSubMayor.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacacionesDS.xsc">
+      <DependentUpon>sueVacacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="sueVacacionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sueVacacionesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sueVacacionesDS.xss">
+      <DependentUpon>sueVacacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet.xsc">
+      <DependentUpon>SummaAdvArPruebaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvArPruebaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet.xss">
+      <DependentUpon>SummaAdvArPruebaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet1.xsc">
+      <DependentUpon>SummaAdvArPruebaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvArPruebaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet1.xss">
+      <DependentUpon>SummaAdvArPruebaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet2.xsc">
+      <DependentUpon>SummaAdvArPruebaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvArPruebaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet2.xss">
+      <DependentUpon>SummaAdvArPruebaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet3.xsc">
+      <DependentUpon>SummaAdvArPruebaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvArPruebaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet3.xss">
+      <DependentUpon>SummaAdvArPruebaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet4.xsc">
+      <DependentUpon>SummaAdvArPruebaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SummaAdvArPruebaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SummaAdvArPruebaDataSet4.xss">
+      <DependentUpon>SummaAdvArPruebaDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

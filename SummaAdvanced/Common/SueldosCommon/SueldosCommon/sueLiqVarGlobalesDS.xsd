@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sueLiqVarGlobalesDS" targetNamespace="http://tempuri.org/sueLiqVarGlobalesDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/sueLiqVarGlobalesDS.xsd" xmlns:mstns="http://tempuri.org/sueLiqVarGlobalesDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="sueLiqVarGlobalesDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="VarGlobal_Id" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionVarGlobal" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha_Desde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Valor" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Ver" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

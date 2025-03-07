@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D571DA76-DC0D-4C9E-8421-12844E819079}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockDAL</RootNamespace>
+    <AssemblyName>StockDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeneralidadesCommon, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Global, Version=1.0.5686.31124, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Referencias\DAL\Global.dll</HintPath>
+    </Reference>
+    <Reference Include="GotDotNet.ApplicationBlocks.Data, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Referencias\DAL\GotDotNet.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="InterfaceDAAB">
+      <HintPath>..\..\..\Servicio\Actions\InterfaceDAAB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stkArtiUM.cs" />
+    <Compile Include="stkCataProductos.cs" />
+    <Compile Include="stkCausasMovi.cs" />
+    <Compile Include="stkCFComImp.cs" />
+    <Compile Include="stkCFVenImp.cs" />
+    <Compile Include="stkCierre.cs" />
+    <Compile Include="stkCondFisCompra.cs" />
+    <Compile Include="stkCondFisVenta.cs" />
+    <Compile Include="stkConsKardex.cs" />
+    <Compile Include="stkConsStock.cs" />
+    <Compile Include="stkCOTAr.cs" />
+    <Compile Include="stkCOTArLimites.cs" />
+    <Compile Include="stkDepositos.cs" />
+    <Compile Include="stkDevolucionesClie.cs" />
+    <Compile Include="stkDevolucionesProv.cs" />
+    <Compile Include="stkEntradasCD.cs" />
+    <Compile Include="stkEntradasEmbarque.cs" />
+    <Compile Include="stkEntradasOC.cs" />
+    <Compile Include="stkEntradasRemi.cs" />
+    <Compile Include="stkEntradasRI.cs" />
+    <Compile Include="stkEnTransito.cs" />
+    <Compile Include="stkExistencia.cs" />
+    <Compile Include="stkExistenciaDespa.cs" />
+    <Compile Include="stkExistenciaDespaXFifo.cs" />
+    <Compile Include="stkExistenciaSerie.cs" />
+    <Compile Include="stkExistenciasSerieXFifoOVto.cs" />
+    <Compile Include="stkExistenciasXDepositoXLote.cs" />
+    <Compile Include="stkExistenciaUbi.cs" />
+    <Compile Include="stkExistenciaUbiSerie.cs" />
+    <Compile Include="stkExistenciaXSerieXUbi.cs" />
+    <Compile Include="stkFamilias.cs" />
+    <Compile Include="stkGrupos.cs" />
+    <Compile Include="stkHojaDeRuta.cs" />
+    <Compile Include="stkHojaDeRutaCuerpo.cs" />
+    <Compile Include="stkHojaSegmentos.cs" />
+    <Compile Include="stkInvenSegmentos.cs" />
+    <Compile Include="stkInventarios.cs" />
+    <Compile Include="stkInventCuerpo.cs" />
+    <Compile Include="stkInventSerie.cs" />
+    <Compile Include="stkInvMoviStk.cs" />
+    <Compile Include="stkMaxMin.cs" />
+    <Compile Include="stkMoviCabe.cs" />
+    <Compile Include="stkMoviCabeCentro.cs" />
+    <Compile Include="stkMoviCausa.cs" />
+    <Compile Include="stkMoviConsigna.cs" />
+    <Compile Include="stkMoviCRevaluo.cs" />
+    <Compile Include="stkMoviCuerpo.cs" />
+    <Compile Include="stkMoviCuerpoCombo.cs" />
+    <Compile Include="stkMoviCuerpoPediCuerpo.cs" />
+    <Compile Include="stkMoviCuerpoReva.cs" />
+    <Compile Include="stkMoviDespa.cs" />
+    <Compile Include="stkMoviEmbarque.cs" />
+    <Compile Include="stkMoviLega.cs" />
+    <Compile Include="stkMoviOC.cs" />
+    <Compile Include="stkMoviProv.cs" />
+    <Compile Include="stkMoviRI.cs" />
+    <Compile Include="stkMoviSerie.cs" />
+    <Compile Include="stkMoviSerieUbicacion.cs" />
+    <Compile Include="stkMoviUbicacion.cs" />
+    <Compile Include="stkNotasCreditoXDevolucion.cs" />
+    <Compile Include="stkPlantillasProductos.cs" />
+    <Compile Include="stkProductos.cs" />
+    <Compile Include="stkProductosCombo.cs" />
+    <Compile Include="stkProductosCostoCierre.cs" />
+    <Compile Include="stkProductosCostoCierreSucursal.cs" />
+    <Compile Include="stkProductosCostos.cs" />
+    <Compile Include="stkProductosCostosSucursal.cs" />
+    <Compile Include="stkProductoXDeposito.cs" />
+    <Compile Include="stkRemiCancPend.cs" />
+    <Compile Include="stkRemiConforma.cs" />
+    <Compile Include="stkRemiPendFact.cs" />
+    <Compile Include="stkRemiPendFactPro.cs" />
+    <Compile Include="stkRemisionFactura.cs" />
+    <Compile Include="stkRemitos.cs" />
+    <Compile Include="stkRevaCostoManual.cs" />
+    <Compile Include="stkSalidasRI.cs" />
+    <Compile Include="stkSerieVencimiento.cs" />
+    <Compile Include="stkSolicitudCD.cs" />
+    <Compile Include="stkSolicitudCDSegmentos.cs" />
+    <Compile Include="stkSolicitudCuerpo.cs" />
+    <Compile Include="stkSubTipoMov.cs" />
+    <Compile Include="stkTipos.cs" />
+    <Compile Include="stkTiposMov.cs" />
+    <Compile Include="stkUbiAlmacenDefecto.cs" />
+    <Compile Include="stkUbicaciones.cs" />
+    <Compile Include="stkUniMed.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\StockCommon\StockCommon\StockCommon.csproj">
+      <Project>{b5aadc9c-a68c-4b7e-9b17-c7fa162283a4}</Project>
+      <Name>StockCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

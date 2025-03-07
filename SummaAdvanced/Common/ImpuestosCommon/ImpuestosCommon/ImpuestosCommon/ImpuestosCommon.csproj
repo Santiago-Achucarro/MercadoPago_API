@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55DD8371-9BE2-4311-A757-67427D08D549}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImpuestosCommon</RootNamespace>
+    <AssemblyName>ImpuestosCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="impArbaTxtDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impArbaTxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impArbaTxtModifDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impArbaTxtModifDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impArcibaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impArcibaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCABATxtDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impCABATxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCalularDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impCalularDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCerrarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impCerrarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCfdiMetaDatosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impCfdiMetaDatosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCitiDS.cs">
+      <DependentUpon>impCitiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impCitiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impCitiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impeSicolDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impeSicolDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impFacturasComprasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impFacturasComprasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impFormulasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impFormulasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impImpuestosCobradosAsiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impImpuestosCobradosAsiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impImpuestosCobradosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impImpuestosCobradosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impImpuestosPagadosAsiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impImpuestosPagadosAsiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impImpuestosPagadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impImpuestosPagadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impJurisdiccionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impJurisdiccionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impLibrosTiposRenglonDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impLibrosTiposRenglonDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impLiquidacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impLiquidacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impLiquidacionFechaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impLiquidacionFechaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impPadronDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impPadronDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impPadronTxtDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impPadronTxtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIArrendaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIArrendaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIDetalleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIDetalleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIDividendosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIDividendosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIEnajAccionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIEnajAccionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIFiedeEmprDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIFiedeEmprDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIInteresesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIInteresesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIOperConDerivDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIOperConDerivDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIPagosExtrDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIPagosExtrDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIPlanesRetDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIPlanesRetDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDIPremiosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDIPremiosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetCFDISecFinanDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetCFDISecFinanDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetencionesCFDIDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetencionesCFDIDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impRetPercIvaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impRetPercIvaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impSicoreDS.cs">
+      <DependentUpon>impSicoreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impSicoreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impSicoreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impSifereDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impSifereDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impTipoImpuestoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impTipoImpuestoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impValidacionFComprasDS.cs">
+      <DependentUpon>impValidacionFComprasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="impValidacionFComprasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>impValidacionFComprasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="impArbaTxtDS.xsc">
+      <DependentUpon>impArbaTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impArbaTxtDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impArbaTxtDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impArbaTxtDS.xss">
+      <DependentUpon>impArbaTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impArbaTxtModifDS.xsc">
+      <DependentUpon>impArbaTxtModifDS.xsd</DependentUpon>
+    </None>
+    <None Include="impArbaTxtModifDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impArbaTxtModifDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impArbaTxtModifDS.xss">
+      <DependentUpon>impArbaTxtModifDS.xsd</DependentUpon>
+    </None>
+    <None Include="impArcibaDS.xsc">
+      <DependentUpon>impArcibaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impArcibaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impArcibaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impArcibaDS.xss">
+      <DependentUpon>impArcibaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCABATxtDS.xsc">
+      <DependentUpon>impCABATxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCABATxtDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impCABATxtDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impCABATxtDS.xss">
+      <DependentUpon>impCABATxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCalularDS.xsc">
+      <DependentUpon>impCalularDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCalularDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impCalularDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impCalularDS.xss">
+      <DependentUpon>impCalularDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCerrarDS.xsc">
+      <DependentUpon>impCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCerrarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impCerrarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impCerrarDS.xss">
+      <DependentUpon>impCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCfdiMetaDatosDS.xsc">
+      <DependentUpon>impCfdiMetaDatosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCfdiMetaDatosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impCfdiMetaDatosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impCfdiMetaDatosDS.xss">
+      <DependentUpon>impCfdiMetaDatosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCitiDS.xsc">
+      <DependentUpon>impCitiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impCitiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impCitiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impCitiDS.xss">
+      <DependentUpon>impCitiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impeSicolDS.xsc">
+      <DependentUpon>impeSicolDS.xsd</DependentUpon>
+    </None>
+    <None Include="impeSicolDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impeSicolDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impeSicolDS.xss">
+      <DependentUpon>impeSicolDS.xsd</DependentUpon>
+    </None>
+    <None Include="impFacturasComprasDS.xsc">
+      <DependentUpon>impFacturasComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="impFacturasComprasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impFacturasComprasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impFacturasComprasDS.xss">
+      <DependentUpon>impFacturasComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="impFormulasDS.xsc">
+      <DependentUpon>impFormulasDS.xsd</DependentUpon>
+    </None>
+    <None Include="impFormulasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impFormulasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impFormulasDS.xss">
+      <DependentUpon>impFormulasDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosCobradosAsiDS.xsc">
+      <DependentUpon>impImpuestosCobradosAsiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosCobradosAsiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impImpuestosCobradosAsiDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impImpuestosCobradosAsiDS.xss">
+      <DependentUpon>impImpuestosCobradosAsiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosCobradosDS.xsc">
+      <DependentUpon>impImpuestosCobradosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosCobradosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impImpuestosCobradosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impImpuestosCobradosDS.xss">
+      <DependentUpon>impImpuestosCobradosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosDS.xsc">
+      <DependentUpon>impImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impImpuestosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impImpuestosDS.xss">
+      <DependentUpon>impImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosPagadosAsiDS.xsc">
+      <DependentUpon>impImpuestosPagadosAsiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosPagadosAsiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impImpuestosPagadosAsiDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impImpuestosPagadosAsiDS.xss">
+      <DependentUpon>impImpuestosPagadosAsiDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosPagadosDS.xsc">
+      <DependentUpon>impImpuestosPagadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impImpuestosPagadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impImpuestosPagadosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impImpuestosPagadosDS.xss">
+      <DependentUpon>impImpuestosPagadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impJurisdiccionesDS.xsc">
+      <DependentUpon>impJurisdiccionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="impJurisdiccionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impJurisdiccionesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impJurisdiccionesDS.xss">
+      <DependentUpon>impJurisdiccionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLibrosTiposRenglonDS.xsc">
+      <DependentUpon>impLibrosTiposRenglonDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLibrosTiposRenglonDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impLibrosTiposRenglonDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impLibrosTiposRenglonDS.xss">
+      <DependentUpon>impLibrosTiposRenglonDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLiquidacionDS.xsc">
+      <DependentUpon>impLiquidacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLiquidacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impLiquidacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impLiquidacionDS.xss">
+      <DependentUpon>impLiquidacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLiquidacionFechaDS.xsc">
+      <DependentUpon>impLiquidacionFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impLiquidacionFechaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impLiquidacionFechaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impLiquidacionFechaDS.xss">
+      <DependentUpon>impLiquidacionFechaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impPadronDS.xsc">
+      <DependentUpon>impPadronDS.xsd</DependentUpon>
+    </None>
+    <None Include="impPadronDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impPadronDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impPadronDS.xss">
+      <DependentUpon>impPadronDS.xsd</DependentUpon>
+    </None>
+    <None Include="impPadronTxtDS.xsc">
+      <DependentUpon>impPadronTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impPadronTxtDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impPadronTxtDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impPadronTxtDS.xss">
+      <DependentUpon>impPadronTxtDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIArrendaDS.xsc">
+      <DependentUpon>impRetCFDIArrendaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIArrendaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIArrendaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impRetCFDIArrendaDS.xss">
+      <DependentUpon>impRetCFDIArrendaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIDetalleDS.xsc">
+      <DependentUpon>impRetCFDIDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIDetalleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIDetalleDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIDetalleDS.xss">
+      <DependentUpon>impRetCFDIDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIDividendosDS.xsc">
+      <DependentUpon>impRetCFDIDividendosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIDividendosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIDividendosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIDividendosDS.xss">
+      <DependentUpon>impRetCFDIDividendosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIEnajAccionDS.xsc">
+      <DependentUpon>impRetCFDIEnajAccionDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIEnajAccionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIEnajAccionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIEnajAccionDS.xss">
+      <DependentUpon>impRetCFDIEnajAccionDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIFiedeEmprDS.xsc">
+      <DependentUpon>impRetCFDIFiedeEmprDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIFiedeEmprDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIFiedeEmprDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIFiedeEmprDS.xss">
+      <DependentUpon>impRetCFDIFiedeEmprDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIInteresesDS.xsc">
+      <DependentUpon>impRetCFDIInteresesDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIInteresesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIInteresesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impRetCFDIInteresesDS.xss">
+      <DependentUpon>impRetCFDIInteresesDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIOperConDerivDS.xsc">
+      <DependentUpon>impRetCFDIOperConDerivDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIOperConDerivDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIOperConDerivDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIOperConDerivDS.xss">
+      <DependentUpon>impRetCFDIOperConDerivDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPagosExtrDS.xsc">
+      <DependentUpon>impRetCFDIPagosExtrDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPagosExtrDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIPagosExtrDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIPagosExtrDS.xss">
+      <DependentUpon>impRetCFDIPagosExtrDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPlanesRetDS.xsc">
+      <DependentUpon>impRetCFDIPlanesRetDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPlanesRetDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIPlanesRetDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDIPlanesRetDS.xss">
+      <DependentUpon>impRetCFDIPlanesRetDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPremiosDS.xsc">
+      <DependentUpon>impRetCFDIPremiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDIPremiosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDIPremiosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impRetCFDIPremiosDS.xss">
+      <DependentUpon>impRetCFDIPremiosDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDISecFinanDS.xsc">
+      <DependentUpon>impRetCFDISecFinanDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetCFDISecFinanDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetCFDISecFinanDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetCFDISecFinanDS.xss">
+      <DependentUpon>impRetCFDISecFinanDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetencionesCFDIDS.xsc">
+      <DependentUpon>impRetencionesCFDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetencionesCFDIDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetencionesCFDIDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impRetencionesCFDIDS.xss">
+      <DependentUpon>impRetencionesCFDIDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetPercIvaDS.xsc">
+      <DependentUpon>impRetPercIvaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impRetPercIvaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impRetPercIvaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impRetPercIvaDS.xss">
+      <DependentUpon>impRetPercIvaDS.xsd</DependentUpon>
+    </None>
+    <None Include="impSicoreDS.xsc">
+      <DependentUpon>impSicoreDS.xsd</DependentUpon>
+    </None>
+    <None Include="impSicoreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impSicoreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impSicoreDS.xss">
+      <DependentUpon>impSicoreDS.xsd</DependentUpon>
+    </None>
+    <None Include="impSifereDS.xsc">
+      <DependentUpon>impSifereDS.xsd</DependentUpon>
+    </None>
+    <None Include="impSifereDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impSifereDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="impSifereDS.xss">
+      <DependentUpon>impSifereDS.xsd</DependentUpon>
+    </None>
+    <None Include="impTipoImpuestoDS.xsc">
+      <DependentUpon>impTipoImpuestoDS.xsd</DependentUpon>
+    </None>
+    <None Include="impTipoImpuestoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impTipoImpuestoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impTipoImpuestoDS.xss">
+      <DependentUpon>impTipoImpuestoDS.xsd</DependentUpon>
+    </None>
+    <None Include="impValidacionFComprasDS.xsc">
+      <DependentUpon>impValidacionFComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="impValidacionFComprasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>impValidacionFComprasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="impValidacionFComprasDS.xss">
+      <DependentUpon>impValidacionFComprasDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

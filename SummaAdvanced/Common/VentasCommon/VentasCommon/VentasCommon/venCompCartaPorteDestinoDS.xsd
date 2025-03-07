@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venCompCartaPorteDestinoDS" targetNamespace="http://tempuri.org/venCompCartaPorteDestinoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venCompCartaPorteDestinoDS.xsd" xmlns:mstns="http://tempuri.org/venCompCartaPorteDestinoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venCompCartaPorteDestinoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venmovimientos" type="xs:long" minOccurs="0" />
+<xs:element name="Ubicacion" type="xs:int" minOccurs="0" />
+<xs:element name="idDestino" type="xs:int" minOccurs="0" />
+<xs:element name="RFCDestinatario" type="xs:string" minOccurs="0" />
+<xs:element name="NombreDestinatario" type="xs:string" minOccurs="0" />
+<xs:element name="NumRegIdTrib" type="xs:string" minOccurs="0" />
+<xs:element name="ResidenciaFiscal" type="xs:short" minOccurs="0" />
+<xs:element name="NumEstacion" type="xs:string" minOccurs="0" />
+<xs:element name="NombreEstacion" type="xs:string" minOccurs="0" />
+<xs:element name="NavegacionTrafico" type="xs:string" minOccurs="0" />
+<xs:element name="FechaHoraProgLlegada" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Calle" type="xs:string" minOccurs="0" />
+<xs:element name="NumeroExterior" type="xs:string" minOccurs="0" />
+<xs:element name="Numerointerior" type="xs:string" minOccurs="0" />
+<xs:element name="Colonia" type="xs:string" minOccurs="0" />
+<xs:element name="Localidad" type="xs:string" minOccurs="0" />
+<xs:element name="Referencia" type="xs:string" minOccurs="0" />
+<xs:element name="Municipio" type="xs:string" minOccurs="0" />
+<xs:element name="Estado" type="xs:string" minOccurs="0" />
+<xs:element name="Pais_Id" type="xs:short" minOccurs="0" />
+<xs:element name="CodigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

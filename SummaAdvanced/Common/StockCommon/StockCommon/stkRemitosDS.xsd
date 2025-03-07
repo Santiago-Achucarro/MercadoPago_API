@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="stkRemitosDS" targetNamespace="http://tempuri.org/stkRemitosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/stkRemitosDS.xsd" xmlns:mstns="http://tempuri.org/stkRemitosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="stkRemitosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="stkMoviCabe" type="xs:long" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:int" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento_Id" type="xs:string" minOccurs="0" />
+<xs:element name="ListaPrecio_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionListasPrecios" type="xs:string" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionMoneda" type="xs:string" minOccurs="0" />
+<xs:element name="HojaRuta_Id" type="xs:int" minOccurs="0" />
+<xs:element name="HojaRuta" type="xs:string" minOccurs="0" />
+<xs:element name="FormaEntrega_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionFormaEntrega" type="xs:string" minOccurs="0" />
+<xs:element name="Camion_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Remolque1" type="xs:string" minOccurs="0" />
+<xs:element name="Remolque2" type="xs:string" minOccurs="0" />
+<xs:element name="FechaHoraSalida" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHoraProgLlegada" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Operador_Id" type="xs:string" minOccurs="0" />
+<xs:element name="NombreOperador" type="xs:string" minOccurs="0" />
+<xs:element name="TotalDistRec" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="sueVariablesMasivoEliminarDS" targetNamespace="http://tempuri.org/sueVariablesMasivoEliminarDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/sueVariablesMasivoEliminarDS.xsd" xmlns:mstns="http://tempuri.org/sueVariablesMasivoEliminarDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="sueVariablesMasivoEliminarDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Legajo_Desde" type="xs:int" minOccurs="0" />
+<xs:element name="Legajo_Hasta" type="xs:int" minOccurs="0" />
+<xs:element name="Concepto_Desde" type="xs:int" minOccurs="0" />
+<xs:element name="Concepto_Hasta" type="xs:int" minOccurs="0" />
+<xs:element name="Grupo_Desde" type="xs:int" minOccurs="0" />
+<xs:element name="Grupo_Hasta" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

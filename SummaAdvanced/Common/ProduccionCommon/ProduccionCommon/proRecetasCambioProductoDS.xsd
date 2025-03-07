@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proRecetasCambioProductoDS" targetNamespace="http://tempuri.org/proRecetasCambioProductoDS.xsd" xmlns:mstns="http://tempuri.org/proRecetasCambioProductoDS.xsd" xmlns="http://tempuri.org/proRecetasCambioProductoDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proRecetasCambioProductoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="proRecetasCambioProductoDS" msprop:Generator_UserDSName="proRecetasCambioProductoDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductoOriginal" msprop:Generator_ColumnVarNameInTable="columnProductoOriginal" msprop:Generator_ColumnPropNameInRow="ProductoOriginal" msprop:Generator_ColumnPropNameInTable="ProductoOriginalColumn" msprop:Generator_UserColumnName="ProductoOriginal" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionProdOrig" msprop:Generator_ColumnVarNameInTable="columnDescripcionProdOrig" msprop:Generator_ColumnPropNameInRow="DescripcionProdOrig" msprop:Generator_ColumnPropNameInTable="DescripcionProdOrigColumn" msprop:Generator_UserColumnName="DescripcionProdOrig" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductoNuevo" msprop:Generator_ColumnVarNameInTable="columnProductoNuevo" msprop:Generator_ColumnPropNameInRow="ProductoNuevo" msprop:Generator_ColumnPropNameInTable="ProductoNuevoColumn" msprop:Generator_UserColumnName="ProductoNuevo" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionProdNuevo" msprop:Generator_ColumnVarNameInTable="columnDescripcionProdNuevo" msprop:Generator_ColumnPropNameInRow="DescripcionProdNuevo" msprop:Generator_ColumnPropNameInTable="DescripcionProdNuevoColumn" msprop:Generator_UserColumnName="DescripcionProdNuevo" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

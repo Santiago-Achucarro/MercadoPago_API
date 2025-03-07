@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proTrabajosProv" targetNamespace="http://tempuri.org/proTrabajosProv.xsd" xmlns:mstns="http://tempuri.org/proTrabajosProv.xsd" xmlns="http://tempuri.org/proTrabajosProv.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proTrabajosProv" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="proTrabajosProv" msprop:Generator_UserDSName="proTrabajosProv">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="proTrabajosProv" msprop:Generator_TableClassName="proTrabajosProvDataTable" msprop:Generator_TableVarName="tableproTrabajosProv" msprop:Generator_TablePropName="_proTrabajosProv" msprop:Generator_RowDeletingName="proTrabajosProvRowDeleting" msprop:Generator_RowChangingName="proTrabajosProvRowChanging" msprop:Generator_RowEvHandlerName="proTrabajosProvRowChangeEventHandler" msprop:Generator_RowDeletedName="proTrabajosProvRowDeleted" msprop:Generator_UserTableName="proTrabajosProv" msprop:Generator_RowChangedName="proTrabajosProvRowChanged" msprop:Generator_RowEvArgName="proTrabajosProvRowChangeEvent" msprop:Generator_RowClassName="proTrabajosProvRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Proveed_Id" msprop:Generator_ColumnVarNameInTable="columnProveed_Id" msprop:Generator_ColumnPropNameInRow="Proveed_Id" msprop:Generator_ColumnPropNameInTable="Proveed_IdColumn" msprop:Generator_UserColumnName="Proveed_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="RazonSocial" msprop:Generator_ColumnVarNameInTable="columnRazonSocial" msprop:Generator_ColumnPropNameInRow="RazonSocial" msprop:Generator_ColumnPropNameInTable="RazonSocialColumn" msprop:Generator_UserColumnName="RazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="Trabajo3_Id" msprop:Generator_ColumnVarNameInTable="columnTrabajo3_Id" msprop:Generator_ColumnPropNameInRow="Trabajo3_Id" msprop:Generator_ColumnPropNameInTable="Trabajo3_IdColumn" msprop:Generator_UserColumnName="Trabajo3_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionT2" msprop:Generator_ColumnVarNameInTable="columnDescripcionT2" msprop:Generator_ColumnPropNameInRow="DescripcionT2" msprop:Generator_ColumnPropNameInTable="DescripcionT2Column" msprop:Generator_UserColumnName="DescripcionT2" type="xs:string" minOccurs="0" />
+              <xs:element name="Orden" msprop:Generator_ColumnVarNameInTable="columnOrden" msprop:Generator_ColumnPropNameInRow="Orden" msprop:Generator_ColumnPropNameInTable="OrdenColumn" msprop:Generator_UserColumnName="Orden" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Renglon" msprop:Generator_ColumnVarNameInTable="columnRenglon" msprop:Generator_ColumnPropNameInRow="Renglon" msprop:Generator_ColumnPropNameInTable="RenglonColumn" msprop:Generator_UserColumnName="Renglon" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadTerminada" msprop:Generator_ColumnVarNameInTable="columnCantidadTerminada" msprop:Generator_ColumnPropNameInRow="CantidadTerminada" msprop:Generator_ColumnPropNameInTable="CantidadTerminadaColumn" msprop:Generator_UserColumnName="CantidadTerminada" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="conSituPariDS" targetNamespace="http://tempuri.org/conSituPariDS.xsd" xmlns:mstns="http://tempuri.org/conSituPariDS.xsd" xmlns="http://tempuri.org/conSituPariDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="conSituPariDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="conSituPariDS" msprop:Generator_UserDSName="conSituPariDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FechaHasta" msprop:Generator_ColumnVarNameInTable="columnFechaHasta" msprop:Generator_ColumnPropNameInRow="FechaHasta" msprop:Generator_ColumnPropNameInTable="FechaHastaColumn" msprop:Generator_UserColumnName="FechaHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta1" msprop:Generator_ColumnVarNameInTable="columnFechaHasta1" msprop:Generator_ColumnPropNameInRow="FechaHasta1" msprop:Generator_ColumnPropNameInTable="FechaHasta1Column" msprop:Generator_UserColumnName="FechaHasta1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CtaResEjer" msprop:Generator_ColumnVarNameInTable="columnCtaResEjer" msprop:Generator_ColumnPropNameInRow="CtaResEjer" msprop:Generator_ColumnPropNameInTable="CtaResEjerColumn" msprop:Generator_UserColumnName="CtaResEjer" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCtaResEjer" msprop:Generator_ColumnVarNameInTable="columnDescripcionCtaResEjer" msprop:Generator_ColumnPropNameInRow="DescripcionCtaResEjer" msprop:Generator_ColumnPropNameInTable="DescripcionCtaResEjerColumn" msprop:Generator_UserColumnName="DescripcionCtaResEjer" type="xs:string" minOccurs="0" />
+              <xs:element name="PorNaturaleza" msprop:Generator_ColumnVarNameInTable="columnPorNaturaleza" msprop:Generator_ColumnPropNameInRow="PorNaturaleza" msprop:Generator_ColumnPropNameInTable="PorNaturalezaColumn" msprop:Generator_UserColumnName="PorNaturaleza" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

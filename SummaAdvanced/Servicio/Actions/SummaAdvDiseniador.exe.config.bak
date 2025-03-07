@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="UbicacionDLLs" value="C:\SummaAdvanced\Servicio\Actions\" />
+    <add key="Instalacion" value="ConStrStandard" />
+  </appSettings>
+  <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+    </startup>
+  <system.serviceModel>
+    <bindings>
+        <netTcpBinding>
+          <binding name="NetTcpBindingEndpoint" maxBufferPoolSize="2131072"
+            maxBufferSize="2131072" maxReceivedMessageSize="2131072">
+            <security mode="None" >
+              <transport clientCredentialType="None" />
+              <message clientCredentialType="None" />
+            </security>            
+            <readerQuotas maxDepth="32" maxStringContentLength="2131072"
+              maxArrayLength="2131072" maxBytesPerRead="2131072" maxNameTableCharCount="2131072" />
+          </binding>        
+        </netTcpBinding>
+    </bindings>
+    <client>
+      <endpoint address="net.tcp://localhost:6019/WCFServicioQBI" binding="netTcpBinding"
+          bindingConfiguration="NetTcpBindingEndpoint" contract="QBIServicio.IQBIManejoDeAcciones"
+          name="NetTcpBindingEndpoint">
+        <identity>
+          <dns value="localhost" />
+        </identity>
+      </endpoint>
+    </client>
+  </system.serviceModel>
+
+</configuration>

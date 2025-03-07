@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24E4CBA8-710C-4A3D-8E5F-A24E8D976541}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContabilidadExchange</RootNamespace>
+    <AssemblyName>ContabilidadExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\Referencias\Common\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conActualizarCuentasMovimientosActionEnum.cs" />
+    <Compile Include="conActualizarCuentasMovimientosActionExchange.cs" />
+    <Compile Include="conAnexoGrupoTiposActionEnum.cs" />
+    <Compile Include="conAnexoGrupoTiposActionExchange.cs" />
+    <Compile Include="conAnexosGruposActionEnum.cs" />
+    <Compile Include="conAnexosGruposActionExchange.cs" />
+    <Compile Include="conAnexosOrigenesActionEnum.cs" />
+    <Compile Include="conAnexosOrigenesActionExchange.cs" />
+    <Compile Include="conArbolAsientosActionEnum.cs" />
+    <Compile Include="conArbolAsientosActionExchange.cs" />
+    <Compile Include="conAsiDistribuirActionEnum.cs" />
+    <Compile Include="conAsiDistribuirActionExchange.cs" />
+    <Compile Include="conAsieCierreActionEnum.cs" />
+    <Compile Include="conAsieCierreActionExchange.cs" />
+    <Compile Include="conAsientosActionEnum.cs" />
+    <Compile Include="conAsientosActionExchange.cs" />
+    <Compile Include="conAsientosAnulActionEnum.cs" />
+    <Compile Include="conAsientosAnulActionExchange.cs" />
+    <Compile Include="conAsientosAperturaActionEnum.cs" />
+    <Compile Include="conAsientosAperturaActionExchange.cs" />
+    <Compile Include="conAsientosContActionEnum.cs" />
+    <Compile Include="conAsientosContActionExchange.cs" />
+    <Compile Include="conAsientosInverActionEnum.cs" />
+    <Compile Include="conAsientosInverActionExchange.cs" />
+    <Compile Include="conAsientosTipoActionEnum.cs" />
+    <Compile Include="conAsientosTipoActionExchange.cs" />
+    <Compile Include="conAsieTipoCuerpoActionEnum.cs" />
+    <Compile Include="conAsieTipoCuerpoActionExchange.cs" />
+    <Compile Include="conAsiMarcaAperturaActionEnum.cs" />
+    <Compile Include="conAsiMarcaAperturaActionExchange.cs" />
+    <Compile Include="conBalanzaElectroMXActionEnum.cs" />
+    <Compile Include="conBalanzaElectroMXActionExchange.cs" />
+    <Compile Include="conBaseDistriActionEnum.cs" />
+    <Compile Include="conBaseDistriActionExchange.cs" />
+    <Compile Include="conCatalogoElectroMXActionEnum.cs" />
+    <Compile Include="conCatalogoElectroMXActionExchange.cs" />
+    <Compile Include="conCentro1ActionEnum.cs" />
+    <Compile Include="conCentro1ActionExchange.cs" />
+    <Compile Include="conCentro2ActionEnum.cs" />
+    <Compile Include="conCentro2ActionExchange.cs" />
+    <Compile Include="conCuadro1FilasActionEnum.cs" />
+    <Compile Include="conCuadro1FilasActionExchange.cs" />
+    <Compile Include="conCuentasActionEnum.cs" />
+    <Compile Include="conCuentasActionExchange.cs" />
+    <Compile Include="conCuentasActualizacionActionEnum.cs" />
+    <Compile Include="conCuentasActualizacionActionExchange.cs" />
+    <Compile Include="conCuentasCuentasActionEnum.cs" />
+    <Compile Include="conCuentasCuentasActionExchange.cs" />
+    <Compile Include="conEjercicioActionEnum.cs" />
+    <Compile Include="conEjercicioActionExchange.cs" />
+    <Compile Include="conEjercicioPeriodoActionEnum.cs" />
+    <Compile Include="conEjercicioPeriodoActionExchange.cs" />
+    <Compile Include="conFechasCierresActionEnum.cs" />
+    <Compile Include="conFechasCierresActionExchange.cs" />
+    <Compile Include="conGrupoCentroActionEnum.cs" />
+    <Compile Include="conGrupoCentroActionExchange.cs" />
+    <Compile Include="conGruposContActionEnum.cs" />
+    <Compile Include="conGruposContActionExchange.cs" />
+    <Compile Include="conIndAjusActionEnum.cs" />
+    <Compile Include="conIndAjusActionExchange.cs" />
+    <Compile Include="conIndicesAjustesActionEnum.cs" />
+    <Compile Include="conIndicesAjustesActionExchange.cs" />
+    <Compile Include="conInfDefCuentasActionEnum.cs" />
+    <Compile Include="conInfDefCuentasActionExchange.cs" />
+    <Compile Include="conInfDefFilasActionEnum.cs" />
+    <Compile Include="conInfDefFilasActionExchange.cs" />
+    <Compile Include="conInfDefiniblesActionEnum.cs" />
+    <Compile Include="conInfDefiniblesActionExchange.cs" />
+    <Compile Include="conInfDefiniblesAcu1GenerarActionEnum.cs" />
+    <Compile Include="conInfDefiniblesAcu1GenerarActionExchange.cs" />
+    <Compile Include="conInfDefiniblesAcuGenerarActionEnum.cs" />
+    <Compile Include="conInfDefiniblesAcuGenerarActionExchange.cs" />
+    <Compile Include="conInfDefiniblesMenGenerarActionEnum.cs" />
+    <Compile Include="conInfDefiniblesMenGenerarActionExchange.cs" />
+    <Compile Include="conMovContActionEnum.cs" />
+    <Compile Include="conMovContActionExchange.cs" />
+    <Compile Include="conMovContConActionEnum.cs" />
+    <Compile Include="conMovContConActionExchange.cs" />
+    <Compile Include="conOrigAplicRengActionEnum.cs" />
+    <Compile Include="conOrigAplicRengActionExchange.cs" />
+    <Compile Include="conPeriodosActionEnum.cs" />
+    <Compile Include="conPeriodosActionExchange.cs" />
+    <Compile Include="conPolizasElectroMxActionEnum.cs" />
+    <Compile Include="conPolizasElectroMxActionExchange.cs" />
+    <Compile Include="conRubroPreviActionEnum.cs" />
+    <Compile Include="conRubroPreviActionExchange.cs" />
+    <Compile Include="conRubrosActionEnum.cs" />
+    <Compile Include="conRubrosActionExchange.cs" />
+    <Compile Include="conRubrosAxiActionEnum.cs" />
+    <Compile Include="conRubrosAxiActionExchange.cs" />
+    <Compile Include="conSituPatriActionEnum.cs" />
+    <Compile Include="conSituPatriActionExchange.cs" />
+    <Compile Include="conSubCuentasActionEnum.cs" />
+    <Compile Include="conSubCuentasActionExchange.cs" />
+    <Compile Include="conTipoEspecialesActionEnum.cs" />
+    <Compile Include="conTipoEspecialesActionExchange.cs" />
+    <Compile Include="conTiposContablesActionEnum.cs" />
+    <Compile Include="conTiposContablesActionExchange.cs" />
+    <Compile Include="conTiposSATActionEnum.cs" />
+    <Compile Include="conTiposSATActionExchange.cs" />
+    <Compile Include="conVeriCentro12ActionEnum.cs" />
+    <Compile Include="conVeriCentro12ActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ContabilidadCommon\ContabilidadCommon\ContabilidadCommon.csproj">
+      <Project>{a1732112-8817-4321-99cc-3c0069457061}</Project>
+      <Name>ContabilidadCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

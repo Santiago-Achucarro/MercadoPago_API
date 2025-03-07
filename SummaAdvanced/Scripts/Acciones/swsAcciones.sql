@@ -1,0 +1,6 @@
+exec swsAccionesGuardar 'genPaisesGuardar'
+exec swsAccionesGuardar 'genPaisesDevolverDatos'
+exec swsAccionesGuardar 'wooVentasConStockDirectasGuardar'
+exec swsAccionesGuardar 'wooVentasConStockDirectasReservarStock'
+exec swsAccionesGuardar 'wooOrdenesCuitGuardar'
+exec swsAccionesGuardar 'wooOrdenesCuitFacturar'

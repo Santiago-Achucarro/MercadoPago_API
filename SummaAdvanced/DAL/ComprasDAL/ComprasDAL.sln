@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComprasDAL", "ComprasDAL\ComprasDAL.csproj", "{2FF2AEF6-D020-4953-A66A-5E04392F70A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComprasPruebas", "ComprasPruebas\ComprasPruebas.csproj", "{D28DE82D-5378-4B83-9B3B-0F11607FE6C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF2AEF6-D020-4953-A66A-5E04392F70A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF2AEF6-D020-4953-A66A-5E04392F70A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF2AEF6-D020-4953-A66A-5E04392F70A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF2AEF6-D020-4953-A66A-5E04392F70A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28DE82D-5378-4B83-9B3B-0F11607FE6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28DE82D-5378-4B83-9B3B-0F11607FE6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28DE82D-5378-4B83-9B3B-0F11607FE6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28DE82D-5378-4B83-9B3B-0F11607FE6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {079212A7-1D31-4CDE-9128-DC7836AF98F9}
+	EndGlobalSection
+EndGlobal

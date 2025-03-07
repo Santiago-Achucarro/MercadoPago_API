@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="tesCheqPropImpresionDS" targetNamespace="http://tempuri.org/tesCheqPropImpresionDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/tesCheqPropImpresionDS.xsd" xmlns:mstns="http://tempuri.org/tesCheqPropImpresionDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="tesCheqPropImpresionDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cartera_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCartera" type="xs:string" minOccurs="0" />
+<xs:element name="Chequera_Id" type="xs:int" minOccurs="0" />
+<xs:element name="NumChequeDesde" type="xs:int" minOccurs="0" />
+<xs:element name="NumChequeHasta" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cheques">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="tesCheqProp" type="xs:int" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="aLaOrden" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

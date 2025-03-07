@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D3B3347-A8CF-4909-AEA6-62C5D45244A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComprasExchange</RootNamespace>
+    <AssemblyName>ComprasExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comAjuEdoCtaActionEnum.cs" />
+    <Compile Include="comAjuEdoCtaActionExchange.cs" />
+    <Compile Include="comAsiCierreActionEnum.cs" />
+    <Compile Include="comAsiCierreActionExchange.cs" />
+    <Compile Include="comAsiCierreCalculoActionEnum.cs" />
+    <Compile Include="comAsiCierreCalculoActionExchange.cs" />
+    <Compile Include="comAsiCierreCrActionEnum.cs" />
+    <Compile Include="comAsiCierreCrActionExchange.cs" />
+    <Compile Include="comAsiCierreDatosCierreActionEnum.cs" />
+    <Compile Include="comAsiCierreDatosCierreActionExchange.cs" />
+    <Compile Include="comAsiSegmentosAnulActionEnum.cs" />
+    <Compile Include="comAsiSegmentosAnulActionExchange.cs" />
+    <Compile Include="comCategoriasActionEnum.cs" />
+    <Compile Include="comCategoriasActionExchange.cs" />
+    <Compile Include="comCFDISatActionEnum.cs" />
+    <Compile Include="comCFDISatActionExchange.cs" />
+    <Compile Include="comCFDISatDatosRangoActionEnum.cs" />
+    <Compile Include="comCFDISatDatosRangoActionExchange.cs" />
+    <Compile Include="comCFDISatPagoActionEnum.cs" />
+    <Compile Include="comCFDISatPagoActionExchange.cs" />
+    <Compile Include="comComprasConsPendActionEnum.cs" />
+    <Compile Include="comComprasConsPendActionExchange.cs" />
+    <Compile Include="comComprasPagadasActionEnum.cs" />
+    <Compile Include="comComprasPagadasActionExchange.cs" />
+    <Compile Include="comCondFiscalActionEnum.cs" />
+    <Compile Include="comCondFiscalActionExchange.cs" />
+    <Compile Include="comConPagoActionEnum.cs" />
+    <Compile Include="comConPagoActionExchange.cs" />
+    <Compile Include="comConsEdoCtaOcEmbActionEnum.cs" />
+    <Compile Include="comConsEdoCtaOcEmbActionExchange.cs" />
+    <Compile Include="comConsEdoCtaProveedoresActionEnum.cs" />
+    <Compile Include="comConsEdoCtaProveedoresActionExchange.cs" />
+    <Compile Include="comConsEdoCtaProveedoresTesoreriaActionEnum.cs" />
+    <Compile Include="comConsEdoCtaProveedoresTesoreriaActionExchange.cs" />
+    <Compile Include="comDespachosActionEnum.cs" />
+    <Compile Include="comDespachosActionExchange.cs" />
+    <Compile Include="comEmbarqueEdtoCtaActionEnum.cs" />
+    <Compile Include="comEmbarqueEdtoCtaActionExchange.cs" />
+    <Compile Include="comEmbarquesActionEnum.cs" />
+    <Compile Include="comEmbarquesActionExchange.cs" />
+    <Compile Include="comEmbAsiCierreActionEnum.cs" />
+    <Compile Include="comEmbAsiCierreActionExchange.cs" />
+    <Compile Include="comEmbCuerpoActionEnum.cs" />
+    <Compile Include="comEmbCuerpoActionExchange.cs" />
+    <Compile Include="comEmbGastoMovProvActionEnum.cs" />
+    <Compile Include="comEmbGastoMovProvActionExchange.cs" />
+    <Compile Include="comEmbGastosActionEnum.cs" />
+    <Compile Include="comEmbGastosActionExchange.cs" />
+    <Compile Include="comEsquemaAutoActionEnum.cs" />
+    <Compile Include="comEsquemaAutoActionExchange.cs" />
+    <Compile Include="comFactTesValoresSugeridosActionEnum.cs" />
+    <Compile Include="comFactTesValoresSugeridosActionExchange.cs" />
+    <Compile Include="comFacturasConOrdenDeCompraActionEnum.cs" />
+    <Compile Include="comFacturasConOrdenDeCompraActionExchange.cs" />
+    <Compile Include="comFacturasConOrdenDeEmbarqueActionEnum.cs" />
+    <Compile Include="comFacturasConOrdenDeEmbarqueActionExchange.cs" />
+    <Compile Include="comFacturasVariasOCActionEnum.cs" />
+    <Compile Include="comFacturasVariasOCActionExchange.cs" />
+    <Compile Include="comFactuReceOcActionEnum.cs" />
+    <Compile Include="comFactuReceOcActionExchange.cs" />
+    <Compile Include="comFactuReceStkActionEnum.cs" />
+    <Compile Include="comFactuReceStkActionExchange.cs" />
+    <Compile Include="comForEntreActionEnum.cs" />
+    <Compile Include="comForEntreActionExchange.cs" />
+    <Compile Include="comHabilitarPagosActionEnum.cs" />
+    <Compile Include="comHabilitarPagosActionExchange.cs" />
+    <Compile Include="comHabilitarPagosMasivosActionEnum.cs" />
+    <Compile Include="comHabilitarPagosMasivosActionExchange.cs" />
+    <Compile Include="comImpuestosActionEnum.cs" />
+    <Compile Include="comImpuestosActionExchange.cs" />
+    <Compile Include="comLIbrosActionEnum.cs" />
+    <Compile Include="comLIbrosActionExchange.cs" />
+    <Compile Include="comLibrosColumnasActionEnum.cs" />
+    <Compile Include="comLibrosColumnasActionExchange.cs" />
+    <Compile Include="comLibrosImpuestosActionEnum.cs" />
+    <Compile Include="comLibrosImpuestosActionExchange.cs" />
+    <Compile Include="comListaNegraActionEnum.cs" />
+    <Compile Include="comListaNegraActionExchange.cs" />
+    <Compile Include="comListaNegraMXActionEnum.cs" />
+    <Compile Include="comListaNegraMXActionExchange.cs" />
+    <Compile Include="comMovContCuentaActionEnum.cs" />
+    <Compile Include="comMovContCuentaActionExchange.cs" />
+    <Compile Include="comMovDetalleActionEnum.cs" />
+    <Compile Include="comMovDetalleActionExchange.cs" />
+    <Compile Include="comMovImpAcreditaActionEnum.cs" />
+    <Compile Include="comMovImpAcreditaActionExchange.cs" />
+    <Compile Include="comMovImpuestosActionEnum.cs" />
+    <Compile Include="comMovImpuestosActionExchange.cs" />
+    <Compile Include="comMovpAnexoActionEnum.cs" />
+    <Compile Include="comMovpAnexoActionExchange.cs" />
+    <Compile Include="comMovpAnexoContActionEnum.cs" />
+    <Compile Include="comMovpAnexoContActionExchange.cs" />
+    <Compile Include="comMovpAnexoDetalleActionEnum.cs" />
+    <Compile Include="comMovpAnexoDetalleActionExchange.cs" />
+    <Compile Include="comMovPOCActionEnum.cs" />
+    <Compile Include="comMovPOCActionExchange.cs" />
+    <Compile Include="comMovProvActionEnum.cs" />
+    <Compile Include="comMovProvActionExchange.cs" />
+    <Compile Include="comMovProvAnexoImpActionEnum.cs" />
+    <Compile Include="comMovProvAnexoImpActionExchange.cs" />
+    <Compile Include="comMovProvDatosConStockActionEnum.cs" />
+    <Compile Include="comMovProvDatosConStockActionExchange.cs" />
+    <Compile Include="comMovProvDatosConsultaActionEnum.cs" />
+    <Compile Include="comMovProvDatosConsultaActionExchange.cs" />
+    <Compile Include="comMovProvDatosPorDifPrecioActionEnum.cs" />
+    <Compile Include="comMovProvDatosPorDifPrecioActionExchange.cs" />
+    <Compile Include="comMovProvDatosSinStockActionEnum.cs" />
+    <Compile Include="comMovProvDatosSinStockActionExchange.cs" />
+    <Compile Include="comMovProvDevengaActionEnum.cs" />
+    <Compile Include="comMovProvDevengaActionExchange.cs" />
+    <Compile Include="comMovProvDevengaContActionEnum.cs" />
+    <Compile Include="comMovProvDevengaContActionExchange.cs" />
+    <Compile Include="comMovProvDevengaCtasActionEnum.cs" />
+    <Compile Include="comMovProvDevengaCtasActionExchange.cs" />
+    <Compile Include="comMovProvDPreFactDirActionEnum.cs" />
+    <Compile Include="comMovProvDPreFactDirActionExchange.cs" />
+    <Compile Include="comMovProvDPreOCActionEnum.cs" />
+    <Compile Include="comMovProvDPreOCActionExchange.cs" />
+    <Compile Include="comMovProvEmbActionEnum.cs" />
+    <Compile Include="comMovProvEmbActionExchange.cs" />
+    <Compile Include="comMovProvEmbDatosFullActionEnum.cs" />
+    <Compile Include="comMovProvEmbDatosFullActionExchange.cs" />
+    <Compile Include="comMovprovFactDifPrecRengActionEnum.cs" />
+    <Compile Include="comMovprovFactDifPrecRengActionExchange.cs" />
+    <Compile Include="comMovProvRemiPendActionEnum.cs" />
+    <Compile Include="comMovProvRemiPendActionExchange.cs" />
+    <Compile Include="comMovProvRemiPendDatosRemiActionEnum.cs" />
+    <Compile Include="comMovProvRemiPendDatosRemiActionExchange.cs" />
+    <Compile Include="comMovProvxClaveFiscalActionEnum.cs" />
+    <Compile Include="comMovProvxClaveFiscalActionExchange.cs" />
+    <Compile Include="comMovProvXmlActionEnum.cs" />
+    <Compile Include="comMovProvXmlActionExchange.cs" />
+    <Compile Include="comMovprovXmlBuscarActionEnum.cs" />
+    <Compile Include="comMovprovXmlBuscarActionExchange.cs" />
+    <Compile Include="comMovTiposActionEnum.cs" />
+    <Compile Include="comMovTiposActionExchange.cs" />
+    <Compile Include="comNivelesAutoActionEnum.cs" />
+    <Compile Include="comNivelesAutoActionExchange.cs" />
+    <Compile Include="comNivelesAutoUsuActionEnum.cs" />
+    <Compile Include="comNivelesAutoUsuActionExchange.cs" />
+    <Compile Include="comOCArticuloActionEnum.cs" />
+    <Compile Include="comOCArticuloActionExchange.cs" />
+    <Compile Include="comOCAutorizandoActionEnum.cs" />
+    <Compile Include="comOCAutorizandoActionExchange.cs" />
+    <Compile Include="comOCCuerpoActionEnum.cs" />
+    <Compile Include="comOCCuerpoActionExchange.cs" />
+    <Compile Include="comOCMemoActionEnum.cs" />
+    <Compile Include="comOCMemoActionExchange.cs" />
+    <Compile Include="comOcReceCuerpoActionEnum.cs" />
+    <Compile Include="comOcReceCuerpoActionExchange.cs" />
+    <Compile Include="comOcRecepcionActionEnum.cs" />
+    <Compile Include="comOcRecepcionActionExchange.cs" />
+    <Compile Include="comOcReveRecepcionActionEnum.cs" />
+    <Compile Include="comOcReveRecepcionActionExchange.cs" />
+    <Compile Include="comOrdenCompActionEnum.cs" />
+    <Compile Include="comOrdenCompActionExchange.cs" />
+    <Compile Include="comOrdenCompDatosConsActionEnum.cs" />
+    <Compile Include="comOrdenCompDatosConsActionExchange.cs" />
+    <Compile Include="comOrdenCompDesechadoActionEnum.cs" />
+    <Compile Include="comOrdenCompDesechadoActionExchange.cs" />
+    <Compile Include="comOrdenCompImprimirActionEnum.cs" />
+    <Compile Include="comOrdenCompImprimirActionExchange.cs" />
+    <Compile Include="comOrdenCompPendAutoActionEnum.cs" />
+    <Compile Include="comOrdenCompPendAutoActionExchange.cs" />
+    <Compile Include="comOrdenCompTienePendEntregaActionEnum.cs" />
+    <Compile Include="comOrdenCompTienePendEntregaActionExchange.cs" />
+    <Compile Include="comOrdenCompTienePendFactActionEnum.cs" />
+    <Compile Include="comOrdenCompTienePendFactActionExchange.cs" />
+    <Compile Include="comOrigenesFiscalesActionEnum.cs" />
+    <Compile Include="comOrigenesFiscalesActionExchange.cs" />
+    <Compile Include="comPagosAnticipoActionEnum.cs" />
+    <Compile Include="comPagosAnticipoActionExchange.cs" />
+    <Compile Include="comPagosHabilitadosActionEnum.cs" />
+    <Compile Include="comPagosHabilitadosActionExchange.cs" />
+    <Compile Include="comPFXActionEnum.cs" />
+    <Compile Include="comPFXActionExchange.cs" />
+    <Compile Include="ComprasCerrarActionEnum.cs" />
+    <Compile Include="ComprasCerrarActionExchange.cs" />
+    <Compile Include="comProvAnexoActionEnum.cs" />
+    <Compile Include="comProvAnexoActionExchange.cs" />
+    <Compile Include="comProvCtasContrapActionEnum.cs" />
+    <Compile Include="comProvCtasContrapActionExchange.cs" />
+    <Compile Include="comProvedoresXlsActionEnum.cs" />
+    <Compile Include="comProvedoresXlsActionExchange.cs" />
+    <Compile Include="comProveedoresActionEnum.cs" />
+    <Compile Include="comProveedoresActionExchange.cs" />
+    <Compile Include="comProveedoresCtasPasivoActionEnum.cs" />
+    <Compile Include="comProveedoresCtasPasivoActionExchange.cs" />
+    <Compile Include="comProveedoresDatosCUITActionEnum.cs" />
+    <Compile Include="comProveedoresDatosCUITActionExchange.cs" />
+    <Compile Include="comProveedoresImpuestosActionEnum.cs" />
+    <Compile Include="comProveedoresImpuestosActionExchange.cs" />
+    <Compile Include="comProveedoresRetencionActionEnum.cs" />
+    <Compile Include="comProveedoresRetencionActionExchange.cs" />
+    <Compile Include="comProveedoresSaldoIniActionEnum.cs" />
+    <Compile Include="comProveedoresSaldoIniActionExchange.cs" />
+    <Compile Include="comProveedoresXLSCatalogoActionEnum.cs" />
+    <Compile Include="comProveedoresXLSCatalogoActionExchange.cs" />
+    <Compile Include="comProvTiposActionEnum.cs" />
+    <Compile Include="comProvTiposActionExchange.cs" />
+    <Compile Include="comRegionesActionEnum.cs" />
+    <Compile Include="comRegionesActionExchange.cs" />
+    <Compile Include="comRemiPendFactActionEnum.cs" />
+    <Compile Include="comRemiPendFactActionExchange.cs" />
+    <Compile Include="comReqInternoActionEnum.cs" />
+    <Compile Include="comReqInternoActionExchange.cs" />
+    <Compile Include="comReqInternoCompTienePendEntregaActionEnum.cs" />
+    <Compile Include="comReqInternoCompTienePendEntregaActionExchange.cs" />
+    <Compile Include="comReqInternoPendAutoActionEnum.cs" />
+    <Compile Include="comReqInternoPendAutoActionExchange.cs" />
+    <Compile Include="comRIArticuloActionEnum.cs" />
+    <Compile Include="comRIArticuloActionExchange.cs" />
+    <Compile Include="comRIAutorizandoActionEnum.cs" />
+    <Compile Include="comRIAutorizandoActionExchange.cs" />
+    <Compile Include="comRIConsolidacionActionEnum.cs" />
+    <Compile Include="comRIConsolidacionActionExchange.cs" />
+    <Compile Include="comRICuerpoActionEnum.cs" />
+    <Compile Include="comRICuerpoActionExchange.cs" />
+    <Compile Include="comRiCuerpoRecibirActionEnum.cs" />
+    <Compile Include="comRiCuerpoRecibirActionExchange.cs" />
+    <Compile Include="comRIMemoActionEnum.cs" />
+    <Compile Include="comRIMemoActionExchange.cs" />
+    <Compile Include="comRISegmentoActionEnum.cs" />
+    <Compile Include="comRISegmentoActionExchange.cs" />
+    <Compile Include="comSolicitudesSatActionEnum.cs" />
+    <Compile Include="comSolicitudesSatActionExchange.cs" />
+    <Compile Include="comSubCategoriasActionEnum.cs" />
+    <Compile Include="comSubCategoriasActionExchange.cs" />
+    <Compile Include="comSubirXmlDesdeCarpetaActionEnum.cs" />
+    <Compile Include="comSubirXmlDesdeCarpetaActionExchange.cs" />
+    <Compile Include="comTipoPermiActionEnum.cs" />
+    <Compile Include="comTipoPermiActionExchange.cs" />
+    <Compile Include="comTipoPermiRIActionEnum.cs" />
+    <Compile Include="comTipoPermiRIActionExchange.cs" />
+    <Compile Include="comTraePendientesActionEnum.cs" />
+    <Compile Include="comTraePendientesActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ComprasCommon\ComprasCommon\ComprasCommon.csproj">
+      <Project>{426a7287-f5d3-42c3-b096-e963f20d1513}</Project>
+      <Name>ComprasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

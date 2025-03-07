@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="espProductosColorTalleKSKDS" targetNamespace="http://tempuri.org/espProductosColorTalleKSKDS.xsd" xmlns:mstns="http://tempuri.org/espProductosColorTalleKSKDS.xsd" xmlns="http://tempuri.org/espProductosColorTalleKSKDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="espProductosColorTalleKSKDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="espProductosColorTalleKSKDS" msprop:Generator_UserDSName="espProductosColorTalleKSKDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TalleColor" msprop:Generator_TableClassName="TalleColorDataTable" msprop:Generator_TableVarName="tableTalleColor" msprop:Generator_TablePropName="TalleColor" msprop:Generator_RowDeletingName="TalleColorRowDeleting" msprop:Generator_RowChangingName="TalleColorRowChanging" msprop:Generator_RowEvHandlerName="TalleColorRowChangeEventHandler" msprop:Generator_RowDeletedName="TalleColorRowDeleted" msprop:Generator_UserTableName="TalleColor" msprop:Generator_RowChangedName="TalleColorRowChanged" msprop:Generator_RowEvArgName="TalleColorRowChangeEvent" msprop:Generator_RowClassName="TalleColorRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionProductos" msprop:Generator_ColumnVarNameInTable="columnDescripcionProductos" msprop:Generator_ColumnPropNameInRow="DescripcionProductos" msprop:Generator_ColumnPropNameInTable="DescripcionProductosColumn" msprop:Generator_UserColumnName="DescripcionProductos" type="xs:string" minOccurs="0" />
+              <xs:element name="Color_Id" msprop:Generator_ColumnVarNameInTable="columnColor_Id" msprop:Generator_ColumnPropNameInRow="Color_Id" msprop:Generator_ColumnPropNameInTable="Color_IdColumn" msprop:Generator_UserColumnName="Color_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionstkColorKSK" msprop:Generator_ColumnVarNameInTable="columnDescripcionstkColorKSK" msprop:Generator_ColumnPropNameInRow="DescripcionstkColorKSK" msprop:Generator_ColumnPropNameInTable="DescripcionstkColorKSKColumn" msprop:Generator_UserColumnName="DescripcionstkColorKSK" type="xs:string" minOccurs="0" />
+              <xs:element name="Talle_Id" msprop:Generator_ColumnVarNameInTable="columnTalle_Id" msprop:Generator_ColumnPropNameInRow="Talle_Id" msprop:Generator_ColumnPropNameInTable="Talle_IdColumn" msprop:Generator_UserColumnName="Talle_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionstkTalleKSK" msprop:Generator_ColumnVarNameInTable="columnDescripcionstkTalleKSK" msprop:Generator_ColumnPropNameInRow="DescripcionstkTalleKSK" msprop:Generator_ColumnPropNameInTable="DescripcionstkTalleKSKColumn" msprop:Generator_UserColumnName="DescripcionstkTalleKSK" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{013FF905-736E-43CD-B713-979EC4F0DE18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActivoFijoExchange</RootNamespace>
+    <AssemblyName>ActivoFijoExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivoFijoXlsActionEnum.cs" />
+    <Compile Include="ActivoFijoXlsActionExchange.cs" />
+    <Compile Include="afiActivoFijoActionEnum.cs" />
+    <Compile Include="afiActivoFijoActionExchange.cs" />
+    <Compile Include="afiActivoFijoOtrosActionEnum.cs" />
+    <Compile Include="afiActivoFijoOtrosActionExchange.cs" />
+    <Compile Include="AfiActivoFijoXLSCatalogoActionEnum.cs" />
+    <Compile Include="AfiActivoFijoXLSCatalogoActionExchange.cs" />
+    <Compile Include="AfiBajasActionEnum.cs" />
+    <Compile Include="AfiBajasActionExchange.cs" />
+    <Compile Include="AfiCentrosActionEnum.cs" />
+    <Compile Include="AfiCentrosActionExchange.cs" />
+    <Compile Include="AficonMovcontActionEnum.cs" />
+    <Compile Include="AficonMovcontActionExchange.cs" />
+    <Compile Include="AfiFijoCerrarActionEnum.cs" />
+    <Compile Include="AfiFijoCerrarActionExchange.cs" />
+    <Compile Include="AfiGenerarDepreActionEnum.cs" />
+    <Compile Include="AfiGenerarDepreActionExchange.cs" />
+    <Compile Include="afiResponsableActivoActionEnum.cs" />
+    <Compile Include="afiResponsableActivoActionExchange.cs" />
+    <Compile Include="afiResponsablesActionEnum.cs" />
+    <Compile Include="afiResponsablesActionExchange.cs" />
+    <Compile Include="AfiRubrosActionEnum.cs" />
+    <Compile Include="AfiRubrosActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ActivoFijoCommon\ActivoFijoCommon\ActivoFijoCommon.csproj">
+      <Project>{439a837c-05dd-47b3-9328-fd2be36e541f}</Project>
+      <Name>ActivoFijoCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

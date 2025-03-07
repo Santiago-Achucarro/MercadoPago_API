@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+=======
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+>>>>>>> 3717e63f32095a76ff40a27eabf75d84b0af17b8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentasMLCommon", "VentasMLCommon\VentasMLCommon.csproj", "{9DA6EF8C-C945-4DC4-A236-C3A0A8959085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DA6EF8C-C945-4DC4-A236-C3A0A8959085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA6EF8C-C945-4DC4-A236-C3A0A8959085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA6EF8C-C945-4DC4-A236-C3A0A8959085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA6EF8C-C945-4DC4-A236-C3A0A8959085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F88EFDD0-7FA3-4ADE-8B3C-3AEBE5B70E09}
+	EndGlobalSection
+EndGlobal

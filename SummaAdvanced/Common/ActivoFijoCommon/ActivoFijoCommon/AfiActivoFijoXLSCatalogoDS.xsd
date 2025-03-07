@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AfiActivoFijoXLSCatalogoDS" targetNamespace="http://tempuri.org/AfiActivoFijoXLSCatalogoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/AfiActivoFijoXLSCatalogoDS.xsd" xmlns:mstns="http://tempuri.org/AfiActivoFijoXLSCatalogoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="AfiActivoFijoXLSCatalogoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ActivoFijoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ActivoFijoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Activos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ActivoFijo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="FechaAlta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaIniDepre" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaBaja" type="xs:dateTime" minOccurs="0" />
+<xs:element name="ValorInicial" type="xs:decimal" minOccurs="0" />
+<xs:element name="VidaUtil" type="xs:int" minOccurs="0" />
+<xs:element name="VidaUtilRestante" type="xs:int" minOccurs="0" />
+<xs:element name="PorResidual" type="xs:decimal" minOccurs="0" />
+<xs:element name="AmortAcumulada" type="xs:decimal" minOccurs="0" />
+<xs:element name="Rubro_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+<xs:element name="CtaValorOrigen_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAmortAcum_Id" type="xs:string" minOccurs="0" />
+<xs:element name="CtaAmortizacion_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Porcentajes">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ActivoFijo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro1_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Centro2_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

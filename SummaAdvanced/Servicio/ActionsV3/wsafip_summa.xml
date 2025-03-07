@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wsAfip>
+	<wsUrlVINCENTIQ1>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+		<urlWSFEXV1>https://servicios1.afip.gov.ar/wsfexv1/service.asmx</urlWSFEXV1> 
+	</wsUrlVINCENTIQ1>
+	<wsUrlPAMPA1>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+		<urlWSFEXV1>https://servicios1.afip.gov.ar/wsfexv1/service.asmx</urlWSFEXV1> 
+	</wsUrlPAMPA1>
+    <proxy>
+        <usuario></usuario>
+        <password></password>
+        <dominio></dominio>
+        <url></url>
+        <puerto></puerto>
+    </proxy>
+</wsAfip>

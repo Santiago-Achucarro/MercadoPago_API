@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39655623-F0FB-49FD-9883-DF2328E5AB5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProduccionReportesCommon</RootNamespace>
+    <AssemblyName>ProduccionReportesCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadenaProduccionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CadenaProduccionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proCausasMovDS.cs">
+      <DependentUpon>proCausasMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proCausasMovDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proCausasMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proConsMaterialesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proConsMaterialesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proCostosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proCostosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proCostosPorOrdenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proCostosPorOrdenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proEficienciaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proEficienciaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proMovStockOrdedDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proMovStockOrdedDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proOrdenOrigenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proOrdenOrigenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proProduccionesPendDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proProduccionesPendDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proProduccionesPeriodoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proProduccionesPeriodoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proProgramaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proProgramaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proRecetasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proRecetasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proTrabajosCPDetaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proTrabajosCPDetaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proTrabajosCPDS.cs">
+      <DependentUpon>proTrabajosCPDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proTrabajosCPDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proTrabajosCPDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proTrabajosProvDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proTrabajosProvDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proTrabajosRecuDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proTrabajosRecuDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proUsoUnProductoDS.cs">
+      <DependentUpon>proUsoUnProductoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proUsoUnProductoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proUsoUnProductoDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CadenaProduccionDS.xsc">
+      <DependentUpon>CadenaProduccionDS.xsd</DependentUpon>
+    </None>
+    <None Include="CadenaProduccionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CadenaProduccionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CadenaProduccionDS.xss">
+      <DependentUpon>CadenaProduccionDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCausasMovDS.xsc">
+      <DependentUpon>proCausasMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCausasMovDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proCausasMovDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proCausasMovDS.xss">
+      <DependentUpon>proCausasMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="proConsMaterialesDS.xsc">
+      <DependentUpon>proConsMaterialesDS.xsd</DependentUpon>
+    </None>
+    <None Include="proConsMaterialesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proConsMaterialesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proConsMaterialesDS.xss">
+      <DependentUpon>proConsMaterialesDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCostosDS.xsc">
+      <DependentUpon>proCostosDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCostosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proCostosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proCostosDS.xss">
+      <DependentUpon>proCostosDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCostosPorOrdenDS.xsc">
+      <DependentUpon>proCostosPorOrdenDS.xsd</DependentUpon>
+    </None>
+    <None Include="proCostosPorOrdenDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proCostosPorOrdenDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proCostosPorOrdenDS.xss">
+      <DependentUpon>proCostosPorOrdenDS.xsd</DependentUpon>
+    </None>
+    <None Include="proEficienciaDS.xsc">
+      <DependentUpon>proEficienciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="proEficienciaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proEficienciaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proEficienciaDS.xss">
+      <DependentUpon>proEficienciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="proMovStockOrdedDS.xsc">
+      <DependentUpon>proMovStockOrdedDS.xsd</DependentUpon>
+    </None>
+    <None Include="proMovStockOrdedDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proMovStockOrdedDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proMovStockOrdedDS.xss">
+      <DependentUpon>proMovStockOrdedDS.xsd</DependentUpon>
+    </None>
+    <None Include="proOrdenOrigenDS.xsc">
+      <DependentUpon>proOrdenOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="proOrdenOrigenDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proOrdenOrigenDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proOrdenOrigenDS.xss">
+      <DependentUpon>proOrdenOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProduccionesPendDS.xsc">
+      <DependentUpon>proProduccionesPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProduccionesPendDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proProduccionesPendDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proProduccionesPendDS.xss">
+      <DependentUpon>proProduccionesPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProduccionesPeriodoDS.xsc">
+      <DependentUpon>proProduccionesPeriodoDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProduccionesPeriodoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proProduccionesPeriodoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proProduccionesPeriodoDS.xss">
+      <DependentUpon>proProduccionesPeriodoDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProgramaDS.xsc">
+      <DependentUpon>proProgramaDS.xsd</DependentUpon>
+    </None>
+    <None Include="proProgramaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proProgramaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proProgramaDS.xss">
+      <DependentUpon>proProgramaDS.xsd</DependentUpon>
+    </None>
+    <None Include="proRecetasDS.xsc">
+      <DependentUpon>proRecetasDS.xsd</DependentUpon>
+    </None>
+    <None Include="proRecetasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proRecetasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proRecetasDS.xss">
+      <DependentUpon>proRecetasDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosCPDetaDS.xsc">
+      <DependentUpon>proTrabajosCPDetaDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosCPDS.xsc">
+      <DependentUpon>proTrabajosCPDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosCPDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proTrabajosCPDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proTrabajosCPDS.xss">
+      <DependentUpon>proTrabajosCPDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosCPDetaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proTrabajosCPDetaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proTrabajosProvDS.xsc">
+      <DependentUpon>proTrabajosProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosProvDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proTrabajosProvDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proTrabajosProvDS.xss">
+      <DependentUpon>proTrabajosProvDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosRecuDS.xsc">
+      <DependentUpon>proTrabajosRecuDS.xsd</DependentUpon>
+    </None>
+    <None Include="proTrabajosRecuDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proTrabajosRecuDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proTrabajosRecuDS.xss">
+      <DependentUpon>proTrabajosRecuDS.xsd</DependentUpon>
+    </None>
+    <None Include="proUsoUnProductoDS.xsc">
+      <DependentUpon>proUsoUnProductoDS.xsd</DependentUpon>
+    </None>
+    <None Include="proUsoUnProductoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proUsoUnProductoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="proUsoUnProductoDS.xss">
+      <DependentUpon>proUsoUnProductoDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

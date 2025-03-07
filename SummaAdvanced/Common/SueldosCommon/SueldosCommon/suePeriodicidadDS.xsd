@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="suePeriodicidadDS" targetNamespace="http://tempuri.org/suePeriodicidadDS.xsd" xmlns:mstns="http://tempuri.org/suePeriodicidadDS.xsd" xmlns="http://tempuri.org/suePeriodicidadDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="suePeriodicidadDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="suePeriodicidadDS" msprop:Generator_UserDSName="suePeriodicidadDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Periodo_Id" msprop:Generator_ColumnVarNameInTable="columnPeriodo_Id" msprop:Generator_ColumnPropNameInRow="Periodo_Id" msprop:Generator_ColumnPropNameInTable="Periodo_IdColumn" msprop:Generator_UserColumnName="Periodo_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Periodo_Id_Nueva" msprop:Generator_ColumnVarNameInTable="columnPeriodo_Id_Nueva" msprop:Generator_ColumnPropNameInRow="Periodo_Id_Nueva" msprop:Generator_ColumnPropNameInTable="Periodo_Id_NuevaColumn" msprop:Generator_UserColumnName="Periodo_Id_Nueva" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Dias" msprop:Generator_ColumnVarNameInTable="columnDias" msprop:Generator_ColumnPropNameInRow="Dias" msprop:Generator_ColumnPropNameInTable="DiasColumn" msprop:Generator_UserColumnName="Dias" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FechaActiva" msprop:Generator_ColumnVarNameInTable="columnFechaActiva" msprop:Generator_ColumnPropNameInRow="FechaActiva" msprop:Generator_ColumnPropNameInTable="FechaActivaColumn" msprop:Generator_UserColumnName="FechaActiva" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Empresa_Id" msprop:Generator_ColumnVarNameInTable="columnEmpresa_Id" msprop:Generator_ColumnPropNameInRow="Empresa_Id" msprop:Generator_ColumnPropNameInTable="Empresa_IdColumn" msprop:Generator_UserColumnName="Empresa_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="PTodasEmpresas" msprop:Generator_ColumnVarNameInTable="columnPTodasEmpresas" msprop:Generator_ColumnPropNameInRow="PTodasEmpresas" msprop:Generator_ColumnPropNameInTable="PTodasEmpresasColumn" msprop:Generator_UserColumnName="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CodFiscal" msprop:Generator_ColumnVarNameInTable="columnCodFiscal" msprop:Generator_ColumnPropNameInRow="CodFiscal" msprop:Generator_ColumnPropNameInTable="CodFiscalColumn" msprop:Generator_UserColumnName="CodFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

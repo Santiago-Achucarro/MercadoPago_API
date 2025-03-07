@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{678DCD1E-D8AC-4FD8-934A-B775110C81D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneralesExchange</RootNamespace>
+    <AssemblyName>GeneralesExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FechaBaseActionEnum.cs" />
+    <Compile Include="FechaBaseActionExchange.cs" />
+    <Compile Include="genAdjuntosActionEnum.cs" />
+    <Compile Include="genAdjuntosActionExchange.cs" />
+    <Compile Include="genAdjuntosIdentidadActionEnum.cs" />
+    <Compile Include="genAdjuntosIdentidadActionExchange.cs" />
+    <Compile Include="genAlertasActionEnum.cs" />
+    <Compile Include="genAlertasActionExchange.cs" />
+    <Compile Include="genAlertasUsuarioActionEnum.cs" />
+    <Compile Include="genAlertasUsuarioActionExchange.cs" />
+    <Compile Include="genAplicacionesActionEnum.cs" />
+    <Compile Include="genAplicacionesActionExchange.cs" />
+    <Compile Include="genAsiSegmentosActionEnum.cs" />
+    <Compile Include="genAsiSegmentosActionExchange.cs" />
+    <Compile Include="genAtributosGeneralesActionEnum.cs" />
+    <Compile Include="genAtributosGeneralesActionExchange.cs" />
+    <Compile Include="genAtributosProvinciaActionEnum.cs" />
+    <Compile Include="genAtributosProvinciaActionExchange.cs" />
+    <Compile Include="genAtributosValoresActionEnum.cs" />
+    <Compile Include="genAtributosValoresActionExchange.cs" />
+    <Compile Include="genAtributosValoresAuditFechaActionEnum.cs" />
+    <Compile Include="genAtributosValoresAuditFechaActionExchange.cs" />
+    <Compile Include="genAtributosValoresXLSActionEnum.cs" />
+    <Compile Include="genAtributosValoresXLSActionExchange.cs" />
+    <Compile Include="genAtributosValorIdentidadActionEnum.cs" />
+    <Compile Include="genAtributosValorIdentidadActionExchange.cs" />
+    <Compile Include="genAtriGralesClasesActionEnum.cs" />
+    <Compile Include="genAtriGralesClasesActionExchange.cs" />
+    <Compile Include="genCancMovActionEnum.cs" />
+    <Compile Include="genCancMovActionExchange.cs" />
+    <Compile Include="genCancMovApliImporActionEnum.cs" />
+    <Compile Include="genCancMovApliImporActionExchange.cs" />
+    <Compile Include="genCancMovCuentaActionEnum.cs" />
+    <Compile Include="genCancMovCuentaActionExchange.cs" />
+    <Compile Include="genCancSaldosCuentaActionEnum.cs" />
+    <Compile Include="genCancSaldosCuentaActionExchange.cs" />
+    <Compile Include="genCertificadosActionEnum.cs" />
+    <Compile Include="genCertificadosActionExchange.cs" />
+    <Compile Include="genCertificadosFeArActionEnum.cs" />
+    <Compile Include="genCertificadosFeArActionExchange.cs" />
+    <Compile Include="genCodPostalActionEnum.cs" />
+    <Compile Include="genCodPostalActionExchange.cs" />
+    <Compile Include="genContadorCopiarActionEnum.cs" />
+    <Compile Include="genContadorCopiarActionExchange.cs" />
+    <Compile Include="genContadorSegmentoActionEnum.cs" />
+    <Compile Include="genContadorSegmentoActionExchange.cs" />
+    <Compile Include="genContadorSegmentoDatosTodosActionEnum.cs" />
+    <Compile Include="genContadorSegmentoDatosTodosActionExchange.cs" />
+    <Compile Include="genControlesSeteosActionEnum.cs" />
+    <Compile Include="genControlesSeteosActionExchange.cs" />
+    <Compile Include="genCulturasActionEnum.cs" />
+    <Compile Include="genCulturasActionExchange.cs" />
+    <Compile Include="genDiasFestivosActionEnum.cs" />
+    <Compile Include="genDiasFestivosActionExchange.cs" />
+    <Compile Include="genDiasFestivosFechaActionEnum.cs" />
+    <Compile Include="genDiasFestivosFechaActionExchange.cs" />
+    <Compile Include="genDominiosActionEnum.cs" />
+    <Compile Include="genDominiosActionExchange.cs" />
+    <Compile Include="genEmpresasActionEnum.cs" />
+    <Compile Include="genEmpresasActionExchange.cs" />
+    <Compile Include="genEmpresasTodasActionEnum.cs" />
+    <Compile Include="genEmpresasTodasActionExchange.cs" />
+    <Compile Include="genEntidadesActionEnum.cs" />
+    <Compile Include="genEntidadesActionExchange.cs" />
+    <Compile Include="genEntidadesBasicasActionEnum.cs" />
+    <Compile Include="genEntidadesBasicasActionExchange.cs" />
+    <Compile Include="genEntidadesBasicasValorActionEnum.cs" />
+    <Compile Include="genEntidadesBasicasValorActionExchange.cs" />
+    <Compile Include="genFavoritosUsuariosActionEnum.cs" />
+    <Compile Include="genFavoritosUsuariosActionExchange.cs" />
+    <Compile Include="genFechasAplicacionActionEnum.cs" />
+    <Compile Include="genFechasAplicacionActionExchange.cs" />
+    <Compile Include="genGlobalesActionEnum.cs" />
+    <Compile Include="genGlobalesActionExchange.cs" />
+    <Compile Include="genGruposActionEnum.cs" />
+    <Compile Include="genGruposActionExchange.cs" />
+    <Compile Include="genGruposPertenceActionEnum.cs" />
+    <Compile Include="genGruposPertenceActionExchange.cs" />
+    <Compile Include="genInstalacionActionEnum.cs" />
+    <Compile Include="genInstalacionActionExchange.cs" />
+    <Compile Include="genJurisCoeficientesActionEnum.cs" />
+    <Compile Include="genJurisCoeficientesActionExchange.cs" />
+    <Compile Include="genLinksAyudaActionEnum.cs" />
+    <Compile Include="genLinksAyudaActionExchange.cs" />
+    <Compile Include="genLinksAyudaTodosActionEnum.cs" />
+    <Compile Include="genLinksAyudaTodosActionExchange.cs" />
+    <Compile Include="genLocalidadesActionEnum.cs" />
+    <Compile Include="genLocalidadesActionExchange.cs" />
+    <Compile Include="genLogRequestActionEnum.cs" />
+    <Compile Include="genLogRequestActionExchange.cs" />
+    <Compile Include="genLogRequestDatosTodosActionEnum.cs" />
+    <Compile Include="genLogRequestDatosTodosActionExchange.cs" />
+    <Compile Include="genMensajesActionEnum.cs" />
+    <Compile Include="genMensajesActionExchange.cs" />
+    <Compile Include="genMensajesPantallaActionEnum.cs" />
+    <Compile Include="genMensajesPantallaActionExchange.cs" />
+    <Compile Include="genMensajesUsuarioActionEnum.cs" />
+    <Compile Include="genMensajesUsuarioActionExchange.cs" />
+    <Compile Include="genMenusActionEnum.cs" />
+    <Compile Include="genMenusActionExchange.cs" />
+    <Compile Include="genMonedasActionEnum.cs" />
+    <Compile Include="genMonedasActionExchange.cs" />
+    <Compile Include="genMovCuotasActionEnum.cs" />
+    <Compile Include="genMovCuotasActionExchange.cs" />
+    <Compile Include="genMovimientosActionEnum.cs" />
+    <Compile Include="genMovimientosActionExchange.cs" />
+    <Compile Include="genMunicipiosActionEnum.cs" />
+    <Compile Include="genMunicipiosActionExchange.cs" />
+    <Compile Include="genPaisesActionEnum.cs" />
+    <Compile Include="genPaisesActionExchange.cs" />
+    <Compile Include="genPermisosActionEnum.cs" />
+    <Compile Include="genPermisosActionExchange.cs" />
+    <Compile Include="genPermisosCopiaActionEnum.cs" />
+    <Compile Include="genPermisosCopiaActionExchange.cs" />
+    <Compile Include="genPermisosDatosTodosActionEnum.cs" />
+    <Compile Include="genPermisosDatosTodosActionExchange.cs" />
+    <Compile Include="genPermisosUsuarioActionEnum.cs" />
+    <Compile Include="genPermisosUsuarioActionExchange.cs" />
+    <Compile Include="genProvinciasActionEnum.cs" />
+    <Compile Include="genProvinciasActionExchange.cs" />
+    <Compile Include="genReporteEjecutarActionEnum.cs" />
+    <Compile Include="genReporteEjecutarActionExchange.cs" />
+    <Compile Include="genReportesActionEnum.cs" />
+    <Compile Include="genReportesActionExchange.cs" />
+    <Compile Include="genReportesSPActionEnum.cs" />
+    <Compile Include="genReportesSPActionExchange.cs" />
+    <Compile Include="genReportesTodosActionEnum.cs" />
+    <Compile Include="genReportesTodosActionExchange.cs" />
+    <Compile Include="genSaldoAnticipoActionEnum.cs" />
+    <Compile Include="genSaldoAnticipoActionExchange.cs" />
+    <Compile Include="genSegmentosActionEnum.cs" />
+    <Compile Include="genSegmentosActionExchange.cs" />
+    <Compile Include="genSegmentoStrActionEnum.cs" />
+    <Compile Include="genSegmentoStrActionExchange.cs" />
+    <Compile Include="genSegmentosValoresActionEnum.cs" />
+    <Compile Include="genSegmentosValoresActionExchange.cs" />
+    <Compile Include="genSemaforoActionEnum.cs" />
+    <Compile Include="genSemaforoActionExchange.cs" />
+    <Compile Include="genSucursalesEmprActionEnum.cs" />
+    <Compile Include="genSucursalesEmprActionExchange.cs" />
+    <Compile Include="genSucursalesListaActionEnum.cs" />
+    <Compile Include="genSucursalesListaActionExchange.cs" />
+    <Compile Include="genTamanioHojaActionEnum.cs" />
+    <Compile Include="genTamanioHojaActionExchange.cs" />
+    <Compile Include="genTareasProgramadasActionEnum.cs" />
+    <Compile Include="genTareasProgramadasActionExchange.cs" />
+    <Compile Include="genTareasProgramadasEjecucionActionEnum.cs" />
+    <Compile Include="genTareasProgramadasEjecucionActionExchange.cs" />
+    <Compile Include="genTareasProgramadasErroresActionEnum.cs" />
+    <Compile Include="genTareasProgramadasErroresActionExchange.cs" />
+    <Compile Include="genTareasProgramadasTodasActionEnum.cs" />
+    <Compile Include="genTareasProgramadasTodasActionExchange.cs" />
+    <Compile Include="genTipoCambioActionEnum.cs" />
+    <Compile Include="genTipoCambioActionExchange.cs" />
+    <Compile Include="genTiposCompAfipActionEnum.cs" />
+    <Compile Include="genTiposCompAfipActionExchange.cs" />
+    <Compile Include="genUltPaginasVisitadasUsuariosActionEnum.cs" />
+    <Compile Include="genUltPaginasVisitadasUsuariosActionExchange.cs" />
+    <Compile Include="genUsuarioLoginActionEnum.cs" />
+    <Compile Include="genUsuarioLoginActionExchange.cs" />
+    <Compile Include="genUsuarioLogoutActionEnum.cs" />
+    <Compile Include="genUsuarioLogoutActionExchange.cs" />
+    <Compile Include="genUsuarioPermisosEspActionEnum.cs" />
+    <Compile Include="genUsuarioPermisosEspActionExchange.cs" />
+    <Compile Include="genUsuariosActionEnum.cs" />
+    <Compile Include="genUsuariosActionExchange.cs" />
+    <Compile Include="genUsuariosCambiarClaveActionEnum.cs" />
+    <Compile Include="genUsuariosCambiarClaveActionExchange.cs" />
+    <Compile Include="genUsuariosRecuperarActionEnum.cs" />
+    <Compile Include="genUsuariosRecuperarActionExchange.cs" />
+    <Compile Include="genUsuariosSucursalActionEnum.cs" />
+    <Compile Include="genUsuariosSucursalActionExchange.cs" />
+    <Compile Include="genWSFactElecActionEnum.cs" />
+    <Compile Include="genWSFactElecActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

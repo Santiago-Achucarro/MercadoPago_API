@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genLinksAyudaTodosDS" targetNamespace="http://tempuri.org/genLinksAyudaTodosDS.xsd" xmlns:mstns="http://tempuri.org/genLinksAyudaTodosDS.xsd" xmlns="http://tempuri.org/genLinksAyudaTodosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genLinksAyudaTodosDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="genLinksAyudaTodosDS" msprop:Generator_UserDSName="genLinksAyudaTodosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_UserTableName="Principal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent" msprop:Generator_RowClassName="PrincipalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LinksAyuda" msprop:Generator_TableClassName="LinksAyudaDataTable" msprop:Generator_TableVarName="tableLinksAyuda" msprop:Generator_TablePropName="LinksAyuda" msprop:Generator_RowDeletingName="LinksAyudaRowDeleting" msprop:Generator_RowChangingName="LinksAyudaRowChanging" msprop:Generator_RowEvHandlerName="LinksAyudaRowChangeEventHandler" msprop:Generator_RowDeletedName="LinksAyudaRowDeleted" msprop:Generator_UserTableName="LinksAyuda" msprop:Generator_RowChangedName="LinksAyudaRowChanged" msprop:Generator_RowEvArgName="LinksAyudaRowChangeEvent" msprop:Generator_RowClassName="LinksAyudaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoLnk" msprop:Generator_ColumnVarNameInTable="columnCodigoLnk" msprop:Generator_ColumnPropNameInRow="CodigoLnk" msprop:Generator_ColumnPropNameInTable="CodigoLnkColumn" msprop:Generator_UserColumnName="CodigoLnk" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

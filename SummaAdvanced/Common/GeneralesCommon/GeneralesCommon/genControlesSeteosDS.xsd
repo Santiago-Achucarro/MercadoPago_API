@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genControlesSeteosDS" targetNamespace="http://tempuri.org/genControlesSeteosDS.xsd" xmlns:mstns="http://tempuri.org/genControlesSeteosDS.xsd" xmlns="http://tempuri.org/genControlesSeteosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genControlesSeteosDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="genControlesSeteosDS" msprop:Generator_UserDSName="genControlesSeteosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Formulario_Id" msprop:Generator_ColumnVarNameInTable="columnFormulario_Id" msprop:Generator_ColumnPropNameInRow="Formulario_Id" msprop:Generator_ColumnPropNameInTable="Formulario_IdColumn" msprop:Generator_UserColumnName="Formulario_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionFormularios" msprop:Generator_ColumnVarNameInTable="columnDescripcionFormularios" msprop:Generator_ColumnPropNameInRow="DescripcionFormularios" msprop:Generator_ColumnPropNameInTable="DescripcionFormulariosColumn" msprop:Generator_UserColumnName="DescripcionFormularios" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Controles" msprop:Generator_TableClassName="ControlesDataTable" msprop:Generator_TableVarName="tableControles" msprop:Generator_RowChangedName="ControlesRowChanged" msprop:Generator_TablePropName="Controles" msprop:Generator_RowDeletingName="ControlesRowDeleting" msprop:Generator_RowChangingName="ControlesRowChanging" msprop:Generator_RowEvHandlerName="ControlesRowChangeEventHandler" msprop:Generator_RowDeletedName="ControlesRowDeleted" msprop:Generator_RowClassName="ControlesRow" msprop:Generator_UserTableName="Controles" msprop:Generator_RowEvArgName="ControlesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Control_Id" msprop:Generator_ColumnVarNameInTable="columnControl_Id" msprop:Generator_ColumnPropNameInRow="Control_Id" msprop:Generator_ColumnPropNameInTable="Control_IdColumn" msprop:Generator_UserColumnName="Control_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Orden" msprop:Generator_ColumnVarNameInTable="columnOrden" msprop:Generator_ColumnPropNameInRow="Orden" msprop:Generator_ColumnPropNameInTable="OrdenColumn" msprop:Generator_UserColumnName="Orden" type="xs:int" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="ModificoValor" msprop:Generator_ColumnVarNameInTable="columnModificoValor" msprop:Generator_ColumnPropNameInRow="ModificoValor" msprop:Generator_ColumnPropNameInTable="ModificoValorColumn" msprop:Generator_UserColumnName="ModificoValor" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deshabilitar" msprop:Generator_ColumnVarNameInTable="columnDeshabilitar" msprop:Generator_ColumnPropNameInRow="Deshabilitar" msprop:Generator_ColumnPropNameInTable="DeshabilitarColumn" msprop:Generator_UserColumnName="Deshabilitar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ocultar" msprop:Generator_ColumnVarNameInTable="columnOcultar" msprop:Generator_ColumnPropNameInRow="Ocultar" msprop:Generator_ColumnPropNameInTable="OcultarColumn" msprop:Generator_UserColumnName="Ocultar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SeteadoPorSistema" msprop:Generator_ColumnVarNameInTable="columnSeteadoPorSistema" msprop:Generator_ColumnPropNameInRow="SeteadoPorSistema" msprop:Generator_ColumnPropNameInTable="SeteadoPorSistemaColumn" msprop:Generator_UserColumnName="SeteadoPorSistema" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Usuario_Id" msprop:Generator_ColumnVarNameInTable="columnUsuario_Id" msprop:Generator_ColumnPropNameInRow="Usuario_Id" msprop:Generator_ColumnPropNameInTable="Usuario_IdColumn" msprop:Generator_UserColumnName="Usuario_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoControl" msprop:Generator_ColumnVarNameInTable="columnTipoControl" msprop:Generator_ColumnPropNameInRow="TipoControl" msprop:Generator_ColumnPropNameInTable="TipoControlColumn" msprop:Generator_UserColumnName="TipoControl" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venPedidosPendAutoDS" targetNamespace="http://tempuri.org/venPedidosPendAutoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venPedidosPendAutoDS.xsd" xmlns:mstns="http://tempuri.org/venPedidosPendAutoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venPedidosPendAutoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Pedidos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venPedidos" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento" type="xs:string" minOccurs="0" />
+<xs:element name="Cliente_Id" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="ObservEstado" type="xs:string" minOccurs="0" />
+<xs:element name="Estado" type="xs:string" minOccurs="0" />
+<xs:element name="ImporteTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="NivelAuto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionNivel" type="xs:string" minOccurs="0" />
+<xs:element name="Secuencia" type="xs:int" minOccurs="0" />
+<xs:element name="ResultadoFormula" type="xs:string" minOccurs="0" />
+<xs:element name="MVendedor" type="xs:boolean" minOccurs="0" />
+<xs:element name="MListaP" type="xs:boolean" minOccurs="0" />
+<xs:element name="MFormaE" type="xs:boolean" minOccurs="0" />
+<xs:element name="MBonifDato" type="xs:boolean" minOccurs="0" />
+<xs:element name="MPrecioReng" type="xs:boolean" minOccurs="0" />
+<xs:element name="MBonifReng" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

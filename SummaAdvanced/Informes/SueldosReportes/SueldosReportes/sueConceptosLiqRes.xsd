@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sueConceptosLiqRes" targetNamespace="http://tempuri.org/sueConceptosLiqRes.xsd" xmlns:mstns="http://tempuri.org/sueConceptosLiqRes.xsd" xmlns="http://tempuri.org/sueConceptosLiqRes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sueConceptosLiqRes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="sueConceptosLiqRes" msprop:Generator_UserDSName="sueConceptosLiqRes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sueConceptosLiqRes" msprop:Generator_TableClassName="sueConceptosLiqResDataTable" msprop:Generator_TableVarName="tablesueConceptosLiqRes" msprop:Generator_RowChangedName="sueConceptosLiqResRowChanged" msprop:Generator_TablePropName="_sueConceptosLiqRes" msprop:Generator_RowDeletingName="sueConceptosLiqResRowDeleting" msprop:Generator_RowChangingName="sueConceptosLiqResRowChanging" msprop:Generator_RowEvHandlerName="sueConceptosLiqResRowChangeEventHandler" msprop:Generator_RowDeletedName="sueConceptosLiqResRowDeleted" msprop:Generator_RowClassName="sueConceptosLiqResRow" msprop:Generator_UserTableName="sueConceptosLiqRes" msprop:Generator_RowEvArgName="sueConceptosLiqResRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nomina" msprop:Generator_ColumnVarNameInTable="columnNomina" msprop:Generator_ColumnPropNameInRow="Nomina" msprop:Generator_ColumnPropNameInTable="NominaColumn" msprop:Generator_UserColumnName="Nomina" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionN" msprop:Generator_ColumnVarNameInTable="columnDescripcionN" msprop:Generator_ColumnPropNameInRow="DescripcionN" msprop:Generator_ColumnPropNameInTable="DescripcionNColumn" msprop:Generator_UserColumnName="DescripcionN" type="xs:string" minOccurs="0" />
+              <xs:element name="Sucursal" msprop:Generator_ColumnVarNameInTable="columnSucursal" msprop:Generator_ColumnPropNameInRow="Sucursal" msprop:Generator_ColumnPropNameInTable="SucursalColumn" msprop:Generator_UserColumnName="Sucursal" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionSuc" msprop:Generator_ColumnVarNameInTable="columnDescripcionSuc" msprop:Generator_ColumnPropNameInRow="DescripcionSuc" msprop:Generator_ColumnPropNameInTable="DescripcionSucColumn" msprop:Generator_UserColumnName="DescripcionSuc" type="xs:string" minOccurs="0" />
+              <xs:element name="Concepto_Id" msprop:Generator_ColumnVarNameInTable="columnConcepto_Id" msprop:Generator_ColumnPropNameInRow="Concepto_Id" msprop:Generator_ColumnPropNameInTable="Concepto_IdColumn" msprop:Generator_UserColumnName="Concepto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionConc" msprop:Generator_ColumnVarNameInTable="columnDescripcionConc" msprop:Generator_ColumnPropNameInRow="DescripcionConc" msprop:Generator_ColumnPropNameInTable="DescripcionConcColumn" msprop:Generator_UserColumnName="DescripcionConc" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Percepciones" msprop:Generator_ColumnVarNameInTable="columnPercepciones" msprop:Generator_ColumnPropNameInRow="Percepciones" msprop:Generator_ColumnPropNameInTable="PercepcionesColumn" msprop:Generator_UserColumnName="Percepciones" type="xs:string" minOccurs="0" />
+              <xs:element name="Deducciones" msprop:Generator_ColumnVarNameInTable="columnDeducciones" msprop:Generator_ColumnPropNameInRow="Deducciones" msprop:Generator_ColumnPropNameInTable="DeduccionesColumn" msprop:Generator_UserColumnName="Deducciones" type="xs:string" minOccurs="0" />
+              <xs:element name="Aportes" msprop:Generator_ColumnVarNameInTable="columnAportes" msprop:Generator_ColumnPropNameInRow="Aportes" msprop:Generator_ColumnPropNameInTable="AportesColumn" msprop:Generator_UserColumnName="Aportes" type="xs:string" minOccurs="0" />
+              <xs:element name="Empleados" msprop:Generator_ColumnVarNameInTable="columnEmpleados" msprop:Generator_ColumnPropNameInRow="Empleados" msprop:Generator_ColumnPropNameInTable="EmpleadosColumn" msprop:Generator_UserColumnName="Empleados" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

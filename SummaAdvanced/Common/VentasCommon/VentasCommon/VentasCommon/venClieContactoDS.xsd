@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venClieContactoDS" targetNamespace="http://tempuri.org/venClieContactoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venClieContactoDS.xsd" xmlns:mstns="http://tempuri.org/venClieContactoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venClieContactoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cliente_Id" type="xs:long" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:int" minOccurs="0" />
+<xs:element name="NroContacto" type="xs:int" minOccurs="0" />
+<xs:element name="Nombre" type="xs:string" minOccurs="0" />
+<xs:element name="Puesto" type="xs:string" minOccurs="0" />
+<xs:element name="Email" type="xs:string" minOccurs="0" />
+<xs:element name="Telefono" type="xs:string" minOccurs="0" />
+<xs:element name="Interno" type="xs:string" minOccurs="0" />
+<xs:element name="Movil" type="xs:string" minOccurs="0" />
+<xs:element name="EnviaFacturas" type="xs:boolean" minOccurs="0" />
+<xs:element name="EnviaRecibo" type="xs:boolean" minOccurs="0" />
+<xs:element name="EnviaPedido" type="xs:boolean" minOccurs="0" />
+<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

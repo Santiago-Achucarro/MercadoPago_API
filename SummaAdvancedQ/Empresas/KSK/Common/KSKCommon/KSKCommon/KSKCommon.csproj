@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01ABE4EE-C792-4EBD-812E-0B28A6970435}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KSKCommon</RootNamespace>
+    <AssemblyName>KSKCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="espConfPtoVtaKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espConfPtoVtaKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espGenAsiSegDatosKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espGenAsiSegDatosKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espgenSucursalCookieKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espgenSucursalCookieKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espgenUsuariosLoginKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espgenUsuariosLoginKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espMovCodBarraDS.cs">
+      <DependentUpon>espMovCodBarraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espMovCodBarraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espMovCodBarraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espstkexistenciaxdepositoKSKDS.cs">
+      <DependentUpon>espstkexistenciaxdepositoKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espstkexistenciaxdepositoKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espstkexistenciaxdepositoKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="esptesMPCobranzaKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>esptesMPCobranzaKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="esptesT3PromocionesKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>esptesT3PromocionesKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="esptesTarjetas3KSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>esptesTarjetas3KSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenClieContactoKSKDS.cs">
+      <DependentUpon>espvenClieContactoKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenClieContactoKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenClieContactoKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenClieHabitualKSKDS.cs">
+      <DependentUpon>espvenClieHabitualKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenClieHabitualKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenClieHabitualKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenComandasDatosKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenComandasDatosKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenMovimientosConStockKSKDS.cs">
+      <DependentUpon>espvenMovimientosConStockKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="espvenMovimientosConStockKSKDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>espvenMovimientosConStockKSKDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espConfPtoVtaKSKDS.xsc">
+      <DependentUpon>espConfPtoVtaKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espConfPtoVtaKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espConfPtoVtaKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espConfPtoVtaKSKDS.xss">
+      <DependentUpon>espConfPtoVtaKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espGenAsiSegDatosKSKDS.xsc">
+      <DependentUpon>espGenAsiSegDatosKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espGenAsiSegDatosKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espGenAsiSegDatosKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espGenAsiSegDatosKSKDS.xss">
+      <DependentUpon>espGenAsiSegDatosKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espgenSucursalCookieKSKDS.xsc">
+      <DependentUpon>espgenSucursalCookieKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espgenSucursalCookieKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espgenSucursalCookieKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espgenSucursalCookieKSKDS.xss">
+      <DependentUpon>espgenSucursalCookieKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espgenUsuariosLoginKSKDS.xsc">
+      <DependentUpon>espgenUsuariosLoginKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espgenUsuariosLoginKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espgenUsuariosLoginKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espgenUsuariosLoginKSKDS.xss">
+      <DependentUpon>espgenUsuariosLoginKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espMovCodBarraDS.xsc">
+      <DependentUpon>espMovCodBarraDS.xsd</DependentUpon>
+    </None>
+    <None Include="espMovCodBarraDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espMovCodBarraDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="espMovCodBarraDS.xss">
+      <DependentUpon>espMovCodBarraDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkexistenciaxdepositoKSKDS.xsc">
+      <DependentUpon>espstkexistenciaxdepositoKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espstkexistenciaxdepositoKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espstkexistenciaxdepositoKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espstkexistenciaxdepositoKSKDS.xss">
+      <DependentUpon>espstkexistenciaxdepositoKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesMPCobranzaKSKDS.xsc">
+      <DependentUpon>esptesMPCobranzaKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesMPCobranzaKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>esptesMPCobranzaKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="esptesMPCobranzaKSKDS.xss">
+      <DependentUpon>esptesMPCobranzaKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesT3PromocionesKSKDS.xsc">
+      <DependentUpon>esptesT3PromocionesKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesT3PromocionesKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>esptesT3PromocionesKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="esptesT3PromocionesKSKDS.xss">
+      <DependentUpon>esptesT3PromocionesKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesTarjetas3KSKDS.xsc">
+      <DependentUpon>esptesTarjetas3KSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="esptesTarjetas3KSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>esptesTarjetas3KSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="esptesTarjetas3KSKDS.xss">
+      <DependentUpon>esptesTarjetas3KSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenClieContactoKSKDS.xsc">
+      <DependentUpon>espvenClieContactoKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenClieContactoKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenClieContactoKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espvenClieContactoKSKDS.xss">
+      <DependentUpon>espvenClieContactoKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenClieHabitualKSKDS.xsc">
+      <DependentUpon>espvenClieHabitualKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenClieHabitualKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenClieHabitualKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espvenClieHabitualKSKDS.xss">
+      <DependentUpon>espvenClieHabitualKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenComandasDatosKSKDS.xsc">
+      <DependentUpon>espvenComandasDatosKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenComandasDatosKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenComandasDatosKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espvenComandasDatosKSKDS.xss">
+      <DependentUpon>espvenComandasDatosKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenMovimientosConStockKSKDS.xsc">
+      <DependentUpon>espvenMovimientosConStockKSKDS.xsd</DependentUpon>
+    </None>
+    <None Include="espvenMovimientosConStockKSKDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>espvenMovimientosConStockKSKDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="espvenMovimientosConStockKSKDS.xss">
+      <DependentUpon>espvenMovimientosConStockKSKDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

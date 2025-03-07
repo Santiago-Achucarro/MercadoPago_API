@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8056579C-2E84-4DCB-AF7E-4AE2CDB88186}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TesoreriaExchange</RootNamespace>
+    <AssemblyName>TesoreriaExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tesAIChequesActionEnum.cs" />
+    <Compile Include="tesAIChequesActionExchange.cs" />
+    <Compile Include="tesAIDepositosActionEnum.cs" />
+    <Compile Include="tesAIDepositosActionExchange.cs" />
+    <Compile Include="tesAISaldosActionEnum.cs" />
+    <Compile Include="tesAISaldosActionExchange.cs" />
+    <Compile Include="tesAperturaCajaMonedasActionEnum.cs" />
+    <Compile Include="tesAperturaCajaMonedasActionExchange.cs" />
+    <Compile Include="tesAsiCierreCalculoActionEnum.cs" />
+    <Compile Include="tesAsiCierreCalculoActionExchange.cs" />
+    <Compile Include="tesAsiCierreDatosCierreActionEnum.cs" />
+    <Compile Include="tesAsiCierreDatosCierreActionExchange.cs" />
+    <Compile Include="tesBancosActionEnum.cs" />
+    <Compile Include="tesBancosActionExchange.cs" />
+    <Compile Include="tesBPlinkActionEnum.cs" />
+    <Compile Include="tesBPlinkActionExchange.cs" />
+    <Compile Include="tesCausasRechazoActionEnum.cs" />
+    <Compile Include="tesCausasRechazoActionExchange.cs" />
+    <Compile Include="tesCFDICobranzaActionEnum.cs" />
+    <Compile Include="tesCFDICobranzaActionExchange.cs" />
+    <Compile Include="TesCFDICobranzaCuerpoActionEnum.cs" />
+    <Compile Include="TesCFDICobranzaCuerpoActionExchange.cs" />
+    <Compile Include="tesCFDICobranzaImprimirActionEnum.cs" />
+    <Compile Include="tesCFDICobranzaImprimirActionExchange.cs" />
+    <Compile Include="tesCFDICobranzaRelActionEnum.cs" />
+    <Compile Include="tesCFDICobranzaRelActionExchange.cs" />
+    <Compile Include="TesCFDICobranzaSegmentosActionEnum.cs" />
+    <Compile Include="TesCFDICobranzaSegmentosActionExchange.cs" />
+    <Compile Include="tesCheqPropActionEnum.cs" />
+    <Compile Include="tesCheqPropActionExchange.cs" />
+    <Compile Include="tesCheqPropAnulActionEnum.cs" />
+    <Compile Include="tesCheqPropAnulActionExchange.cs" />
+    <Compile Include="tesCheqPropDebitarCDActionEnum.cs" />
+    <Compile Include="tesCheqPropDebitarCDActionExchange.cs" />
+    <Compile Include="tesCheqPropDiferidosActionEnum.cs" />
+    <Compile Include="tesCheqPropDiferidosActionExchange.cs" />
+    <Compile Include="tesCheqPropEstadoActionEnum.cs" />
+    <Compile Include="tesCheqPropEstadoActionExchange.cs" />
+    <Compile Include="tesCheqPropImpresionActionEnum.cs" />
+    <Compile Include="tesCheqPropImpresionActionExchange.cs" />
+    <Compile Include="tesCheqTercerosActionEnum.cs" />
+    <Compile Include="tesCheqTercerosActionExchange.cs" />
+    <Compile Include="tesCheqTercerosCambioActionEnum.cs" />
+    <Compile Include="tesCheqTercerosCambioActionExchange.cs" />
+    <Compile Include="tesCheqTerEstadoActionEnum.cs" />
+    <Compile Include="tesCheqTerEstadoActionExchange.cs" />
+    <Compile Include="tesChequerasActionEnum.cs" />
+    <Compile Include="tesChequerasActionExchange.cs" />
+    <Compile Include="tesChequerasChequesActionEnum.cs" />
+    <Compile Include="tesChequerasChequesActionExchange.cs" />
+    <Compile Include="tesChequerasEstadoActionEnum.cs" />
+    <Compile Include="tesChequerasEstadoActionExchange.cs" />
+    <Compile Include="tesChequesRechCanjeActionEnum.cs" />
+    <Compile Include="tesChequesRechCanjeActionExchange.cs" />
+    <Compile Include="tesClearingActionEnum.cs" />
+    <Compile Include="tesClearingActionExchange.cs" />
+    <Compile Include="tesCobranzasActionEnum.cs" />
+    <Compile Include="tesCobranzasActionExchange.cs" />
+    <Compile Include="tesCobraProvActionEnum.cs" />
+    <Compile Include="tesCobraProvActionExchange.cs" />
+    <Compile Include="tesConciliacionActionEnum.cs" />
+    <Compile Include="tesConciliacionActionExchange.cs" />
+    <Compile Include="tesCreditosBancariosActionEnum.cs" />
+    <Compile Include="tesCreditosBancariosActionExchange.cs" />
+    <Compile Include="tesCreditosBancariosEnum.cs" />
+    <Compile Include="tesCreditosBancariosExchange.cs" />
+    <Compile Include="tesCTlinkActionEnum.cs" />
+    <Compile Include="tesCTlinkActionExchange.cs" />
+    <Compile Include="tesDebitosBancariosActionEnum.cs" />
+    <Compile Include="tesDebitosBancariosActionExchange.cs" />
+    <Compile Include="tesDepIdentificacionActionEnum.cs" />
+    <Compile Include="tesDepIdentificacionActionExchange.cs" />
+    <Compile Include="tesDepoPorIdentActionEnum.cs" />
+    <Compile Include="tesDepoPorIdentActionExchange.cs" />
+    <Compile Include="tesDepoPorIdentImpActionEnum.cs" />
+    <Compile Include="tesDepoPorIdentImpActionExchange.cs" />
+    <Compile Include="tesDepositoActionEnum.cs" />
+    <Compile Include="tesDepositoActionExchange.cs" />
+    <Compile Include="tesDepositoEfectivoActionEnum.cs" />
+    <Compile Include="tesDepositoEfectivoActionExchange.cs" />
+    <Compile Include="tesDepositosChequesActionEnum.cs" />
+    <Compile Include="tesDepositosChequesActionExchange.cs" />
+    <Compile Include="tesDepositosXBancosActionEnum.cs" />
+    <Compile Include="tesDepositosXBancosActionExchange.cs" />
+    <Compile Include="tesFFCobClientesActionEnum.cs" />
+    <Compile Include="tesFFCobClientesActionExchange.cs" />
+    <Compile Include="tesFFCobranzaOtrosActionEnum.cs" />
+    <Compile Include="tesFFCobranzaOtrosActionExchange.cs" />
+    <Compile Include="tesFFDepositosActionEnum.cs" />
+    <Compile Include="tesFFDepositosActionExchange.cs" />
+    <Compile Include="tesFFPagosProvedoresActionEnum.cs" />
+    <Compile Include="tesFFPagosProvedoresActionExchange.cs" />
+    <Compile Include="tesFFSegmentosActionEnum.cs" />
+    <Compile Include="tesFFSegmentosActionExchange.cs" />
+    <Compile Include="tesFlujoFondoActionEnum.cs" />
+    <Compile Include="tesFlujoFondoActionExchange.cs" />
+    <Compile Include="tesFlujoActionEnum.cs" />
+    <Compile Include="tesFlujoActionExchange.cs" />
+    <Compile Include="tesGananciasActionEnum.cs" />
+    <Compile Include="tesGananciasActionExchange.cs" />
+    <Compile Include="tesGanCuerpoActionEnum.cs" />
+    <Compile Include="tesGanCuerpoActionExchange.cs" />
+    <Compile Include="tesIdBancoPropioActionEnum.cs" />
+    <Compile Include="tesIdBancoPropioActionExchange.cs" />
+    <Compile Include="tesIdCajaAhorroActionEnum.cs" />
+    <Compile Include="tesIdCajaAhorroActionExchange.cs" />
+    <Compile Include="tesIdCheqTercerosActionEnum.cs" />
+    <Compile Include="tesIdCheqTercerosActionExchange.cs" />
+    <Compile Include="tesIdentificaActionEnum.cs" />
+    <Compile Include="tesIdentificaActionExchange.cs" />
+    <Compile Include="tesIdentificaPVActionEnum.cs" />
+    <Compile Include="tesIdentificaPVActionExchange.cs" />
+    <Compile Include="tesIdentificaSaldoActionEnum.cs" />
+    <Compile Include="tesIdentificaSaldoActionExchange.cs" />
+    <Compile Include="tesIdRetClienActionEnum.cs" />
+    <Compile Include="tesIdRetClienActionExchange.cs" />
+    <Compile Include="tesIdRetProvActionEnum.cs" />
+    <Compile Include="tesIdRetProvActionExchange.cs" />
+    <Compile Include="tesIdTarjetas3ActionEnum.cs" />
+    <Compile Include="tesIdTarjetas3ActionExchange.cs" />
+    <Compile Include="tesIdTarjetasTipoActionEnum.cs" />
+    <Compile Include="tesIdTarjetasTipoActionExchange.cs" />
+    <Compile Include="tesIdVariosActionEnum.cs" />
+    <Compile Include="tesIdVariosActionExchange.cs" />
+    <Compile Include="tesIngCheqRechazadoActionEnum.cs" />
+    <Compile Include="tesIngCheqRechazadoActionExchange.cs" />
+    <Compile Include="tesIngDepPorIdentActionEnum.cs" />
+    <Compile Include="tesIngDepPorIdentActionExchange.cs" />
+    <Compile Include="tesMoviGravadoActionEnum.cs" />
+    <Compile Include="tesMoviGravadoActionExchange.cs" />
+    <Compile Include="tesMovimientosActionEnum.cs" />
+    <Compile Include="tesMovimientosActionExchange.cs" />
+    <Compile Include="tesMovimientosDatosBaseActionEnum.cs" />
+    <Compile Include="tesMovimientosDatosAsignarCambioActionExchange.cs" />
+    <Compile Include="tesMovimientosDatosBaseActionExchange.cs" />
+    <Compile Include="tesMovimientosEnviarActionEnum.cs" />
+    <Compile Include="tesMovimientosEnviarActionExchange.cs" />
+    <Compile Include="TesoreriaCerrarActionEnum.cs" />
+    <Compile Include="TesoreriaCerrarActionExchange.cs" />
+    <Compile Include="tesOtrosEgresosActionEnum.cs" />
+    <Compile Include="tesOtrosEgresosActionExchange.cs" />
+    <Compile Include="tesOtrosIngresosActionEnum.cs" />
+    <Compile Include="tesOtrosIngresosActionExchange.cs" />
+    <Compile Include="tesPagosClieActionEnum.cs" />
+    <Compile Include="tesPagosClieActionExchange.cs" />
+    <Compile Include="tesPagosClieDatosBaseActionEnum.cs" />
+    <Compile Include="tesPagosClieDatosBaseActionExchange.cs" />
+    <Compile Include="tesPagosClieTotalDebeActionEnum.cs" />
+    <Compile Include="tesPagosClieTotalDebeActionExchange.cs" />
+    <Compile Include="tesPagosImpuestosActionEnum.cs" />
+    <Compile Include="tesPagosImpuestosActionExchange.cs" />
+    <Compile Include="tesPagosProveedoresActionEnum.cs" />
+    <Compile Include="tesPagosProveedoresActionExchange.cs" />
+    <Compile Include="tesPagosProveedoresAsignarCambioActionEnum.cs" />
+    <Compile Include="tesPagosProveedoresAsignarCambioActionExchange.cs" />
+    <Compile Include="tesPagoSueldosActionEnum.cs" />
+    <Compile Include="tesPagoSueldosActionExchange.cs" />
+    <Compile Include="tesPartidasInConActionEnum.cs" />
+    <Compile Include="tesPartidasInConActionExchange.cs" />
+    <Compile Include="tesRengConciliacActionEnum.cs" />
+    <Compile Include="tesRengConciliacActionExchange.cs" />
+    <Compile Include="tesRengMoviActionEnum.cs" />
+    <Compile Include="tesRengMoviActionExchange.cs" />
+    <Compile Include="tesRengMovicomMovProvActionEnum.cs" />
+    <Compile Include="tesRengMovicomMovProvActionExchange.cs" />
+    <Compile Include="tesRengMoviDebeActionEnum.cs" />
+    <Compile Include="tesRengMoviDebeActionExchange.cs" />
+    <Compile Include="tesRengMoviRetClieActionEnum.cs" />
+    <Compile Include="tesRengMoviRetClieActionExchange.cs" />
+    <Compile Include="tesRengMoviRetProvActionEnum.cs" />
+    <Compile Include="tesRengMoviRetProvActionExchange.cs" />
+    <Compile Include="tesRetProvSegmentoActionEnum.cs" />
+    <Compile Include="tesRetProvSegmentoActionExchange.cs" />
+    <Compile Include="tesRetProvxOPActionEnum.cs" />
+    <Compile Include="tesRetProvxOPActionExchange.cs" />
+    <Compile Include="tesReversionOPActionEnum.cs" />
+    <Compile Include="tesReversionOPActionExchange.cs" />
+    <Compile Include="tesSaldosInicialesActionEnum.cs" />
+    <Compile Include="tesSaldosInicialesActionExchange.cs" />
+    <Compile Include="tesSolicitantesActionEnum.cs" />
+    <Compile Include="tesSolicitantesActionExchange.cs" />
+    <Compile Include="tesSolicitudActionEnum.cs" />
+    <Compile Include="tesSolicitudActionExchange.cs" />
+    <Compile Include="tesSolicitudPagosActionEnum.cs" />
+    <Compile Include="tesSolicitudPagosActionExchange.cs" />
+    <Compile Include="tesSolicitudParaAutorizarActionEnum.cs" />
+    <Compile Include="tesSolicitudParaAutorizarActionExchange.cs" />
+    <Compile Include="tesSolicitudRendicionActionEnum.cs" />
+    <Compile Include="tesSolicitudRendicionActionExchange.cs" />
+    <Compile Include="tesSubTiposMovActionEnum.cs" />
+    <Compile Include="tesSubTiposMovActionExchange.cs" />
+    <Compile Include="tesT3PromocionesActionEnum.cs" />
+    <Compile Include="tesT3PromocionesActionExchange.cs" />
+    <Compile Include="tesT3PromocionesCuotasActionEnum.cs" />
+    <Compile Include="tesT3PromocionesCuotasActionExchange.cs" />
+    <Compile Include="tesT3PromocionesVigentesActionEnum.cs" />
+    <Compile Include="tesT3PromocionesVigentesActionExchange.cs" />
+    <Compile Include="tesTarjetasPromocionesActionEnum.cs" />
+    <Compile Include="tesTarjetasPromocionesActionExchange.cs" />
+    <Compile Include="tesTimbradoCobraActionEnum.cs" />
+    <Compile Include="tesTimbradoCobraActionExchange.cs" />
+    <Compile Include="tesTimbradoCobranzaEnviarActionEnum.cs" />
+    <Compile Include="tesTimbradoCobranzaEnviarActionExchange.cs" />
+    <Compile Include="tesXmlComprobantePagoActionEnum.cs" />
+    <Compile Include="tesXmlComprobantePagoActionExchange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon\TesoreriaCommon.csproj">
+      <Project>{8ce1debf-54f4-4e33-94fb-2e316fe994f8}</Project>
+      <Name>TesoreriaCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

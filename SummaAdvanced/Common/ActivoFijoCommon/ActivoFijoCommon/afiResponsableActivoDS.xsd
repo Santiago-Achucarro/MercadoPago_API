@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="afiResponsableActivoDS" targetNamespace="http://tempuri.org/afiResponsableActivoDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/afiResponsableActivoDS.xsd" xmlns:mstns="http://tempuri.org/afiResponsableActivoDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="afiResponsableActivoDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Responsable_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionResponsables" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionResponsables_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="ActivoFijo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionActivoFijo" type="xs:string" minOccurs="0" />
+<xs:element name="FechaAsignacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Cantidad" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

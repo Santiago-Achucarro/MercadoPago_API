@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="venCondFiscImpDS" targetNamespace="http://tempuri.org/venCondFiscImpDS.xsd" xmlns:mstns="http://tempuri.org/venCondFiscImpDS.xsd" xmlns="http://tempuri.org/venCondFiscImpDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="venCondFiscImpDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="venCondFiscImpDS" msprop:Generator_UserDSName="venCondFiscImpDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="venCondFiscal" msprop:Generator_ColumnVarNameInTable="columnvenCondFiscal" msprop:Generator_ColumnPropNameInRow="venCondFiscal" msprop:Generator_ColumnPropNameInTable="venCondFiscalColumn" msprop:Generator_UserColumnName="venCondFiscal" type="xs:int" minOccurs="0" />
+              <xs:element name="CondFisc_Id" msprop:Generator_ColumnVarNameInTable="columnCondFisc_Id" msprop:Generator_ColumnPropNameInRow="CondFisc_Id" msprop:Generator_ColumnPropNameInTable="CondFisc_IdColumn" msprop:Generator_UserColumnName="CondFisc_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCondFiscal" msprop:Generator_ColumnVarNameInTable="columnDescripcionCondFiscal" msprop:Generator_ColumnPropNameInRow="DescripcionCondFiscal" msprop:Generator_ColumnPropNameInTable="DescripcionCondFiscalColumn" msprop:Generator_UserColumnName="DescripcionCondFiscal" type="xs:string" minOccurs="0" />
+              <xs:element name="Impuesto_Id" msprop:Generator_ColumnVarNameInTable="columnImpuesto_Id" msprop:Generator_ColumnPropNameInRow="Impuesto_Id" msprop:Generator_ColumnPropNameInTable="Impuesto_IdColumn" msprop:Generator_UserColumnName="Impuesto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionImpuestos" msprop:Generator_ColumnVarNameInTable="columnDescripcionImpuestos" msprop:Generator_ColumnPropNameInRow="DescripcionImpuestos" msprop:Generator_ColumnPropNameInTable="DescripcionImpuestosColumn" msprop:Generator_UserColumnName="DescripcionImpuestos" type="xs:string" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="impCitiDS" targetNamespace="http://tempuri.org/impCitiDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/impCitiDS.xsd" xmlns:mstns="http://tempuri.org/impCitiDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="impCitiDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Destino" type="xs:string" minOccurs="0" />
+<xs:element name="ImportacionDefBienes" type="xs:int" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="VentasCbte">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+<xs:element name="venSucursal" type="xs:string" minOccurs="0" />
+<xs:element name="venTipoMov_Id" type="xs:string" minOccurs="0" />
+<xs:element name="venComprobante" type="xs:int" minOccurs="0" />
+<xs:element name="ComprobanteDesde" type="xs:int" minOccurs="0" />
+<xs:element name="venLetra" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="TipoDoc" type="xs:string" minOccurs="0" />
+<xs:element name="Pais_Id_Fact" type="xs:short" minOccurs="0" />
+<xs:element name="Comprobante_Id" type="xs:int" minOccurs="0" />
+<xs:element name="CodigoFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="FechaVencimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cambio" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cuit" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="NoGravado" type="xs:decimal" minOccurs="0" />
+<xs:element name="Exento" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercNac" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercIIBB" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercMuni" type="xs:decimal" minOccurs="0" />
+<xs:element name="ImpInterno" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="VentasAlicuotas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="NetoGravado" type="xs:decimal" minOccurs="0" />
+<xs:element name="codAlicuota" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ComprasCbte">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="Fecha_CCP" type="xs:dateTime" minOccurs="0" />
+<xs:element name="TipoCompFE" type="xs:int" minOccurs="0" />
+<xs:element name="Proveed_Id" type="xs:string" minOccurs="0" />
+<xs:element name="TipoMov" type="xs:string" minOccurs="0" />
+<xs:element name="Sucursal" type="xs:string" minOccurs="0" />
+<xs:element name="Comprobante" type="xs:int" minOccurs="0" />
+<xs:element name="Letra" type="xs:string" minOccurs="0" />
+<xs:element name="NroOrdenExterior" type="xs:string" minOccurs="0" />
+<xs:element name="Aduana" type="xs:string" minOccurs="0" />
+<xs:element name="Destinacion" type="xs:string" minOccurs="0" />
+<xs:element name="NroOperacion" type="xs:string" minOccurs="0" />
+<xs:element name="FechaDespa" type="xs:string" minOccurs="0" />
+<xs:element name="Despacho_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Verificador" type="xs:string" minOccurs="0" />
+<xs:element name="Cuit" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="Pais_Id" type="xs:short" minOccurs="0" />
+<xs:element name="TipoDoc" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="IvaNoGravado" type="xs:decimal" minOccurs="0" />
+<xs:element name="IvaExento" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercIva" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercNac" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercIIBB" type="xs:decimal" minOccurs="0" />
+<xs:element name="PercMuni" type="xs:decimal" minOccurs="0" />
+<xs:element name="ImpInterno" type="xs:decimal" minOccurs="0" />
+<xs:element name="Otros" type="xs:decimal" minOccurs="0" />
+<xs:element name="IVA" type="xs:decimal" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cambio" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ComprasAlicuotas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conAsientos" type="xs:long" minOccurs="0" />
+<xs:element name="NetoGravado" type="xs:decimal" minOccurs="0" />
+<xs:element name="codAlicuota" type="xs:string" minOccurs="0" />
+<xs:element name="Importe_Impuesto" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

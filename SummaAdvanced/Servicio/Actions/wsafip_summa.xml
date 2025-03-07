@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wsAfip>
+	<wsUrlQUASARGLOBALAR1>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFEX>https://servicios1.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+	</wsUrlQUASARGLOBALAR1>
+	<wsUrlHERRAMIENTASAR1>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFEX>https://servicios1.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+	</wsUrlHERRAMIENTASAR1>
+	<wsUrlConStrSoporteckAr>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFEX>https://servicios1.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+	</wsUrlConStrSoporteckAr>
+	<wsUrlAMERICOLDADVAR1>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFEX>https://servicios1.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+	</wsUrlAMERICOLDADVAR1>
+
+    <proxy>
+        <usuario></usuario>
+        <password></password>
+        <dominio></dominio>
+        <url></url>
+        <puerto></puerto>
+    </proxy>
+</wsAfip>

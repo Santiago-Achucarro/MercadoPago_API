@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="genPermisos" targetNamespace="http://tempuri.org/genPermisos.xsd" xmlns:mstns="http://tempuri.org/genPermisos.xsd" xmlns="http://tempuri.org/genPermisos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="genPermisos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="genPermisos" msprop:Generator_UserDSName="genPermisos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="genPermisos" msprop:Generator_TableClassName="genPermisosDataTable" msprop:Generator_TableVarName="tablegenPermisos" msprop:Generator_RowChangedName="genPermisosRowChanged" msprop:Generator_TablePropName="_genPermisos" msprop:Generator_RowDeletingName="genPermisosRowDeleting" msprop:Generator_RowChangingName="genPermisosRowChanging" msprop:Generator_RowEvHandlerName="genPermisosRowChangeEventHandler" msprop:Generator_RowDeletedName="genPermisosRowDeleted" msprop:Generator_RowClassName="genPermisosRow" msprop:Generator_UserTableName="genPermisos" msprop:Generator_RowEvArgName="genPermisosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Usuario_Id" msprop:Generator_ColumnVarNameInTable="columnUsuario_Id" msprop:Generator_ColumnPropNameInRow="Usuario_Id" msprop:Generator_ColumnPropNameInTable="Usuario_IdColumn" msprop:Generator_UserColumnName="Usuario_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellido_y_Nombres" msprop:Generator_ColumnVarNameInTable="columnApellido_y_Nombres" msprop:Generator_ColumnPropNameInRow="Apellido_y_Nombres" msprop:Generator_ColumnPropNameInTable="Apellido_y_NombresColumn" msprop:Generator_UserColumnName="Apellido_y_Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Formulario_Id" msprop:Generator_ColumnVarNameInTable="columnFormulario_Id" msprop:Generator_ColumnPropNameInRow="Formulario_Id" msprop:Generator_ColumnPropNameInTable="Formulario_IdColumn" msprop:Generator_UserColumnName="Formulario_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Consultar" msprop:Generator_ColumnVarNameInTable="columnConsultar" msprop:Generator_ColumnPropNameInRow="Consultar" msprop:Generator_ColumnPropNameInTable="ConsultarColumn" msprop:Generator_UserColumnName="Consultar" type="xs:string" minOccurs="0" />
+              <xs:element name="Actualizar" msprop:Generator_ColumnVarNameInTable="columnActualizar" msprop:Generator_ColumnPropNameInRow="Actualizar" msprop:Generator_ColumnPropNameInTable="ActualizarColumn" msprop:Generator_UserColumnName="Actualizar" type="xs:string" minOccurs="0" />
+              <xs:element name="Borrar" msprop:Generator_ColumnVarNameInTable="columnBorrar" msprop:Generator_ColumnPropNameInRow="Borrar" msprop:Generator_ColumnPropNameInTable="BorrarColumn" msprop:Generator_UserColumnName="Borrar" type="xs:string" minOccurs="0" />
+              <xs:element name="Postear" msprop:Generator_ColumnVarNameInTable="columnPostear" msprop:Generator_ColumnPropNameInRow="Postear" msprop:Generator_ColumnPropNameInTable="PostearColumn" msprop:Generator_UserColumnName="Postear" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

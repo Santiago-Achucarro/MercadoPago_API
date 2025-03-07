@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VenCondPagoCuotasDS" targetNamespace="http://tempuri.org/VenCondPagoCuotasDS.xsd" xmlns:mstns="http://tempuri.org/VenCondPagoCuotasDS.xsd" xmlns="http://tempuri.org/VenCondPagoCuotasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VenCondPagoCuotasDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="VenCondPagoCuotasDS" msprop:Generator_UserDSName="VenCondPagoCuotasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="venCondPago" msprop:Generator_ColumnVarNameInTable="columnvenCondPago" msprop:Generator_ColumnPropNameInRow="venCondPago" msprop:Generator_ColumnPropNameInTable="venCondPagoColumn" msprop:Generator_UserColumnName="venCondPago" type="xs:int" minOccurs="0" />
+              <xs:element name="CondPagoCli_Id" msprop:Generator_ColumnVarNameInTable="columnCondPagoCli_Id" msprop:Generator_ColumnPropNameInRow="CondPagoCli_Id" msprop:Generator_ColumnPropNameInTable="CondPagoCli_IdColumn" msprop:Generator_UserColumnName="CondPagoCli_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCondPago" msprop:Generator_ColumnVarNameInTable="columnDescripcionCondPago" msprop:Generator_ColumnPropNameInRow="DescripcionCondPago" msprop:Generator_ColumnPropNameInTable="DescripcionCondPagoColumn" msprop:Generator_UserColumnName="DescripcionCondPago" type="xs:string" minOccurs="0" />
+              <xs:element name="Renglon" msprop:Generator_ColumnVarNameInTable="columnRenglon" msprop:Generator_ColumnPropNameInRow="Renglon" msprop:Generator_ColumnPropNameInTable="RenglonColumn" msprop:Generator_UserColumnName="Renglon" type="xs:int" minOccurs="0" />
+              <xs:element name="Dias" msprop:Generator_ColumnVarNameInTable="columnDias" msprop:Generator_ColumnPropNameInRow="Dias" msprop:Generator_ColumnPropNameInTable="DiasColumn" msprop:Generator_UserColumnName="Dias" type="xs:int" minOccurs="0" />
+              <xs:element name="Porcentaje" msprop:Generator_ColumnVarNameInTable="columnPorcentaje" msprop:Generator_ColumnPropNameInRow="Porcentaje" msprop:Generator_ColumnPropNameInTable="PorcentajeColumn" msprop:Generator_UserColumnName="Porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

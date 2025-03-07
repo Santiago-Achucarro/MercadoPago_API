@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="stkMoviCuerpoPediCuerpoDS" targetNamespace="http://tempuri.org/stkMoviCuerpoPediCuerpoDS.xsd" xmlns:mstns="http://tempuri.org/stkMoviCuerpoPediCuerpoDS.xsd" xmlns="http://tempuri.org/stkMoviCuerpoPediCuerpoDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="stkMoviCuerpoPediCuerpoDS" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_DataSetName="stkMoviCuerpoPediCuerpoDS" msprop:Generator_UserDSName="stkMoviCuerpoPediCuerpoDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stkMoviCabe" msprop:Generator_ColumnVarNameInTable="columnstkMoviCabe" msprop:Generator_ColumnPropNameInRow="stkMoviCabe" msprop:Generator_ColumnPropNameInTable="stkMoviCabeColumn" msprop:Generator_UserColumnName="stkMoviCabe" type="xs:long" minOccurs="0" />
+              <xs:element name="Renglon" msprop:Generator_ColumnVarNameInTable="columnRenglon" msprop:Generator_ColumnPropNameInRow="Renglon" msprop:Generator_ColumnPropNameInTable="RenglonColumn" msprop:Generator_UserColumnName="Renglon" type="xs:int" minOccurs="0" />
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionProducto" msprop:Generator_ColumnVarNameInTable="columnDescripcionProducto" msprop:Generator_ColumnPropNameInRow="DescripcionProducto" msprop:Generator_ColumnPropNameInTable="DescripcionProductoColumn" msprop:Generator_UserColumnName="DescripcionProducto" type="xs:string" minOccurs="0" />
+              <xs:element name="CantidadPedida" msprop:Generator_ColumnVarNameInTable="columnCantidadPedida" msprop:Generator_ColumnPropNameInRow="CantidadPedida" msprop:Generator_ColumnPropNameInTable="CantidadPedidaColumn" msprop:Generator_UserColumnName="CantidadPedida" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="venPedidos" msprop:Generator_ColumnVarNameInTable="columnvenPedidos" msprop:Generator_ColumnPropNameInRow="venPedidos" msprop:Generator_ColumnPropNameInTable="venPedidosColumn" msprop:Generator_UserColumnName="venPedidos" type="xs:int" minOccurs="0" />
+              <xs:element name="Renglon_Pe" msprop:Generator_ColumnVarNameInTable="columnRenglon_Pe" msprop:Generator_ColumnPropNameInRow="Renglon_Pe" msprop:Generator_ColumnPropNameInTable="Renglon_PeColumn" msprop:Generator_UserColumnName="Renglon_Pe" type="xs:int" minOccurs="0" />
+              <xs:element name="Existe" msprop:Generator_ColumnVarNameInTable="columnExiste" msprop:Generator_ColumnPropNameInRow="Existe" msprop:Generator_ColumnPropNameInTable="ExisteColumn" msprop:Generator_UserColumnName="Existe" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

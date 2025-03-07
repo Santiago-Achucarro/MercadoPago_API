@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="venImpuestosDS" targetNamespace="http://tempuri.org/venImpuestosDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/venImpuestosDS.xsd" xmlns:mstns="http://tempuri.org/venImpuestosDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="venImpuestosDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="venImpuestos" type="xs:int" minOccurs="0" />
+<xs:element name="Impuesto_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Impuesto_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="TipoImpuesto" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionTipoImpuesto" type="xs:string" minOccurs="0" />
+<xs:element name="CodigoFiscal" type="xs:string" minOccurs="0" />
+<xs:element name="UsaFormula" type="xs:boolean" minOccurs="0" />
+<xs:element name="Formulacalc" type="xs:string" minOccurs="0" />
+<xs:element name="Porcentaje" type="xs:decimal" minOccurs="0" />
+<xs:element name="Fecha_Desde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Fecha_Hasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Depende_de" type="xs:string" minOccurs="0" />
+<xs:element name="PorVencimiento" type="xs:boolean" minOccurs="0" />
+<xs:element name="CtaReversion" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaReversion" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCuentas" type="xs:string" minOccurs="0" />
+<xs:element name="CtaDifCambio" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionCtaDifCambio" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="ImpuestoXProducto" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="genAtributosGenerales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="AtributoNro" type="xs:int" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="ValorN" type="xs:decimal" minOccurs="0" />
+<xs:element name="ValorC" type="xs:string" minOccurs="0" />
+<xs:element name="ValorF" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

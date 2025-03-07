@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="conCuentasActualizacionDS" targetNamespace="http://tempuri.org/conCuentasActualizacionDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/conCuentasActualizacionDS.xsd" xmlns:mstns="http://tempuri.org/conCuentasActualizacionDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="conCuentasActualizacionDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conCuentas" type="xs:int" minOccurs="0" />
+<xs:element name="Cuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cuenta_Id_Nueva" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="PTodasEmpresas" type="xs:boolean" minOccurs="0" />
+<xs:element name="Tipo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Rubro_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Imputable" type="xs:boolean" minOccurs="0" />
+<xs:element name="TipoRubro" type="xs:string" minOccurs="0" />
+<xs:element name="Nivel" type="xs:int" minOccurs="0" />
+<xs:element name="Base_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Grupo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Cuadro1Fila_Id" type="xs:int" minOccurs="0" />
+<xs:element name="ReservadaPor" type="xs:string" minOccurs="0" />
+<xs:element name="Fecha_Reserva" type="xs:dateTime" minOccurs="0" />
+<xs:element name="SubCuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="NoSeReserva" type="xs:boolean" minOccurs="0" />
+<xs:element name="Rubro_Balance" type="xs:string" minOccurs="0" />
+<xs:element name="Ajustable" type="xs:boolean" minOccurs="0" />
+<xs:element name="Notas" type="xs:string" minOccurs="0" />
+<xs:element name="Moneda_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Indice_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Metodo" type="xs:short" minOccurs="0" />
+<xs:element name="EliminaConsolida" type="xs:boolean" minOccurs="0" />
+<xs:element name="TipoSAT_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Naturaleza" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Posteado" type="xs:boolean" minOccurs="0" />
+<xs:element name="DescripcionconBaseDistri" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconCuadro1Filas" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconGruposCont" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconRubros" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconSituPatri" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconSubCuentas" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconTiposContables" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionconTiposSAT" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionIndicesAjustes" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionEmpresa" type="xs:string" minOccurs="0" />
+<xs:element name="DescripciongenMonedas" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="CuentaSC" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionSC" type="xs:string" minOccurs="0" />
+<xs:element name="PorSubCuenta" type="xs:boolean" minOccurs="0" />
+<xs:element name="Description" type="xs:string" minOccurs="0" />
+<xs:element name="RubroAxi_Id" type="xs:int" minOccurs="0" />
+<xs:element name="DescripcionRubroAxi" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="SubCuentas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="conSubCuentas" type="xs:int" minOccurs="0" />
+<xs:element name="SubCuenta_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="Marca" type="xs:boolean" minOccurs="0" />
+<xs:element name="TipoSAT_Id" type="xs:string" minOccurs="0" />
+<xs:element name="Base_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionTipoSat" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionBaseDistri" type="xs:string" minOccurs="0" />
+<xs:element name="Inactivo" type="xs:boolean" minOccurs="0" />
+<xs:element name="Grupo_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionGrupo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

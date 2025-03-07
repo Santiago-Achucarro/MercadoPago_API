@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="genCancMovDS" targetNamespace="http://tempuri.org/genCancMovDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/genCancMovDS.xsd" xmlns:mstns="http://tempuri.org/genCancMovDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="genCancMovDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Asiento_Id" type="xs:long" minOccurs="0" />
+<xs:element name="CuotaNro" type="xs:short" minOccurs="0" />
+<xs:element name="Asiento_Id_Ap" type="xs:long" minOccurs="0" />
+<xs:element name="CuotaNro_Ap" type="xs:short" minOccurs="0" />
+<xs:element name="Cambio" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cambio_Ap" type="xs:decimal" minOccurs="0" />
+<xs:element name="Importacion" type="xs:boolean" minOccurs="0" />
+<xs:element name="EsVentaContado" type="xs:boolean" minOccurs="0" />
+<xs:element name="EsAplicOriginal" type="xs:boolean" minOccurs="0" />
+<xs:element name="LlamarAlWS" type="xs:boolean" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Cuerpo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento1N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento2N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento3N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento4N" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento1C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento2C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento3C" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento4C" type="xs:string" minOccurs="0" />
+<xs:element name="CuotaNro" type="xs:short" minOccurs="0" />
+<xs:element name="Asiento_Id" type="xs:long" minOccurs="0" />
+<xs:element name="Segmento1N_ap" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento2N_ap" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento3N_ap" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento4N_ap" type="xs:int" minOccurs="0" />
+<xs:element name="Segmento1C_ap" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento2C_ap" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento3C_ap" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento4C_ap" type="xs:string" minOccurs="0" />
+<xs:element name="Asiento_Id_Ap" type="xs:long" minOccurs="0" />
+<xs:element name="CuotaNro_Ap" type="xs:short" minOccurs="0" />
+<xs:element name="FechaAplicacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="Importe" type="xs:decimal" minOccurs="0" />
+<xs:element name="Importe_ap" type="xs:decimal" minOccurs="0" />
+<xs:element name="Usuario_Id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionUsuario" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento" type="xs:string" minOccurs="0" />
+<xs:element name="Segmento_ap" type="xs:string" minOccurs="0" />
+<xs:element name="AsientoApli_Id" type="xs:long" minOccurs="0" />
+<xs:element name="NroAplicacion" type="xs:int" minOccurs="0" />
+<xs:element name="Importacion" type="xs:boolean" minOccurs="0" />
+<xs:element name="AsieDifCambio_Id" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

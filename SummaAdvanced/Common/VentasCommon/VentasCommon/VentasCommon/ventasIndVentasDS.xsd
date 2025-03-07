@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ventasIndVentasDS" targetNamespace="http://tempuri.org/ventasIndVentasDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/ventasIndVentasDS.xsd" xmlns:mstns="http://tempuri.org/ventasIndVentasDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="ventasIndVentasDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="FechaDesde" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaHasta_Nueva" type="xs:dateTime" minOccurs="0" />
+<xs:element name="VendedorDesde" type="xs:string" minOccurs="0" />
+<xs:element name="VendedorHasta" type="xs:string" minOccurs="0" />
+<xs:element name="ClienteDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ClienteHasta" type="xs:string" minOccurs="0" />
+<xs:element name="FamiliaDesde" type="xs:string" minOccurs="0" />
+<xs:element name="FamiliaHasta" type="xs:string" minOccurs="0" />
+<xs:element name="GrupoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="GrupoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="ProductoDesde" type="xs:string" minOccurs="0" />
+<xs:element name="ProductoHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Empresa_Id" type="xs:int" minOccurs="0" />
+<xs:element name="VentaTotal" type="xs:decimal" minOccurs="0" />
+<xs:element name="VentaMismoPerAnioAnt" type="xs:decimal" minOccurs="0" />
+<xs:element name="VentaPerAnterior" type="xs:decimal" minOccurs="0" />
+<xs:element name="SucursalDesde" type="xs:string" minOccurs="0" />
+<xs:element name="SucursalHasta" type="xs:string" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Monto">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Monto" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

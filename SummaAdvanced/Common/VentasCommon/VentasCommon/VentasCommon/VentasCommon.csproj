@@ -1,0 +1,2998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF0479CE-A5F1-4DD3-BA1F-9D61C65038B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VentasCommon</RootNamespace>
+    <AssemblyName>VentasCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcuseCancDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcuseCancDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueBonifDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueBonifDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAddendaMXDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAddendaMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAjuEdoCtaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAjuEdoCtaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAplicacionCobranzaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAplicacionCobranzaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAsiCierreCalculoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAsiCierreCalculoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAsiCierreCrDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAsiCierreCrDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAsiCierreDatosCierreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAsiCierreDatosCierreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venAsiCierreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venAsiCierreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venBonifTemporalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venBonifTemporalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venBonifTemporalHayOtraDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venBonifTemporalHayOtraDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venBonifTemporalSegmentoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venBonifTemporalSegmentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCamionesDS.cs">
+      <DependentUpon>venCamionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCamionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCamionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCancPendientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCancPendientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCanjeNotasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCanjeNotasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCartaPorteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCartaPorteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCartaPorteFactDatosFactDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCartaPorteFactDatosFactDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCartaPorteFactDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCartaPorteFactDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCategCreditoDS.cs">
+      <DependentUpon>venCategCreditoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCategCreditoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCategCreditoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCFDISatDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCFDISatDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClieContactoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClieContactoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClieEstadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClieEstadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClieHabitualDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClieHabitualDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesCtasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesCtasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesCtasPlantillaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesCtasPlantillaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesImportarXlsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesImportarXlsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesPlantillaDS.cs">
+      <DependentUpon>venClientesPlantillaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesPlantillaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesPlantillaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesSaldoIniDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesSaldoIniDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesSucDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesSucDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venClientesXLSCatalogoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venClientesXLSCatalogoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCobradoresDS.cs">
+      <DependentUpon>venCobradoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCobradoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCobradoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteDestinoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteDestinoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteLibreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteLibreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteMercanciaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteMercanciaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteOrigenDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteOrigenDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCompCartaPorteUbiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCompCartaPorteUbiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCondFiscalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCondFiscalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCondFiscImpDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCondFiscImpDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VenCondPagoCuotasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VenCondPagoCuotasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCondPagoDS.cs">
+      <DependentUpon>venCondPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCondPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCondPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venConsEdoCtaClientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venConsEdoCtaClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VenConsEdoCtaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VenConsEdoCtaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venConsultaFEDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venConsultaFEDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizacionesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizacionesEnviarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizacionesEnviarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizAnulDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizAnulDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizClienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizClienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizCuerpoDS.cs">
+      <DependentUpon>venCotizCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizEstadoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizEstadoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizFactuCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizFactuCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizFacturaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizFacturaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizPediCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizPediCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizPedidosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizPedidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venCotizSegmentoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venCotizSegmentoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venEsquemaAutoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venEsquemaAutoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venEsquemaAutoRengDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venEsquemaAutoRengDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venFactAnulHastaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venFactAnulHastaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venFacturacionPedidoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venFacturacionPedidoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venFacturacionRemitoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venFacturacionRemitoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venFormaEntregaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venFormaEntregaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGeneraRemitoFacturaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGeneraRemitoFacturaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraTortaClienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraTortaClienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraTortaFamiliaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraTortaFamiliaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraTortaGrupoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraTortaGrupoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraTortaProductoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraTortaProductoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraTortaVendedorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraTortaVendedorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGraVentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGraVentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venGuardarTknSgnDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venGuardarTknSgnDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venImportarListaXlsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venImportarListaXlsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venImpuestosDS.cs">
+      <DependentUpon>venImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venIncotermDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venIncotermDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venIndicadoresDS.cs">
+      <DependentUpon>venIndicadoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venIndicadoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venIndicadoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLibrosColumnasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLibrosColumnasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLibrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLibrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLibrosImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLibrosImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLibrosRetencionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLibrosRetencionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLimiteCreditoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLimiteCreditoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListaCoeficienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListaCoeficienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListaPrecXLSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListaPrecXLSDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasCopiarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasCopiarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venlistasHayOrtaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venlistasHayOrtaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPrecBoniRecDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasPrecBoniRecDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPreciosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasPreciosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPreciosTraerProductosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasPreciosTraerProductosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPreciosXLSCatalogoDS.cs">
+      <DependentUpon>venListasPreciosXLSCatalogoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPreciosXLSCatalogoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasPreciosXLSCatalogoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasPrecProdDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasPrecProdDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venListasVersionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venListasVersionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLPTabCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLPTabCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLPTabCuerpoValorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLPTabCuerpoValorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venLPTablaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venLPTablaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovAnuladosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovAnuladosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovClieSucDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovClieSucDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovConformaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovConformaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovConStockCrDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovConStockCrDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovConStockCrPedDatosCancDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovConStockCrPedDatosCancDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovConStockCrPedDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovConStockCrPedDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovConStockDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovConStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovCSImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovCSImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovDetalleDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovDetalleDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovHistDatosXMovDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovHistDatosXMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMoviAnticipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMoviAnticipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VenMoviFiscalVirtualDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VenMoviFiscalVirtualDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientoRelacionadoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientoRelacionadoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosCFDIRDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosCFDIRDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosCFDIRVirtualDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosCFDIRVirtualDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosConStockDS.cs">
+      <DependentUpon>venMovimientosConStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosConStockDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosConStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosConsultaDrillDownDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosConsultaDrillDownDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosConsultaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosConsultaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosCPDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosCPDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosCRExpMxDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosCRExpMxDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosEnviarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosEnviarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosExpMXDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosExpMXDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosExpVirtualDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosExpVirtualDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosFiscalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosFiscalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosFiscalINEDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosFiscalINEDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosImprimirDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosImprimirDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosMetodoPagoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosMetodoPagoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosSinStockDS.cs">
+      <DependentUpon>venMovimientosSinStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovimientosSinStockDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovimientosSinStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovImpTrasladoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovImpTrasladoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMoviPredialDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMoviPredialDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovSSImpuestosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovSSImpuestosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovStkHistDevolverIdMovStockDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovStkHistDevolverIdMovStockDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venMovStkHistDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venMovStkHistDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venNivelesAutoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venNivelesAutoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venNivelesAutoUsuDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venNivelesAutoUsuDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venNotaDeCreditoAnticipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venNotaDeCreditoAnticipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venNPAutorizandoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venNPAutorizandoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venOperadoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venOperadoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediAutorizaClienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediAutorizaClienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediAutorizaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediAutorizaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosAnticipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosAnticipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosAnticipoFactDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosAnticipoFactDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosAnulDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosAnulDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosConsultaDrillDownDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosConsultaDrillDownDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosDS.cs">
+      <DependentUpon>venPedidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosEnviarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosEnviarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosEstadoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosEstadoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosFacturaAnticipoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosFacturaAnticipoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosPendAutoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosPendAutoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosPendClieDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosPendClieDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPedidosPorClienteDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPedidosPorClienteDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediFacturadosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediFacturadosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediFacturadosPediDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediFacturadosPediDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediRemiFactuDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediRemiFactuDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediRemitidosDatosCancDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediRemitidosDatosCancDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediRemitidosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediRemitidosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediSegmentosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediSegmentosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPediValiComerDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPediValiComerDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venPropietarioArrendaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venPropietarioArrendaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRegionDS.cs">
+      <DependentUpon>venRegionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRegionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRegionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRemitosPendienteClieDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRemitosPendienteClieDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepaPediDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepaPediDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepaPediSerieDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepaPediSerieDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepaPediSerieUbiDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepaPediSerieUbiDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepartoCalcularCuerpoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepartoCalcularCuerpoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepartoDS.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>venRepartoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepartoFacturasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepartoFacturasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepartoImprimirDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepartoImprimirDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepartoRemitosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepartoRemitosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepaSegmentosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepaSegmentosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venRepaUbicacionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venRepaUbicacionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venSaldosPendientesTareaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venSaldosPendientesTareaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venSTMAfipDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venSTMAfipDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venSubTipoMovDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venSubTipoMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasCanjeNotaAgregarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasCanjeNotaAgregarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasCanjeNotasAgregarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasCanjeNotasAgregarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasCanjeNotasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasCanjeNotasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VentasCerrarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VentasCerrarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ventasIndVentasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ventasIndVentasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venTipoMovDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venTipoMovDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venTiposClieDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venTiposClieDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venTraePendientesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venTraePendientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venVendedoresDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venVendedoresDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venVeriCreditoDS.cs">
+      <DependentUpon>venVeriCreditoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venVeriCreditoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venVeriCreditoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="venZonaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>venZonaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XmlComprobanteDSDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XmlComprobanteDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AcuseCancDS.xsc">
+      <DependentUpon>AcuseCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="AcuseCancDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcuseCancDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AcuseCancDS.xss">
+      <DependentUpon>AcuseCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QueBonifDS.xsc">
+      <DependentUpon>QueBonifDS.xsd</DependentUpon>
+    </None>
+    <None Include="QueBonifDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QueBonifDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QueBonifDS.xss">
+      <DependentUpon>QueBonifDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAddendaMXDS.xsc">
+      <DependentUpon>venAddendaMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAddendaMXDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAddendaMXDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venAddendaMXDS.xss">
+      <DependentUpon>venAddendaMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAjuEdoCtaDS.xsc">
+      <DependentUpon>venAjuEdoCtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAjuEdoCtaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAjuEdoCtaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venAjuEdoCtaDS.xss">
+      <DependentUpon>venAjuEdoCtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAplicacionCobranzaDS.xsc">
+      <DependentUpon>venAplicacionCobranzaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAplicacionCobranzaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAplicacionCobranzaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venAplicacionCobranzaDS.xss">
+      <DependentUpon>venAplicacionCobranzaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreCalculoDS.xsc">
+      <DependentUpon>venAsiCierreCalculoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreCalculoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAsiCierreCalculoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venAsiCierreCalculoDS.xss">
+      <DependentUpon>venAsiCierreCalculoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreCrDS.xsc">
+      <DependentUpon>venAsiCierreCrDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreCrDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAsiCierreCrDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venAsiCierreCrDS.xss">
+      <DependentUpon>venAsiCierreCrDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreDatosCierreDS.xsc">
+      <DependentUpon>venAsiCierreDatosCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreDatosCierreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAsiCierreDatosCierreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venAsiCierreDatosCierreDS.xss">
+      <DependentUpon>venAsiCierreDatosCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreDS.xsc">
+      <DependentUpon>venAsiCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venAsiCierreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venAsiCierreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venAsiCierreDS.xss">
+      <DependentUpon>venAsiCierreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalDS.xsc">
+      <DependentUpon>venBonifTemporalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venBonifTemporalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venBonifTemporalDS.xss">
+      <DependentUpon>venBonifTemporalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalHayOtraDS.xsc">
+      <DependentUpon>venBonifTemporalHayOtraDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalHayOtraDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venBonifTemporalHayOtraDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venBonifTemporalHayOtraDS.xss">
+      <DependentUpon>venBonifTemporalHayOtraDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalSegmentoDS.xsc">
+      <DependentUpon>venBonifTemporalSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venBonifTemporalSegmentoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venBonifTemporalSegmentoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venBonifTemporalSegmentoDS.xss">
+      <DependentUpon>venBonifTemporalSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCamionesDS.xsc">
+      <DependentUpon>venCamionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCamionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>venCamionesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCamionesDS.xss">
+      <DependentUpon>venCamionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCancPendientesDS.xsc">
+      <DependentUpon>venCancPendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCancPendientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCancPendientesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCancPendientesDS.xss">
+      <DependentUpon>venCancPendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCanjeNotasDS.xsc">
+      <DependentUpon>venCanjeNotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCanjeNotasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCanjeNotasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCanjeNotasDS.xss">
+      <DependentUpon>venCanjeNotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteDS.xsc">
+      <DependentUpon>venCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCartaPorteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCartaPorteDS.xss">
+      <DependentUpon>venCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteFactDatosFactDS.xsc">
+      <DependentUpon>venCartaPorteFactDatosFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteFactDatosFactDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCartaPorteFactDatosFactDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCartaPorteFactDatosFactDS.xss">
+      <DependentUpon>venCartaPorteFactDatosFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteFactDS.xsc">
+      <DependentUpon>venCartaPorteFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCartaPorteFactDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCartaPorteFactDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCartaPorteFactDS.xss">
+      <DependentUpon>venCartaPorteFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCategCreditoDS.xsc">
+      <DependentUpon>venCategCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCategCreditoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCategCreditoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCategCreditoDS.xss">
+      <DependentUpon>venCategCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCFDISatDS.xsc">
+      <DependentUpon>venCFDISatDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCFDISatDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCFDISatDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCFDISatDS.xss">
+      <DependentUpon>venCFDISatDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieContactoDS.xsc">
+      <DependentUpon>venClieContactoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieContactoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClieContactoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venClieContactoDS.xss">
+      <DependentUpon>venClieContactoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieEstadosDS.xsc">
+      <DependentUpon>venClieEstadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieEstadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClieEstadosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClieEstadosDS.xss">
+      <DependentUpon>venClieEstadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieHabitualDS.xsc">
+      <DependentUpon>venClieHabitualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClieHabitualDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>venClieHabitualDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClieHabitualDS.xss">
+      <DependentUpon>venClieHabitualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesCtasDS.xsc">
+      <DependentUpon>venClientesCtasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesCtasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesCtasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClientesCtasDS.xss">
+      <DependentUpon>venClientesCtasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesCtasPlantillaDS.xsc">
+      <DependentUpon>venClientesCtasPlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesCtasPlantillaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesCtasPlantillaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venClientesCtasPlantillaDS.xss">
+      <DependentUpon>venClientesCtasPlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesDS.xsc">
+      <DependentUpon>venClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClientesDS.xss">
+      <DependentUpon>venClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesImportarXlsDS.xsc">
+      <DependentUpon>venClientesImportarXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesImportarXlsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesImportarXlsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClientesImportarXlsDS.xss">
+      <DependentUpon>venClientesImportarXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesPlantillaDS.xsc">
+      <DependentUpon>venClientesPlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesPlantillaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesPlantillaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venClientesPlantillaDS.xss">
+      <DependentUpon>venClientesPlantillaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesSaldoIniDS.xsc">
+      <DependentUpon>venClientesSaldoIniDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesSaldoIniDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesSaldoIniDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venClientesSaldoIniDS.xss">
+      <DependentUpon>venClientesSaldoIniDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesSucDS.xsc">
+      <DependentUpon>venClientesSucDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesSucDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesSucDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venClientesSucDS.xss">
+      <DependentUpon>venClientesSucDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesXLSCatalogoDS.xsc">
+      <DependentUpon>venClientesXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venClientesXLSCatalogoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venClientesXLSCatalogoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venClientesXLSCatalogoDS.xss">
+      <DependentUpon>venClientesXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCobradoresDS.xsc">
+      <DependentUpon>venCobradoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCobradoresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCobradoresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCobradoresDS.xss">
+      <DependentUpon>venCobradoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteDestinoDS.xsc">
+      <DependentUpon>venCompCartaPorteDestinoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteDestinoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteDestinoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCompCartaPorteDestinoDS.xss">
+      <DependentUpon>venCompCartaPorteDestinoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteDS.xsc">
+      <DependentUpon>venCompCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCompCartaPorteDS.xss">
+      <DependentUpon>venCompCartaPorteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteLibreDS.xsc">
+      <DependentUpon>venCompCartaPorteLibreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteLibreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteLibreDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCompCartaPorteLibreDS.xss">
+      <DependentUpon>venCompCartaPorteLibreDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteMercanciaDS.xsc">
+      <DependentUpon>venCompCartaPorteMercanciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteMercanciaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteMercanciaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCompCartaPorteMercanciaDS.xss">
+      <DependentUpon>venCompCartaPorteMercanciaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteOrigenDS.xsc">
+      <DependentUpon>venCompCartaPorteOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteOrigenDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteOrigenDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCompCartaPorteOrigenDS.xss">
+      <DependentUpon>venCompCartaPorteOrigenDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteUbiDS.xsc">
+      <DependentUpon>venCompCartaPorteUbiDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCompCartaPorteUbiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCompCartaPorteUbiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCompCartaPorteUbiDS.xss">
+      <DependentUpon>venCompCartaPorteUbiDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondFiscalDS.xsc">
+      <DependentUpon>venCondFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondFiscalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCondFiscalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCondFiscalDS.xss">
+      <DependentUpon>venCondFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondFiscImpDS.xsc">
+      <DependentUpon>venCondFiscImpDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondFiscImpDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCondFiscImpDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCondFiscImpDS.xss">
+      <DependentUpon>venCondFiscImpDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenCondPagoCuotasDS.xsc">
+      <DependentUpon>VenCondPagoCuotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenCondPagoCuotasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VenCondPagoCuotasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VenCondPagoCuotasDS.xss">
+      <DependentUpon>VenCondPagoCuotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondPagoDS.xsc">
+      <DependentUpon>venCondPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCondPagoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCondPagoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCondPagoDS.xss">
+      <DependentUpon>venCondPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venConsEdoCtaClientesDS.xsc">
+      <DependentUpon>venConsEdoCtaClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venConsEdoCtaClientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venConsEdoCtaClientesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venConsEdoCtaClientesDS.xss">
+      <DependentUpon>venConsEdoCtaClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenConsEdoCtaDS.xsc">
+      <DependentUpon>VenConsEdoCtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenConsEdoCtaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VenConsEdoCtaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VenConsEdoCtaDS.xss">
+      <DependentUpon>VenConsEdoCtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venConsultaFEDS.xsc">
+      <DependentUpon>venConsultaFEDS.xsd</DependentUpon>
+    </None>
+    <None Include="venConsultaFEDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venConsultaFEDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venConsultaFEDS.xss">
+      <DependentUpon>venConsultaFEDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizacionesDS.xsc">
+      <DependentUpon>venCotizacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizacionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizacionesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizacionesDS.xss">
+      <DependentUpon>venCotizacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizacionesEnviarDS.xsc">
+      <DependentUpon>venCotizacionesEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizacionesEnviarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizacionesEnviarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCotizacionesEnviarDS.xss">
+      <DependentUpon>venCotizacionesEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizAnulDS.xsc">
+      <DependentUpon>venCotizAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizAnulDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizAnulDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizAnulDS.xss">
+      <DependentUpon>venCotizAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizClienteDS.xsc">
+      <DependentUpon>venCotizClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizClienteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizClienteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizClienteDS.xss">
+      <DependentUpon>venCotizClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizCuerpoDS.xsc">
+      <DependentUpon>venCotizCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizCuerpoDS.xss">
+      <DependentUpon>venCotizCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizEstadoDS.xsc">
+      <DependentUpon>venCotizEstadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizEstadoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizEstadoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizEstadoDS.xss">
+      <DependentUpon>venCotizEstadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizFactuCuerpoDS.xsc">
+      <DependentUpon>venCotizFactuCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizFactuCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizFactuCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizFactuCuerpoDS.xss">
+      <DependentUpon>venCotizFactuCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizFacturaDS.xsc">
+      <DependentUpon>venCotizFacturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizFacturaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizFacturaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizFacturaDS.xss">
+      <DependentUpon>venCotizFacturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizPediCuerpoDS.xsc">
+      <DependentUpon>venCotizPediCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizPediCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizPediCuerpoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venCotizPediCuerpoDS.xss">
+      <DependentUpon>venCotizPediCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizPedidosDS.xsc">
+      <DependentUpon>venCotizPedidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizPedidosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizPedidosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizPedidosDS.xss">
+      <DependentUpon>venCotizPedidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizSegmentoDS.xsc">
+      <DependentUpon>venCotizSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venCotizSegmentoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venCotizSegmentoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venCotizSegmentoDS.xss">
+      <DependentUpon>venCotizSegmentoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venEsquemaAutoDS.xsc">
+      <DependentUpon>venEsquemaAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venEsquemaAutoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venEsquemaAutoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venEsquemaAutoDS.xss">
+      <DependentUpon>venEsquemaAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venEsquemaAutoRengDS.xsc">
+      <DependentUpon>venEsquemaAutoRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="venEsquemaAutoRengDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venEsquemaAutoRengDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venEsquemaAutoRengDS.xss">
+      <DependentUpon>venEsquemaAutoRengDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFactAnulHastaDS.xsc">
+      <DependentUpon>venFactAnulHastaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFactAnulHastaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venFactAnulHastaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venFactAnulHastaDS.xss">
+      <DependentUpon>venFactAnulHastaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFacturacionPedidoDS.xsc">
+      <DependentUpon>venFacturacionPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFacturacionPedidoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venFacturacionPedidoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venFacturacionPedidoDS.xss">
+      <DependentUpon>venFacturacionPedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFacturacionRemitoDS.xsc">
+      <DependentUpon>venFacturacionRemitoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFacturacionRemitoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venFacturacionRemitoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venFacturacionRemitoDS.xss">
+      <DependentUpon>venFacturacionRemitoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFormaEntregaDS.xsc">
+      <DependentUpon>venFormaEntregaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venFormaEntregaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venFormaEntregaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venFormaEntregaDS.xss">
+      <DependentUpon>venFormaEntregaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGeneraRemitoFacturaDS.xsc">
+      <DependentUpon>venGeneraRemitoFacturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGeneraRemitoFacturaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGeneraRemitoFacturaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venGeneraRemitoFacturaDS.xss">
+      <DependentUpon>venGeneraRemitoFacturaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaClienteDS.xsc">
+      <DependentUpon>venGraTortaClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaClienteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraTortaClienteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraTortaClienteDS.xss">
+      <DependentUpon>venGraTortaClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaFamiliaDS.xsc">
+      <DependentUpon>venGraTortaFamiliaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaFamiliaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraTortaFamiliaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraTortaFamiliaDS.xss">
+      <DependentUpon>venGraTortaFamiliaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaGrupoDS.xsc">
+      <DependentUpon>venGraTortaGrupoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaGrupoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraTortaGrupoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraTortaGrupoDS.xss">
+      <DependentUpon>venGraTortaGrupoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaProductoDS.xsc">
+      <DependentUpon>venGraTortaProductoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaProductoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraTortaProductoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraTortaProductoDS.xss">
+      <DependentUpon>venGraTortaProductoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaVendedorDS.xsc">
+      <DependentUpon>venGraTortaVendedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraTortaVendedorDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraTortaVendedorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraTortaVendedorDS.xss">
+      <DependentUpon>venGraTortaVendedorDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraVentasDS.xsc">
+      <DependentUpon>venGraVentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGraVentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGraVentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venGraVentasDS.xss">
+      <DependentUpon>venGraVentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGuardarTknSgnDS.xsc">
+      <DependentUpon>venGuardarTknSgnDS.xsd</DependentUpon>
+    </None>
+    <None Include="venGuardarTknSgnDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venGuardarTknSgnDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venGuardarTknSgnDS.xss">
+      <DependentUpon>venGuardarTknSgnDS.xsd</DependentUpon>
+    </None>
+    <None Include="venImportarListaXlsDS.xsc">
+      <DependentUpon>venImportarListaXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="venImportarListaXlsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venImportarListaXlsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venImportarListaXlsDS.xss">
+      <DependentUpon>venImportarListaXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="venImpuestosDS.xsc">
+      <DependentUpon>venImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venImpuestosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venImpuestosDS.xss">
+      <DependentUpon>venImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venIncotermDS.xsc">
+      <DependentUpon>venIncotermDS.xsd</DependentUpon>
+    </None>
+    <None Include="venIncotermDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venIncotermDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venIncotermDS.xss">
+      <DependentUpon>venIncotermDS.xsd</DependentUpon>
+    </None>
+    <None Include="venIndicadoresDS.xsc">
+      <DependentUpon>venIndicadoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venIndicadoresDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venIndicadoresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venIndicadoresDS.xss">
+      <DependentUpon>venIndicadoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosColumnasDS.xsc">
+      <DependentUpon>venLibrosColumnasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosColumnasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLibrosColumnasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venLibrosColumnasDS.xss">
+      <DependentUpon>venLibrosColumnasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosDS.xsc">
+      <DependentUpon>venLibrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLibrosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venLibrosDS.xss">
+      <DependentUpon>venLibrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosImpuestosDS.xsc">
+      <DependentUpon>venLibrosImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLibrosImpuestosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venLibrosImpuestosDS.xss">
+      <DependentUpon>venLibrosImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosRetencionDS.xsc">
+      <DependentUpon>venLibrosRetencionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLibrosRetencionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLibrosRetencionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venLibrosRetencionDS.xss">
+      <DependentUpon>venLibrosRetencionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLimiteCreditoDS.xsc">
+      <DependentUpon>venLimiteCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLimiteCreditoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLimiteCreditoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venLimiteCreditoDS.xss">
+      <DependentUpon>venLimiteCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListaCoeficienteDS.xsc">
+      <DependentUpon>venListaCoeficienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListaCoeficienteDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListaCoeficienteDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListaCoeficienteDS.xss">
+      <DependentUpon>venListaCoeficienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListaPrecXLSDS.xsc">
+      <DependentUpon>venListaPrecXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListaPrecXLSDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListaPrecXLSDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListaPrecXLSDS.xss">
+      <DependentUpon>venListaPrecXLSDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasCopiarDS.xsc">
+      <DependentUpon>venListasCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasCopiarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasCopiarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListasCopiarDS.xss">
+      <DependentUpon>venListasCopiarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venlistasHayOrtaDS.xsc">
+      <DependentUpon>venlistasHayOrtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venlistasHayOrtaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venlistasHayOrtaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venlistasHayOrtaDS.xss">
+      <DependentUpon>venlistasHayOrtaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPrecBoniRecDS.xsc">
+      <DependentUpon>venListasPrecBoniRecDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPrecBoniRecDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasPrecBoniRecDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListasPrecBoniRecDS.xss">
+      <DependentUpon>venListasPrecBoniRecDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosDS.xsc">
+      <DependentUpon>venListasPreciosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasPreciosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListasPreciosDS.xss">
+      <DependentUpon>venListasPreciosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosTraerProductosDS.xsc">
+      <DependentUpon>venListasPreciosTraerProductosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosTraerProductosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasPreciosTraerProductosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venListasPreciosTraerProductosDS.xss">
+      <DependentUpon>venListasPreciosTraerProductosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosXLSCatalogoDS.xsc">
+      <DependentUpon>venListasPreciosXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPreciosXLSCatalogoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasPreciosXLSCatalogoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venListasPreciosXLSCatalogoDS.xss">
+      <DependentUpon>venListasPreciosXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPrecProdDS.xsc">
+      <DependentUpon>venListasPrecProdDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasPrecProdDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasPrecProdDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venListasPrecProdDS.xss">
+      <DependentUpon>venListasPrecProdDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasVersionDS.xsc">
+      <DependentUpon>venListasVersionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venListasVersionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venListasVersionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venListasVersionDS.xss">
+      <DependentUpon>venListasVersionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTabCuerpoDS.xsc">
+      <DependentUpon>venLPTabCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTabCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLPTabCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venLPTabCuerpoDS.xss">
+      <DependentUpon>venLPTabCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTabCuerpoValorDS.xsc">
+      <DependentUpon>venLPTabCuerpoValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTabCuerpoValorDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLPTabCuerpoValorDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venLPTabCuerpoValorDS.xss">
+      <DependentUpon>venLPTabCuerpoValorDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTablaDS.xsc">
+      <DependentUpon>venLPTablaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venLPTablaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venLPTablaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venLPTablaDS.xss">
+      <DependentUpon>venLPTablaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovAnuladosDS.xsc">
+      <DependentUpon>venMovAnuladosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovAnuladosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovAnuladosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovAnuladosDS.xss">
+      <DependentUpon>venMovAnuladosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovClieSucDS.xsc">
+      <DependentUpon>venMovClieSucDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovClieSucDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovClieSucDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovClieSucDS.xss">
+      <DependentUpon>venMovClieSucDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConformaDS.xsc">
+      <DependentUpon>venMovConformaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConformaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovConformaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovConformaDS.xss">
+      <DependentUpon>venMovConformaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrDS.xsc">
+      <DependentUpon>venMovConStockCrDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovConStockCrDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovConStockCrDS.xss">
+      <DependentUpon>venMovConStockCrDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrPedDatosCancDS.xsc">
+      <DependentUpon>venMovConStockCrPedDatosCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrPedDatosCancDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovConStockCrPedDatosCancDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovConStockCrPedDatosCancDS.xss">
+      <DependentUpon>venMovConStockCrPedDatosCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrPedDS.xsc">
+      <DependentUpon>venMovConStockCrPedDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockCrPedDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovConStockCrPedDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovConStockCrPedDS.xss">
+      <DependentUpon>venMovConStockCrPedDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockDS.xsc">
+      <DependentUpon>venMovConStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovConStockDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovConStockDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovConStockDS.xss">
+      <DependentUpon>venMovConStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovCSImpuestosDS.xsc">
+      <DependentUpon>venMovCSImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovCSImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovCSImpuestosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovCSImpuestosDS.xss">
+      <DependentUpon>venMovCSImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovDetalleDS.xsc">
+      <DependentUpon>venMovDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovDetalleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovDetalleDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovDetalleDS.xss">
+      <DependentUpon>venMovDetalleDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovHistDatosXMovDS.xsc">
+      <DependentUpon>venMovHistDatosXMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovHistDatosXMovDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovHistDatosXMovDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovHistDatosXMovDS.xss">
+      <DependentUpon>venMovHistDatosXMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMoviAnticipoDS.xsc">
+      <DependentUpon>venMoviAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMoviAnticipoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMoviAnticipoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMoviAnticipoDS.xss">
+      <DependentUpon>venMoviAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenMoviFiscalVirtualDS.xsc">
+      <DependentUpon>VenMoviFiscalVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="VenMoviFiscalVirtualDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VenMoviFiscalVirtualDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VenMoviFiscalVirtualDS.xss">
+      <DependentUpon>VenMoviFiscalVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientoRelacionadoDS.xsc">
+      <DependentUpon>venMovimientoRelacionadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientoRelacionadoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientoRelacionadoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientoRelacionadoDS.xss">
+      <DependentUpon>venMovimientoRelacionadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCFDIRDS.xsc">
+      <DependentUpon>venMovimientosCFDIRDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCFDIRDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosCFDIRDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosCFDIRDS.xss">
+      <DependentUpon>venMovimientosCFDIRDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCFDIRVirtualDS.xsc">
+      <DependentUpon>venMovimientosCFDIRVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCFDIRVirtualDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosCFDIRVirtualDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosCFDIRVirtualDS.xss">
+      <DependentUpon>venMovimientosCFDIRVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConStockDS.xsc">
+      <DependentUpon>venMovimientosConStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConStockDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosConStockDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosConStockDS.xss">
+      <DependentUpon>venMovimientosConStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConsultaDrillDownDS.xsc">
+      <DependentUpon>venMovimientosConsultaDrillDownDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConsultaDrillDownDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosConsultaDrillDownDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosConsultaDrillDownDS.xss">
+      <DependentUpon>venMovimientosConsultaDrillDownDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConsultaDS.xsc">
+      <DependentUpon>venMovimientosConsultaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosConsultaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosConsultaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosConsultaDS.xss">
+      <DependentUpon>venMovimientosConsultaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCPDS.xsc">
+      <DependentUpon>venMovimientosCPDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCPDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosCPDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosCPDS.xss">
+      <DependentUpon>venMovimientosCPDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCRExpMxDS.xsc">
+      <DependentUpon>venMovimientosCRExpMxDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosCRExpMxDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosCRExpMxDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosCRExpMxDS.xss">
+      <DependentUpon>venMovimientosCRExpMxDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosDS.xsc">
+      <DependentUpon>venMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosDS.xss">
+      <DependentUpon>venMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosEnviarDS.xsc">
+      <DependentUpon>venMovimientosEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosEnviarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosEnviarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosEnviarDS.xss">
+      <DependentUpon>venMovimientosEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosExpMXDS.xsc">
+      <DependentUpon>venMovimientosExpMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosExpMXDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosExpMXDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosExpMXDS.xss">
+      <DependentUpon>venMovimientosExpMXDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosExpVirtualDS.xsc">
+      <DependentUpon>venMovimientosExpVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosExpVirtualDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosExpVirtualDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosExpVirtualDS.xss">
+      <DependentUpon>venMovimientosExpVirtualDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosFiscalDS.xsc">
+      <DependentUpon>venMovimientosFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosFiscalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosFiscalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosFiscalDS.xss">
+      <DependentUpon>venMovimientosFiscalDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosFiscalINEDS.xsc">
+      <DependentUpon>venMovimientosFiscalINEDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosFiscalINEDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosFiscalINEDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovimientosFiscalINEDS.xss">
+      <DependentUpon>venMovimientosFiscalINEDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosImprimirDS.xsc">
+      <DependentUpon>venMovimientosImprimirDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosImprimirDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosImprimirDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosImprimirDS.xss">
+      <DependentUpon>venMovimientosImprimirDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosMetodoPagoDS.xsc">
+      <DependentUpon>venMovimientosMetodoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosMetodoPagoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosMetodoPagoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosMetodoPagoDS.xss">
+      <DependentUpon>venMovimientosMetodoPagoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosSinStockDS.xsc">
+      <DependentUpon>venMovimientosSinStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovimientosSinStockDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovimientosSinStockDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMovimientosSinStockDS.xss">
+      <DependentUpon>venMovimientosSinStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovImpTrasladoDS.xsc">
+      <DependentUpon>venMovImpTrasladoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovImpTrasladoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovImpTrasladoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovImpTrasladoDS.xss">
+      <DependentUpon>venMovImpTrasladoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovImpuestosDS.xsc">
+      <DependentUpon>venMovImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovImpuestosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovImpuestosDS.xss">
+      <DependentUpon>venMovImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMoviPredialDS.xsc">
+      <DependentUpon>venMoviPredialDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMoviPredialDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMoviPredialDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venMoviPredialDS.xss">
+      <DependentUpon>venMoviPredialDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovSSImpuestosDS.xsc">
+      <DependentUpon>venMovSSImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovSSImpuestosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovSSImpuestosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovSSImpuestosDS.xss">
+      <DependentUpon>venMovSSImpuestosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovStkHistDevolverIdMovStockDS.xsc">
+      <DependentUpon>venMovStkHistDevolverIdMovStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovStkHistDevolverIdMovStockDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovStkHistDevolverIdMovStockDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovStkHistDevolverIdMovStockDS.xss">
+      <DependentUpon>venMovStkHistDevolverIdMovStockDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovStkHistDS.xsc">
+      <DependentUpon>venMovStkHistDS.xsd</DependentUpon>
+    </None>
+    <None Include="venMovStkHistDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venMovStkHistDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venMovStkHistDS.xss">
+      <DependentUpon>venMovStkHistDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNivelesAutoDS.xsc">
+      <DependentUpon>venNivelesAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNivelesAutoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venNivelesAutoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venNivelesAutoDS.xss">
+      <DependentUpon>venNivelesAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNivelesAutoUsuDS.xsc">
+      <DependentUpon>venNivelesAutoUsuDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNivelesAutoUsuDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venNivelesAutoUsuDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venNivelesAutoUsuDS.xss">
+      <DependentUpon>venNivelesAutoUsuDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNotaDeCreditoAnticipoDS.xsc">
+      <DependentUpon>venNotaDeCreditoAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNotaDeCreditoAnticipoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venNotaDeCreditoAnticipoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venNotaDeCreditoAnticipoDS.xss">
+      <DependentUpon>venNotaDeCreditoAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNPAutorizandoDS.xsc">
+      <DependentUpon>venNPAutorizandoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venNPAutorizandoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venNPAutorizandoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venNPAutorizandoDS.xss">
+      <DependentUpon>venNPAutorizandoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venOperadoresDS.xsc">
+      <DependentUpon>venOperadoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venOperadoresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venOperadoresDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venOperadoresDS.xss">
+      <DependentUpon>venOperadoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediAutorizaClienteDS.xsc">
+      <DependentUpon>venPediAutorizaClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediAutorizaClienteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediAutorizaClienteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediAutorizaClienteDS.xss">
+      <DependentUpon>venPediAutorizaClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediAutorizaDS.xsc">
+      <DependentUpon>venPediAutorizaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediAutorizaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediAutorizaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPediAutorizaDS.xss">
+      <DependentUpon>venPediAutorizaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediCuerpoDS.xsc">
+      <DependentUpon>venPediCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediCuerpoDS.xss">
+      <DependentUpon>venPediCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnticipoDS.xsc">
+      <DependentUpon>venPedidosAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnticipoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosAnticipoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosAnticipoDS.xss">
+      <DependentUpon>venPedidosAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnticipoFactDS.xsc">
+      <DependentUpon>venPedidosAnticipoFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnticipoFactDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosAnticipoFactDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosAnticipoFactDS.xss">
+      <DependentUpon>venPedidosAnticipoFactDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnulDS.xsc">
+      <DependentUpon>venPedidosAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosAnulDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosAnulDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosAnulDS.xss">
+      <DependentUpon>venPedidosAnulDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosConsultaDrillDownDS.xsc">
+      <DependentUpon>venPedidosConsultaDrillDownDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosConsultaDrillDownDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosConsultaDrillDownDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosConsultaDrillDownDS.xss">
+      <DependentUpon>venPedidosConsultaDrillDownDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosDS.xsc">
+      <DependentUpon>venPedidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosDS.xss">
+      <DependentUpon>venPedidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosEnviarDS.xsc">
+      <DependentUpon>venPedidosEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosEnviarDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosEnviarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPedidosEnviarDS.xss">
+      <DependentUpon>venPedidosEnviarDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosEstadoDS.xsc">
+      <DependentUpon>venPedidosEstadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosEstadoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosEstadoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPedidosEstadoDS.xss">
+      <DependentUpon>venPedidosEstadoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosFacturaAnticipoDS.xsc">
+      <DependentUpon>venPedidosFacturaAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosFacturaAnticipoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosFacturaAnticipoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPedidosFacturaAnticipoDS.xss">
+      <DependentUpon>venPedidosFacturaAnticipoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPendAutoDS.xsc">
+      <DependentUpon>venPedidosPendAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPendAutoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosPendAutoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosPendAutoDS.xss">
+      <DependentUpon>venPedidosPendAutoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPendClieDS.xsc">
+      <DependentUpon>venPedidosPendClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPendClieDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosPendClieDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosPendClieDS.xss">
+      <DependentUpon>venPedidosPendClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPorClienteDS.xsc">
+      <DependentUpon>venPedidosPorClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPedidosPorClienteDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPedidosPorClienteDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPedidosPorClienteDS.xss">
+      <DependentUpon>venPedidosPorClienteDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediFacturadosDS.xsc">
+      <DependentUpon>venPediFacturadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediFacturadosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediFacturadosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPediFacturadosDS.xss">
+      <DependentUpon>venPediFacturadosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediFacturadosPediDS.xsc">
+      <DependentUpon>venPediFacturadosPediDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediFacturadosPediDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediFacturadosPediDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venPediFacturadosPediDS.xss">
+      <DependentUpon>venPediFacturadosPediDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemiFactuDS.xsc">
+      <DependentUpon>venPediRemiFactuDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemiFactuDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediRemiFactuDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediRemiFactuDS.xss">
+      <DependentUpon>venPediRemiFactuDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemitidosDatosCancDS.xsc">
+      <DependentUpon>venPediRemitidosDatosCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemitidosDatosCancDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediRemitidosDatosCancDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediRemitidosDatosCancDS.xss">
+      <DependentUpon>venPediRemitidosDatosCancDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemitidosDS.xsc">
+      <DependentUpon>venPediRemitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediRemitidosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediRemitidosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediRemitidosDS.xss">
+      <DependentUpon>venPediRemitidosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediSegmentosDS.xsc">
+      <DependentUpon>venPediSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediSegmentosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediSegmentosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediSegmentosDS.xss">
+      <DependentUpon>venPediSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediValiComerDS.xsc">
+      <DependentUpon>venPediValiComerDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPediValiComerDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPediValiComerDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPediValiComerDS.xss">
+      <DependentUpon>venPediValiComerDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPropietarioArrendaDS.xsc">
+      <DependentUpon>venPropietarioArrendaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venPropietarioArrendaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venPropietarioArrendaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venPropietarioArrendaDS.xss">
+      <DependentUpon>venPropietarioArrendaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRegionDS.xsc">
+      <DependentUpon>venRegionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRegionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRegionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venRegionDS.xss">
+      <DependentUpon>venRegionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRemitosPendienteClieDS.xsc">
+      <DependentUpon>venRemitosPendienteClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRemitosPendienteClieDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRemitosPendienteClieDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venRemitosPendienteClieDS.xss">
+      <DependentUpon>venRemitosPendienteClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediDS.xsc">
+      <DependentUpon>venRepaPediDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepaPediDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepaPediDS.xss">
+      <DependentUpon>venRepaPediDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediSerieDS.xsc">
+      <DependentUpon>venRepaPediSerieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediSerieDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepaPediSerieDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venRepaPediSerieDS.xss">
+      <DependentUpon>venRepaPediSerieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediSerieUbiDS.xsc">
+      <DependentUpon>venRepaPediSerieUbiDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaPediSerieUbiDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepaPediSerieUbiDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepaPediSerieUbiDS.xss">
+      <DependentUpon>venRepaPediSerieUbiDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoCalcularCuerpoDS.xsc">
+      <DependentUpon>venRepartoCalcularCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoCalcularCuerpoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepartoCalcularCuerpoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepartoCalcularCuerpoDS.xss">
+      <DependentUpon>venRepartoCalcularCuerpoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoDS.xsc">
+      <DependentUpon>venRepartoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepartoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepartoDS.xss">
+      <DependentUpon>venRepartoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoFacturasDS.xsc">
+      <DependentUpon>venRepartoFacturasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoFacturasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepartoFacturasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepartoFacturasDS.xss">
+      <DependentUpon>venRepartoFacturasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoImprimirDS.xsc">
+      <DependentUpon>venRepartoImprimirDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoImprimirDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepartoImprimirDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venRepartoImprimirDS.xss">
+      <DependentUpon>venRepartoImprimirDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoRemitosDS.xsc">
+      <DependentUpon>venRepartoRemitosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepartoRemitosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepartoRemitosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepartoRemitosDS.xss">
+      <DependentUpon>venRepartoRemitosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaSegmentosDS.xsc">
+      <DependentUpon>venRepaSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaSegmentosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepaSegmentosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepaSegmentosDS.xss">
+      <DependentUpon>venRepaSegmentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaUbicacionDS.xsc">
+      <DependentUpon>venRepaUbicacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venRepaUbicacionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venRepaUbicacionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venRepaUbicacionDS.xss">
+      <DependentUpon>venRepaUbicacionDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSaldosPendientesTareaDS.xsc">
+      <DependentUpon>venSaldosPendientesTareaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSaldosPendientesTareaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venSaldosPendientesTareaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venSaldosPendientesTareaDS.xss">
+      <DependentUpon>venSaldosPendientesTareaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSTMAfipDS.xsc">
+      <DependentUpon>venSTMAfipDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSTMAfipDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venSTMAfipDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venSTMAfipDS.xss">
+      <DependentUpon>venSTMAfipDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSubTipoMovDS.xsc">
+      <DependentUpon>venSubTipoMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="venSubTipoMovDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venSubTipoMovDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venSubTipoMovDS.xss">
+      <DependentUpon>venSubTipoMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotaAgregarDS.xsc">
+      <DependentUpon>ventasCanjeNotaAgregarDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotaAgregarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasCanjeNotaAgregarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ventasCanjeNotaAgregarDS.xss">
+      <DependentUpon>ventasCanjeNotaAgregarDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotasAgregarDS.xsc">
+      <DependentUpon>ventasCanjeNotasAgregarDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotasAgregarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasCanjeNotasAgregarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ventasCanjeNotasAgregarDS.xss">
+      <DependentUpon>ventasCanjeNotasAgregarDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotasDS.xsc">
+      <DependentUpon>ventasCanjeNotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasCanjeNotasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasCanjeNotasDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ventasCanjeNotasDS.xss">
+      <DependentUpon>ventasCanjeNotasDS.xsd</DependentUpon>
+    </None>
+    <None Include="VentasCerrarDS.xsc">
+      <DependentUpon>VentasCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="VentasCerrarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VentasCerrarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VentasCerrarDS.xss">
+      <DependentUpon>VentasCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasIndVentasDS.xsc">
+      <DependentUpon>ventasIndVentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="ventasIndVentasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ventasIndVentasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ventasIndVentasDS.xss">
+      <DependentUpon>ventasIndVentasDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTipoMovDS.xsc">
+      <DependentUpon>venTipoMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTipoMovDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venTipoMovDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venTipoMovDS.xss">
+      <DependentUpon>venTipoMovDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTiposClieDS.xsc">
+      <DependentUpon>venTiposClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTiposClieDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venTiposClieDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venTiposClieDS.xss">
+      <DependentUpon>venTiposClieDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTraePendientesDS.xsc">
+      <DependentUpon>venTraePendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venTraePendientesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venTraePendientesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="venTraePendientesDS.xss">
+      <DependentUpon>venTraePendientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="venVendedoresDS.xsc">
+      <DependentUpon>venVendedoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venVendedoresDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venVendedoresDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venVendedoresDS.xss">
+      <DependentUpon>venVendedoresDS.xsd</DependentUpon>
+    </None>
+    <None Include="venVeriCreditoDS.xsc">
+      <DependentUpon>venVeriCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venVeriCreditoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venVeriCreditoDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venVeriCreditoDS.xss">
+      <DependentUpon>venVeriCreditoDS.xsd</DependentUpon>
+    </None>
+    <None Include="venZonaDS.xsc">
+      <DependentUpon>venZonaDS.xsd</DependentUpon>
+    </None>
+    <None Include="venZonaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>venZonaDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="venZonaDS.xss">
+      <DependentUpon>venZonaDS.xsd</DependentUpon>
+    </None>
+    <None Include="XmlComprobanteDS.xsc">
+      <DependentUpon>XmlComprobanteDS.xsd</DependentUpon>
+    </None>
+    <None Include="XmlComprobanteDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>XmlComprobanteDSDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="XmlComprobanteDS.xss">
+      <DependentUpon>XmlComprobanteDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

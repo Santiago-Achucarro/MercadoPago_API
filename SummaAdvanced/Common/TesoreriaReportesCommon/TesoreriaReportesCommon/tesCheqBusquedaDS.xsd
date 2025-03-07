@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tesCheqBusquedaDS" targetNamespace="http://tempuri.org/tesCheqBusquedaDS.xsd" xmlns:mstns="http://tempuri.org/tesCheqBusquedaDS.xsd" xmlns="http://tempuri.org/tesCheqBusquedaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tesCheqBusquedaDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="tesCheqBusquedaDS" msprop:Generator_UserDSName="tesCheqBusquedaDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Principal" msprop:Generator_TableClassName="PrincipalDataTable" msprop:Generator_TableVarName="tablePrincipal" msprop:Generator_RowChangedName="PrincipalRowChanged" msprop:Generator_TablePropName="Principal" msprop:Generator_RowDeletingName="PrincipalRowDeleting" msprop:Generator_RowChangingName="PrincipalRowChanging" msprop:Generator_RowEvHandlerName="PrincipalRowChangeEventHandler" msprop:Generator_RowDeletedName="PrincipalRowDeleted" msprop:Generator_RowClassName="PrincipalRow" msprop:Generator_UserTableName="Principal" msprop:Generator_RowEvArgName="PrincipalRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarteraDesde" msprop:Generator_ColumnVarNameInTable="columnCarteraDesde" msprop:Generator_ColumnPropNameInRow="CarteraDesde" msprop:Generator_ColumnPropNameInTable="CarteraDesdeColumn" msprop:Generator_UserColumnName="CarteraDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="CarteraHasta" msprop:Generator_ColumnVarNameInTable="columnCarteraHasta" msprop:Generator_ColumnPropNameInRow="CarteraHasta" msprop:Generator_ColumnPropNameInTable="CarteraHastaColumn" msprop:Generator_UserColumnName="CarteraHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDesde" msprop:Generator_ColumnVarNameInTable="columnFechaDesde" msprop:Generator_ColumnPropNameInRow="FechaDesde" msprop:Generator_ColumnPropNameInTable="FechaDesdeColumn" msprop:Generator_UserColumnName="FechaDesde" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta" msprop:Generator_ColumnVarNameInTable="columnFechaHasta" msprop:Generator_ColumnPropNameInRow="FechaHasta" msprop:Generator_ColumnPropNameInTable="FechaHastaColumn" msprop:Generator_UserColumnName="FechaHasta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaDesde2" msprop:Generator_ColumnVarNameInTable="columnFechaDesde2" msprop:Generator_ColumnPropNameInRow="FechaDesde2" msprop:Generator_ColumnPropNameInTable="FechaDesde2Column" msprop:Generator_UserColumnName="FechaDesde2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaHasta2" msprop:Generator_ColumnVarNameInTable="columnFechaHasta2" msprop:Generator_ColumnPropNameInRow="FechaHasta2" msprop:Generator_ColumnPropNameInTable="FechaHasta2Column" msprop:Generator_UserColumnName="FechaHasta2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumChequeDesde" msprop:Generator_ColumnVarNameInTable="columnNumChequeDesde" msprop:Generator_ColumnPropNameInRow="NumChequeDesde" msprop:Generator_ColumnPropNameInTable="NumChequeDesdeColumn" msprop:Generator_UserColumnName="NumChequeDesde" type="xs:int" minOccurs="0" />
+              <xs:element name="NumChequeHasta" msprop:Generator_ColumnVarNameInTable="columnNumChequeHasta" msprop:Generator_ColumnPropNameInRow="NumChequeHasta" msprop:Generator_ColumnPropNameInTable="NumChequeHastaColumn" msprop:Generator_UserColumnName="NumChequeHasta" type="xs:int" minOccurs="0" />
+              <xs:element name="ClienteDesde" msprop:Generator_ColumnVarNameInTable="columnClienteDesde" msprop:Generator_ColumnPropNameInRow="ClienteDesde" msprop:Generator_ColumnPropNameInTable="ClienteDesdeColumn" msprop:Generator_UserColumnName="ClienteDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="ClienteHasta" msprop:Generator_ColumnVarNameInTable="columnClienteHasta" msprop:Generator_ColumnPropNameInRow="ClienteHasta" msprop:Generator_ColumnPropNameInTable="ClienteHastaColumn" msprop:Generator_UserColumnName="ClienteHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="CobradorDesde" msprop:Generator_ColumnVarNameInTable="columnCobradorDesde" msprop:Generator_ColumnPropNameInRow="CobradorDesde" msprop:Generator_ColumnPropNameInTable="CobradorDesdeColumn" msprop:Generator_UserColumnName="CobradorDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="CobradorHasta" msprop:Generator_ColumnVarNameInTable="columnCobradorHasta" msprop:Generator_ColumnPropNameInRow="CobradorHasta" msprop:Generator_ColumnPropNameInTable="CobradorHastaColumn" msprop:Generator_UserColumnName="CobradorHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaBancoDesde" msprop:Generator_ColumnVarNameInTable="columnCuentaBancoDesde" msprop:Generator_ColumnPropNameInRow="CuentaBancoDesde" msprop:Generator_ColumnPropNameInTable="CuentaBancoDesdeColumn" msprop:Generator_UserColumnName="CuentaBancoDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaBancoHasta" msprop:Generator_ColumnVarNameInTable="columnCuentaBancoHasta" msprop:Generator_ColumnPropNameInRow="CuentaBancoHasta" msprop:Generator_ColumnPropNameInTable="CuentaBancoHastaColumn" msprop:Generator_UserColumnName="CuentaBancoHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Proveed" msprop:Generator_ColumnVarNameInTable="columnProveed" msprop:Generator_ColumnPropNameInRow="Proveed" msprop:Generator_ColumnPropNameInTable="ProveedColumn" msprop:Generator_UserColumnName="Proveed" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoDesde" msprop:Generator_ColumnVarNameInTable="columnBancoDesde" msprop:Generator_ColumnPropNameInRow="BancoDesde" msprop:Generator_ColumnPropNameInTable="BancoDesdeColumn" msprop:Generator_UserColumnName="BancoDesde" type="xs:string" minOccurs="0" />
+              <xs:element name="BancoHasta" msprop:Generator_ColumnVarNameInTable="columnBancoHasta" msprop:Generator_ColumnPropNameInRow="BancoHasta" msprop:Generator_ColumnPropNameInTable="BancoHastaColumn" msprop:Generator_UserColumnName="BancoHasta" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" type="xs:int" minOccurs="0" />
+              <xs:element name="Rechazado" msprop:Generator_ColumnVarNameInTable="columnRechazado" msprop:Generator_ColumnPropNameInRow="Rechazado" msprop:Generator_ColumnPropNameInTable="RechazadoColumn" msprop:Generator_UserColumnName="Rechazado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Empresa_Id" msprop:Generator_ColumnVarNameInTable="columnEmpresa_Id" msprop:Generator_ColumnPropNameInRow="Empresa_Id" msprop:Generator_ColumnPropNameInTable="Empresa_IdColumn" msprop:Generator_UserColumnName="Empresa_Id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9086DC67-3A32-4C61-9C2D-5AF1F42A37BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VentasExchange</RootNamespace>
+    <AssemblyName>VentasExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueBonifActionEnum.cs" />
+    <Compile Include="QueBonifActionExchange.cs" />
+    <Compile Include="venAddendaMXActionEnum.cs" />
+    <Compile Include="venAddendaMXActionExchange.cs" />
+    <Compile Include="venAjuEdoCtaActionEnum.cs" />
+    <Compile Include="venAjuEdoCtaActionExchange.cs" />
+    <Compile Include="venAplicacionCobranzaActionEnum.cs" />
+    <Compile Include="venAplicacionCobranzaActionExchange.cs" />
+    <Compile Include="venAsiCierreActionEnum.cs" />
+    <Compile Include="venAsiCierreActionExchange.cs" />
+    <Compile Include="venAsiCierreCalculoActionEnum.cs" />
+    <Compile Include="venAsiCierreCalculoActionExchange.cs" />
+    <Compile Include="venAsiCierreCrActionEnum.cs" />
+    <Compile Include="venAsiCierreCrActionExchange.cs" />
+    <Compile Include="venAsiCierreDatosCierreActionEnum.cs" />
+    <Compile Include="venAsiCierreDatosCierreActionExchange.cs" />
+    <Compile Include="venBonifTemporalActionEnum.cs" />
+    <Compile Include="venBonifTemporalActionExchange.cs" />
+    <Compile Include="venBonifTemporalSegmentoActionEnum.cs" />
+    <Compile Include="venBonifTemporalSegmentoActionExchange.cs" />
+    <Compile Include="venCamionesActionEnum.cs" />
+    <Compile Include="venCamionesActionExchange.cs" />
+    <Compile Include="venCancPendientesActionEnum.cs" />
+    <Compile Include="venCancPendientesActionExchange.cs" />
+    <Compile Include="venCanjeNotasActionEnum.cs" />
+    <Compile Include="venCanjeNotasActionExchange.cs" />
+    <Compile Include="venCartaPorteActionEnum.cs" />
+    <Compile Include="venCartaPorteActionExchange.cs" />
+    <Compile Include="venCategCreditoActionEnum.cs" />
+    <Compile Include="venCategCreditoActionExchange.cs" />
+    <Compile Include="venCFDISatActionEnum.cs" />
+    <Compile Include="venCFDISatActionExchange.cs" />
+    <Compile Include="venClieContactoActionEnum.cs" />
+    <Compile Include="venClieContactoActionExchange.cs" />
+    <Compile Include="venClieEstadosActionEnum.cs" />
+    <Compile Include="venClieEstadosActionExchange.cs" />
+    <Compile Include="venClieHabitualActionEnum.cs" />
+    <Compile Include="venClieHabitualActionExchange.cs" />
+    <Compile Include="venClientesActionEnum.cs" />
+    <Compile Include="venClientesActionExchange.cs" />
+    <Compile Include="venClientesCtasActionEnum.cs" />
+    <Compile Include="venClientesCtasActionExchange.cs" />
+    <Compile Include="venClientesCtasPlantillaActionEnum.cs" />
+    <Compile Include="venClientesCtasPlantillaActionExchange.cs" />
+    <Compile Include="venClientesImportarXlsActionEnum.cs" />
+    <Compile Include="venClientesImportarXlsActionExchange.cs" />
+    <Compile Include="venClientesPlantillaActionEnum.cs" />
+    <Compile Include="venClientesPlantillaActionExchange.cs" />
+    <Compile Include="venClientesSaldoIniActionEnum.cs" />
+    <Compile Include="venClientesSaldoIniActionExchange.cs" />
+    <Compile Include="venClientesXLSCatalogoActionEnum.cs" />
+    <Compile Include="venClientesXLSCatalogoActionExchange.cs" />
+    <Compile Include="venCobradoresActionEnum.cs" />
+    <Compile Include="venCobradoresActionExchange.cs" />
+    <Compile Include="venCompCartaPorteActionEnum.cs" />
+    <Compile Include="venCompCartaPorteActionExchange.cs" />
+    <Compile Include="venCompCartaPorteDestinoActionEnum.cs" />
+    <Compile Include="venCompCartaPorteDestinoActionExchange.cs" />
+    <Compile Include="venCompCartaPorteLibreActionEnum.cs" />
+    <Compile Include="venCompCartaPorteLibreActionExchange.cs" />
+    <Compile Include="venCompCartaPorteMercanciaActionEnum.cs" />
+    <Compile Include="venCompCartaPorteMercanciaActionExchange.cs" />
+    <Compile Include="venCompCartaPorteOrigenActionEnum.cs" />
+    <Compile Include="venCompCartaPorteOrigenActionExchange.cs" />
+    <Compile Include="venCompCartaPorteUbiActionEnum.cs" />
+    <Compile Include="venCompCartaPorteUbiActionExchange.cs" />
+    <Compile Include="venCondFiscalActionEnum.cs" />
+    <Compile Include="venCondFiscalActionExchange.cs" />
+    <Compile Include="venCondFiscImpActionEnum.cs" />
+    <Compile Include="venCondFiscImpActionExchange.cs" />
+    <Compile Include="venCondPagoActionEnum.cs" />
+    <Compile Include="venCondPagoActionExchange.cs" />
+    <Compile Include="VenCondPagoCuotasActionEnum.cs" />
+    <Compile Include="VenCondPagoCuotasActionExchange.cs" />
+    <Compile Include="VenConsEdoCtaActionEnum.cs" />
+    <Compile Include="VenConsEdoCtaActionExchange.cs" />
+    <Compile Include="venConsEdoCtaClientesActionEnum.cs" />
+    <Compile Include="venConsEdoCtaClientesActionExchange.cs" />
+    <Compile Include="venConsultaFEActionEnum.cs" />
+    <Compile Include="venConsultaFEActionExchange.cs" />
+    <Compile Include="venCotizacionesActionEnum.cs" />
+    <Compile Include="venCotizacionesActionExchange.cs" />
+    <Compile Include="venCotizacionesEnviarActionEnum.cs" />
+    <Compile Include="venCotizacionesEnviarActionExchange.cs" />
+    <Compile Include="venCotizClienteActionEnum.cs" />
+    <Compile Include="venCotizClienteActionExchange.cs" />
+    <Compile Include="venCotizCuerpoActionEnum.cs" />
+    <Compile Include="venCotizCuerpoActionExchange.cs" />
+    <Compile Include="venCotizFactuCuerpoActionEnum.cs" />
+    <Compile Include="venCotizFactuCuerpoActionExchange.cs" />
+    <Compile Include="venCotizPediCuerpoActionEnum.cs" />
+    <Compile Include="venCotizPediCuerpoActionExchange.cs" />
+    <Compile Include="venCotizPedidosActionEnum.cs" />
+    <Compile Include="venCotizPedidosActionExchange.cs" />
+    <Compile Include="venCotizSegmentoActionEnum.cs" />
+    <Compile Include="venCotizSegmentoActionExchange.cs" />
+    <Compile Include="venEsquemaAutoActionEnum.cs" />
+    <Compile Include="venEsquemaAutoActionExchange.cs" />
+    <Compile Include="venEsquemaAutoRengActionEnum.cs" />
+    <Compile Include="venEsquemaAutoRengActionExchange.cs" />
+    <Compile Include="venFactAnulHastaActionEnum.cs" />
+    <Compile Include="venFactAnulHastaActionExchange.cs" />
+    <Compile Include="venFacturacionPedidoActionEnum.cs" />
+    <Compile Include="venFacturacionPedidoActionExchange.cs" />
+    <Compile Include="venFacturacionRemitoActionEnum.cs" />
+    <Compile Include="venFacturacionRemitoActionExchange.cs" />
+    <Compile Include="venFormaEntregaActionEnum.cs" />
+    <Compile Include="venFormaEntregaActionExchange.cs" />
+    <Compile Include="venGeneraRemitoFacturaActionEnum.cs" />
+    <Compile Include="venGeneraRemitoFacturaActionExchange.cs" />
+    <Compile Include="venGraTortaClienteActionEnum.cs" />
+    <Compile Include="venGraTortaClienteActionExchange.cs" />
+    <Compile Include="venGraTortaFamiliaActionEnum.cs" />
+    <Compile Include="venGraTortaFamiliaActionExchange.cs" />
+    <Compile Include="venGraTortaGrupoActionEnum.cs" />
+    <Compile Include="venGraTortaGrupoActionExchange.cs" />
+    <Compile Include="venGraTortaProductoActionEnum.cs" />
+    <Compile Include="venGraTortaProductoActionExchange.cs" />
+    <Compile Include="venGraTortaVendedorActionEnum.cs" />
+    <Compile Include="venGraTortaVendedorActionExchange.cs" />
+    <Compile Include="venGraVentasActionEnum.cs" />
+    <Compile Include="venGraVentasActionExchange.cs" />
+    <Compile Include="venGuardarTknSgnActionEnum.cs" />
+    <Compile Include="venGuardarTknSgnActionExchange.cs" />
+    <Compile Include="venImportarListaXlsActionEnum.cs" />
+    <Compile Include="venImportarListaXlsActionExchange.cs" />
+    <Compile Include="venImpuestosActionEnum.cs" />
+    <Compile Include="venImpuestosActionExchange.cs" />
+    <Compile Include="venIncotermActionEnum.cs" />
+    <Compile Include="venIncotermActionExchange.cs" />
+    <Compile Include="venIndicadoresActionEnum.cs" />
+    <Compile Include="venIndicadoresActionExchange.cs" />
+    <Compile Include="venLibrosActionEnum.cs" />
+    <Compile Include="venLibrosActionExchange.cs" />
+    <Compile Include="venLibrosColumnasActionEnum.cs" />
+    <Compile Include="venLibrosColumnasActionExchange.cs" />
+    <Compile Include="venLibrosImpuestosActionEnum.cs" />
+    <Compile Include="venLibrosImpuestosActionExchange.cs" />
+    <Compile Include="venLibrosRetencionActionEnum.cs" />
+    <Compile Include="venLibrosRetencionActionExchange.cs" />
+    <Compile Include="venLimiteCreditoActionEnum.cs" />
+    <Compile Include="venLimiteCreditoActionExchange.cs" />
+    <Compile Include="venListaCoeficienteActionEnum.cs" />
+    <Compile Include="venListaCoeficienteActionExchange.cs" />
+    <Compile Include="venListaPrecXLSActionEnum.cs" />
+    <Compile Include="venListaPrecXLSActionExchange.cs" />
+    <Compile Include="venListasCopiarActionEnum.cs" />
+    <Compile Include="venListasCopiarActionExchange.cs" />
+    <Compile Include="venListasPrecBoniRecActionEnum.cs" />
+    <Compile Include="venListasPrecBoniRecActionExchange.cs" />
+    <Compile Include="venListasPreciosActionEnum.cs" />
+    <Compile Include="venListasPreciosActionExchange.cs" />
+    <Compile Include="venListasPreciosXLSCatalogoActionEnum.cs" />
+    <Compile Include="venListasPreciosXLSCatalogoActionExchange.cs" />
+    <Compile Include="venListasPrecProdActionEnum.cs" />
+    <Compile Include="venListasPrecProdActionExchange.cs" />
+    <Compile Include="venListasVersionActionEnum.cs" />
+    <Compile Include="venListasVersionActionExchange.cs" />
+    <Compile Include="venLPTabCuerpoActionEnum.cs" />
+    <Compile Include="venLPTabCuerpoActionExchange.cs" />
+    <Compile Include="venLPTabCuerpoValorActionEnum.cs" />
+    <Compile Include="venLPTabCuerpoValorActionExchange.cs" />
+    <Compile Include="venLPTablaActionEnum.cs" />
+    <Compile Include="venLPTablaActionExchange.cs" />
+    <Compile Include="venMovAnuladosActionEnum.cs" />
+    <Compile Include="venMovAnuladosActionExchange.cs" />
+    <Compile Include="venMovClieSucActionEnum.cs" />
+    <Compile Include="venMovClieSucActionExchange.cs" />
+    <Compile Include="venMovConformaActionEnum.cs" />
+    <Compile Include="venMovConformaActionExchange.cs" />
+    <Compile Include="venMovConStockActionEnum.cs" />
+    <Compile Include="venMovConStockActionExchange.cs" />
+    <Compile Include="venMovConStockCrActionEnum.cs" />
+    <Compile Include="venMovConStockCrActionExchange.cs" />
+    <Compile Include="venMovConStockCrPedActionEnum.cs" />
+    <Compile Include="venMovConStockCrPedActionExchange.cs" />
+    <Compile Include="venMovCSImpuestosActionEnum.cs" />
+    <Compile Include="venMovCSImpuestosActionExchange.cs" />
+    <Compile Include="venMovDetalleActionEnum.cs" />
+    <Compile Include="venMovDetalleActionExchange.cs" />
+    <Compile Include="venMoviAnticipoActionEnum.cs" />
+    <Compile Include="venMoviAnticipoActionExchange.cs" />
+    <Compile Include="VenMoviFiscalVirtualActionEnum.cs" />
+    <Compile Include="VenMoviFiscalVirtualActionExchange.cs" />
+    <Compile Include="venMovimientosActionEnum.cs" />
+    <Compile Include="venMovimientosActionExchange.cs" />
+    <Compile Include="venMovimientosCFDIRActionEnum.cs" />
+    <Compile Include="venMovimientosCFDIRActionExchange.cs" />
+    <Compile Include="venMovimientosCFDIRVirtualActionEnum.cs" />
+    <Compile Include="venMovimientosCFDIRVirtualActionExchange.cs" />
+    <Compile Include="venMovimientosConStockActionEnum.cs" />
+    <Compile Include="venMovimientosConStockActionExchange.cs" />
+    <Compile Include="venMovimientosConsultaActionEnum.cs" />
+    <Compile Include="venMovimientosConsultaActionExchange.cs" />
+    <Compile Include="venMovimientosConsultaDrillDownActionEnum.cs" />
+    <Compile Include="venMovimientosConsultaDrillDownActionExchange.cs" />
+    <Compile Include="venMovimientosCPActionEnum.cs" />
+    <Compile Include="venMovimientosCPActionExchange.cs" />
+    <Compile Include="venMovimientosCRExpMxActionEnum.cs" />
+    <Compile Include="venMovimientosCRExpMxActionExchange.cs" />
+    <Compile Include="venMovimientosEnviarActionEnum.cs" />
+    <Compile Include="venMovimientosEnviarActionExchange.cs" />
+    <Compile Include="venMovimientosExpMXActionEnum.cs" />
+    <Compile Include="venMovimientosExpMXActionExchange.cs" />
+    <Compile Include="venMovimientosExpVirtualActionEnum.cs" />
+    <Compile Include="venMovimientosExpVirtualActionExchange.cs" />
+    <Compile Include="venMovimientosFiscalActionEnum.cs" />
+    <Compile Include="venMovimientosFiscalActionExchange.cs" />
+    <Compile Include="venMovimientosFiscalINEActionEnum.cs" />
+    <Compile Include="venMovimientosFiscalINEActionExchange.cs" />
+    <Compile Include="venMovimientosImprimirActionEnum.cs" />
+    <Compile Include="venMovimientosImprimirActionExchange.cs" />
+    <Compile Include="venMovimientosMetodoPagoActionEnum.cs" />
+    <Compile Include="venMovimientosMetodoPagoActionExchange.cs" />
+    <Compile Include="venMovimientosSinStockActionEnum.cs" />
+    <Compile Include="venMovimientosSinStockActionExchange.cs" />
+    <Compile Include="venMovImpTrasladoActionEnum.cs" />
+    <Compile Include="venMovImpTrasladoActionExchange.cs" />
+    <Compile Include="venMovImpuestosActionEnum.cs" />
+    <Compile Include="venMovImpuestosActionExchange.cs" />
+    <Compile Include="venMoviPredialActionEnum.cs" />
+    <Compile Include="venMoviPredialActionExchange.cs" />
+    <Compile Include="venMovSSImpuestosActionEnum.cs" />
+    <Compile Include="venMovSSImpuestosActionExchange.cs" />
+    <Compile Include="venMovStkHistActionEnum.cs" />
+    <Compile Include="venMovStkHistActionExchange.cs" />
+    <Compile Include="venMovStkHistDevolverIdMovStockActionEnum.cs" />
+    <Compile Include="venMovStkHistDevolverIdMovStockActionExchange.cs" />
+    <Compile Include="venNivelesAutoActionEnum.cs" />
+    <Compile Include="venNivelesAutoActionExchange.cs" />
+    <Compile Include="venNivelesAutoUsuActionEnum.cs" />
+    <Compile Include="venNivelesAutoUsuActionExchange.cs" />
+    <Compile Include="venNotaDeCreditoAnticipoActionEnum.cs" />
+    <Compile Include="venNotaDeCreditoAnticipoActionExchange.cs" />
+    <Compile Include="venNPAutorizandoActionEnum.cs" />
+    <Compile Include="venNPAutorizandoActionExchange.cs" />
+    <Compile Include="venOperadoresActionEnum.cs" />
+    <Compile Include="venOperadoresActionExchange.cs" />
+    <Compile Include="venPediAutorizaActionEnum.cs" />
+    <Compile Include="venPediAutorizaActionExchange.cs" />
+    <Compile Include="venPediCuerpoActionEnum.cs" />
+    <Compile Include="venPediCuerpoActionExchange.cs" />
+    <Compile Include="venPediCuerpoWrapper.cs" />
+    <Compile Include="venPedidosActionEnum.cs" />
+    <Compile Include="venPedidosActionExchange.cs" />
+    <Compile Include="venPedidosAnticipoActionEnum.cs" />
+    <Compile Include="venPedidosAnticipoActionExchange.cs" />
+    <Compile Include="venPedidosAnticipoFactActionEnum.cs" />
+    <Compile Include="venPedidosAnticipoFactActionExchange.cs" />
+    <Compile Include="venPedidosAnulActionEnum.cs" />
+    <Compile Include="venPedidosAnulActionExchange.cs" />
+    <Compile Include="venPedidosConsultaDrillDownActionEnum.cs" />
+    <Compile Include="venPedidosConsultaDrillDownActionExchange.cs" />
+    <Compile Include="venPedidosEnviarActionEnum.cs" />
+    <Compile Include="venPedidosEnviarActionExchange.cs" />
+    <Compile Include="venPedidosFacturaAnticipoActionEnum.cs" />
+    <Compile Include="venPedidosFacturaAnticipoActionExchange.cs" />
+    <Compile Include="venPedidosPendAutoActionEnum.cs" />
+    <Compile Include="venPedidosPendAutoActionExchange.cs" />
+    <Compile Include="venPedidosPorClienteActionEnum.cs" />
+    <Compile Include="venPedidosPorClienteActionExchange.cs" />
+    <Compile Include="venPediFacturadosActionEnum.cs" />
+    <Compile Include="venPediFacturadosActionExchange.cs" />
+    <Compile Include="venPediRemiFactuActionEnum.cs" />
+    <Compile Include="venPediRemiFactuActionExchange.cs" />
+    <Compile Include="venPediRemitidosActionEnum.cs" />
+    <Compile Include="venPediRemitidosActionExchange.cs" />
+    <Compile Include="venPediRemitidosDatosCancActionEnum.cs" />
+    <Compile Include="venPediRemitidosDatosCancActionExchange.cs" />
+    <Compile Include="venPediSegmentosActionEnum.cs" />
+    <Compile Include="venPediSegmentosActionExchange.cs" />
+    <Compile Include="venPediValiComerActionEnum.cs" />
+    <Compile Include="venPediValiComerActionExchange.cs" />
+    <Compile Include="venPropietarioArrendaActionEnum.cs" />
+    <Compile Include="venPropietarioArrendaActionExchange.cs" />
+    <Compile Include="venRegionActionEnum.cs" />
+    <Compile Include="venRegionActionExchange.cs" />
+    <Compile Include="venRemitosPendienteClieActionEnum.cs" />
+    <Compile Include="venRemitosPendienteClieActionExchange.cs" />
+    <Compile Include="venRepaPediActionEnum.cs" />
+    <Compile Include="venRepaPediActionExchange.cs" />
+    <Compile Include="venRepaPediSerieActionEnum.cs" />
+    <Compile Include="venRepaPediSerieActionExchange.cs" />
+    <Compile Include="venRepartoActionEnum.cs" />
+    <Compile Include="venRepartoActionExchange.cs" />
+    <Compile Include="venRepartoCalcularCuerpoActionEnum.cs" />
+    <Compile Include="venRepartoCalcularCuerpoActionExchange.cs" />
+    <Compile Include="venRepartoFacturasActionEnum.cs" />
+    <Compile Include="venRepartoFacturasActionExchange.cs" />
+    <Compile Include="venRepartoImprimirActionEnum.cs" />
+    <Compile Include="venRepartoImprimirActionExchange.cs" />
+    <Compile Include="venRepartoRemitosActionEnum.cs" />
+    <Compile Include="venRepartoRemitosActionExchange.cs" />
+    <Compile Include="venRepaSegmentosActionEnum.cs" />
+    <Compile Include="venRepaSegmentosActionExchange.cs" />
+    <Compile Include="venSaldosPendientesTareaActionEnum.cs" />
+    <Compile Include="venSaldosPendientesTareaActionExchange.cs" />
+    <Compile Include="venSTMAfipActionEnum.cs" />
+    <Compile Include="venSTMAfipActionExchange.cs" />
+    <Compile Include="venSubTipoMovActionEnum.cs" />
+    <Compile Include="venSubTipoMovActionExchange.cs" />
+    <Compile Include="ventasCanjeNotaAgregarActionEnum.cs" />
+    <Compile Include="ventasCanjeNotaAgregarActionExchange.cs" />
+    <Compile Include="ventasCanjeNotasActionEnum.cs" />
+    <Compile Include="ventasCanjeNotasActionExchange.cs" />
+    <Compile Include="ventasCanjeNotasAgregarActionEnum.cs" />
+    <Compile Include="ventasCanjeNotasAgregarActionExchange.cs" />
+    <Compile Include="VentasCerrarActionEnum.cs" />
+    <Compile Include="VentasCerrarActionExchange.cs" />
+    <Compile Include="ventasIndVentasActionEnum.cs" />
+    <Compile Include="ventasIndVentasActionExchange.cs" />
+    <Compile Include="venTipoMovActionEnum.cs" />
+    <Compile Include="venTipoMovActionExchange.cs" />
+    <Compile Include="venTiposClieActionEnum.cs" />
+    <Compile Include="venTiposClieActionExchange.cs" />
+    <Compile Include="venTraePendientesActionEnum.cs" />
+    <Compile Include="venTraePendientesActionExchange.cs" />
+    <Compile Include="venVendedoresActionEnum.cs" />
+    <Compile Include="venVendedoresActionExchange.cs" />
+    <Compile Include="venVeriCreditoActionEnum.cs" />
+    <Compile Include="venVeriCreditoActionExchange.cs" />
+    <Compile Include="venZonaActionEnum.cs" />
+    <Compile Include="venZonaActionExchange.cs" />
+    <Compile Include="XmlComprobanteActionEnum.cs" />
+    <Compile Include="XmlComprobanteActionExchange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\VentasCommon\VentasCommon\VentasCommon\VentasCommon.csproj">
+      <Project>{ff0479ce-a5f1-4dd3-ba1f-9d61c65038b6}</Project>
+      <Name>VentasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

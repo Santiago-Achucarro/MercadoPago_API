@@ -1,0 +1,6 @@
+-- UNIFICADOS V1 Y V2
+exec sisAccion_Guardar 'lupIdentidadesTodasDevolverDatos', 'lupIdentidadesTodasDevolverDatos', 'Devuelve Datos de Todos lupIdentidades', 'LupasBE.lupIdentidadesTodasDevolverDatosAction,LupasBE', 1
+exec sisAccion_Guardar 'lupIdentidadesDevolverDatos', 'lupIdentidadesDevolverDatos', 'Devuelve Datos de lupIdentidades', 'LupasBE.lupIdentidadesDevolverDatosAction,LupasBE', 1
+exec sisAccion_Guardar 'lupIdentidadesConsultaEjecutar', 'lupIdentidadesConsultaEjecutar', 'Devuelve Datos de la ejecucion de una consulta ', 'LupasBE.lupIdentidadesConsultaEjecutarAction,LupasBE', 1
+exec sisAccion_Guardar 'lupIdentidadesConsultaEjecutarCantRegistros', 'lupIdentidadesConsultaEjecutarCantRegistros', 'Devuelve la cantidad de registros de una consulta ', 'LupasBE.lupIdentidadesConsultaEjecutarCantRegistrosAction,LupasBE', 1
+exec sisAccion_Guardar 'lupIdentidadesBrowserDatos', 'lupIdentidadesBrowserdatos', 'Retorna Datos para el browser de la lupa ', 'LupasBE.lupIdentidadesBrowserDatosAction,LupasBE', 1

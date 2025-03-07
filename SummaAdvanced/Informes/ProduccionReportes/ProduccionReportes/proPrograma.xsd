@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proPrograma" targetNamespace="http://tempuri.org/proPrograma.xsd" xmlns:mstns="http://tempuri.org/proPrograma.xsd" xmlns="http://tempuri.org/proPrograma.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proPrograma" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="proPrograma" msprop:Generator_UserDSName="proPrograma">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="proPrograma" msprop:Generator_TableClassName="proProgramaDataTable" msprop:Generator_TableVarName="tableproPrograma" msprop:Generator_TablePropName="_proPrograma" msprop:Generator_RowDeletingName="proProgramaRowDeleting" msprop:Generator_RowChangingName="proProgramaRowChanging" msprop:Generator_RowEvHandlerName="proProgramaRowChangeEventHandler" msprop:Generator_RowDeletedName="proProgramaRowDeleted" msprop:Generator_UserTableName="proPrograma" msprop:Generator_RowChangedName="proProgramaRowChanged" msprop:Generator_RowEvArgName="proProgramaRowChangeEvent" msprop:Generator_RowClassName="proProgramaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Programa" msprop:Generator_ColumnVarNameInTable="columnPrograma" msprop:Generator_ColumnPropNameInRow="Programa" msprop:Generator_ColumnPropNameInTable="ProgramaColumn" msprop:Generator_UserColumnName="Programa" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNecesidad" msprop:Generator_ColumnVarNameInTable="columnFechaNecesidad" msprop:Generator_ColumnPropNameInRow="FechaNecesidad" msprop:Generator_ColumnPropNameInTable="FechaNecesidadColumn" msprop:Generator_UserColumnName="FechaNecesidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Confirmado" msprop:Generator_ColumnVarNameInTable="columnConfirmado" msprop:Generator_ColumnPropNameInRow="Confirmado" msprop:Generator_ColumnPropNameInTable="ConfirmadoColumn" msprop:Generator_UserColumnName="Confirmado" type="xs:string" minOccurs="0" />
+              <xs:element name="Segmento_Id" msprop:Generator_ColumnVarNameInTable="columnSegmento_Id" msprop:Generator_ColumnPropNameInRow="Segmento_Id" msprop:Generator_ColumnPropNameInTable="Segmento_IdColumn" msprop:Generator_UserColumnName="Segmento_Id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C15CB6D1-2A61-4531-9589-6B07913CCF6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockFEEventos</RootNamespace>
+    <AssemblyName>StockFEEventos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.94.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="fwkcore">
+      <HintPath>..\..\..\Servicio\Actions\fwkcore.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCommon">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneralidadesCore">
+      <HintPath>..\..\..\Servicio\Actions\GeneralidadesCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComunesStock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stkCondFisCompras.cs" />
+    <Compile Include="stkCondFisVentas.cs" />
+    <Compile Include="stkconsKardex.cs" />
+    <Compile Include="stkConsStock.cs" />
+    <Compile Include="stkDepositos.cs" />
+    <Compile Include="stkDevolucionesProv.cs" />
+    <Compile Include="stkEntradasCD.cs" />
+    <Compile Include="stkEntradasEmbarque.cs" />
+    <Compile Include="stkEntradasOC.cs" />
+    <Compile Include="stkEntradasRemito.cs" />
+    <Compile Include="stkEntradasUbicacion.cs" />
+    <Compile Include="stkEnTransito.cs" />
+    <Compile Include="stkHojaDeRuta.cs" />
+    <Compile Include="stkInventarios.cs" />
+    <Compile Include="stkMoviCabe.cs" />
+    <Compile Include="stkMoviCabeDatosEmpleado.cs" />
+    <Compile Include="stkMoviCabeEntradasCausa.cs" />
+    <Compile Include="stkMoviCabeSalidasCausa.cs" />
+    <Compile Include="stkMoviSerieEntradasSolapa.cs" />
+    <Compile Include="stkMoviSerieSalidasSolapa.cs" />
+    <Compile Include="stkPlantillasProductos.cs" />
+    <Compile Include="stkProductos.cs" />
+    <Compile Include="stkProductosXLS.cs" />
+    <Compile Include="stkRemiConforma.cs" />
+    <Compile Include="stkRemiProv.cs" />
+    <Compile Include="stkRemisionFactura.cs" />
+    <Compile Include="stkRevaCostoManual.cs" />
+    <Compile Include="stkSalidasRemito.cs" />
+    <Compile Include="stkSalidasRemitoConsultaDrillDown.cs" />
+    <Compile Include="stkSalidasRI.cs" />
+    <Compile Include="stkSolicitudCD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\ComprasBE\ComprasValidacion\ComprasValidacion.csproj">
+      <Project>{2ebbad1b-4fcd-4bb0-a358-5a5e043b3941}</Project>
+      <Name>ComprasValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\GeneralesBE\GeneralesValidacion\GeneralesValidacion.csproj">
+      <Project>{bd4fd30c-d5fa-4c15-84ea-6d46f45f3d0b}</Project>
+      <Name>GeneralesValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\ProduccionBE\ProduccionValidacion\ProduccionValidacion.csproj">
+      <Project>{124eef74-8fc4-47ea-a604-71801c16e1ff}</Project>
+      <Name>ProduccionValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\StockBE\StockValidacion\StockValidacion.csproj">
+      <Project>{23391bb2-8a2d-4c42-b7a9-16a107399447}</Project>
+      <Name>StockValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SummaAdvancedQ\BE\VentasBE\VentasValidacion\VentasValidacion.csproj">
+      <Project>{aec868c2-7e39-4678-a7e0-15895cc16008}</Project>
+      <Name>VentasValidacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\ComprasExchange\ComprasExchange.csproj">
+      <Project>{0d3b3347-a8cf-4909-aea6-62c5d45244a3}</Project>
+      <Name>ComprasExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\GeneralesExchange\GeneralesExchange.csproj">
+      <Project>{678dcd1e-d8ac-4fd8-934a-b775110c81d5}</Project>
+      <Name>GeneralesExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\ProduccionExchange\ProduccionExchange.csproj">
+      <Project>{bc7dc036-55f2-4920-a465-564d2438d94e}</Project>
+      <Name>ProduccionExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\StockExchange\StockExchange.csproj">
+      <Project>{93e23fa8-c960-4b51-a145-03d16483cafe}</Project>
+      <Name>StockExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BE\VentasExchange\VentasExchange.csproj">
+      <Project>{9086dc67-3a32-4c61-9c2d-5af1f42a37bc}</Project>
+      <Name>VentasExchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ComprasCommon\ComprasCommon\ComprasCommon.csproj">
+      <Project>{426a7287-f5d3-42c3-b096-e963f20d1513}</Project>
+      <Name>ComprasCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\GeneralesCommon\GeneralesCommon\GeneralesCommon.csproj">
+      <Project>{8559dc7b-a346-4fa7-bb58-75e025ffff03}</Project>
+      <Name>GeneralesCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\ProduccionCommon\ProduccionCommon\ProduccionCommon.csproj">
+      <Project>{d4466173-db34-4721-9e5f-1abc4c463ce2}</Project>
+      <Name>ProduccionCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\StockCommon\StockCommon\StockCommon.csproj">
+      <Project>{b5aadc9c-a68c-4b7e-9b17-c7fa162283a4}</Project>
+      <Name>StockCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\VentasCommon\VentasCommon\VentasCommon\VentasCommon.csproj">
+      <Project>{ff0479ce-a5f1-4dd3-ba1f-9d61c65038b6}</Project>
+      <Name>VentasCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

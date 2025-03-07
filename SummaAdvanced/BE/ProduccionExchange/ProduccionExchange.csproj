@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC7DC036-55F2-4920-A465-564D2438D94E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProduccionExchange</RootNamespace>
+    <AssemblyName>ProduccionExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon">
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="proCausasActionEnum.cs" />
+    <Compile Include="proCausasActionExchange.cs" />
+    <Compile Include="proCentroProductivoActionEnum.cs" />
+    <Compile Include="proCentroProductivoActionExchange.cs" />
+    <Compile Include="proCierresCostoActionEnum.cs" />
+    <Compile Include="proCierresCostoActionExchange.cs" />
+    <Compile Include="proExistenciaActionEnum.cs" />
+    <Compile Include="proExistenciaActionExchange.cs" />
+    <Compile Include="proExploProgramaActionEnum.cs" />
+    <Compile Include="proExploProgramaActionExchange.cs" />
+    <Compile Include="proExploProgramaFaltantesActionEnum.cs" />
+    <Compile Include="proExploProgramaFaltantesActionExchange.cs" />
+    <Compile Include="proExplosionActionEnum.cs" />
+    <Compile Include="proExplosionActionExchange.cs" />
+    <Compile Include="proMovCierreOrdenActionEnum.cs" />
+    <Compile Include="proMovCierreOrdenActionExchange.cs" />
+    <Compile Include="proMovCierreRecursosActionEnum.cs" />
+    <Compile Include="proMovCierreRecursosActionExchange.cs" />
+    <Compile Include="proMovCierreTrabajos3ActionEnum.cs" />
+    <Compile Include="proMovCierreTrabajos3ActionExchange.cs" />
+    <Compile Include="proOrdenActionEnum.cs" />
+    <Compile Include="proOrdenActionExchange.cs" />
+    <Compile Include="proOrdenCerrarrActionEnum.cs" />
+    <Compile Include="proOrdenCerrarrActionExchange.cs" />
+    <Compile Include="proOrdenCerrarrCalcularActionEnum.cs" />
+    <Compile Include="proOrdenCerrarrCalcularActionExchange.cs" />
+    <Compile Include="proOrdenesGenerarActionEnum.cs" />
+    <Compile Include="proOrdenesGenerarActionExchange.cs" />
+    <Compile Include="proOrdenesLimpiarActionEnum.cs" />
+    <Compile Include="proOrdenesLimpiarActionExchange.cs" />
+    <Compile Include="proOrdenProdActionEnum.cs" />
+    <Compile Include="proOrdenProdActionExchange.cs" />
+    <Compile Include="proOrdenProdSerieActionEnum.cs" />
+    <Compile Include="proOrdenProdSerieActionExchange.cs" />
+    <Compile Include="proOrdenRecursosActionEnum.cs" />
+    <Compile Include="proOrdenRecursosActionExchange.cs" />
+    <Compile Include="proOrdenSegmentoActionEnum.cs" />
+    <Compile Include="proOrdenSegmentoActionExchange.cs" />
+    <Compile Include="proOrdenStockActionEnum.cs" />
+    <Compile Include="proOrdenStockActionExchange.cs" />
+    <Compile Include="proOrdenStockCostoActionEnum.cs" />
+    <Compile Include="proOrdenStockCostoActionExchange.cs" />
+    <Compile Include="proOrdenSubRecursoActionEnum.cs" />
+    <Compile Include="proOrdenSubRecursoActionExchange.cs" />
+    <Compile Include="proOrdenTrabajos3ActionEnum.cs" />
+    <Compile Include="proOrdenTrabajos3ActionExchange.cs" />
+    <Compile Include="proPasarAProduccionActionEnum.cs" />
+    <Compile Include="proPasarAProduccionActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proProductosRecetaActionEnum.cs" />
+    <Compile Include="proProductosRecetaActionExchange.cs" />
+    <Compile Include="proProgramaActionEnum.cs" />
+    <Compile Include="proProgramaActionExchange.cs" />
+    <Compile Include="proProgramaFechasMrpActionEnum.cs" />
+    <Compile Include="proProgramaFechasMrpActionExchange.cs" />
+    <Compile Include="proProgramaOrdenActionEnum.cs" />
+    <Compile Include="proProgramaOrdenActionExchange.cs" />
+    <Compile Include="proProgramaProduccionActionEnum.cs" />
+    <Compile Include="proProgramaProduccionActionExchange.cs" />
+    <Compile Include="proProgramasSegmentoActionEnum.cs" />
+    <Compile Include="proProgramasSegmentoActionExchange.cs" />
+    <Compile Include="proProgramaSubRecursosActionEnum.cs" />
+    <Compile Include="proProgramaSubRecursosActionExchange.cs" />
+    <Compile Include="proRecetasActionEnum.cs" />
+    <Compile Include="proRecetasActionExchange.cs" />
+    <Compile Include="proRecetasCambioProductoActionEnum.cs" />
+    <Compile Include="proRecetasCambioProductoActionExchange.cs" />
+    <Compile Include="proRecetasCopiarActionEnum.cs" />
+    <Compile Include="proRecetasCopiarActionExchange.cs" />
+    <Compile Include="proRecetasProdActionEnum.cs" />
+    <Compile Include="proRecetasProdActionExchange.cs" />
+    <Compile Include="proRecetasRecursosActionEnum.cs" />
+    <Compile Include="proRecetasRecursosActionExchange.cs" />
+    <Compile Include="proRecetasTrabajo3ActionEnum.cs" />
+    <Compile Include="proRecetasTrabajo3ActionExchange.cs" />
+    <Compile Include="proRecetasXLSActionEnum.cs" />
+    <Compile Include="proRecetasXLSActionExchange.cs" />
+    <Compile Include="proRecursosActionEnum.cs" />
+    <Compile Include="proRecursosActionExchange.cs" />
+    <Compile Include="proSubRecursosActionEnum.cs" />
+    <Compile Include="proSubRecursosActionExchange.cs" />
+    <Compile Include="proTrabajo3ActionEnum.cs" />
+    <Compile Include="proTrabajo3ActionExchange.cs" />
+    <Compile Include="proTrabajo3ProvActionEnum.cs" />
+    <Compile Include="proTrabajo3ProvActionExchange.cs" />
+    <Compile Include="provarGlobalesActionEnum.cs" />
+    <Compile Include="provarGlobalesActionExchange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ProduccionCommon\ProduccionCommon\ProduccionCommon.csproj">
+      <Project>{d4466173-db34-4721-9e5f-1abc4c463ce2}</Project>
+      <Name>ProduccionCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="impRetencionesCFDIDS" targetNamespace="http://tempuri.org/impRetencionesCFDIDS.xsd" elementFormDefault="qualified"
+attributeFormDefault="qualified" xmlns="http://tempuri.org/impRetencionesCFDIDS.xsd" xmlns:mstns="http://tempuri.org/impRetencionesCFDIDS.xsd"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"> 
+<xs:element name="impRetencionesCFDIDS" msdata:IsDataSet="true">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Principal">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="Folio" type="xs:int" minOccurs="0" />
+<xs:element name="Sello" type="xs:string" minOccurs="0" />
+<xs:element name="NumCert" type="xs:string" minOccurs="0" />
+<xs:element name="FechaExp" type="xs:dateTime" minOccurs="0" />
+<xs:element name="CveRetenc" type="xs:string" minOccurs="0" />
+<xs:element name="DescRetenc" type="xs:string" minOccurs="0" />
+<xs:element name="Nacionalidad" type="xs:string" minOccurs="0" />
+<xs:element name="RFC" type="xs:string" minOccurs="0" />
+<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+<xs:element name="CURP" type="xs:string" minOccurs="0" />
+<xs:element name="NroRegIdTrib" type="xs:string" minOccurs="0" />
+<xs:element name="Ejercicio" type="xs:int" minOccurs="0" />
+<xs:element name="MesIni" type="xs:short" minOccurs="0" />
+<xs:element name="MesFin" type="xs:short" minOccurs="0" />
+<xs:element name="montoTotOperacion" type="xs:decimal" minOccurs="0" />
+<xs:element name="montoTotGrav" type="xs:decimal" minOccurs="0" />
+<xs:element name="montoTotExent" type="xs:decimal" minOccurs="0" />
+<xs:element name="montoTotRet" type="xs:decimal" minOccurs="0" />
+<xs:element name="Cancelado" type="xs:boolean" minOccurs="0" />
+<xs:element name="FechaCancelacion" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaTimbre" type="xs:string" minOccurs="0" />
+<xs:element name="SelloSAT" type="xs:string" minOccurs="0" />
+<xs:element name="NoCertificadoSAT" type="xs:string" minOccurs="0" />
+<xs:element name="UUID" type="xs:string" minOccurs="0" />
+<xs:element name="RfcProvCertif" type="xs:string" minOccurs="0" />
+<xs:element name="Leyenda" type="xs:string" minOccurs="0" />
+<xs:element name="Xml" type="xs:string" minOccurs="0" />
+<xs:element name="CodPostal" type="xs:string" minOccurs="0" />
+<xs:element name="UtilidadBimestral" type="xs:decimal" minOccurs="0" />
+<xs:element name="ISRCorrespondiente" type="xs:decimal" minOccurs="0" />
+<xs:element name="Existe" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIDetalle">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="Renglon" type="xs:int" minOccurs="0" />
+<xs:element name="BaseRet" type="xs:decimal" minOccurs="0" />
+<xs:element name="TipoImpuesto" type="xs:string" minOccurs="0" />
+<xs:element name="montoRet" type="xs:decimal" minOccurs="0" />
+<xs:element name="TipoPagoRet" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIArrenda">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="PagProvEfecPorFiduc" type="xs:decimal" minOccurs="0" />
+<xs:element name="RendimFideicom" type="xs:decimal" minOccurs="0" />
+<xs:element name="DeduccCorresp" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontTotRet" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontResFiscDistFibras" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontOtrosConceptDistr" type="xs:decimal" minOccurs="0" />
+<xs:element name="DescrMontOtrosConceptDistr" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIDividendos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="CveTipDivOUtil" type="xs:string" minOccurs="0" />
+<xs:element name="MontISRAcredRetMexico" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontISRAcredRetExtranjero" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontRetExtDivExt" type="xs:decimal" minOccurs="0" />
+<xs:element name="TipoSocDistrDiv" type="xs:string" minOccurs="0" />
+<xs:element name="MontISRAcredNal" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontDivAcumNal" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontDivAcumExt" type="xs:decimal" minOccurs="0" />
+<xs:element name="ProporcionRem" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIEnajAccion">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="ContratoIntermediacion" type="xs:string" minOccurs="0" />
+<xs:element name="Ganancia" type="xs:decimal" minOccurs="0" />
+<xs:element name="Perdida" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIFiedeEmpr">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="MontTotEntradasPeriodo" type="xs:decimal" minOccurs="0" />
+<xs:element name="PartPropAcumDelFideicom" type="xs:decimal" minOccurs="0" />
+<xs:element name="PropDelMontTot" type="xs:decimal" minOccurs="0" />
+<xs:element name="Concepto" type="xs:string" minOccurs="0" />
+<xs:element name="MontTotEgresPeriodo" type="xs:decimal" minOccurs="0" />
+<xs:element name="PartPropDelFideicom" type="xs:decimal" minOccurs="0" />
+<xs:element name="PropDelMontTotE" type="xs:decimal" minOccurs="0" />
+<xs:element name="ConseptoS" type="xs:string" minOccurs="0" />
+<xs:element name="MontRetRelPagFideic" type="xs:decimal" minOccurs="0" />
+<xs:element name="DescRetRelPagFideic" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIOperConDeriv">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="MontGanAcum" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontPerdDed" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIPagosExtr">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="EsBenefEfectDelCobro" type="xs:string" minOccurs="0" />
+<xs:element name="Pais_id" type="xs:short" minOccurs="0" />
+<xs:element name="ConceptoPago" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionConcepto" type="xs:string" minOccurs="0" />
+<xs:element name="BeneRFC" type="xs:string" minOccurs="0" />
+<xs:element name="BeneCURP" type="xs:string" minOccurs="0" />
+<xs:element name="NomDenRazSocB" type="xs:string" minOccurs="0" />
+<xs:element name="BeneConceptoPago" type="xs:string" minOccurs="0" />
+<xs:element name="BeneDescripcionConcepto" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIPlanesRet">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="SistemaFinanc" type="xs:string" minOccurs="0" />
+<xs:element name="MontTotAportAnioInmAnterior" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontIntRealesDevengAniooInmAnt" type="xs:decimal" minOccurs="0" />
+<xs:element name="HuboRetirosAnioInmAntPer" type="xs:string" minOccurs="0" />
+<xs:element name="MontTotRetiradoAnioInmAntPer" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontTotExentRetiradoAnioInmAnt" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontTotExedenteAnioInmAnt" type="xs:decimal" minOccurs="0" />
+<xs:element name="HuboRetirosAnioInmAnt" type="xs:string" minOccurs="0" />
+<xs:element name="MontTotRetiradoAnioInmAnt" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIPremios">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="Provincia_id" type="xs:string" minOccurs="0" />
+<xs:element name="DescripcionProvincia" type="xs:string" minOccurs="0" />
+<xs:element name="MontTotPago" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontTotPagoGrav" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontTotPagoExent" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDISecFinan">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="IdFideicom" type="xs:string" minOccurs="0" />
+<xs:element name="NomFideicom" type="xs:string" minOccurs="0" />
+<xs:element name="DescripFideicom" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="impRetCFDIIntereses">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="impRetencionesCFDI" type="xs:int" minOccurs="0" />
+<xs:element name="SistFinanciero" type="xs:string" minOccurs="0" />
+<xs:element name="RetiroAORESRetInt" type="xs:string" minOccurs="0" />
+<xs:element name="OperFinancDerivad" type="xs:string" minOccurs="0" />
+<xs:element name="MontIntNominal" type="xs:decimal" minOccurs="0" />
+<xs:element name="MontIntReal" type="xs:decimal" minOccurs="0" />
+<xs:element name="Perdida" type="xs:decimal" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

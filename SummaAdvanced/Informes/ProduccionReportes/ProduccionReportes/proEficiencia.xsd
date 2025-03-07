@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="proEficiencia" targetNamespace="http://tempuri.org/proEficiencia.xsd" xmlns:mstns="http://tempuri.org/proEficiencia.xsd" xmlns="http://tempuri.org/proEficiencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="proEficiencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="proEficiencia" msprop:Generator_UserDSName="proEficiencia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="proEficiencia" msprop:Generator_TableClassName="proEficienciaDataTable" msprop:Generator_TableVarName="tableproEficiencia" msprop:Generator_RowChangedName="proEficienciaRowChanged" msprop:Generator_TablePropName="_proEficiencia" msprop:Generator_RowDeletingName="proEficienciaRowDeleting" msprop:Generator_RowChangingName="proEficienciaRowChanging" msprop:Generator_RowEvHandlerName="proEficienciaRowChangeEventHandler" msprop:Generator_RowDeletedName="proEficienciaRowDeleted" msprop:Generator_RowClassName="proEficienciaRow" msprop:Generator_UserTableName="proEficiencia" msprop:Generator_RowEvArgName="proEficienciaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CtroProd_Id" msprop:Generator_ColumnVarNameInTable="columnCtroProd_Id" msprop:Generator_ColumnPropNameInRow="CtroProd_Id" msprop:Generator_ColumnPropNameInTable="CtroProd_IdColumn" msprop:Generator_UserColumnName="CtroProd_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCP" msprop:Generator_ColumnVarNameInTable="columnDescripcionCP" msprop:Generator_ColumnPropNameInRow="DescripcionCP" msprop:Generator_ColumnPropNameInTable="DescripcionCPColumn" msprop:Generator_UserColumnName="DescripcionCP" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto_Id" msprop:Generator_ColumnVarNameInTable="columnProducto_Id" msprop:Generator_ColumnPropNameInRow="Producto_Id" msprop:Generator_ColumnPropNameInTable="Producto_IdColumn" msprop:Generator_UserColumnName="Producto_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Programado" msprop:Generator_ColumnVarNameInTable="columnProgramado" msprop:Generator_ColumnPropNameInRow="Programado" msprop:Generator_ColumnPropNameInTable="ProgramadoColumn" msprop:Generator_UserColumnName="Programado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Terminado" msprop:Generator_ColumnVarNameInTable="columnTerminado" msprop:Generator_ColumnPropNameInRow="Terminado" msprop:Generator_ColumnPropNameInTable="TerminadoColumn" msprop:Generator_UserColumnName="Terminado" type="xs:string" minOccurs="0" />
+              <xs:element name="Medida_Id" msprop:Generator_ColumnVarNameInTable="columnMedida_Id" msprop:Generator_ColumnPropNameInRow="Medida_Id" msprop:Generator_ColumnPropNameInTable="Medida_IdColumn" msprop:Generator_UserColumnName="Medida_Id" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

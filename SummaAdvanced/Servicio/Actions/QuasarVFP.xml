@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wsAfip>
+	<wsUrlcabelma>
+		<urlWSAA>https://wsaa.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA>
+		<urlWSFEX>https://servicios1.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+		<urlWSFE>https://servicios1.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+		<urlWSFEV1>https://servicios1.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+	</wsUrlcabelma>
+	<wsUrlGottert_SA>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlGottert_SA>
+<wsUrlIschebeck>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlIschebeck>
+<wsUrlklockner>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlklockner>
+<wsUrlPH_Argentina>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlPH_Argentina>
+<wsUrlVersion130>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlVersion130>
+<wsUrlVentapel>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+		<urlWSFEXV1>https://wswhomo.afip.gov.ar/wsfexv1/service.asmx</urlWSFEXV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlVentapel>
+<wsUrlTeadit>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+ 		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlTeadit>
+<wsUrlTeadit_Actualizada>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX>
+ 		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlTeadit_Actualizada>
+<wsUrlPH_PampaTrade>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlPH_PampaTrade>
+<wsUrlDynamic>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlDynamic>
+<wsUrlCagroup>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlCagroup>
+<wsUrlAmericold>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlAmericold>
+<wsUrlMastropor>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlMastropor>
+	<wsUrlReal>
+		<urlWSAA>https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl</urlWSAA> 
+		<urlWSFEX>https://wswhomo.afip.gov.ar/wsfex/service.asmx</urlWSFEX> 
+		<urlWSFE>https://wswhomo.afip.gov.ar/wsfe/service.asmx</urlWSFE>
+    		<urlWSFEV1>https://wswhomo.afip.gov.ar/wsfev1/service.asmx</urlWSFEV1>
+    		<urlWSMTXCA>https://fwshomo.afip.gov.ar/wsmtxca/services/MTXCAService?wsdl</urlWSMTXCA>
+  </wsUrlReal>
+    <proxy>
+        <usuario></usuario>
+        <password></password>
+        <dominio></dominio>
+        <url></url>
+        <puerto></puerto>
+    </proxy>
+</wsAfip>

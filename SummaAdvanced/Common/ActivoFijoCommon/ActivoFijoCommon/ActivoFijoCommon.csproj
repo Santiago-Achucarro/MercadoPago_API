@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{439A837C-05DD-47B3-9328-FD2BE36E541F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActivoFijoCommon</RootNamespace>
+    <AssemblyName>ActivoFijoCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivoFijoXlsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivoFijoXlsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="afiActivoFijoAmortDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>afiActivoFijoAmortDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="afiActivoFijoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>afiActivoFijoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="afiActivoFijoOtrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>afiActivoFijoOtrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiActivoFijoXLSCatalogoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiActivoFijoXLSCatalogoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiBajasDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiBajasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiCalcDepreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiCalcDepreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiCentrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiCentrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AficonMovcontDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AficonMovcontDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AficonMovcontPendDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AficonMovcontPendDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiFijoCerrarDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiFijoCerrarDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiGenerarDepreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiGenerarDepreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiMovimientosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiMovimientosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="afiResponsableActivoDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>afiResponsableActivoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="afiResponsablesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>afiResponsablesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AfiRubrosDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfiRubrosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActivoFijoXlsDS.xsc">
+      <DependentUpon>ActivoFijoXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActivoFijoXlsDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActivoFijoXlsDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ActivoFijoXlsDS.xss">
+      <DependentUpon>ActivoFijoXlsDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoAmortDS.xsc">
+      <DependentUpon>afiActivoFijoAmortDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoAmortDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>afiActivoFijoAmortDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="afiActivoFijoAmortDS.xss">
+      <DependentUpon>afiActivoFijoAmortDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoDS.xsc">
+      <DependentUpon>afiActivoFijoDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>afiActivoFijoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="afiActivoFijoDS.xss">
+      <DependentUpon>afiActivoFijoDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoOtrosDS.xsc">
+      <DependentUpon>afiActivoFijoOtrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiActivoFijoOtrosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>afiActivoFijoOtrosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="afiActivoFijoOtrosDS.xss">
+      <DependentUpon>afiActivoFijoOtrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiActivoFijoXLSCatalogoDS.xsc">
+      <DependentUpon>AfiActivoFijoXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiActivoFijoXLSCatalogoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiActivoFijoXLSCatalogoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AfiActivoFijoXLSCatalogoDS.xss">
+      <DependentUpon>AfiActivoFijoXLSCatalogoDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiBajasDS.xsc">
+      <DependentUpon>AfiBajasDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiBajasDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiBajasDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AfiBajasDS.xss">
+      <DependentUpon>AfiBajasDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiCalcDepreDS.xsc">
+      <DependentUpon>AfiCalcDepreDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiCalcDepreDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiCalcDepreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AfiCalcDepreDS.xss">
+      <DependentUpon>AfiCalcDepreDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiCentrosDS.xsc">
+      <DependentUpon>AfiCentrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiCentrosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiCentrosDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AfiCentrosDS.xss">
+      <DependentUpon>AfiCentrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="AficonMovcontDS.xsc">
+      <DependentUpon>AficonMovcontDS.xsd</DependentUpon>
+    </None>
+    <None Include="AficonMovcontDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AficonMovcontDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AficonMovcontDS.xss">
+      <DependentUpon>AficonMovcontDS.xsd</DependentUpon>
+    </None>
+    <None Include="AficonMovcontPendDS.xsc">
+      <DependentUpon>AficonMovcontPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="AficonMovcontPendDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AficonMovcontPendDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AficonMovcontPendDS.xss">
+      <DependentUpon>AficonMovcontPendDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiFijoCerrarDS.xsc">
+      <DependentUpon>AfiFijoCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiFijoCerrarDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiFijoCerrarDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AfiFijoCerrarDS.xss">
+      <DependentUpon>AfiFijoCerrarDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiGenerarDepreDS.xsc">
+      <DependentUpon>AfiGenerarDepreDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiGenerarDepreDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiGenerarDepreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AfiGenerarDepreDS.xss">
+      <DependentUpon>AfiGenerarDepreDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiMovimientosDS.xsc">
+      <DependentUpon>AfiMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiMovimientosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiMovimientosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AfiMovimientosDS.xss">
+      <DependentUpon>AfiMovimientosDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiResponsableActivoDS.xsc">
+      <DependentUpon>afiResponsableActivoDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiResponsableActivoDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>afiResponsableActivoDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="afiResponsableActivoDS.xss">
+      <DependentUpon>afiResponsableActivoDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiResponsablesDS.xsc">
+      <DependentUpon>afiResponsablesDS.xsd</DependentUpon>
+    </None>
+    <None Include="afiResponsablesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>afiResponsablesDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="afiResponsablesDS.xss">
+      <DependentUpon>afiResponsablesDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiRubrosDS.xsc">
+      <DependentUpon>AfiRubrosDS.xsd</DependentUpon>
+    </None>
+    <None Include="AfiRubrosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AfiRubrosDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AfiRubrosDS.xss">
+      <DependentUpon>AfiRubrosDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFE1812B-C85C-42E3-9384-1F65256EC080}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImpuestosExchange</RootNamespace>
+    <AssemblyName>ImpuestosExchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Servicio\Actions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fwkcommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Servicio\Actions\fwkcommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="impArbaTxtActionEnum.cs" />
+    <Compile Include="impArbaTxtActionExchange.cs" />
+    <Compile Include="impArbaTxtModifActionEnum.cs" />
+    <Compile Include="impArbaTxtModifActionExchange.cs" />
+    <Compile Include="impArcibaActionEnum.cs" />
+    <Compile Include="impArcibaActionExchange.cs" />
+    <Compile Include="impCABATxtActionEnum.cs" />
+    <Compile Include="impCABATxtActionExchange.cs" />
+    <Compile Include="impCerrarActionEnum.cs" />
+    <Compile Include="impCerrarActionExchange.cs" />
+    <Compile Include="impCfdiMetaActionEnum.cs" />
+    <Compile Include="impCfdiMetaActionExchange.cs" />
+    <Compile Include="impCitiActionEnum.cs" />
+    <Compile Include="impCitiActionExchange.cs" />
+    <Compile Include="impeSicolActionEnum.cs" />
+    <Compile Include="impeSicolActionExchange.cs" />
+    <Compile Include="impFormulasActionEnum.cs" />
+    <Compile Include="impFormulasActionExchange.cs" />
+    <Compile Include="impImpuestosActionEnum.cs" />
+    <Compile Include="impImpuestosActionExchange.cs" />
+    <Compile Include="impImpuestosCobradosActionEnum.cs" />
+    <Compile Include="impImpuestosCobradosActionExchange.cs" />
+    <Compile Include="impImpuestosCobradosAsiActionEnum.cs" />
+    <Compile Include="impImpuestosCobradosAsiActionExchange.cs" />
+    <Compile Include="impImpuestosPagadosActionEnum.cs" />
+    <Compile Include="impImpuestosPagadosActionExchange.cs" />
+    <Compile Include="impImpuestosPagadosAsiActionEnum.cs" />
+    <Compile Include="impImpuestosPagadosAsiActionExchange.cs" />
+    <Compile Include="impJurisdiccionesActionEnum.cs" />
+    <Compile Include="impJurisdiccionesActionExchange.cs" />
+    <Compile Include="impLibrosTiposRenglonActionEnum.cs" />
+    <Compile Include="impLibrosTiposRenglonActionExchange.cs" />
+    <Compile Include="impLiquidacionActionEnum.cs" />
+    <Compile Include="impLiquidacionActionExchange.cs" />
+    <Compile Include="impPadronActionEnum.cs" />
+    <Compile Include="impPadronActionExchange.cs" />
+    <Compile Include="impPadronTxtActionEnum.cs" />
+    <Compile Include="impPadronTxtActionExchange.cs" />
+    <Compile Include="impRetencionesCFDIActionEnum.cs" />
+    <Compile Include="impRetencionesCFDIActionExchange.cs" />
+    <Compile Include="impRetPercIvaActionEnum.cs" />
+    <Compile Include="impRetPercIvaActionExchange.cs" />
+    <Compile Include="impSicoreActionEnum.cs" />
+    <Compile Include="impSicoreActionExchange.cs" />
+    <Compile Include="impSifereActionEnum.cs" />
+    <Compile Include="impSifereActionExchange.cs" />
+    <Compile Include="impTipoImpuestoActionEnum.cs" />
+    <Compile Include="impTipoImpuestoActionExchange.cs" />
+    <Compile Include="impValidacionFComprasActionEnum.cs" />
+    <Compile Include="impValidacionFComprasActionExchange.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ImpuestosCommon\ImpuestosCommon\ImpuestosCommon\ImpuestosCommon.csproj">
+      <Project>{55dd8371-9be2-4311-a757-67427d08d549}</Project>
+      <Name>ImpuestosCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
